@@ -8,7 +8,28 @@ ENV PHP_REQUEST_TERMINATE_TIMEOUT=0
 ENV PHP_MAX_EXECUTION_TIME=30
 ENV PHP_MEMORY_LIMIT=512M
 
+#ENV PJT_DB_TYPE=mysql
+#ENV PJT_DB_HOST=127.0.0.1
+#ENV PJT_DB_PORT=3306
+#ENV PJT_DB_USER=projeqtor
+#ENV PJT_DB_PASSWORD=projeqtor
+#ENV PJT_DB_NAME=projeqtor
+#ENV PJT_DB_PREFIX=pjt
+#ENV PJT_SSL_KEY=''
+#ENV PJT_SSL_CERT=''
+#ENV PJT_SSL_CA=''
+#ENV PJT_ATTACHMENT_MAX_SIZE_MAIL=2097152
+#ENV PJT_LOG_LEVEL=2
+#ENV PJT_ENFORCE_UTF8=1
+
+VOLUME /mnt/documents/
+VOLUME /mnt/logs/
+VOLUME /var/www/html/files/config/parameters.php
+
+
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY parameters.php /opt/parameters.php
+
 #VOLUME "$PHP_INI_DIR/conf.d/custom.ini"
 ADD run.sh /opt
 RUN chmod 777 /opt/run.sh
