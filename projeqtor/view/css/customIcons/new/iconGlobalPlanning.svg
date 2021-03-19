@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<path id="path29_1_" fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M66.5,124.288H15.354
+	c-5.954,0-10.781-4.826-10.781-10.781V14.983c0-5.955,4.827-10.781,10.781-10.781h98.525c5.953,0,10.781,4.827,10.781,10.781V75.5"
+	/>
+<line id="line31" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="13.498" y1="24.584" x2="47.168" y2="24.584"/>
+<line id="line33" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="46.292" y1="78.417" x2="70.923" y2="78.417"/>
+<line id="line37" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="47.143" y1="51.53" x2="94.702" y2="51.53"/>
+<path id="path2790" fill="none" stroke="#FF0000" d="M46.766,18.707l-0.073,65.684"/>
+<g id="Calque_2_1_" display="none">
+	<path display="inline" fill="#FF0000" d="M64.101,84.712c-1.835,2.088-2.965,4.849-2.977,7.937
+		c0.026,6.742,5.396,11.94,11.797,11.949c6.401-0.009,11.771-5.207,11.798-11.949c-0.01-3.088-1.141-5.851-2.977-7.938"/>
+	<path display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M55.339,84.715c-1.058,2.405-1.653,5.084-1.664,7.934c0.043,10.99,8.793,19.465,19.229,19.479
+		c10.435-0.016,19.187-8.488,19.229-19.479c-0.021-6.344-2.941-11.842-7.41-15.363"/>
+	<path display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="
+		M29.879,84.715c-3.159,4.012-4.877,6.879-4.917,6.907l-0.617,1.017l0.607,1.035c0.127,0.096,18.642,32.02,47.952,32.164
+		c29.32-0.146,47.824-32.068,47.951-32.164l0.607-1.035l-0.615-1.017c-0.115-0.081-14.014-23.492-36.131-30.318"/>
+</g>
+<g id="Calque_2_2_" display="none">
+</g>
+<g>
+	<path fill="#FF0000" d="M118.288,71.942L101.813,93.62v0.349L128,90.498v11.795l-26.188-3.122v0.346l16.648,20.813l-10.927,6.242
+		L97.13,102.293h-0.348L85.51,126.747l-9.887-6.244L92.1,99.345v-0.347l-25.667,3.295V90.498l25.494,3.296v-0.345l-16.304-21.16
+		l10.58-6.07l10.752,24.109h0.347l10.579-24.282L118.288,71.942z"/>
+</g>
+</svg>

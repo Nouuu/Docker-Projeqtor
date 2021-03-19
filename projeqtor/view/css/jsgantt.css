@@ -1,0 +1,530 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+
+// These are the class/styles used by various objects in GanttChart.  However, Firefox has problems deciphering class style when DIVs are embedded in other DIVs.
+
+div .scrollLeft { 
+  /*border: #c0c0c0 1px solid;*/ 
+  height:100%;
+  padding: 0px; 
+  margin: 0px;
+  overflow: hidden;
+  background-color: transparent;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+}
+div .scrollLeftTop { 
+  /*border: #c0c0c0 1px solid;*/
+  /*border-bottom: #707070 2px solid;*/ 
+  padding: 0px; 
+  margin: 0px;
+  overflow: hidden;
+  background: url(images/titleBarDark.png) #DDDDDD top repeat-x;
+  color: #ffffff;
+  text-shadow: 1px 1px #505050;
+  font-weight: bold;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  height:45px;
+}
+div .scrollRight { 
+  padding: 0px; margin: 0px;
+  overflow-x:hidden;
+  overflow-y:hidden; 
+  background-color: #dddddd;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  border-left: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
+div .scrollRightTop { 
+	border-bottom: #707070 2px solid; 
+  padding: 0px; margin: 0px;
+  overflow:hidden ;
+  background-color: #dddddd;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  border-left: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+}
+
+.ganttDetail, .ganttExpandOpened, .ganttExpandClosed {
+	height: 20px;
+}
+.ganttHeight {
+  height: 21px;
+}
+
+.ganttLeftTitle, .ganttRightSubTitle, .gantHeightLeftTitle,
+.ganttLeftTopLine, .ganttRightTitle {
+  height: 21px;
+}
+
+.ganttLeftTopLine {
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  padding: 0px; margin: 0px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.ganttTable {
+  padding: 0px; margin: 0px;
+  height: 100%; width: 100%; overflow: hidden;
+  text-align: left;
+  font-weight: normal;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  vertical-align: top;
+  /*z-index:5;*/
+}
+
+.ganttLeftTitle, .ganttRightTitle {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  background: url(images/titleBarDark.png) #DDDDDD top repeat-x;
+  color: #ffffff;
+  text-shadow: 1px 1px #505050;
+  padding: 0px; margin: 0px;
+  border-left: #efefef 1px solid;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+}
+.ganttRightTitle {
+  border-bottom: 1px solid #ffffff;
+  position:absolute;
+  top:0px; 
+  height:19px;
+  padding-top:5px;
+}
+* .ganttAlignLeft {
+  text-align: left;
+}
+* .ganntNoLeftBorder {
+  border-left:0px;
+}
+
+.ganttRightSubTitle {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x;
+  color: #000000;
+  padding: 0px; margin: 0px;
+  border-left: #D0D0D0 1px solid;
+  font-family: Verdana, Arial, Tahoma, sans-serif; 
+  font-size: 8pt;
+  position: absolute;
+  height:18px;
+  top: 24px;
+  padding-top:3px;
+}
+
+.ganttTaskrow {
+  padding: 0px; margin: 0px;
+  background-color: #ffffff;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  /*z-index:50;*/
+}
+.selectedrow {
+  padding: 0px; margin: 0px;
+  background-color: #AAAAFF;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  /*z-index:50;*/
+}
+
+
+.ganttTaskrowBar {
+   height: 11px; 
+   /*cursor: pointer;*/
+   opacity:0.9;
+   filter: alpha(opacity=90);
+   /*z-index:90;*/
+}
+.ganttTaskrowBaseBar {
+   height: 9px; 
+   
+   z-index: 10;
+   position: absolute;
+   opacity:0.9;
+   filter: alpha(opacity=90);
+   /*z-index:90;*/
+}
+
+.ganttTaskrowBaseTop {
+  background-color:#BBDDDD;
+  top: 0px;
+}
+.ganttTaskrowBaseBottom {
+  background-color:#BBBBFF;
+  top: 12px;
+}
+.ganttTaskrowBaseTopMile {
+  color:#BBDDDD;
+}
+.ganttTaskrowBaseBottomMile {
+  color:#BBBBFF;
+}
+.ganttTaskrowBaseTopGroup {
+	
+}
+.ganttTaskrowBaseBottomGroup {
+  top:8px;
+}
+
+.ganttTaskrowBarComplete { 
+  background-color:#000000; 
+  height:5px; 
+  overflow: hidden; 
+  margin-top:4px;
+  opacity:0.4; 
+  filter: alpha(opacity=40);
+  position: absolute; top: 0px; left: 0px;
+  z-index: 14; 
+  /*z-index:100;*/
+}
+.ganttGrouprowBarComplete { 
+  z-index: -4; 
+  float:left; 
+  background-color:#FFFFFF; 
+  height:2px;
+  overflow: hidden; 
+  margin-top:2px; margin-left:1px; margin-right:1px;
+  filter: alpha(opacity=70); opacity:0.7;
+  /*z-index:100;*/
+  /*cursor: pointer;*/
+}
+
+
+.ganttTaskgroup {
+  padding: 0px; margin: 0px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  border-color: #F6F6F6 #ACACAC #ACACAC #F6F6F6;
+  background: #E8E8E8 ;
+}
+
+.ganttTaskgroupBar { 
+  background-color:#505050; 
+  text-align:center;
+  height: 7px;
+  /*cursor: pointer;*/
+  opacity:0.9; 
+}
+
+.ganttTaskgroupBarExt { 
+  z-index: -4; 
+  background-color:#505050; 
+  overflow: hidden; 
+  width:1px
+}
+.ganttTaskgroupBarExtInvisible { 
+  z-index: -4; 
+  overflow: hidden; 
+  width:1px
+}
+
+.ganttTaskgroupBarText { 
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  position:absolute; 
+  top:-3px; 
+  width:120px; 
+}
+
+.ganttTaskmile {
+  padding: 0px; margin: 0px;
+  font-weight: lighter;
+  font-style:italic;
+  background-color: #ffffff;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+
+.ganttName { 
+  border-top: #c0c0c0 1px solid;
+  font-size: 90%;      
+  padding: 0px; margin: 0px;
+  z-index: 0;
+  height: 20px;
+}
+.ganttLeftHover {
+	position: absolute;
+	margin-top: -3px;
+	left: 25px;
+	height: 20px;
+	background-color: #FFFFFF;
+	opacity:0.1;
+  filter: alpha(opacity=10);
+	z-index: 998;
+	cursor: pointer;
+}
+
+.ganttLeftMileContract {
+	position: absolute;
+	margin-top: -3px;
+	left: 25px;
+	height: 20px;
+	background-color: #FFFFFF;
+	opacity:0.1;
+  filter: alpha(opacity=10);
+	z-index: 998;
+}
+
+.hideLeftPartrow, .hideLeftPartmile {
+  z-index: 999;
+  display: inline-block;
+  width: 100%;
+  /*cursor: pointer;*/
+  
+}
+.hideLeftPartgroup {
+  z-index: 999;
+  display: inline-block;
+  width: 100%;
+  /*cursor: pointer;*/
+}
+.namePartrow, .namePartmile {
+  z-index: -999;
+  display: inline-block;
+  width: 99%;
+  cursor: pointer;
+}
+.namePartgroup {
+  z-index: -999;
+  display: inline-block;
+  width: 99%;
+  cursor: pointer;
+}
+
+.handleCursor {
+	cursor: move;
+}
+.ganttDetail {
+  border-top: #c0c0c0 1px solid;
+  /*font-size: 90%;*/
+  font-size: 89%; /* important to avoid non-aligned lines on Gantt Chart on Linux / Firefox */
+  padding: 0px; margin: 0px;
+  z-index: 10;   
+  /*z-index: 15;*/
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ganttDetailNoborder {
+  border-top: #c0c0c0 1px solid;
+  /*font-size: 90%;*/
+  font-size: 89%; /* important to avoid non-aligned lines on Gantt Chart on Linux / Firefox */
+  padding: 0px; margin: 0px;
+  z-index: 10;   
+  /*z-index: 15;*/
+}
+.ganttDetail, .ganttDetailBoderleft {
+  border-left: #dddddd 1px solid;
+}
+.ganttDetailBoderleft, .ganttSubDetailNoborder  {
+  font-size: 5%;  
+  padding: 0px; margin: 0px;     
+}
+
+/*
+.ganttExpandOpened {
+  background-image: url(images/minus.gif);  background-repeat: no-repeat;
+  cursor: pointer;
+}
+  
+.ganttExpandClosed {
+  background-image: url(images/plus.gif);  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+*/
+
+.ganttSep {
+  width: 16px;
+  font-size: 90%;
+  font-weight: normal;
+  font-style: normal; 
+}
+.ganttScale {
+	width:100px;
+	float:none;
+	test-align: left;
+}
+.ganttScaleText {
+  width:100px;
+  font-size: 80%;
+  float:none;
+  position: relative;
+  top: 0px;
+  test-align: left;
+  font-weight: normal;
+  text-shadow: 1px 1px #505050;
+}
+	
+.ganttUnselectable {
+    user-select: none; 
+    -o-user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+}
+
+.ganttDndLink {
+	cursor: url('images/dndLink.png'),help;
+}
+
+.dayBackground {
+	background-image: url(images/ganttDay.png);  
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	opacity:0.15;
+  filter: alpha(opacity=15);
+  border-top: #000000 1px solid;
+  z-index:10;
+  position:relative;
+  height: 20px !important;
+}
+.weekBackground {
+  background-image: url(images/ganttWeek.png);  
+  background-repeat: repeat-x;
+  opacity:0.15;
+  filter: alpha(opacity=15);
+  border-top: #000000 1px solid;
+  z-index:10;
+  position:relative;
+  height: 20px;
+}
+.monthBackground {
+  background-image: url(images/ganttMonth.png);  
+  background-repeat: repeat-x;
+  opacity:0.15;
+  filter: alpha(opacity=15);
+  border-top: #000000 1px solid;
+  z-index:10;
+  position:relative;
+  height: 20px;
+}
+.quarterBackground {
+  background-image: url(images/ganttQuarter.png);  
+  background-repeat: repeat-x;
+  opacity:0.15;
+  filter: alpha(opacity=15);
+  border-top: #000000 1px solid;
+  z-index:10;
+  position:relative;
+  height: 20px;
+}
+
+.specificDayWeekEnd {
+	opacity:0.5;
+	filter: alpha(opacity=40);
+	z-index:0; 
+	background-color: #D0D0D0;
+	position:absolute; 
+}
+.specificDayCurrent {
+  opacity:0.4;
+  filter: alpha(opacity=30);
+  z-index:0; 
+  background-color: #FFFF00;
+  position:absolute; 
+}
+.specificDayToday {
+  opacity:0.9;
+  filter: alpha(opacity=90);
+  z-index:0; 
+  background-color: #FF0000;
+  position:absolute; 
+  width:2px;
+}
+.rightTableLine {
+  /*z-index: 8;*/
+  /*opacity:0.9;
+  filter: alpha(opacity=90);*/
+  position:relative; 
+  top:0px;
+}
+
+.barDivMilestone {
+	z-index: 10;
+	position:absolute; 
+	top:-2px; 
+	overflow:hidden;
+}
+.barDivGoup {
+  z-index: 10;
+  position:absolute; 
+  top:5px;
+}
+.barDivTask {
+  z-index: 10;
+  position:absolute; 
+  top:4px;
+}
+.labelBarDiv {
+	z-index:10;
+	font-size:9px; 
+	position:absolute; 
+	top:-5px; 
+	width:150px;
+  max-height: 22px;
+  overflow: hidden; 
+  display: -webkit-box;  
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+}
+
+.dojoxGridRowSelected .ganttIconBackground {
+	background-color:rgba(255,255,255,0.7)
+}
+
+.columnHandle {
+	display:block;
+	position:absolute;
+	right:1px;
+	top:0px;
+	height:20px;
+	width:4px;
+	border:1px solid red;
+}
+.columnHandle:hover {
+	cursor:col-resize;
+}
+
+#rightTableBarDetail {
+	width:200px;
+	height:100px;
+	position: absolute;
+	/*background-color:#E0E0E0;*/
+	z-index:70000;
+	display:none;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.dependencyLine:hover {
+	width:3px !important;
+	background-color: #0000ff !important;
+}
+#leftside, #rightGanttChartDIV {
+  scroll-behavior: smooth;
+}

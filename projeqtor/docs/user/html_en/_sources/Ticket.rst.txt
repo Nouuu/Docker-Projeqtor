@@ -1,0 +1,536 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Tickets
+
+.. index:: Ticket 
+
+.. _ticket:
+.. _simple-ticket:
+
+Tickets
+-------
+
+A ticket is a kind of task that cannot be scheduled in a unitary manner.
+
+This is usually a short-lived activity for a single ticket that gives feedback to the issuer or to keep track of the result.
+
+
+.. figure:: /images/GUI/TICKET_SCR_Presentation.png
+   :alt: Tickets management screen
+   
+   Tickets management screen
+
+It can be globally planned as a general activity, but not unitarily.
+
+For instance, bugs should be managed through tickets : 
+
+* You can not plan bugs before they are registered.
+* You must be able to give a feedback on each bug.
+* You can (or at least should) globally plan bug fixing activity. 
+
+.. index:: Ticket (Simple) 
+
+.. topic:: Tickets (simple) 
+
+   * This screen is a limited version of screen "Tickets".
+   * It's dedicated to users who want to create and follow their own tickets without be involved in their treatment.
+   * When fields and features are available, the description is similar.
+    
+
+.. topic:: Restrict the entry of real work in the ticket
+
+   * Possibility to define that only the responsible of ticket can enter real work.
+   * This behavior can be set in  :ref:`Global parameters<auto-responsible>` screen.
+
+
+.. rubric:: Due dates
+
+* Initial and planned due date allows to define a target date for solving the ticket.
+
+ .. compound:: **Initial due date**
+
+    * If a definition of ticket delay exists for giving ticket type and urgency the date is automatically calculated with this delay.
+    * :ref:`delay-for-ticket` screen allows to define ticket delay.
+
+ .. compound:: **Planned due date**
+
+    * Is used to define a target date after evaluation.
+    * Automatically initialized to the initial due date.
+
+ .. compound:: **Monitoring indicator**
+
+    * Possibility to define indicators to follow the respect of dates values.
+
+    .. describe:: Respect of initial due date/time
+    .. describe:: Respect of planned due date/time
+
+
+.. note::
+
+   Initial due date of the ticket set as read only if it is calculated from the setting of "delays for tickets"
+
+.. rubric:: Product, component and versions fields
+
+* Allows to identify the product and component relating to the issue.
+* Identifies from which versions, the issue occurs and to which versions a resolution will be applied. 
+
+.. sidebar:: Other sections
+
+   * :ref:`Linked element<linkElement-section>`
+   * :ref:`Attachments<attachment-section>`
+   * :ref:`Notes<note-section>`
+   
+ .. compound:: **Versions identified**
+
+    * A ticket can identify all versions allocated.
+    * Possibility to define a main version and the other versions allocated.
+    * See: :ref:`Product concept<product-concept>`.
+
+.. rubric:: Responsible of product
+
+
+   
+   
+A responsible can be defined for a product or component.
+
+If a product or component is selected, the responsible defined can be automatically assigned to the ticket.
+
+.. note:: Ticket responsible from product responsible
+
+   This parameter, in Global parameters, allows to define, if the defined responsible is automatically assigned to the ticket.
+   
+   See: :ref:`Global Parameters<globalParam_tickets>`
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :widths: 40, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the ticket.
+   * - |RequiredField| Name
+     - Short description of the ticket.
+   * - |RequiredField| Ticket type
+     - Type of ticket.
+   * - |RequiredField| Project
+     - The project concerned by the ticket.
+   * - :term:`External reference`
+     - External reference of the ticket.
+   * - Urgency
+     - Urgency for treatment of the ticket, as requested by the issuer.
+   * - :term:`Requestor`
+     - Contact at the origin of the ticket.
+   * - :term:`Origin`
+     - Element which is the origin of the ticket.
+   * - Duplicate ticket
+     - Link to another ticket, to link duplicate tickets.
+   * - Context
+     - List of 3 items describing the context of the ticket.
+   * - Product
+     - The product for which this ticket has been identified.
+   * - Component
+     - The component for which this ticket has been identified.
+   * - Original product version
+     - Product versions for which the issue has been identified.
+   * - Original comp. version 
+     - Component versions for which the issue has been identified.
+   * - :term:`Description`
+     - Complete description of the ticket.
+
+.. topic :: Field Context
+
+   * Contexts are initialized for IT Projects as “Environment”, “OS” and “Browser”. 
+   * This can be easily changed values in :ref:`context` screen.  
+
+.. topic:: Product or component
+
+   * List of values contains the products and components linked the selected project.
+
+.. topic:: Fields: Original product version & Original comp. version
+
+   * The list of values will be filtered depends on the selected value in fields "Product and component".
+   * Click on |Add| to add a other version, see :ref:`multi-version-selection`.
+
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :widths: 40, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Planning activity
+     - Activity where global work for this kind of ticket is planned. 
+   * - |RequiredField| Status
+     - Actual :term:`status` of the ticket.
+   * - Resolution
+     - Ticket resolution.
+   * - :term:`Responsible`
+     - Resource who is responsible for the ticket.
+   * - Criticality
+     - Importance of impact on the system, as determined after analysis.
+   * - Priority
+     - Priority of treatment.
+   * - Initial due date
+     - Initial target date for solving the ticket.
+   * - Planned due date
+     - Actual target date for solving the ticket.
+   * - Estimated work
+     - Estimated workload needed to treat the ticket.
+   * - Real work
+     - Real workload spent to treat the ticket.
+   * - Left work
+     - Left workload needed to finish the ticket.
+   * - :term:`Handled`
+     - Box checked indicates the ticket is taken over.
+   * - :term:`Done`
+     - Box checked indicates the ticket has been treated.
+   * - Solved
+     - Box checked indicates the ticket has been solved.
+   * - :term:`Closed`
+     - Box checked indicates the ticket is archived.
+   * - Cancelled
+     - Box checked indicates the ticket is cancelled.
+   * - Target product version 
+     - Product versions for which a resolution of issue will be delivered.
+   * - Target comp. version 
+     - Component versions for which a resolution of issue will be delivered.
+   * - :term:`Result`
+     - Complete description of the resolution of the ticket. 
+ 
+.. topic:: Priority
+
+   * Automatically calculated from Urgency and Criticality values. See: :ref:`priority-calculation`.
+   * Can be changed manually.
+   
+   Notion of regression can be added.
+   
+   **Left work**
+
+   * Automatically calculated as Estimated – Real.
+   * Set to zero when ticket is done.
+
+
+   **Target product version & Target comp. version**
+
+   * The list of values will be filtered depends on the selected value in fields "Product and component".
+   * Click on |Add| to add a other version, see :ref:`multi-version-selection`.
+
+   **Field Solved**
+
+   * The box is automatically checked or unchecked, according to the resolution selected.
+
+.. raw:: latex
+
+    \newpage
+
+.. rubric:: Button **Start/End work**
+
+.. figure:: /images/GUI/TICKET_ZONE_StartWork.png
+   :alt: Button start work
+   
+* The start Work / Stop Work button is a clock on / off timer.
+* If the logged in user is a resource, he or she has the option to start working on the ticket.
+* Click the "Start work" button to start timing the processing time on the ticket.
+* The start time is then displayed under the button and the button changes name.
+
+.. figure:: /images/GUI/TICKET_ZONE_Button_StartWork.png
+   :alt: Button start work
+
+* Once the work is done, press the "stop work" button.
+* The spend time will automatically be converted as real work.
+* It'll be transferred on planning activity if it is set.
+* A decrease in "left work" on activity will be carried out.
+   
+.. important::
+
+   Closing the application or starting work on another ticket will automatically stop the current ongoing work. 
+
+.. rubric:: Button Dispatch
+
+This button allows to dispatch ticket.
+
+.. figure:: /images/GUI/TICKET_BOX_DispatchWork.png
+   :alt: Dialog box - Dispatch work 
+   :align: center
+
+
+* Click on |Add| to add a line. 
+
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Planning activity    
+
+.. _ticket-planning-activity:
+
+Planning activity
+"""""""""""""""""
+Planning activity field allows to link the ticket with a planning activity.
+
+If the global parameter :ref:`limit Planning Activity to those with flag<globalParam_tickets>` is set to yes then:
+
+* You must check the "Planning activity" box on the activity to be linked.
+* It will then be visible in the planning activities list of your ticket.
+* Work on the ticket will be included in this activity.
+* After saving the option, new fields are displayed.
+* You can see the number of tickets linked to this activity and time information corresponding to all of these tickets.
+
+
+.. figure:: /images/GUI/TICKET_ZONE_SteeringActivityPlanningOK.png
+   :alt: Planning activity news fields
+   
+   New fields displayed after saving the Planning activity option
+   
+   
+* Click on |Search| to open a popup which will display the details of these tickets.
+
+
+.. figure:: /images/GUI/TICKET_BOX_ActivityPlanningLISTTICKETS.png
+   :alt: List of tickets linked to the activity
+   
+   List of tickets linked to the activity
+   
+   
+
+.. rubric:: Real work
+
+Put the real work from tickets to the resource timesheet.
+
+* When a resource has entered the real work on the ticket and the ticket is linked to a planning activity.
+* The resource is automatically assigned to this activity.
+* Real work set on tickets is automatically set in resource timesheet.
+    
+    
+.. figure:: /images/GUI/TICKET_ZONE_Timesheet.png
+   :alt: Timesheet
+   
+   Imputations real work on related tickets.
+
+* The tickets are very dependent on the planning activity.
+* The time indicated by the resources will be decremented to that planned for the activity.
+
+
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. _multi-version-selection:
+
+Multi-version selection
+"""""""""""""""""""""""
+
+In the version fields, it's possible to set several versions.
+
+.. topic:: Main and other version
+
+   * The version with smaller id will appear in the select list and is considered as the main version.
+   * Other versions are listed above. 
+   * It is possible to set an ‘other’ version as the main version using the button |Switch|.
+
+
+* Click on |Add| to add a other version. 
+* Click on |Delete| to delete a version.
+
+
+   
+.. _priority-calculation:
+
+Priority value calculation
+""""""""""""""""""""""""""
+
+Priority value is automatically calculated from **Urgency** and **Criticality** values.
+
+Priority, Urgency and Criticality values  are defined in lists of values screens. See: :ref:`priority`, :ref:`urgency` and :ref:`criticality` screens.
+
+In the previous screens, a name of value is set with numeric value.  
+
+Priority numeric value is determined by a simple equation as follows:
+
+.. topic:: Equation
+
+   * [Priority value] = [Urgency value] X [Criticality value] / 2
+   * For example:
+
+     * Blocking (4) X Critical (8) / 2  = Critical priority (16)for [Priority value] 
+
+.. rubric:: Default values
+
+* Default values are determined.
+* You can change its values while respecting the equation defined above. 
+
+
+
+
+.. _ticket-fromemail:
+
+Receive tickets from emails
+"""""""""""""""""""""""""""
+
+ProjeQtOr offers to save tickets from e-mail directly in the application.
+
+.. figure:: /images/GUI/TICKET_SCR_EmailTicket.png
+   :alt: Receive email from ticket screen
+   
+   Receive email from ticket screen
+   
+   
+
+.. rubric:: Description section
+
+This section allows you to enter the parameters of your mailbox. 
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the ticket.
+   * - |RequiredField| Name
+     - Short description of the ticket.
+   * - |RequiredField| Project
+     - name of the project to which the ticket is attached.
+   * - |RequiredField| IMAP host
+     - Name of your IMAP host. 
+   * - |RequiredField| IMAP User
+     - Mail of the IMAP user.
+   * - |RequiredField| IMAP Password
+     - IMAP user account password entered.
+
+
+You can create a new mailbox for tickets on each project and for each type of ticket configured in ProjeQtOr.
+ 
+
+
+ .. compound:: IMAP Host
+
+   The address must be an IMAP connection string.
+   
+   Example to connect to the GMAIL input area, the host must be
+
+   {imap.gmail.com:143}INBOX
+   
+   No protocol is required 
+   
+
+   
+ .. compound:: security constraints
+ 
+   * **Mails from any source (may lead to spam**
+     Allow you to receive emails from anyone and therefore can cause spam 
+     
+   * **Only mails from known users**
+     Can only receive emails saved in your ProjeQtOr application
+     
+   * **Only mails from known users allocated to the project**
+     Only allows you to receive emails saved in your ProjeQtOr application 
+     and which are assigned to the project selected in the settings of your mailbox
+     
+   * Include attachments  
+     Indicates whether or not you allow your users to attach attachments.
+     
+   * allow up to   
+     maximum weight allowed for receiving emails.     
+     
+     .. warning:: maximum weight 
+
+       There is no weight limit in ProjeQtOr but probably your mail server. 
+       
+       Most of the time emails are blocked beyond 5 to 10 MB
+       
+       
+.. rubric:: Description treatment       
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Ticket type
+     - Type of ticket for which emails will be sent.
+   * - Responsible 
+     - Name of the person who will work on the default ticket.
+   * - Planning activity
+     - Name of the planning activity on which the tickets will be decremented. The parent activity must belong to the same project. 
+   * - |RequiredField| Limit of tickets / hour 
+     - Maximum number of emails per hour allowed.
+   * - Last input date
+     - Date of last ticket received
+   * - Last input ticket    
+     - Display the name of the last ticket received
+   * - Total input tickets
+     - Total number of the tickets since the mailbox creation
+
+
+.. warning:: 
+   Cron must be launched for tickets to be processed in ProjeQtOr.
+   If you do not receive a ticket, try to stop the cron so that it can restart with a refresh of the code.
+
+
+Some fields can be decisive for the reception of your emails.
+     
+     
+ .. compound:: limit of tickets / hour
+ 
+   * This limit allows you to restrict the reception of emails by hour.
+     
+     If the number of tickets received is much higher than your limitation then the probability of spam is to be considered or you have incorrectly evaluated the number of tickets to be processed.
+     
+   * When the maximum number of tickets is reached then the mailbox freezes
+
+     Only manual intervention by the administrator can unlock it
+
+     Its role will consist in reassessing the number of tickets to allow their receipt
+     
+   * If the maximum number of tickets per hour has been reached then you have a rejection message on the history line: **rejected ticket: ticket limit per hour**  
+      
+      
+.. rubric:: History of ticket created
+
+You can choose the number of tickets to display in the history by filling in the "history to display" field
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Email adresse
+     - address of the ticket sender
+   * - Date
+     - date of receipt of the ticket 
+   * - Result 
+     - Indicates whether the ticket has been processed or rejected
+     
+     
+     
+      
+     

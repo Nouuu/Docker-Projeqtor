@@ -1,0 +1,51 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Requirements dashboard
+
+.. index:: Requirement (Dashboard)
+
+.. _requirements-dashboard:
+
+Requirements dashboard
+======================
+
+Allows user to have a requirement global view of his projects.
+
+Shows several small reports, listing the number of requirements by item.
+
+Filters are available to limit scope.
+
+.. figure:: /images/GUI/REQUIREMENT_SCR_Dashboard.png
+   :alt: Requirement dashboard screen
+
+.. rubric:: Direct access to the list of requirements
+
+* In reports, click on an item to get list of requirement corresponding to this item.
+
+.. rubric:: Parameters
+
+* Click on |Parameter| to access parameters.
+
+.. important:: For **Synthesis by status**, filter clauses are not applicable.
+
+.. figure:: /images/GUI/REQUIREMENT_BOX_Itemdisplay.png 
+   :alt: Dialog box - Ticket dashboard parameters
+   :align: center
+
+* Allows to define reports displayed on the screen.
+* Allows to reorder reports displayed with drag & drop feature. 
+* Using the selector area button |Drag|.
+
+
+ .. compound:: Scope filters
+
+   * Filters allow you to restrict the display of saved requirements.
+   
+   * By status, period, duration, closed element, linked to the user or no related...
+
+
+ .. compound:: No resolution scheduled 
+
+   * Unscheduled: Requirements whose resolution is not scheduled in a next product version (target product version not set). 
+
+

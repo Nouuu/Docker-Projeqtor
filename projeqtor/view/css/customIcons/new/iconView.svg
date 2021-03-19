@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Calque_1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="iconView.svg" display="none">
+	
+		<sodipodi:namedview  gridtolerance="10" borderopacity="1" inkscape:zoom="5.7421875" objecttolerance="10" bordercolor="#666666" inkscape:cx="64" guidetolerance="10" pagecolor="#ffffff" inkscape:cy="64" showgrid="false" id="namedview20" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:current-layer="Calque_1" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1">
+		</sodipodi:namedview>
+	<g display="inline">
+		<path fill="#FF0000" d="M120.325,63.404c-0.155-0.111-22.396-37.598-56.307-37.775C30.12,25.806,7.873,63.293,7.712,63.404
+			l-0.725,1.195l0.713,1.216c0.149,0.111,21.894,37.604,56.317,37.775c34.436-0.171,56.168-37.664,56.317-37.775l0.713-1.216
+			L120.325,63.404z M63.482,94.936C47.014,94.897,22.839,81.554,22.8,64.609c0.039-16.955,24.208-30.293,40.683-30.321
+			C79.95,34.316,104.509,47.04,104.547,64C104.509,80.95,79.95,94.897,63.482,94.936z"/>
+	</g>
+</g>
+<g id="Calque_3">
+	<path fill="#FF0000" d="M64.02,50.575c-7.518,0.01-13.824,6.107-13.854,14.034c0.03,7.919,6.336,14.024,13.854,14.034
+		c7.52-0.01,13.824-6.115,13.856-14.034C77.85,56.683,71.54,50.585,64.02,50.575z"/>
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M64,41.733
+		c-12.256,0.017-22.533,9.955-22.583,22.876C41.467,77.517,51.744,87.47,64,87.486c12.255-0.017,22.533-9.97,22.584-22.877
+		C86.542,51.688,76.255,41.75,64,41.733z"/>
+</g>
+<g id="Calque_2">
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M120.307,63.404
+		C120.151,63.293,97.91,25.806,64,25.628C30.102,25.806,7.854,63.293,7.694,63.404L6.97,64.599l0.713,1.216
+		C7.832,65.926,29.576,103.419,64,103.59c34.436-0.171,56.168-37.664,56.317-37.775l0.713-1.216L120.307,63.404z"/>
+</g>
+</svg>

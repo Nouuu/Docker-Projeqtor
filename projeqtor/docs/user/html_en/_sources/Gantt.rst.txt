@@ -1,0 +1,2037 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Planning
+
+.. index:: Planning
+
+.. index:: Gantt chart
+
+
+
+Planning
+********
+
+The Gantt chart is a tool used in scheduling and project management and allowing to visualize in time the various tasks composing a project.
+
+It is a representation of a connected graph, evaluated and oriented, which makes it possible to graphically represent the progress of the project
+
+
+.. _Gantt_chart:
+
+Gantt chart
+-----------
+
+This screen allows to define projects planning and follow progress.
+
+**The Gantt Chart is composed of five areas:**
+  
+
+.. figure:: /images/GUI/GANTT_ZONE_Planning.png 
+   :alt: Gantt (Planning)
+   :align: center
+
+   Gantt (Planning)
+
+
+
+.. topic:: Interface areas:
+
+   |one| :ref:`Toolbar-Gantt`
+         
+   |two| :ref:`task-list`
+   
+   |three| :ref:`progress-data-view`
+   
+   |four| :ref:`gantt-chart-view`
+   
+   |five| :ref:`gantt-details-area`
+
+
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. _Toolbar-Gantt:
+
+Toolbar
+=======
+
+
+.. figure:: /images/GUI/GANTT_ZONE_Toolbar.png
+   :alt: Gantt chart's toolbar 
+   
+   Gantt chart's toolbar
+
+
+.. topic:: Interface areas
+
+   |one| :ref:`Activity planning calculation<ActivityPlanningCalculation>`
+   
+   |two| :ref:`Automatique run plan<auto-run>`
+   
+   |three| :ref:`Create a new planning element<new-element-gantt>`
+   
+   |four| :ref:`Advanced filter<advanced-filter-gantt>`
+   
+   |five| :ref:`Display the columns<displayed-columns-gantt>`
+   
+   |six| :ref:`Display other options<other-option>`
+   
+   |seven| :ref:`Display from... to... <display-from>`
+   
+   |eight|  :ref:`Planning validation<planning-validation>`
+   
+   |nine| :ref:`Save and show baseline<save-baseline>`
+   
+   |ten| :ref:`Print and Export<print-export-gantt>`
+   
+   |eleven| :ref:`The checkbox<checkbox-gantt>`   
+   
+   
+   
+
+
+.. _ActivityPlanningCalculation:
+
+.. rubric:: |oneBLC| Activity planning calculation
+
+When you make a modification on an element of your project, the project must then be recalculated to take it into account.
+
+You have the option of using the automatic calculation function, which, if you make a modification on the planning screen, and only on this screen, will immediately take this modification into account.
+
+If the modification is made on another screen, even if you have selected automatic calculation then, you will have to restart the calculation on the planning screen.
+
+
+
+* Click on |Plan| to start the activity planning calculation.
+
+* A popup window appears with the list of projects. 
+
+* The check boxes allow you to select one or more projects to recalculate.
+
+
+
+.. figure:: /images/GUI/GANTT_BOX_Calculation.png
+   :alt: Project selection popUp for project calculation
+   
+   Project selection popUp for project calculation 
+
+
+If you have selected one or more projects with :ref:`Project Selector<project-selector>` then the selected projects will be automatically checked.
+   
+Choose the date on which you want to recalculate the project.  
+
+By checking the "Hide unselected projects" box, you will only have the projects selected in the project selector and they will be automatically checked.
+
+
+.. index:: Overuse
+
+.. _overuse-calculation:
+
+
+ .. compound:: Overuse
+  
+   The overuse option allows you to allocate to all the resources and this, on the projects of your choice, maximum overbooking.
+
+   This allows you to see the amount of work that is overused for the resources assigned to the task for each period of time.
+
+   .. Warning::
+
+      This function is dangerous, it does not reflect reality.
+   
+      For this reason, by default, it is not activated, even for the administrator.
+
+      See: :ref:`specific_access` in the Planning section access rights
+
+
+
+
+
+
+
+
+
+.. _auto-run:
+
+.. rubric:: |twoBLC| Automatic run plan
+
+Swith the button to activate automatic calculation on each change.
+  
+Only works on the Gantt Planning view. 
+
+If the modification of an element is carried out on the dedicated screen of the element, then it is necessary to click again on BUTTON to restart the computation
+
+All modifications about assignement (rate, name or numbers of resources, dates...) done are not displayed on the new planning screen until having, for this purpose, activited the planning calculation, either in an automatic run plan or not.
+  
+On the contrary, the screen planning will not change even if modifications have been loaded yet.
+
+
+
+
+ .. compound:: Automatic calculation
+
+  **Differential calculation =** calculation of projects that require a recalculation.
+  
+  **Complete calculation =** calculation of all projects
+
+  
+  The calculations are programmed according to a frequency of CRON type (every minute, every hour, at a given hour every day, at a given time on a given week day, ...)
+  
+  See: Global Parameters into the chapter :ref:`Automatic planning Calculation<automatic-planning-calcul>`
+
+
+
+
+.. _new-element-gantt:
+
+.. rubric:: |threeBLC| Add a new planning element
+
+* Allows you to create a new planning element.
+* The element is then added under the previously selected element and with the same level of incrementation
+* The element is added to the Gantt chart and the detail area adapts to the content created.
+* The details area allows you to complete the entry.
+
+.. figure:: /images/GUI/GANTT_TIP_CreateNewItem.png
+   :alt: Popup menu - Create a new item
+   :align: center
+
+   Popup menu - Create a new item
+
+You can create several elements on the planning view and more on to the :ref:`Global planning<gantt-planning>`.
+
+
+
+
+
+.. _advanced-filter-gantt:
+
+.. rubric:: |fourBLC| Advanced Filter
+
+The advanced filter allows to define clause to filter and sort.
+
+More details: :ref:`filters<filters>`
+   
+ 
+ 
+ 
+.. _displayed-columns-gantt:
+
+.. rubric:: |fiveBLC| Displayed columns
+
+This functionality allows to define columns displayed in the progress data view.
+
+More details: :ref:`Display and organize the columns<columns>`. 
+ 
+ 
+ 
+ 
+.. _other-option:
+
+.. rubric:: |sixBLC| Display other options 
+ 
+Clicking the icon will bring up the additional options window. 
+ 
+ 
+ 
+ 
+.. _display-from:
+
+.. rubric:: |sevenBLC| Display from... to... 
+
+Change the start and / or end date to limit or extend the display of a Gantt Chart.
+
+If the display is truncated because the project is too long, think to change the display scale.
+
+
+  .. compound:: All the projet
+
+   Check **All the project** for the Gantt chart to show all project tasks when possible.
+
+  .. compound:: Saving dates  
+
+   Save your dates of display to retrieve them on every connection.
+
+
+
+
+
+
+.. _planning-validation:
+
+.. rubric:: |eightBLC| Planning validation
+
+Allows you to replace the validated dates with the planned dates.
+
+
+.. figure:: /images/GUI/GANTT_BOX_StorePlannedDates.png
+   :alt: Dialog box - Store planned dates
+   :align: center
+
+   Store planned dates
+
+With this approach, you validate in a way any possible delay on the activities of your project.
+
+Two actions are available: **Always** or **If empty**.
+
+
+  .. compound:: Always
+
+    Will overwrite existing values.
+    
+    If values are entered in the "validated" fields then, they will all be replaced by the planned dates (calculated by the software)
+    
+  .. compound:: If empty
+      
+    Will not overwrite existing values.  
+    
+    If the "validated" fields are not completed, then these dates will be replaced by the planned dates.
+    
+    If the "validated" fields are completed then they will be kept.
+    
+    
+
+
+
+
+
+
+
+.. _save-baseline:
+
+.. rubric:: |nineBLC| Save and show baseline
+
+The baseline is a record of the planning state at a time T.
+
+
+.. figure:: /images/GUI/GANTT_ZONE_Baseline.png
+   :alt: Save a baseline
+   
+   Save a baseline
+  
+You can create as many baselines as you want per day, but you can only save one baseline per day. Each new baseline must replace the previous one.
+  
+  
+  .. compound:: Save baseline
+  
+   Saved a baseline with the button |Baseline|. 
+   
+   Enter the project on which to create the baseline. The list of existing baselines, already registered, is available via this window. You can modify your baseline or delete it to save another one.
+  
+   .. figure:: /images/GUI/GANTT_BOX_Baseline.png
+      :alt: Record baseline
+   
+      Record baseline
+
+
+
+
+
+  .. compound:: Show baseline
+  
+   You can display two baselines at the same time. The one above the current activity bars of your project. The other below.
+   
+   Each of them has a different color, pale blue for the top line and pale purple for the bottom line
+   
+   .. figure:: /images/GUI/GANTT_ZONE_Baseline.png
+      :alt: Display two baselines
+      
+      Display two baselines
+      
+
+   This option will be very useful for you to compare possible drifts and explain them. 
+
+
+
+
+
+.. _print-export-gantt:
+
+.. rubric:: |tenBLC| Print and Export the Gantt chart
+
+You can print directly on your printer or export in PDF format or in MS Project format
+
+
+
+
+
+  .. compound:: Print planning
+
+   Click on the button |Print| to print the Gantt chart in A4 and / or A3 format.
+
+   The print quality, despite printing or exporting on a reduced scale, remains very qualitative and offers very little loss of detail in the diagram.
+
+
+
+
+
+
+  .. compound:: Export planning to PDF
+
+   Allows to export planning to PDF format.
+   Export can be done horizontally (landscape) or vertically (portrait) in A4 and / or A3 format
+   with great detail even with a zoom
+
+   Export contains all details and links between tasks and also include a pagination.
+   
+   And the option **Repeat Headers** allow you to print or export your planning in multiple pages
+   
+   .. figure:: /images/GUI/GANTT_BOX_ExportPlanningPDF.png
+      :alt: Dialog box - Export planning to PDF
+      :align: center
+
+      Export planning to PDF
+
+
+   This feature will execute export on client side, in your browser. Thus the server will not be heavy loaded like standard PDF export does.
+   
+   It is highly faster than standard PDF export.
+
+   .. warning:: 
+   
+      This technically complex feature is highly dependent on the browser and is not compatible with all of them.
+      It is compatible with the latest versions of IE (v11), Firefox, Edge and Chrome. Otherwise, the old export function will be used.
+   
+   .. tip:: 
+
+      **Forced feature activation/deactivation**
+      
+      * To enable this feature for all browsers, add the parameter **$pdfPlanningBeta='true';** in parameters.php file.
+      * To disable if for all browsers, add the parameter **$pdfPlanningBeta='false';** 
+        Default (when **$pdfPlanningBeta** parameter is not set) is *enabled with Chrome, disabled with other browsers* 
+
+
+  .. index:: Export to MS Project
+
+  .. compound:: Export planning to MS Project
+
+   You have the option of exporting XML in MS Project. 
+
+   Click on the button |msProject| to start the export. 
+
+
+   A **user parameter** allows you to enter if you want to add the assignments when exporting the project to MS-Project format.
+
+   If not, the name of the resources will not be available in the MS-Project application   
+   
+   See: User Parameters into the chapter :ref:`UP-print-export` 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. _checkbox-gantt:
+
+.. rubric:: |elevenBLC| Checkbox for display
+
+At the end of the first zone, you have the choice to display or not, certain information on the Gantt chart.
+
+  .. compound:: Show WBS
+  
+   Click on "Show WBS" to display the :term:`WBS` number before the names.
+
+   .. figure:: /images/GUI/GANTT_ZONE_TaskWBS.png
+      :alt: Task list with WBS display
+      
+      Task list without and with WBS Display
+
+
+  .. compound:: Closed item 
+  
+   Flag on "Show closed items" allows to list closed items.
+   
+   
+  .. compound:: Resource
+  
+   The Resource checkbox allows you to directly display the resources assigned to each activity on the Gantt chart.
+
+   .. figure:: /images/GUI/GANTT_ZONE_ShowResourceInitials.png
+      :alt: Display of initials
+      
+      Display of initials
+
+   .. figure:: /images/GUI/GANTT_ZONE_ShowResourceName.png
+      :alt: Display of initials
+      
+      Display of name
+      
+      
+   A user parameter allows you to choose between displaying names or initials.
+
+   Choose if you want names, initials or nothing to appear on the Gantt chart.
+   
+   See: :ref:`display-parameters`
+   
+      
+      
+
+
+.. _critical-path:
+
+  .. compound:: Show Critical path
+
+      **The critical path** allows you to determine the total duration of your project. This is the longest sequence of tasks that must be completed for the project to be completed on time.
+      
+      **The Critical Chain**, meanwhile, is a technique for planning and monitoring deadlines but has the same principle: take into account the constraints to determine the duration of the project and the critical tasks that may impact this duration.
+      One of these constraints is the taking into account of resource or skill limitations in addition to the dependencies between the tasks and the implementation of buffers, i.e. time reserves, in the critical chain and the secondary chains.
+      
+      ProjeQtOr offers you a critical chain rather than a critical path, but for better understanding, the term Critical path has been retained.
+      
+      * click on the **critical path** check box to calculate and display the red path in the Gantt schedule.
+      
+      .. figure:: /images/GUI/GANTT_ZONE_CriticalPath.png
+         :alt: Critical Path
+         :align: center
+         
+         The red net represents the critical path of the project. 
+      
+      .. note::
+         
+         The tasks of the project which are not crossed by the critical path are elements which will not affect the duration of the project and, even modified, will not automatically involve a modification of this duration for the entire project.
+
+
+
+
+
+
+
+
+.. _task-list:
+
+Task List
+=========
+
+The task list displays the planning elements in hierarchical form by dividing the :term:`WBS`.
+
+Tasks are regrouped by projects and activities.
+
+The projects displayed depend on the selection made with **the project selector** 
+
+See: :ref:`Project selector<project-selector>`
+
+
+.. figure:: /images/GUI/GANTT_ZONE_TaskList.png
+   :alt: Task list & progress data view
+   :align: center
+
+   Task list & progress data view
+
+
+.. topic:: Interface areas:
+
+   |one|:ref:`Show or Hide activities<hide-activity>`
+         
+   |two| :ref:`Icon of element<icon-element>`
+      
+   |three| :ref:`Reorder Planning elements<reorderPlanning>`
+   
+   |four| :ref:`Names of the items<item-name>`
+   
+   |five| :ref:`Increase and decrease indent level<increase-decrease-indent>`
+
+
+
+
+
+
+.. _hide-activity:
+
+.. rubric:: |oneBLC| Show/Hide activities
+
+* Click on the plus or minus of the header area to close and open the groups in the list area.
+
+* Click on the icons at the top of the list to expand or collapse all project groups at the same time
+      
+* Click on the group row to expand or collapse the group only
+
+
+
+.. _icon-element:
+            
+.. rubric:: |twoBLC| Icon of element
+
+A specific icon appears to the left of each item type for faster identification.
+
+* |Project| Project
+* |Replan| Project to recalculate (the Gant diagramm to display with the latest settings) 
+* |construction| Project under construction
+* |Fixed| Projet fixed in the planning
+* |Activity| Activity
+* |Milestone| Milestone
+* |Meeting| Meeting
+* |TestSession| Test session
+
+
+Other items can be displayed in the :ref:`gantt-planning` (action, decision, delivery...)
+
+
+
+
+.. _reorderPlanning:
+
+.. rubric:: |threeBLC| Reorder planning elements
+
+The selector |Drag| allows to reorder the planning elements.
+
+.. note:: 
+
+   Ability to move multiple tasks at one time from one location to another using the key control to select the lines and then dragging and dropping them.
+
+
+.. warning:: 
+
+   If you move an activity to a new project, the assigned resource must be allocated to the new project to allow this move.
+
+
+
+
+
+
+
+.. _item-name:
+
+.. rubric:: |fourBLC| Item name 
+
+Click on a line to display the detail of the item in the detail area.
+
+.. _show-closed-item:
+
+
+
+
+
+.. _increase-decrease-indent:
+
+.. rubric:: |fiveBLC| Increase and decrease indent level
+
+Increase and decrease indent level
+
+.. figure:: /images/GUI/GANTT_Button_Indent.png
+   :alt: Indentation
+   
+   Indentation buttons
+
+
+.. compound:: **Increase indent**
+   
+   The element will become the child of the previous element.
+   
+.. compound:: **Decrease indent**
+   
+   The element will be moved at the same level than the previous element.
+   
+     
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+
+.. _progress-data-view:
+
+Progress data view
+==================
+
+The progress data view allows to show progress on project elements.
+
+To display the progress columns, pull the splitter to the right.
+
+For each planning element, the progress data are displayed at them right.
+
+
+.. figure:: /images/GUI/GANTT_ZONE_ProjectDATAView.png
+   :alt: Progress data view
+   :align: center
+
+   Progress data view
+   
+
+
+* The projects used to display consolidated progress data by the tasks.
+* The task row used to display task progress data.
+* Click on |Column| to define the columns displayed.   
+
+More details: :ref:`Display and organize the columns<columns>`.
+
+More option on the :ref:`Project Portfolio<project-portfolio>` screen
+
+
+
+
+
+
+
+
+
+
+.. _gantt-chart-view:
+
+Gantt chart view
+================
+
+The Gantt chart view is a graphical representation of the progress data of a project. 
+
+For each planning element, a bar is associated with it
+
+.. figure:: /images/GUI/GANTT_ZONE_ChartView.png
+   :alt: Gantt chart view
+   :align: center
+
+   Gantt chart view
+   
+   
+   
+.. topic:: Interface areas
+
+   |one| :ref:`Scale<scale-gantt>`
+   
+   |two| :ref:`The Gantt chart's Bars<gantt-bars>`
+   
+   |three| :ref:`Dependencies<dependency-links>`
+   
+   |four| :ref:`Milestone<milestones-gantt>`
+   
+   |five| :ref:`Detail of the work<detail-work>`   
+
+
+
+
+
+
+.. _scale-gantt:
+
+.. rubric:: |oneBLC| Scale
+
+Scale available: daily, weekly, monthly and quarter
+
+The Gantt chart view will be adjusted according to scale selected.
+
+
+
+
+
+
+.. _gantt-bars:
+
+.. rubric:: |twoBLC| Gantt chart's bars
+
+The bars displayed in the gantt chart can appear with different colors. Each color has a meaning.
+
+  .. compound:: Current date Bar
+
+   .. figure:: /images/GUI/GANTT_BAR_YellowBar.png 
+      :alt: Current date bar
+      :figwidth: 100% 
+      :align: left
+      
+      Current date bar
+      
+  
+   Yellow column indicates the current day, week, month or quarter, according to scale selected.
+
+   The red line in yellow collumn display the current day and time.
+
+
+  .. compound:: PALE GREEN OR RED BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_PaleGreen.png 
+      :alt: Without assigned work
+      :figwidth: 100% 
+      :align: left
+      
+      no charge
+      
+   
+   Condition : Activities without assigned work - pale red or pale green as appropriate
+
+
+
+
+  .. compound:: GREEN BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_Green.png 
+      :alt: all is well
+      :figwidth: 100% 
+      :align: left
+      
+      all is well
+      
+   Condition : Assigned resources are available and meet workload, validated or scheduled dates do not conflict with other items   
+
+
+
+  .. compound:: RED BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_Red.png 
+      :alt: Overdue tasks
+      :figwidth: 100% 
+      :align: left
+
+      Overdue tasks
+
+
+   Condition: Planned end date > Validated end date - Real end date if completed task > Valited end date
+
+
+
+  .. compound:: PURPLE BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_Purple.png 
+      :alt: Impossible to calculate
+      :figwidth: 100% 
+      :align: left
+      
+      Impossible to calculate the remaining work
+
+   Condition: If a resource is not or is no longer available on an activity.
+
+   The calculator is trying to plan the workload. The resource assigned to the activity is unable to be planned for this task (absence, calendar, assignment or assignment periods, etc.); then the bar turns purple.
+   
+
+
+  .. compound:: SURBOOKING and OVERUSE BAR
+  
+   .. figure:: /images/GUI/GANTT_BAR_Yellow.png
+      :alt: Surbooking
+      :figwidth: 100% 
+      :align: left      
+
+      Resource capacity overbooking
+
+   Condition: Add extra work time on the standard capabilities of your resources to plan more projects that you will not process.
+   
+   .. figure:: /images/GUI/GANTT_BAR_SurbookingView.png
+      :alt: Surbooking or orveruse view on Gantt chart
+      :figwidth: 100% 
+      :align: left
+      
+      
+      Surbooking or orveruse view on Gantt chart
+         
+   See: :ref:`surbooking`
+      
+   See: :ref:`overuse<overuse-calculation>` 
+
+
+
+  .. compound:: SURCAPACITY BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_Surcapacity.png 
+      :alt: Surcapacity
+      
+      Overcapacity of resources
+
+   Condition: The capacity of the resource has been changed. It can be under capacity or over capacity. That is to say, it does less or more than its FTE.
+   
+
+   .. figure:: /images/GUI/GANTT_ZONE_SurcapacityDetails.png
+      :alt: Surcapacity view on Gantt chart
+      
+      Surcapacity view on Gantt chart
+      
+   For more information see: :ref:`variation-capacity`
+      
+      
+      
+      
+
+  .. compound:: REAL WORK IN PROGRESS
+
+   .. figure:: /images/GUI/GANTT_BAR_GreenWork.png 
+      :alt: Work in progress
+      :figwidth: 100% 
+      :align: left
+      
+      Work in progress
+
+   Condition: the length represents the percentage of completion based on the actual progress versus the length of the Gantt bar.
+   
+
+
+
+  .. compound:: CONSOLIDATION BAR
+
+   .. figure:: /images/GUI/GANTT_BAR_Consolidation.png
+      :alt: consolidation bar
+      :figwidth: 100% 
+      :align: left
+      
+      Consolidation Bar
+ 
+   Condition: graphical display of the dates consolidated by the group of planning elements for a project
+     
+
+
+  .. compound:: CUSTOM COLORS
+  
+   you can apply the color of your choice on the bars of the Gantt chart representing activities, milestones and meetings. 
+
+   If the Planned end date> Validated end date then the bar should be colored red. In case you have set a custom color, this state will still be indicated
+   
+   .. figure:: /images/GUI/GANTT_ZONE_CustomBars.png 
+      :alt: Custom colors n the gantt chart bars
+      :align: left
+      
+      Custom colors on the gantt chart bars   
+      
+
+   On the one hand, directly on the bar and on the other hand in the task list, where the indicators remain the original color.   
+      
+   Click on the reset button to come back to original colors.   
+      
+      
+  .. compound:: Item name display      
+
+   .. figure:: /images/GUI/GANTT_ZONE_DisplayDates.png 
+      :alt: View the item name and scheduled dates on the selected bar
+      
+      Item name and scheduled dates on the selected bar
+      
+   Move the cursor over the bar to display item name and planned dates.   
+
+
+
+
+
+
+
+
+
+
+.. index:: Dependency Links
+
+.. _dependency-links:
+
+.. rubric:: |threeBLC| Dependency links
+
+Dependencies allow to define the execution order of tasks (sequential or concurrent).
+
+All planning elements can be linked to others.
+
+Dependencies can be managed in the Gantt chart and in screen of planning element.
+
+Dependencies between planning elements are displayed with an arrow.
+
+
+ .. compound:: Create a dependency
+
+   To create a dependency, left click on a bar of the gantt (the predecessor) and slide towards the successor.
+   
+   You can also create dependencies with the predecessor and successor tables at the bottom of the details area. 
+   
+   Remember than the first task always drives the second.
+
+
+   .. figure:: /images/GUI/COMMON_ZONE_Success&Predecessor.png
+      :alt: Predecessor and Successor section
+   
+      Predecessor and Successor section - In the NAME field, icons are displayed to indicate the type of dependencies
+
+
+   * Click on |Add| on the corresponding section to add a dependency link.
+   * Click on |Edit| to edit the dependency link.
+   * Click on |Delete| to delete the corresponding dependency link. 
+
+   .. figure:: /images/GUI/COMMON_BOX_Success&Predecessor.png
+      :alt: Dialog box - Predecessor or Successor element
+      :scale: 80%
+
+      Dialog box - Predecessor or Successor element
+
+   
+   
+     
+   
+
+
+ .. compound:: Modify a dependency
+    
+   Click on the arrow which turns orange, a pop up is displayed allowing you to modify the type and one to add a possible delay.
+   
+   The delay can be positive or negative. Negative delay allows overlapping of certain tasks
+
+   See the strict mode of dependencies
+
+
+   .. figure:: /images/GUI/GANTT_BOX_dependencies.png
+      :alt: update dependency pop-up
+      
+      Dependencies dialog box
+      
+      
+
+ .. compound:: Dependency types
+
+  .. compound:: |DependancyES| End-Start 
+  
+    The second activity can not start before the end of the first activity.
+
+  .. compound:: |DependancySS| Start-Start
+  
+    The successor can not begin before the beginning of the predecessor. Anyway, the successor can begin after the beginning of the predecessor.
+
+  .. compound:: |DependancyEE| End-End
+  
+    The successor should not end after the end of the predecessor, which leads to planning "as late as possible". 
+    
+    Anyway, the successor can end before the predecessor. Note that the successor "should" not end after the end of predecessor, but in some cases this will not be respected:
+    
+    * if the resource is already 100% used until the end of the successor
+    * if the successor has another predecessor of type "End-Start" or "Start-Start" and the remaining time is not enough to complete the task
+    * if the delay from the planning start date does not allow to complete the task
+ 
+
+
+ .. compound:: Strict mode for dependencies
+   
+   The strict dependency mode forces the successor planning element not to start on the same day as the same predecessor but the next day. Even if the task is finished before the end of the day.
+
+   To have the successor start on the same day or before the end of the predecessor task, select NO for strict mode or you can also put a negative delay.
+
+   The strict dependency mode is a :ref:`global parameter<gp_planning-section>`.
+
+   By default, the strict dependency mode is set to YES.
+
+
+
+     
+
+
+.. index:: Milestone (Gantt chart)
+
+.. _milestones-gantt:
+
+.. rubric:: |fourBLC| Milestone
+
+Milestones appear as small diamonds. Filled if completed, empty otherwise.
+
+Color of  diamond depends on milestone progress.
+
+.. compound:: **Ongoing milestone and in times**
+
+   .. image:: /images/GUI/GANTT_ZONE_GreenMilestone.png
+      :alt: ongoing milestone and in times
+
+.. compound:: **Completed milestone and in times**
+
+   .. image:: /images/GUI/GANTT_ZONE_FilledGreenMilestone.png
+      :alt: completed milestone and in times
+
+.. compound:: **Ongoing milestone and delayed**
+
+Planned end date > Validate end date
+
+.. image:: /images/GUI/GANTT_ZONE_RedMilestone.png
+      :alt: ongoing milestone and delayed
+
+.. compound:: **Completed milestone and delayed**
+
+Real end date > Validated end date
+
+.. image:: /images/GUI/GANTT_ZONE_FilledRedMilestone.png
+      :alt: completed milestone and delayed
+
+
+
+
+
+
+
+.. _detail-work:
+
+.. rubric:: |fiveBLC| Detail of the work 
+   
+
+Right click on a bar to displays the detail of the work for this bar.
+
+.. figure:: /images/GUI/GANTT_ZONE_Resources.png 
+   :alt: Display details of the work
+      
+   Display details of the work
+
+
+Meaning of colors
+ 
+ 
+   |greenBox| Planned workload
+   
+   |realBox| Real work - charged to the timesheet
+   
+   |redBox| Excess workload over dates
+   
+   |blueBox| Absence of the resource
+
+
+
+
+
+
+
+
+.. Warning:: 
+
+   You have to selected week or day scale to display detail or a message will ask you to switch to smaller scale.
+
+
+
+
+
+.. _gantt-details-area:
+
+Details area
+============
+
+The details area is the same as on all the ProjeQtOr element screens and adapts according to the selected element.
+
+For more details on this area, see: :ref:`Details window<detail-window>`
+
+
+.. _planning-mode-gantt:
+
+Planning Modes
+==============
+
+Projeqtor offers several ways to plan the workload for your resource with 11 different planning modes.
+
+* :ref:`As soon as possible<mode-assoon>`
+* :ref:`Work together<mode-worktogether>`
+* :ref:`Must start before...<mode-startbefore>`
+* :ref:`Should end before...<mode-endbefore>`
+* :ref:`Regular between dates<mode-regular>`
+* :ref:`Regular between dates in full dat<mode-regularFull>`
+* :ref:`Regular between dates in half day<mode-regularHalf>`
+* :ref:`Regular between dates in quarter day<mode-regularQuarter>`
+* :ref:`Recurring<mode-recurring>`
+* :ref:`Fixed duration<mode-fixedduration>`
+* :ref:`Manual planning<mode-manualplanning>`
+* :ref:`Minimum threshold & not splitted work<minimum-threshold>`
+
+
+
+.. _mode-assoon:
+
+.. rubric:: As soon as possible
+
+The task is planned to finish as soon as possible.
+
+.. note:: For tasks "as soon as possible", if no assignment is created but the validated work is defined, take the validated work as the default duration (instead of 1 days)
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+.. _mode-worktogether:
+
+.. rubric:: Work together
+
+When two or more resources are assigned to the same task, planning tries to find periods where all resources are available to work together.
+
+Periods are searched "as soon as possible".
+
+If only one resource is assigned, this planning mode is exactly the same as "As soon as possible".
+
+If one resource is assigned more work than the other, the extra work is planned after working together periods.
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+.. _mode-startbefore:
+
+.. rubric:: Must not start before validated date
+
+The validated start date field must be set.
+
+The task must not begin before a specific date.
+
+:ref:`|MODES|<planning-mode-gantt>`  
+
+
+
+    
+     
+.. _mode-endbefore:
+
+.. rubric:: Should end before validated end date
+
+The validated end date field must be set.
+
+The task is planned backward from end to start.
+     
+"Floating" backward planning is not possible, validated end date must be defined. 
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+
+
+.. _mode-regular:
+
+.. rubric:: Regular between dates
+
+* Allows to evenly distribute work between two dates.
+* Used for management recurrent activities.
+* The validated dates fields must be set.
+* Possibility to readjust the task with handles directly on the bar of the Gantt view.
+
+   
+.. figure:: /images/GUI/GANTT_ZONE_Regular.png
+   :alt: Regular between dates
+      
+   Regular between dates mode
+
+
+Examples of the planning modes upcoming are based on 2 work days to plan on 10 days.
+
+Work will be evenly divided between on working days. For instance, 0.2 days during 10 days.
+
+See also: :ref:`Regular modes with excess workload<mode-regularExcess>`
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+
+
+.. _mode-regularFull:
+
+.. rubric:: Regular in full days
+ 
+Work will be distributed on full day between on working days.
+
+Possibility to readjust the task with handles directly on the bar of the Gantt view.
+
+.. list-table::
+   :widths: 30,10,10,10,10,10,10,10,10,10,10
+   :header-rows: 1
+
+   * - Day
+     - 1
+     - 2
+     - 3
+     - 4
+     - 5
+     - 6
+     - 7
+     - 8
+     - 9
+     - 10
+   * - Distribution
+     - 0
+     - 0
+     - 0
+     - 0
+     - 1
+     - 0
+     - 0
+     - 0
+     - 0
+     - 1
+
+
+See also: :ref:`Regular modes with excess workload<mode-regularExcess>`
+
+:ref:`|MODES|<planning-mode-gantt>`        
+
+
+
+
+
+
+.. _mode-regularHalf:
+
+.. rubric:: Regular in half days
+
+The work will be distributed over half of the day between working days. 
+
+Possibility to readjust the task with handles directly on the bar of the Gantt view.   
+
+.. list-table::
+   :widths: 30,10,10,10,10,10,10,10,10,10,10
+   :header-rows: 1
+
+   * - Day
+     - 1
+     - 2
+     - 3
+     - 4
+     - 5
+     - 6
+     - 7
+     - 8
+     - 9
+     - 10
+   * - Distribution
+     - 0
+     - 0
+     - 0.5
+     - 0
+     - 0.5
+     - 0
+     - 0
+     - 0.5
+     - 0
+     - 0.5
+
+
+See also: :ref:`Regular modes with excess workload<mode-regularExcess>`
+
+:ref:`|MODES|<planning-mode-gantt>`
+
+
+
+
+
+.. _mode-regularQuarter:
+
+.. rubric:: Regular in quarter days
+ 
+Work will be distributed on one quarter of the day between on working days.
+
+Possibility to readjust the task with handles directly on the bar of the Gantt view.
+
+
+.. list-table::
+   :widths: 30,10,10,10,10,10,10,10,10,10,10
+   :header-rows: 1
+
+   * - Day
+     - 1
+     - 2
+     - 3
+     - 4
+     - 5
+     - 6
+     - 7
+     - 8
+     - 9
+     - 10
+   * - Distribution
+     - 0
+     - 0.25
+     - 0.25
+     - 0.25
+     - 0.25
+     - 0
+     - 0.25
+     - 0.25
+     - 0.25
+     - 0.25
+
+
+See also: :ref:`Regular modes with excess workload<mode-regularExcess>`
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+
+
+.. _mode-regularExcess:
+
+ .. compound:: Regular modes with excess workload
+
+    If the dates are too short compared to the assigned load, the excess load will be divided and added in the same way as the chosen mode.
+    
+    So you can get full days even in regular mode in quarter day or half days.
+    
+      * Example with 8 days of workload to plan over 10 days with the Regular mode in half days between dates 
+    
+      .. image:: /images/GUI/GANTT_ZONE_RegularHalf.png
+         :alt: Regular in half day with excess workload
+         
+         
+    The load is distributed regularly so as to respect the dates.
+
+
+      .. image:: /images/GUI/GANTT_ZONE_RegularExcess.png
+
+    If the load is too high to meet the dates, the excess load will be distributed over the whole day after the validated end date and will therefore be late (red color)
+
+See also: :ref:`Regular modes with excess workload<mode-regularExcess>`
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+.. _mode-recurring:
+
+.. rubric:: Recurring (on a weekly basis)
+  
+This new mode allows reserving availability on recurring tasks on a weekly basis, for example 1/2 day every Monday, 1h every day, ... 
+    
+Activities in this mode dynamically assign the work based on the start and end bounds:
+    
+       * Start defined with a dependence End-Start or Start-Start
+       * End defined with an end-end dependency
+       * Planning mode for which the assigned work is not fixed
+       * Workload distributed weekly
+       * Adapts to the duration of the project
+
+See: :ref:`Recurrent mode assignment<recurrent-mode-assign>`
+   
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+
+
+
+
+.. _mode-fixedduration:
+
+.. rubric:: Fixed duration
+
+* The task is planned by duration.
+* The task is “floating” depending on predecessors.
+* The validated duration field must be set.
+* It is not necessary to assign resources to the task.
+* If work is assigned to the task, planning behavior is the same as "Regular between dates" but with floating task. 
+* Possibility to readjust the task with handles directly on the bar of the Gantt view.
+
+.. note::
+
+   If you want fixed duration with fixed start, use "Regular between dates", or use milestone to define start.
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+.. _mode-manualplanning:
+
+.. rubric:: Manual planning
+
+* This is the most priority planning mode and constraint.
+
+* You have the option to save the work as scheduled or actual work. 
+
+* Two screens are dedicated to it: :ref:`planned interventions<planned-interventions>` to plan monthly and the :ref:`View interventions<view-interventions>` for read-only.
+
+.. note::
+
+   The choice of planned or actual work is made in the global parameters in the planning section work tab.
+
+   See: :ref:`global parameters<GP-effectCapacity>`.
+
+:ref:`|MODES|<planning-mode-gantt>` 
+
+
+.. _minimum-threshold:
+
+.. rubric:: Minimum threshold & not splitted work
+   
+When this value is set, the activity will only be scheduled on the day when the daily availability is greater than or equal to this threshold.
+
+You also have the option to add a new property to a “cannot be split” task.
+
+This will require defining the minimum work to be allocated each day and therefore filling in the minimum threshold field.
+
+Be careful with this mode, planning will require finding consecutive days with at least the given value possible, which may never happen.
+
+
+
+
+.. _gantt-planning:
+
+Planning global
+---------------
+
+.. figure:: /images/GUI/GANTT_ZONE_PlanningGlobal.png
+   :alt: Global planning
+   
+   Global planning
+
+The global planning allows to create and visualize any type of element (project, activity, milestones, risk, meeting, action ...)
+
+* Add and Show any new planning element on Gantt chart
+* The created item is added in the Gantt and detail window is opened.
+* The detail window allows to complete entry
+* Project planning and activity planning calculation can be done in the Gantt.
+
+.. figure:: /images/GUI/GANTT_TIP_PlanningElement.png
+   :alt: Create a new item
+   :align: center
+
+   Create a new item
+
+
+
+
+
+
+
+
+
+.. index:: Gantt chart (Projects portfolio)
+
+.. _project-portfolio:
+
+Projects portfolio
+------------------
+
+This screen displays only the projects on the diagram. The activities and other elements that make up the schedule are hidden.
+
+It displays summary and project dependencies only.
+
+.. note::
+
+   This section describes specific behavior for this screen.
+   All others behaviors are similar to :ref:`gantt-planning` screen.
+
+
+.. figure:: /images/GUI/GANTT_ZONE_PortfolioPlanning.png 
+   :alt: Gantt (Projects portfolio)
+   :align: center
+
+   Gantt (Projects portfolio) 
+
+.. rubric:: Show milestones
+
+* You have the option to show or hide milestones.
+* It is possible to define the type of milestone to display. All milestones are available: deliverable, incoming, key date, etc.
+* The milestones are displayed directly on the bar of your project.
+* Colored columns are displayed in addition to those in the simple planning view.
+* It is about the life and general health of your project. With the health status, quality level, trend and progress columns.
+
+.. figure:: /images/GUI/GANTT_ZONE_ProjectPortfolio_Columns.png
+   :alt: Projects portfolio columns
+   
+   Projects portfolio columns
+
+
+
+
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Gantt chart (Resource planning)
+
+.. index:: Resource planning
+
+.. _resource-planning:
+
+Resource planning
+-----------------
+
+.. sidebar:: Others section 
+
+   * :ref:`resource`
+   
+   
+This screen displays the Gantt chart from a resource perspective.
+
+The assigned tasks are grouped under the resource level.
+
+Regarding resource planning, periodic group meetings are under his responsibility
+
+Ability to view assigned activities without charge
+
+
+.. figure:: /images/GUI/GANTT_SCR_ResourcePlanning.png 
+   :alt: Gantt (Resource planning) 
+   :align: center
+
+   Gantt (Resource planning)  
+   
+   
+.. topic:: Interface areas
+
+   |one| :ref:`Show project level<project-level>`
+   
+   |two| :ref:`Gantt charts for resources<gantt-bars-resource>`
+  
+   |three| :ref:`Limit display<visibility-resource>`
+   
+   |four| :ref:`Tools<tools-ganttresource>`
+   
+   |five| :ref:`Print and exportation<print-export-ganttresource>`
+   
+   |six| :ref:`Display dates<display-date-ganttresource>`
+   
+   |seven| :ref:`Checkbox<checkbox-ganttresource>`
+
+
+
+
+.. _project-level:
+
+.. rubric:: |oneBLC| Show project level  
+
+Tasks can be grouped by project in the list area.
+
+Click on Show project level |one| to view the projects on which resource activities depend.
+
+
+.. figure:: /images/GUI/GANTT_ZONE_ResourcesPlanning_with&without_PjtLVL.png 
+   :alt: view with project levels (Resource planning) 
+
+   view with project levels and without project levels
+   
+   
+   
+   
+   
+   
+.. _gantt-bars-resource:
+
+.. rubric:: |twoBLC| Gantt charts for resources
+   
+
+The bars used in the Gantt chart for resources differ slightly from the standard planning bars.
+   
+Most of the bars used in the Gantt chart are the same as for standard planning.
+
+See: :ref:`Gantt chart’s bars<gantt-bars>`.
+
+
+  .. compound:: GREY BAR
+
+   .. figure:: /images/GanttBar_Grey.png 
+      :alt: all is well
+      :figwidth: 100% 
+      :align: left
+      
+      all is well
+      
+   Condition : Assigned resources are available and meet workload, validated or scheduled dates do not conflict with other items.
+
+   The gray bar in the middle graphically represents the actual percentage progress relative to the total duration of the activity.
+
+   This makes appear some planning gap between started work and reassessed work.
+
+  .. compound:: Dependencies behavior
+
+   * Links between activities are displayed only in the resource group. 
+
+   * Links existing between tasks on different resources are not displayed.
+
+   .. note::
+   
+      This section describes specific behavior for this screen.
+      
+      All others behaviors are similar to :ref:`gantt-planning` screen.
+
+
+
+
+.. _visibility-resource:
+
+.. rubric:: |threeBLC| Limit display to selected ressource or team 
+
+* Click and select one ressource to display only his data.
+
+* Click and select one team to display only data of resources of this team.
+
+* Click and select one organization to display only data of resources of this organization.
+
+
+
+
+
+
+
+
+
+.. _tools-ganttresource:
+
+.. rubric:: |fourBLC| Tools
+
+* Click on |Plan| to start the activity planning calculation. See: :ref:`ActivityPlanningCalculation`.
+* Click on |Add| to create a new element.
+* Click on |Filters| to apply many filters. See: :ref:`Advanced filters<filters>`.
+* Click on |Column| to organize the columns of the progress data view.
+* Click on |SubMenu| to display the sub-menu
+
+
+
+.. _print-export-ganttresource:  
+
+.. rubric:: |fiveBLC| print and export  
+   
+You can print directly on your printer or export in PDF format.
+
+
+  .. compound:: Print planning
+
+   Click on the button |Print| to print the Gantt chart in A4 and / or A3 format.
+
+   The print quality, despite printing or exporting on a reduced scale, remains very qualitative and offers very little loss of detail in the diagram.
+
+
+  .. compound:: Export planning to PDF
+
+   Allows to export planning to PDF format.
+   
+   Export can be done horizontally (landscape) or vertically (portrait) in A4 and / or A3 format with great detail even with a zoom
+
+   Export contains all details and links between tasks and also include a pagination.
+   
+   And the option **Repeat Headers** allow you to print or export your planning in multiple pages
+  
+   This feature will execute export on client side, in your browser. Thus the server will not be heavy loaded like standard PDF export does.
+   
+   It is highly faster than standard PDF export.
+
+   .. warning:: 
+   
+      This technically complex feature is highly dependent on the browser and is not compatible with all of them.
+      It is compatible with the latest versions of IE (v11), Firefox, Edge and Chrome. Otherwise, the old export function will be used.
+   
+   .. tip:: 
+
+      **Forced feature activation/deactivation**
+      
+      * To enable this feature for all browsers, add the parameter **$pdfPlanningBeta='true';** in parameters.php file.
+      * To disable if for all browsers, add the parameter **$pdfPlanningBeta='false';** 
+        Default (when **$pdfPlanningBeta** parameter is not set) is *enabled with Chrome, disabled with other browsers* 
+
+
+
+.. _display-date-ganttresource:  
+
+.. rubric:: |sixBLC| Display dates  
+
+This functionality allows to define columns displayed in the progress data view.
+
+More details: :ref:`Display and organize the columns<columns>`. 
+
+
+
+
+
+.. _checkbox-ganttresource:
+
+.. rubric:: |sevenBLC| Checkbox for display
+
+You have the choice to display or not, certain information on the Gantt chart.
+
+  .. compound:: Show WBS
+  
+   Click on "Show WBS" to display the :term:`WBS` number before the names.
+
+
+  .. compound:: Closed item 
+  
+   Flag on "Show closed items" allows to list closed items.
+   
+  .. compound:: Show left work 
+  
+   The option **Show left work** displays at the end of each bar the left work directly on the gantt chart.   
+      
+  .. compound:: Show activities without work 
+  
+   Basically, activities with no workload do not appear on the Gantt chart by resource.
+
+   Check this box to make them appear.
+   
+   
+      
+  .. compound:: Show project level
+  
+   Show projects in the list area.
+      
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Gantt chart (Manual planning)
+
+.. index:: Manual planning
+
+.. _planned-interventions:
+
+Planned Interventions
+---------------------
+
+The goal is to make the specifications more flexible to cover broader and more generic needs.
+
+
+
+
+.. _assignment-manualplanning:
+
+.. rubric:: Assignment
+
+The assigned workload is no longer determined but will be entered on a calendar which can be clicked, per half-day.
+
+See: :ref:`Planned interventions assignment<plannedintervention-assign>`
+   
+.. figure:: /images/GUI/GANTT_BOX_PlanningManual-Assignment.png
+   :alt: Assigment with the Manual planning mode
+   
+   Assigment with the Manual planning mode
+   
+The workload saved in this window will be displayed to the planned interventions screen.
+
+
+
+
+   
+
+.. rubric:: The planned Interventions
+
+The planned interventions screen allow you to manage the manual planning.
+
+This screen is available if at least one activity has a planning mode set to manual planning. 
+
+
+.. figure:: /images/GUI/GANTT_SCR_PlannedInterventions.png
+   :alt: Planned interventions screen
+   
+   Planned interventions screen
+
+   
+.. topic:: Interface areas
+
+   |one| :ref:`Display zone<manualPlan-display>`
+   
+   |two| :ref:`List of Projects and activity<manualPlan-ListProjectActivity>`
+   
+   |three| :ref:`FTE<manuelPlan-fte>`
+   
+   |four| :ref:`Interventions mode<manualPlan-InterventionMode>`
+   
+   |five| :ref:`Interventions Calendar<manualPlan-InterventionIntervention>` 
+    
+   
+
+.. _manualPlan-display:
+
+.. rubric:: |oneBLC| Display zone    
+   
+The display area allows you to filter the resources you want to display.
+
+The screen is blank until you select the resource, the team or the organization.
+
+The calendar is displayed for the resource or for all members of the selected team or organization.
+
+These parameters are not exclusive, you can select team and organization.
+
+ .. compound:: Resource
+ 
+   Filter by resource on calendar display.
+
+ .. compound:: Team
+ 
+   Filter by team on calendar display.   
+
+ .. compound:: Organization
+ 
+   Filter by organization on calendar display.
+
+ .. compound:: Project
+ 
+   Filter by project on calendar display. 
+   
+ .. compound:: Year
+ 
+   Select the year to display.     
+   
+ .. compound:: Month
+ 
+   Select the month to display.  
+   
+
+.. note:: 
+
+   The selected parameters, except the month, always set by default to the current month, are saved as a user parameter. 
+
+   When the user returns to the screen, he therefore finds the last parameters entered   
+   
+   
+.. _manualPlan-ListProjectActivity:
+
+.. rubric:: |twoBLC| List of Projects and activity    
+   
+The list of activities displayed are in the planning mode "manual planning". If no filter is selected (project, resource, organization ...) then the screen does not display any data.
+
+You cannot create new activities in manual planning mode from the intervention screen. You need to access the activities or schedule screen to create the new activity in manual planning mode. The new activity will then appear in the list.
+
+Click on |Goto| to access the activity screen and view its detail 
+ 
+
+
+
+   .. _manuelPlan-fte:
+
+.. rubric:: |threeBLC| FTE    
+   
+In this calendar, we display graphically if we respect the quantity of people requested on the activity and on the half day.
+
+Fill in an integer value for each activity to check.
+
+If you enter 1, you expect at least one person to perform half a day on this activity.
+
+A check is then carried out and takes into account all the resources assigned to each activity, and not only those selected and visible on the calendar.
+
+If the field is left empty or at 0 then no control is carried out and the calendar will not display any green or red box.
+
+
+
+ .. compound:: Green Box
+ 
+   If the entry respects the workload constraint expected in FTE the box is green.
+
+   .. image:: /images/GUI/GANTT_ZONE_FTEGreen.png
+   
+   Example with a value of 2 in the FTE field for the selected activity.
+   
+   This FTE value is defined for each half-day.
+
+   You must therefore have 2 effective persons planned for each half day whatever the resource or resources that will be provided.
+   
+   
+   
+ .. compound:: Red Box
+ 
+  If the total entry is greater than the expected workload in FTE the box is red.
+   
+  .. image:: /images/GUI/GANTT_ZONE_FTERed.png
+   
+  The box then turns red: the workload is higher than expected since we expected a person on this half day and on this activity   
+   
+   
+ .. compound:: Non-colored box
+ 
+  The total entry is less than the expected workload in FTE or there is no expected workload.
+   
+
+.. _manualPlan-InterventionMode:
+
+.. rubric:: |fourBLC| Interventions mode
+
+The list of possible intervention methods is customizable.
+
+This list can be modified via a setting screen in the :ref:`list of values<intervention-mode-value>`.
+
+The saved modes will remain fixed for all projects and all teams.
+
+.. figure:: /images/GUI/GANTT_ZONE_InterventionsModes.png
+   :alt: Interventions mode
+   
+   Intervention mode
+
+You can select an activity or a modality or both.
+
+     * If the intervention mode is not selected, the box is colored according to the activity but no letter appears, and vice versa.
+
+     * If only the intervention mode is selected, it will be saved without modifying the planned or actual work.
+
+You can however add one or the other after having planned the intervention or the intervention mode.
+
+A second click with the same parameters will delete the assignment.
+
+Ctrl Click allows you to complete the two half days
+
+
+
+.. _manualPlan-InterventionIntervention:
+
+.. rubric:: |fiveBLC| Interventions Calendar
+
+
+* Click on an activity and / or an intervention modes to plan workload on it
+
+* Click on half a day to plan the workload
+      
+* The targeted half day is filled with the color of the selected activity and the letter of the chosen intervention mode.
+
+   
+ .. compound:: Light Gray color
+
+   The light gray box indicates that the day is inactive on the resource calendar.
+
+   It can correspond to a weekend, a public holiday or a non-working day recorded on the resource's calendar.
+ 
+   .. image:: /images/GUI/GANTT_ZONE_PLannedInterventionCalendar.png
+
+
+
+ .. compound:: Dark Gray color
+ 
+   The dark gray boxes indicate reality. It's work actually performed and informed on the timesheet.
+   
+   When real work is completed for half a day, the box is half gray.
+
+   If the full day is completed then the box is completely grayed out.
+   
+   .. image:: /images/GUI/GANTT_ZONE_PLannedInterventionReal.png   
+   
+   
+   
+   
+ .. compound:: Blue color
+ 
+   The blue boxes indicate absences.
+
+   .. image:: /images/GUI/GANTT_ZONE_PLannedInterventionAbsence.png
+
+
+ .. compound:: Striped box
+
+   The striped boxes indicates that the working time recorded by the resource has been validated.
+   
+   .. image:: /images/GUI/GANTT_ZONE_PLannedInterventionValid.png
+   
+   
+   
+      
+.. note:: Planned or Real
+
+   The workload can be recorded as a planned load or as a real load.   
+
+   This option can be set in the :ref:`global settings<GP-manualplan-workas>`. 
+   
+
+
+.. _view-interventions:
+   
+View interventions
+==================
+
+This screen allows you to see your planned interventions.
+
+You cannot modify these interventions or plan another half day on this screen.
+
+It is a bit the equivalent of planning by resource but in manual planning mode
+
+
+.. figure:: /images/GUI/GANTT_SCR_ViewInterventions.png
+   :alt: View interventions screen
+   
+   View interventions screen     

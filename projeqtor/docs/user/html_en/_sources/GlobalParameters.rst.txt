@@ -1,0 +1,1399 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Global Parameters
+
+.. index:: Global Parameters
+
+.. _global_parameters:
+
+Global Parameters
+#################
+
+Global parameters screen allows configuration of application settings.
+
+depending on the modules installed, some tabs may not appear.
+
+.. Tip:: 
+   
+   **Good to know**
+   
+   .. image:: /images/GUI/GLOBALPARAM_ZONE_Tooltip.png
+      :alt: display infos
+   
+   Moving the mouse over the caption of a parameter will display a tooltip with more description about the parameter.
+
+.. _work:
+
+Tab Work time
+*************
+     
+.. topic:: Work time sections
+
+   * :ref:`Daily work hours<daily-work-hours-section>`
+   * :ref:`Open day<open-day-section>`
+   * :ref:`Unit for work<unitForWork-section>`
+   * :ref:`Timesheet<realWorkAllocation-section>`
+   
+.. _daily-work-hours-section:
+
+.. rubric:: Daily work hours
+
+Definition of the hours of work applied in your company.
+
+Used to calculate delays based on “open hours”.
+
+.. _open-day-section:
+
+.. rubric:: Open days
+
+Possibility to define the working days in the company. 
+
+For each day of the week, you can choose between open days or off days.
+
+See: :ref:`Resource<calendars>` section Calendars
+
+.. note:: 
+   
+   This parameter are taken into account in : **working days on calendars**, 
+   the working days on the calculation and the display, the working days on the display of real work allocation.
+
+.. index:: Real work allocation (Unit for work)
+.. index:: Workload (Unit form work)
+
+.. _unitForWork-section:
+
+
+.. rubric:: Units for work
+
+Parameters to determine the units used to calculate the actual work
+
+   .. compound:: Unit for Timesheet (real work) & Unit for Workload
+      
+      Parameters to real work allocation and workload.
+      
+      The fields Unit for real work allocation and for all work data can be in days or hours.
+
+   .. compound:: Number of hours per day
+   
+      Allows to set number of hours per day.
+
+.. warning::
+     
+  * If both values are different, rounding errors may occur.
+  * Remember that data is always stored in days.   
+  * Duration will always be displayed in days, whatever the workload unit. 
+  
+  
+.. index:: Real work allocation (Behavior)
+
+.. _realWorkAllocation-section:
+
+.. rubric:: Timesheet
+
+Defines behavior of tasks in the real work allocation screen.
+
+   .. compound:: Display only started tasks
+   
+      Display only tasks with the :ref:`Macro status<treatment-section>` activated.
+   
+   .. compound:: Set to first 'in progress' status
+   
+      Change the status of the task to the first "in progress" status when actual work is entered.
+   
+   .. compound:: Set to first 'done' status
+   
+      Change status of the task to the first "done" status when no left work remains.
+      
+   .. compound:: Show only notes on Activity Stream
+   
+      if so, you will not see the status change and item update.
+   
+   .. compound:: Max days to book work (warning) :
+   
+      Number of days that user can enter real work in the future before getting a warning.
+      
+      Leave blank if you do not want warning.
+      
+      This parameter does not apply to administrative projects
+    
+   .. compound:: Max days to book work (blocking)
+   
+      Number of days that user can enter real work in the future. This limit is blocking.
+      
+      Leave blank if you do not want blocking.
+     
+      This parameter does not apply to administrative projects.
+  
+   .. compound:: Alert resource on input done by someone else
+   
+      Alert the resource when some real work is entered by someone else.
+      
+      Select your type of alert : Internal, Email, both or none.
+      
+   .. compound:: Alert when timesheet canceled by other
+   
+      Send an alert or mail when timesheet is cancelled by another resource.
+      
+      Select your type of alert : Internal, Email, both or none   
+   
+   .. compound:: Display pools on timesheet
+   
+      Possibly to display the pool whose the resource belongs to.
+   
+      You can manage different trigger settings per recipient
+
+      .. Warning:: Resources that do not have access to the imputations screen do not receive these alerts
+
+
+   .. compound:: After submit, alert to project leader
+     
+      After submission what type of alert would you want to send to the project leader 
+   
+   .. compound:: After submit, alert to team manager
+     
+      After submission what type of alert would you want to send to the team manager
+     
+   .. compound:: After submit, alert to organism manager
+     
+      After submission what type of alert would you want to send to the organism manager  
+  
+  
+.. _gp-tabActivity:
+
+Tab Activity
+************
+
+.. topic:: Activity tab's sections
+
+   * :ref:`Planning<gp_planning-section>`
+   * :ref:`Tickets<globalParam_tickets>`
+   * :ref:`Organization<gp-organization-section>`
+   * :ref:`Pools of resources<gp-pool-section>`
+   * :ref:`Automation<GlobalParam_automation>`
+   * :ref:`Milestones<gp-milestones-section>`
+   * :ref:`Control and restriction<gp-control-restict-section>`
+   * :ref:`Leaves system<leaves-system>`
+   
+.. _gp_planning-section:
+
+.. rubric:: Planning
+
+Specific parameters about Gantt planning presentation.
+
+   .. compound:: Show resource in Gantt
+   
+      Select if the resource can be displayed in a Gantt chart, and format for display (name or initials or none).
+   
+   .. compound:: Max projects to display
+   
+      Defines maximum number of projects to display.
+   
+      To avoid performance issues.
+   
+   .. compound:: Apply strict mode for dependencies
+   
+      Defines if a task can begin the same day as the preceding one.
+   
+        * If yes, the successor should begin the next day 
+        * If no, the successor can start the same day.
+        
+   .. compound:: Manual progress of fixed-duration activities 
+   
+      Choose whether the progress should be calculated or entered manually.
+      
+
+   .. compound:: Progress in unity of work. 
+   
+      Displays a technical progress in unit of work independent of the planning progress by the load.
+      
+      See: :ref:`Technical progress<technical-progress>`
+      
+.. _GP-manualplan-workas:
+           
+   .. compound:: Manual planned interventions enter work as
+      
+      Choose whether the work entered in the manual planning should be saved as real work or planned work.
+      
+      See: :ref:`Manual planning mode<mode-manualplanning>`
+      
+      See: :ref:`Planned Interventions<planned-interventions>`
+      
+
+.. _GP-effectCapacity:
+
+    
+   .. compound:: Effect of capacity on planned interventions 
+      
+      * **Limit duration**
+      
+      Limit duration a resource with capacity 0.8 can be planned only one half-day of 0.5d   
+      
+      * **Determine Duration**
+      
+      Determine duration a resource with capacity 0.8 can be planned on 2 half-days of 0.4d each
+      
+      * **none**
+      
+      A resource with capacité 0.8 can be planned on 2 half-days of 0.5d each    
+
+.. _globalParam_tickets:
+
+.. rubric:: Tickets
+
+Specific behavior for ticket management 
+
+   .. compound:: Only responsible works on ticket
+   
+      Only responsible can enter some real work on the ticket.
+   
+   .. compound:: Ticket responsible from product Responsible
+   
+      Select if the product Responsible is displayed ( always, if empty, never) as Ticket Responsible on that screen
+   
+   .. compound:: Limit planning activity to those whit flag
+   
+      Display planning activity selected for the ticket
+   
+   .. compound:: Enable to filter ticket reports by priority
+    
+      Can display tickets on Report screen by level of priority
+   
+   .. compound:: Display ticket at customer level
+   
+      Display of tickets on the Customer screen and on the Contacts screen
+   
+   .. compound:: Display ticket at version level
+   
+      Display of tickets on the version screen 
+   
+   .. compound:: Manage accontable on ticket
+   
+      Display the coordinator as Accountable, so the Responsible is the current actor
+
+.. _gp-organization-section:
+
+.. rubric:: Organization
+
+Specific parameter for Organization management 
+
+   .. compound:: Use budget feature for organizations
+   
+      If yes, can display and work on budget for an organization.
+
+
+.. _gp-pool-section:
+
+.. rubric:: Pool of resource
+
+Specific parameter for Pool of resource
+
+   .. compound:: Automatic allocation of pool resources 
+   
+      Automatic allocation of resources of the pool when allocating a pool to a project.
+      
+      The explicit allocation will generate visible allocations that won't be changed afterwards (if allocation of pool changes). 
+      
+      The implicit allocation will generate invisible allocations that will follow changes of the pool (allocation of the pool to the project or of resources to the pool).
+
+
+.. _GlobalParam_automation:
+
+.. rubric:: Automation
+
+Parameters to manage automations
+
+   .. compound:: Consolidate validated work & cost
+   
+      Select if validated work & cost are consolidated on top activities and therefore for projects :
+     
+         * **Never**: Not consolidated
+         * **Always**: Values are replaced on activities and project.(erase parents)
+         * **Only is set**: Replaces values ( excepted if set by null or stay not indicated,do not erase parents)
+
+  
+  
+.. _auto-responsible:
+
+   .. compound:: Auto set Responsible if single resource:
+   
+      Behavior about management of responsible, including automatic initialization of responsible.
+   
+      Automatically set Responsible if not set and by the only one resource allocated to the project 
+   
+   .. compound:: Auto allocated the Manager to the project:
+       
+      Automatically create an allocation for the project Manager to the project. He should be a resource.
+   
+   .. compound:: Auto set a Responsible if needed:
+    
+      Automatically set Responsible to current resource (as using the element) if not set and if a Responsible is required (respecting access rights)
+   
+   .. compound:: Auto assign Responsible to activity:
+    
+      Assign automatically the Responsible to activities
+    
+   .. compound:: Auto set parent activity status:
+    
+      Auto set status of parent activity from the status of children activity. 
+     
+      
+      
+      
+      
+
+.. _gp-milestones-section:
+
+.. rubric:: Milestones
+
+Specific parameters for Milstones management 
+
+   .. compound:: Manage target milestone
+    
+      It updates the target (planned) date of the element (on Requirements, Tickets, Product Versions, Incomings, Deliverables and Deliveries) from the planned date of the milestone.
+   
+   .. compound:: Auto link the milestone
+    
+      It optionally allows you to display the element linked to the milestone (The option above should be on "yes" to have access to the selection of milestone targetted)
+   
+   .. compound:: Set milestone from product version
+    
+      It optionally allows you to automatically retrieve the milestone from the milestone of the Project Version.
+       
+   .. compound:: Update milestone from deliverable (Have to link elements)
+    
+      Update milestone Responsible automatically when the Responsible of deliverable has changed.
+   
+   .. compound:: Update milestone from incoming (Have to link elements)
+    
+      Update milestone Responsible automatically when the Responsible of deliverable has changed.
+   
+   .. compound:: Update deliverable from milestone (have to link elements)
+    
+      Update deliverable Responsible automatically when the Responsible of mielstone has changed.
+   
+   .. compound:: Update incoming from milestone (have to link elements)
+    
+      Update incoming Responsible automatically when the Responsible of milestone has changed.  
+       
+       
+       
+.. _gp-control-restict-section:
+
+.. rubric:: Controls and restrictions
+
+Specific parameters for the control and management of restrictions
+
+   .. compound:: Allow the type restriction on project
+   
+      Allow to define additional restriction's type on each project additionally to restrictions defined at project type level. 
+   
+      If so, a Restrict Types button appears in the detail area and allows you to define the type restriction .
+
+      .. image:: /images/GUI/GLOBALPARAM_ZONE_RestrictType.png
+
+   .. compound:: Restriction on types by profil hides items
+
+      If set to yes, users with profiles won't see items of unselected types
+      
+      If set to no, users will just not have possibility to create new items with such types
+
+      .. figure:: /images/GUI/GLOBALPARAM_BOX_RestrictType.png
+         :alt: Restrict type box
+         :align: center
+         
+         Restrict type box
+
+   .. compound:: Limit the functions to those of the resource 
+   
+     On assignments limit functions to those of the resource. Ones with cost and defaut one.
+
+
+
+.. _leaves-system:
+
+.. rubric:: Leaves system
+
+Allows you to determine who will be the administrator of regulated absences.
+
+The administrator of regulated absences can define the parameters and authorizations of the screens in this module.
+
+
+
+
+
+
+
+
+.. _display:
+    
+Tab Display
+***********
+
+.. topic:: Display tab's sections
+
+   * :ref:`Display<global-display-section>`
+   * :ref:`Localization<gp-localization-section>`
+   * :ref:`Default values<gp-default-values-section>`
+      
+.. _global-display-section:
+
+.. rubric:: Display
+
+Graphic interface behavior and generic display parameters.
+
+   .. compound:: Name of the instance
+   
+      Change the window's name. The name appears at the top center of the window.
+   
+   .. compound:: Display in fading mode
+   
+      Transition between screen changes in flash or fade mode.
+   
+   .. compound:: Max number of projects on today
+   
+      Limit the display of the "today list". items are generally ordered by issue date increasing.
+   
+   .. compound:: Quick filtering by status
+   
+      Display one button. Allow to filter on lists the element by status checking boxes. Refresh to make appear on boxe a new state just created on list .
+
+  
+.. _gp-localization-section: 
+
+.. rubric:: Localization
+
+Choose how the monetary units behave in your area
+
+   .. compound:: Currency
+   
+      Choose your symbol displayed on each monetary box
+   
+   .. compound:: Currency position for cost display
+   
+      Symbol sets  before or after each monetary box
+
+.. _gp-default-values-section:
+
+.. rubric:: Default values for user parameters
+
+Default values for user 
+
+
+    
+
+   .. compound:: New interface
+   
+      Choose between interface v8.6 or the new interface v9.0
+
+   .. compound:: Theme colors
+   
+      The v9.0 interface is composed of two main colors which are declined throughout the application in different hues and saturation to keep the same charter spirit.
+      
+      
+         .. compound:: Interface main color
+            
+            Choose the main color that will be applied to the main architectural elements
+      
+         .. compound:: Interface secondary color
+      
+            Choose the secondary color that will be applied on the navigation and highlighting elements
+            
+            
+         .. compound:: Color discs
+         
+            You have pre-recorded color discs available. One offers the colors of classic ProjeQtOr. Two others are proposals. The fourth will take the colors that you have saved in the global settings for your instances.
+      
+            They are accelerators to apply your themes.
+   
+
+
+
+
+   .. compound:: Default language
+   
+      Choose among 19 languages / easy come back with translation in target language.
+   
+   .. compound:: Default theme
+   
+      More than 30 themes choices. Available only with version v8.6. 
+   
+   .. compound:: First page
+   
+      Choice of the first visible screen after the connection.
+   
+   .. compound:: Icone size in menu
+   
+      Icon size are default : user can overwrite these values.  Available only with version v8.6.
+   
+   .. compound:: Display of the upper menu
+   
+      The top menu is invisible or not at each connection. Available only with version v8.6.
+   
+   .. compound:: Display of the left menu
+   
+      The top menu is invisible or not at each connection.  Available only with version v8.6.
+      
+      
+   .. tip:: Menu v9.0
+   
+      To show or hide the icons of the new menu, right click on the menu.   
+   
+   .. compound:: Display history
+   
+         * No
+         * Yes, yes with work indicated on the bottom of the page
+         * On request with a specific button
+         
+      To show or hide the icons of the new menu, right click on the menu.   
+      
+      The button |History| will then be displayed in the menu of the details area of each element.
+       
+   .. compound:: Editor for rich text
+   
+      Choose your favorite text editor.
+   
+   .. compound:: Activate the spell checker in CK editor
+   
+      No will no longer allow highlighting of misspelled words.
+
+      .. Warning:: your browser also has an autocorrect option which may continue to highlight misspelled words
+   
+   .. compound:: Not applicable value
+   
+      Choice of the symbol defining the non-applicable values.
+      
+      On the global view the value of the field that has no applicable value for the given column will display this symbol
+   
+   .. compound:: Restric project list
+    
+      When creating an element, name of the project stays like than the one selected at the selector or on contrary offers choice on global list of projects
+    
+   .. compound:: Export in XLS or ODS 
+    
+      Choose the format in which you want to export either in native excel format or with the ODS format of OpenDocument.     
+    
+   .. compound:: Displaying notes in discussion mode
+   
+      Display of notes in discussion mode with indentation for answers 
+      
+   .. compound:: Not receive his own emails 
+   
+      You don't receive the emails you create. 
+      
+   .. compound:: Order notes ascending in mail model
+   
+      Choice of display of notes in the mail template.   
+  
+   .. compound:: List quotations, commands and bills on client form
+  
+      Display or not the list of financial elements related to the customer on the screen of the latter.
+      
+      Please note that the parameter also exists on the user side. If the latter is not activated also then the financial elements will not be visible.
+      
+ 
+
+.. _gp-reference:
+
+Tab References
+**************
+
+.. topic:: References tab's sections
+
+   * :ref:`Format for reference numbering<format_reference_number>`
+   * :ref:`Document reference format<format_reference_doc>`
+   * :ref:`Bill reference format<format_reference_bill>`
+
+
+.. _format_reference_number:
+
+.. rubric:: Format for reference numbering
+
+Sections for format references
+
+   .. compound:: Prefix format for reference
+      
+      Allows to define reference formats for items of element, documents and bills.
+   
+      Can contain prefix : 
+    
+         * {PROJ} for project code, 
+         * {TYPE} for type code, 
+         * {YEAR} for current year 
+         * {MONTH} for current month.
+   .. compound:: Number of digits for reference number 
+   
+      Indicate the number of digits you want to appear in your reference.
+                 
+   .. compound:: Change reference on type or project change
+   
+      Change the reference on type change of element will generate missing numbers in reference.
+
+.. _format_reference_doc:
+
+.. rubric:: Document reference format
+
+Sections for document format references
+
+   .. compound:: Document reference format
+   
+      Format can contain : 
+      
+            * {PROJ} for project code, 
+            * {TYPE} for type code, 
+            * {NUM} for number as computed for reference, 
+            * {NAME} for document name.
+         
+      You can allow or forbid downloading locked files in this section.
+   
+   
+   .. compound:: Version reference suffix
+   
+      Suffix can contain : 
+   
+            * {VERS} for version name.
+         
+   .. compound:: Separator for draft in version name
+   
+      Choose the sign for the separator of the draft.
+   
+   .. compound:: Preserve uploaded file name
+   
+      If yes, the file is downloaded with the name of original file. 
+   
+      If no, the document take the reference formatted name.
+   
+   .. compound:: Forbid download of locked document
+   
+      Forbid document download if yes is checked.
+      
+.. _format_reference_bill:
+    
+.. rubric:: Bill reference format
+
+Sections for bill format references
+
+   .. compound:: Bill reference format
+   
+      Reference format : can contain {NUM} for version name.
+   
+   .. compound:: Number of digit for bill number
+   
+      Choice of the number of digits to display in an invoice.
+
+.. _configuration:
+
+Tab Configuration
+*****************
+
+.. topic:: References tab's sections
+
+   * :ref:`Product and component<gp-product-component-section>`
+   * :ref:`Versions<gp-versions-section>`
+
+.. _gp-product-component-section:
+
+.. rubric:: Product and Component
+   
+This menu contains all the parameters for configuration management   
+   
+   .. compound:: Display Business features
+   
+         Filter on date.
+   
+   
+   .. compound:: Display language in Product/Component (Version)
+   
+         Enable language.
+   
+   .. compound:: Display contexts in Product/Component (Version)
+   
+         Enable contexts.
+   
+   .. compound:: Display Tenders on Products, Components, Versions
+   
+         Display a section to list linked Tenders on products, component, product version and component versions.
+   
+   .. compound:: Include sub-products in structure    
+   
+         Include sub-products in display of product structure (flat or not).
+   
+   
+
+.. _gp-versions-section:
+
+.. rubric:: Versions section
+
+This section allows you to manage more details in the behavior of the elements linked to the versions. 
+
+   
+   .. compound:: Display the start and delivery milestones
+   
+         Display start and delivery milestones for product/component version and delivery dates in flat structure.
+   
+   .. compound:: List of activity on component version
+   
+         Display the list of activity.
+   
+   .. compound:: Direct access to product / component full list
+   
+         When selecting a component, we go directly to the full list (with filter capacity), without going through the pop-up window.
+   
+   .. compound:: Automatic format of version name
+   
+         Ability to choose a preformatted format for version names.
+   
+   .. compound:: Separator between name and number
+   
+         Choose the character of the separator for version names.
+   
+   .. compound:: Auto subscription to versions
+   
+         Suscription automatic to versions or components when you suscribe to product or component.
+   
+   .. compound:: Types of copy of Component Version
+   
+         You can choose between :
+   
+            * Free choice
+            
+            * Copy structure from origin version
+         
+            * Replace the origin version with new copied one
+   
+   .. compound:: Enable Product Versions compatibility management
+   
+         Display compatibility section in product version details.
+   
+   .. compound:: Display product version on delivery
+   
+         Allows to link a delivery to product version.
+   
+   .. compound:: Sort versions combobox in descending order
+   
+         Change sort order for versions in combobox to have more recent first (descending on name).
+   
+   .. compound:: Sort version composition and structure on type
+   
+         Sort version composition and structure by type ascending and name descending.
+   
+   .. compound:: Manage component on requirements
+   
+         Manage component and target component version on requirements.
+   
+   .. compound:: Do not add closed and delivered versions to a project
+   
+         When adding a product to a project, do not add its closed and delivered versions.
+   
+   .. compound:: Allow activities on delivered version
+   
+         Include delivered products versions in target product version list for activities.
+   
+   .. compound:: Automatically set component version if unique
+   
+         Automatically set component version if there is only one component version of the selected component that is linked to the selected product version.
+
+
+
+
+
+
+.. _financial:
+
+Tab Financial
+*************
+
+.. topic:: References tab's sections
+
+   * :ref:`Input of amounts for expenses<gp-input-amount-expenses>`
+   * :ref:`Input of amounts for incomes<gp-input-amount-incomes>`
+   * :ref:`Automation of financial<deferral-expense>`
+   * :ref:`Revenue & work unit managment<gp-revenue-work-unit>`
+   
+.. _gp-input-amount-expenses:
+   
+.. rubric:: Input of amounts for expenses
+
+Parameters for choosing the input method for expenditure amounts.
+
+   .. compound:: Input mode for amounts
+   
+         Defined for expenses items if the amounts must be entered without taxes and calculated in with taxes or vice versa.
+   
+   .. compound:: Input mode for bill lines
+   
+         Defined for expenses items if the total bill lines feed the total with or without taxes. The parameter is priority if there a bill lines.
+
+.. _gp-input-amount-incomes:
+
+.. rubric:: Input of amounts for incomes
+
+Parameters for choosing the method of entering income.
+
+   .. compound:: Input mode for amounts
+   
+         Defined for incomes items if the amounts must be entered without taxes and calculated in with taxes or vice versa.
+   
+   .. compound:: Input mode for bill lines
+   
+         Defined for icomes items if the total bill lines feed the total with or without taxes. The parameter is priority if there a bill lines.
+
+
+.. _deferral-expense:
+
+.. rubric:: Automation of financial
+
+
+**The Deferral of expenses** option occurs during the automatic generation of an expense from an offer, order or invoice.
+
+If the expense is linked to an offer, an order AND / OR an invoice, then this is carried over to the related elements. This update is recursive.
+
+Example: if the expense is generated from an invoice, it is reported on the order linked to the invoice and on the offer linked to the order.
+
+
+.. _gp-revenue-work-unit:
+   
+.. rubric:: Revenue and Work unit managment
+     
+Parameters used in the unit of work catalog.
+
+   .. compound:: Number of complexities 
+
+      Parameter used to define the default maximum number used in the unit of work catalog.   
+
+   .. compound:: Copy revenue into validated cost of activities.
+
+      Copy revenue into validated cost of activities.
+
+
+
+
+.. index:: Mailing Parameters
+
+.. _mail:
+
+Tab Mailing
+***********
+
+.. topic:: References tab's sections
+
+   * :ref:`Emailing<gp-emailing-section>`
+   * :ref:`Mail titles<mail-titles>`
+   * :ref:`Automatic emails grouping<administration-emailing-group-label>`
+   * :ref:`Test email configuration<gp-test-email-section>`
+
+.. index:: Emailing
+
+.. _gp-emailing-section:
+
+.. rubric:: Emailing
+
+Parameters to allow the application to send emails.
+
+You define the administrator's email with the possibility of choosing a different address for "from" and "reply to" and the name to display
+
+You configure the SMTP serveur and port - the login name and password.
+
+You can also define the sendmail path or the send method.
+
+The maximum size not to be exceeded for sending emails is in bytes by default if you do not fill in the units.
+
+You can use bytes (O), megabytes (M) and gigabytes (G).
+
+.. _mail-titles:
+
+.. rubric:: Mail titles
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_MailsTitles.png
+   :alt: Mail titles
+   
+   Mail titles section
+
+Parameters to define title of email depending on event.
+
+See: :ref:`administration-emailing-group-label`
+
+It is possible to use special fields to call a function or data of the project.
+
+See: :ref:`administration-special-fields`
+
+
+.. index:: special fields
+
+.. _administration-emailing-group-label:
+
+.. rubric:: Automatic emails grouping
+
+Parameters to define if the email group is active or not.
+
+   .. compound:: Activate email grouping
+
+         When email grouping is enabled, automatic emails sent within the defined period are grouped into a single email.
+
+For example when the status of an element has been modified several times in less than Xs then you will not receive an email for each change of state.
+
+   .. compound:: Grouping period (in seconds)
+
+         Defines the period (in seconds) during which if an email is send after another on same item. 
+      
+         Then emails are grouped into single one.
+
+   .. compound:: How to treat different formats
+
+         If grouped emails refer to different templates, you can :
+          
+            * send all messages, one for each template
+            * Only send the last message
+            * Merge all messages and send a single email
+
+         You'll can see this email in the **email to send** screen in the Tools menu.
+
+.. _gp-test-email-section:
+
+.. rubric:: Test email configuration
+
+You can test the settings of your email submissions.
+
+   .. compound:: Send email to
+
+      Sent a email to check sptm configuration.
+
+      .. warning:: This operation saves global parameters.
+
+
+.. _authent:
+
+Tab Authentication
+******************
+
+.. topic:: Authentication's sections
+
+   * :ref:`User and password<user_password>`
+   * :ref:`LDAP Management Parameters<ldap_user>`
+   * :ref:`Single Sign On SAML2<SSO_Saml2>`
+   * :ref:`Test email configuration<gp-test-email-section>`
+
+.. _user_password:
+
+.. rubric:: User and password
+
+Parameters to manage how the connection behaves
+
+   .. compound:: Security constraints about users and passwords
+   
+         You can choose the default profile and password 
+         
+         You can choose to block the user after x connection attempts
+         
+         You can define the behavior's password with the min length ord the validy period
+         
+         You can display or no the check box on the login screen "remember me" 
+         
+         You can initialize password on user creation 
+
+         You can defined a new password to random value 
+
+         You can reset all the password with the :ref:`multiple update fonction<multipleupdate>`
+
+.. _ldap_user:
+
+.. rubric:: LDAP Management Parameters
+
+All the necessary parameters for connecting your projeqtor instances with your corporate LDAP 
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_LDAP.png
+   :alt: LDAP
+   
+   LDAP
+   
+Set the base dn, host, port, version...
+
+Default profile for Ldap users, message on creation new user from Ldap,  
+
+Actions on LDAP user creation   
+
+Project to allocate automatically...
+
+
+
+.. _SSO_Saml2:
+
+.. rubric:: Single Sign On SAML2
+
+Single sign-on is a method that allows a user to access multiple computer applications (or secure websites) by performing a single authentication.
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_ConnexionSSO.png
+   :alt: Connexion screen with the protocol SSO
+   
+   With the single sign on you do not go through the login screen of projeqtor but by a screen dedicated to single sign-on
+
+When connected to the SSO service, the service tells each application that the user is logged on. 
+
+This avoids having to connect to applications one by one.
+
+In concrete terms, the site or service to which the user is trying to connect makes a request to the server or the identity provider's site. This one asks if the user is connected. If so, he transmits the information.
+
+Depending on the protocol used, the two sites exchange keys, signatures and / or other information to verify the identity of the user.
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_DeconnexionSSO.png
+   :alt: disconnection screen
+   
+   Disconnection screen
+   
+When you want to disconnect from ProjeQtOr with the SSO method, the logout screen gives you several options.
+
+* local disconnection of projeqtor. I do not leave my SSO session
+* Internal reconnection: I reconnect to ProjeQtOr locally. I leave my SSO session. I should identify myself again
+* SSO disconnect. I leave my SSO session. I should identify myself again    
+
+   .. compound:: Parameters
+   
+      This is an SSO connection via the SAML2 protocol
+   
+   
+      .. figure:: /images/GUI/GLOBALPARAM_ZONE_SSO.png
+         :alt: Global parameters: LDAP
+         
+         Global parameters: LDAP 
+   
+      * Set the Entity ID, the IDP certificate, the single sign on and logout...
+      * Default profile for users, message on creation new user from SAML,
+      * And some parameters for users  
+
+.. _automation:
+
+Tab Automation
+**************
+
+.. topic:: Authentication's sections
+
+   * :ref:`Management of automated service<automated-service>`
+   * :ref:`Automatic import of files<automatic-import>`
+   * :ref:`Automatic import of replies to emails<gp-automatic-import-replies>`
+   * :ref:`Automatic planning calculation<automatic-planning-calcul>`
+   * :ref:`Atuomatic archiving of history<automatic-history>`   
+   * :ref:`Generation of alerts for real work<gp-genereation-alert-realwork>`
+
+.. _automated-service:
+
+.. rubric:: Management of automated service
+
+Parameters for the :term:`Cron` process.
+
+   .. compound:: Defined frequency for these automatic functions
+   
+         It will manage :
+   
+            * **Alert generation:** Frequency for recalculation of indicators values.
+            
+            * **Check alert:** Frequency for client side browser to check if alert has to be displayed.
+            
+            * **Import:** Automatic import parameters as below.
+     
+.. warning:: **Cron working directory** should be set out of the path web..
+
+
+
+.. _automatic-history:
+     
+.. rubric:: Automatic archiving of history
+
+This section allows you to manage the behavior of the history
+
+  .. compound:: Archive history older than (in days) 
+
+   Determines how often your history is archived.
+
+  .. compound:: Start time of daily archiving 
+
+   Choose the time at which the daily archiving will start.
+   
+  .. compound:: Archive all history for idle items
+
+   Choose whether the history of closed items should be archived or not. 
+   
+   
+   
+      
+.. _automatic-import:
+     
+.. rubric:: Automatic import of files
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_AutoImport.png
+   :alt: Automatic import of files
+   
+   Automatic import of files
+   
+Automatic import settings for :term:`cron` processes.
+
+.. warning:: **Directory of automated integration files** should be set out of the path web.
+
+
+
+
+
+
+
+.. _gp-automatic-import-replies:
+
+.. rubric:: Automatic import of replies to emails
+
+   
+* Defined parameters for the “Reply to” process
+
+* It will manage connection to IMAP INBOX to retrieve email answers.
+
+   .. compound:: Email input check cron delay (in seconds)
+   
+         Delay of -1 deactivates this functionality. 
+         
+   .. compound:: Email reception
+        
+      When you have completed the IMAP settings for receiving emails, you receive your email with a new header. See the image below.
+      
+      .. figure:: /images/GUI/GLOBALPARAM_BOX_Outlook.png
+         :alt: receiving an email before and after configuring IMAP settings 
+         
+         receiving an email settings
+
+      You always find the name of the item that is related to your application. A single click takes you to the item page.
+
+      The line in the header tells you where your answer should be positioned to allow you to retrieve the response text in your ProjeQtor instance without the original message. 
+
+   .. compound:: Signing start identifier 
+        
+      When you have completed the IMAP settings for receiving emails, you receive your email with a new header. See the image below.
+
+        
+      The fields allows you to identify the beginning of your signature in order to avoid retrieving the signature in the response.
+
+      For example, enter, so that ProjeQtOr recognizes that your signature begins with this word. He will not take back everything behind.
+
+
+
+.. note:: **IMAP host**
+
+   * Must be an IMAP connection string.
+   * To connect to GMAIL input box, host must be: {imap.gmail.com:993/imap/ssl}INBOX
+   * You must set these parameters if you want to use the :ref:`Not receive his own mails<UP-automation>` option in the user settings 
+   
+.. _automatic-planning-calcul:
+
+.. rubric:: Automatic planning calculation
+
+
+.. figure:: /images/GUI/GLOBALPARAM_ZONE_InputWork.png
+   :alt: Enter real work with the recalculation
+   
+Activated or desactived this feature by simple click
+  
+ .. compound:: Differential calculation
+   
+   Project planning is recalculated only for those who need to be. A data or more has been changed into the project so a new calculation is expected. 
+   
+ .. compound:: Complete calculation
+   
+   All projects planning are recalculated. 
+         
+
+ .. compound:: Automatic feed of the real
+   
+   You automatically fill in the actual work from the scheduled work up to a given date.
+
+   The automatic calculation of projects from the day after this date is triggered.
+
+   The actual work is automatically entered from the scheduled work until the day before the start of the schedule calculation.
+
+      .. warning:: 
+      
+         For security, and to avoid overlapping with a manual input of reality, if the resource has reality for a given date, we do not copy the possible planned existing in reality.
+ 
+   For each scheduled job found, if no job exists for the relevant resource on the date of the scheduled job, copies the scheduled job to an actual job.
+  
+   We will mark the actual work entered automatically (technical zone type label) to distinguish between automatic feeding and manual feeding.
+
+   This area will not be processed for screen renderings, but will analyze any unexpected behavior.
+         
+
+
+ .. compound:: Frequency 
+
+   Select the frequency on the calendar by clicking on the button **defined parameters** and choose the schedule, day, month.
+      
+   .. figure:: /images/GUI/GLOBALPARAM_BOX_DefineParameters.png
+      :alt: Define parameters
+         
+      Define parameters
+
+
+ .. compound:: Start date for
+
+   .. image:: /images/GUI/GLOBALPARAM_ZONE_StardDateFor.png
+   
+   Select when you want to recalculate project(s)according the date of today's date 
+
+.. _gp-genereation-alert-realwork:
+
+.. rubric:: Generation of alerts if real work is not entered
+
+Specific settings for alerts based on a profile.
+ 
+* An email is sent on the agreed date. 
+* Click on the button **Define Parameters**
+* Select the frequency of the calendar with which the emails will be generated and sent to the profile. 
+* See: :ref:`automated-service` to set the send frequency.
+
+
+
+.. rubric:: When and How
+   
+In addition to the sending frequency, you can refine the generation with several additional options.
+
+ .. compound:: Control input up to
+
+   Select when you want to be controlled: current day, previous day or next days.
+   
+ .. compound:: Number of days to control
+   
+   Choose how many days will be controled
+         
+ .. compound:: Send alert to resource 
+   
+   Choose how alerts will be sent, Internal alert, email, both or none
+
+ .. compound:: only incompletes imputation  
+      
+   The goal is to be able to send alerts on charges only if the entry is incomplete, not if it is greater than the capacity of the resource.
+
+   With the option checked, when generating alerts, an entry greater than the capacity of the resource does not trigger an alert.      
+      
+      
+.. warning::
+
+   * All days of the week, open or off days are taken into account.
+   * Off days in real work allocation will not send you an alert.
+
+
+.. _system:
+ 
+Tab System
+**********
+
+.. topic:: Authentication's sections
+
+   * :ref:`Files and directories service<file-directory-section>`
+   * :ref:`Localization data<localization-data-section>`
+   * :ref:`Miscellaneous<gp-miscellaneous-section>`
+   * :ref:`PDF export<gp-pdf-export-section>`
+   * :ref:`SSL connection to database<gp-ssl-connect-database>`
+
+
+.. _file-directory-section:
+
+.. rubric:: Files and directories
+
+Definition of directories and other parameters used for Files and documents management.
+
+.. warning:: 
+
+   **Attachments Directory** and **Root directory for documents** Should be set out of web reach.
+
+   **Temporary directory for reports** Must be kept in web reach.
+   
+
+.. _localization-data-section:
+
+.. rubric:: Localization data
+
+Parameters to define character sets, their encoding, their behavior ... for saving files on the server
+
+   .. compound:: Charset to save files on server
+   
+         Keep empty for Linux servers, files names will be stored in UTF8. 
+      
+         For windows OS server, define charset as "windows-1252" (for western europe) or similar corresponding to your localization.
+       
+   .. compound:: Separator for CSV files
+   
+         Choose the field separator for csv exports
+   
+   .. compound:: Export CSV to UTF-8 format
+   
+         Preserve UTF-8 for exported csv files. If set no, will encode in CP1252 (recommended for windows in English and western Europe Languages)
+   
+.. _gp-miscellaneous-section:
+
+.. rubric:: Miscellaneous
+
+Settings for the update
+
+   .. compound:: Check for new version
+   
+         Auto check (or not) for existing new version of the tool (only administrator is informed);
+
+.. _gp-pdf-export-section:
+
+.. rubric:: PDF export
+
+Basic settings for PDF exports
+
+   .. compound:: Memory limit for PDF generation.
+   
+         Size In MB. Too small can lead to PDF error but too big can crash the server
+   
+   .. compound:: Font for PDF Export.
+   
+         Freesans give great portability for non ANSI characters - Helvetica give smaller PDF files.
+
+
+.. _gp-ssl-connect-database: 
+
+.. rubric:: SSL connection to database
+
+Allows to set up a secure SSL connection:
+
+   * SSL Key
+   
+   * SSL Certification
+   
+   * SSL Certificate Authority
+   
+   * Enter patch to corresponding files to enable SSL connection to the database.
+
+.. warning:: 
+
+   Take care that these files must exist and be valid SSL files.
+   
+   If values are incorrect, the application will not work any more, and you'll have to manually fix parameters in the database.  
+    
+
+.. index:: Special Fields
+
+.. _administration-special-fields:
+
+Special Fields
+##############
+
+Special fields can be used in the title and body mail to be replaced 
+
+by item values :
+
+* **${dbName}** the display name of the instance
+* **${id}** id of the item
+* **${item}** the class of the item (for instance "Ticket") 
+* **${name}** name of the item
+* **${status}** the current status of the item
+* **${project}** the name of the project of the item
+* **${type}** the type of the item
+* **${reference}** the reference of the item
+* **${externalReference}** the :term:`external reference` of the item
+* **${issuer}** the name of the issuer of the item
+* **${responsible}** the name of the responsible for the item
+* **${sender}** the name of the sender of email
+* **${sponsor}** the name of the project sponsor
+* **${projectCode}** the project code
+* **${contractCode}** the contact code of project
+* **${customer}** Customer of project 
+* **${url}** the URL for direct access to the item
+* **${login}** the user name
+* **${password}** the user password
+* **${adminMail}** the email of administrator

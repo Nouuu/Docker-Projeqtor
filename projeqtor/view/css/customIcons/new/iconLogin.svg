@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Layer_1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="iconTicket.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="128px"
+	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<sodipodi:namedview  inkscape:cx="22.296444" pagecolor="#ffffff" gridtolerance="10" showgrid="false" guidetolerance="10" borderopacity="1" objecttolerance="10" inkscape:cy="24.881783" inkscape:zoom="14.75" bordercolor="#666666" id="namedview27" inkscape:snap-global="false" inkscape:document-rotation="0" inkscape:current-layer="Layer_1" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-height="1017" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:pageopacity="0" inkscape:pageshadow="2">
+	</sodipodi:namedview>
+<path fill="#FF0000" d="M70.31,21.781c2.104,3.782,8.513,7.921,12.137,9.468C82.018,18.975,74.48,6.024,63.86,6.024
+	c-9.889,0-21.651,11.536-19.962,27.81C56.328,33.101,65.882,26.103,70.31,21.781z"/>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M83.271,32.373c0,5.844-1.455,11.245-3.918,15.62c-3.687,6.545-9.629,13.714-16.332,13.714c-6.593,0-12.451-7.032-16.147-13.396
+	c-2.574-4.43-4.102-9.951-4.102-15.938c0-14.587,9.066-26.413,20.25-26.413C74.206,5.96,83.271,17.785,83.271,32.373z"/>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M64,124.834c-46.667,0-50.895-8.936-50.895-8.936s-5.705-34,30.629-43.5c0,0,5.86,9.936,20.146,9.936H64
+	c14.285,0,20.146-9.936,20.146-9.936c36.334,9.5,30.63,43.5,30.63,43.5S110.667,124.834,64,124.834z"/>
+</svg>

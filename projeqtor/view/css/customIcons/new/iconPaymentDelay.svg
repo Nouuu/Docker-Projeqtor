@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Calque_2">
+	
+		<circle fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="90.57" cy="90.45" r="34.425"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		88.106,71.792 88.106,90.837 104.183,106.912 	"/>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M49.479,41.842c0,4.004,3.245,7.251,7.246,7.251h10.546c4.001,0,7.25-3.247,7.25-7.251l0,0c0-4-3.249-7.246-7.25-7.246H56.725
+			c-4.001,0-7.246-3.244-7.246-7.245l0,0c0-4.002,3.242-7.246,7.246-7.246h10.546c4.001,0,7.25,3.243,7.25,7.246l0,0"/>
+	</g>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="62.001" y1="20.105" x2="62.001" y2="13.346"/>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="62.001" y1="55.846" x2="62.001" y2="49.091"/>
+</g>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M104.882,14.999"/>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M104.882,14.999"/>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M48.318,75.658H5.611c-1.094,0-1.98-0.885-1.98-1.98V4.257c0-1.093,0.887-1.979,1.98-1.979h113.981c1.093,0,1.979,0.887,1.979,1.979
+	v50.887"/>
+</svg>

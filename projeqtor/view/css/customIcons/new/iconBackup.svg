@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg15" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="iconKanban.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="128px"
+	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<sodipodi:namedview  objecttolerance="10" inkscape:cy="24" gridtolerance="10" pagecolor="#ffffff" inkscape:zoom="15.3125" showgrid="false" guidetolerance="10" inkscape:cx="24.979592" borderopacity="1" bordercolor="#666666" id="namedview17" inkscape:window-maximized="1" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:window-height="1017" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:pageshadow="2" inkscape:current-layer="svg15">
+	</sodipodi:namedview>
+<title  id="title6"></title>
+<g>
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M95.884,16.667c0,5.853-14.379,10.597-32.111,10.597S31.665,22.52,31.665,16.667c0-5.848,14.375-10.591,32.107-10.591
+		S95.884,10.818,95.884,16.667z"/>
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M95.884,37.854c0,5.853-14.379,10.597-32.111,10.597s-32.107-4.744-32.107-10.597"/>
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M95.884,59.046c0,5.851-14.379,10.595-32.111,10.595s-32.107-4.744-32.107-10.595"/>
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M31.665,16.667v63.568c0,5.851,14.375,10.594,32.107,10.594s32.111-4.743,32.111-10.594V16.667"/>
+</g>
+<circle fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="63.776" cy="112.191" r="9.623"/>
+<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="63.774" y1="101.172" x2="63.774" y2="91.754"/>
+<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.38" y1="112.191" x2="54.153" y2="112.191"/>
+<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="73.398" y1="112.191" x2="123.168" y2="112.191"/>
+</svg>

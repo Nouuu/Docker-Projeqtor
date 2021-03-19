@@ -1,0 +1,42 @@
+Code provided by :
+http://www.movable-type.co.uk/scripts/aes-php.html
+
+=================================================================================================
+
+This is a PHP version of AES (Advanced Encryption Standard). I created this PHP version as a 
+server-side complement to my JavaScript AES implementation.
+
+This version directly mirrors the JavaScript version; it differs in that PHP has Base64 encoding 
+and UTF-8 encoding built-in, and has no unsigned-right-shift operator(!), but is otherwise a 
+straightforward port, with syntactic differences and differently-named libray functions. It is 
+quite simple to compare the two versions side-by-side.
+
+=================================================================================================
+
+An explanation of the operation of the algorithm is given with the JavaScript version.
+
+See below for the source code of the PHP implementation. §ection numbers relate the code back to 
+sections in the standard.
+
+Update October 2010: I have revised the code into an object-oriented structure, 
+organised into classes in place of the previous simple functions.
+
+=================================================================================================
+
+I offer these formulæ & scripts for free use and adaptation as my contribution to the open-source 
+info-sphere from which I have received so much. You are welcome to re-use these scripts [under a 
+simple attribution license or a GPL licence, without any warranty express or implied] provided 
+solely that you retain my copyright notice and a link to this page.
+
+Paypal donation If you would like to show your appreciation and support continued development of 
+these scripts, I would most gratefully accept donations.
+
+If you have any queries or find any problems, contact me at ku.oc.epyt-elbavom@cne-stpircs.
+
+© 2005-2011 Chris Veness
+
+=================================================================================================
+
+Sofware provided under GPL Licence.
+
+=================================================================================================

@@ -1,0 +1,307 @@
+.. include:: ImageReplacement.txt
+
+.. raw:: latex
+
+    \newpage
+
+.. title:: Today (Dashboard)
+
+
+.. index:: Today
+.. index:: Dashboard
+
+.. _today-screen:
+
+Today (Dashboard)
+=================
+
+.. figure:: /images/GUI/TODAY_SCR_GlobalView.png
+   :alt: Today's Global view
+   
+   Today screen's Global view
+   
+
+This screen allows the user to have an overview of the projects and tasks he is working on.
+
+His projects, the tasks to which the user is assigned, those for which he is responsible as well as the various tasks created by himself or for which he is a requestor are listed in different sections.
+
+Each list can therefore contain different types of tasks. The user can therefore view activities, questions, decisions, tickets, risks, meetings, milestones, ... as well as financial elements, such as quotes, invoices or contracts.
+
+It's the User parameter “First page” by default
+
+This parameter defines the screen that will be displayed first on each connection.
+
+The definition of visibility is based on the access rights of each user
+
+
+.. rubric:: Automatic refresh
+
+* Allows to refresh data according defined delay. 
+* Also the screen will be scrolling from top to bottom according defined delay.
+* Click on |Refresh| to enable/disable automatic refresh. 
+
+
+.. rubric:: Print
+
+* Click on |Print| to print Today screen. 
+
+.. rubric:: Parameters
+
+* Click on |Parameter| to access screen parameters.
+
+.. figure:: /images/GUI/TODAY_BOX_Parameters.png
+   :alt: Dialog box - Today parameters 
+   :align: center
+   
+.. rubric:: Period for task selection
+
+Allows to define the period for tasks will be displayed.
+
+ .. compound:: **Due date**
+
+ * Select only items with due date less than today plus this selected period.
+
+ .. compound:: **Or not set**
+ 
+ * Select also items with due date not set. 
+ 
+ 
+.. rubric:: Refresh parameters
+
+Allows to define parameters for automatic refresh.
+
+ .. compound:: **Field Refresh delay**
+         
+ * Selects the delay between two screen refresh.
+
+ .. compound:: **Field Scroll delay**
+         
+ * Selects the delay between two scrolling.
+
+.. _items-be-displayed:
+
+.. rubric:: Items to be displayed
+
+* Allows to define sections displayed on the screen.
+* Allows to reorder sections displayed with drag & drop feature.
+* Using the selector area button icon drag |Drag|. 
+
+The number of items to display for the user can be customized in the user parameters, in the display tab.
+
+Enter the number of projects or tasks to appear on the screen.
+
+See: :ref:`User parameters<display-parameters>`
+
+ 
+
+If you have added any reports to the Today page, they will appear in the list.
+      
+You can hide the added reports by clicking on the box.
+
+   
+See : :ref:`Favorite Report<favorite_report>`
+
+See : :ref:`Today Screen Report<today_report>`
+   
+See: :ref:`extending<extending-today>`
+   
+    
+.. raw:: latex
+
+    \newpage
+
+Projects
+--------
+
+A quick overview of projects status.
+
+The projects list is limited to the project visibility scope of the connected user. 
+
+The number of displayed projects can be defined in the :ref:`global parameters<display>`.
+
+
+.. figure:: /images/GUI/TODAY_ZONE_Projects.png
+   :alt: Section - Projects 
+   :align: center
+   
+   Project section
+   
+.. topic:: Interface areas
+
+   |one| :ref:`Scope of the numbers counted<scopenumbers-today>`
+   
+   |two| :ref:`Trend<trend-today>`
+   
+   |three| :ref:`Health status<healthstatus-today>`
+   
+   |four| :ref:`Calculated and overall progress<calculated-today>`
+      
+   |five| :ref:`Other mesure of progress<otherprogress-today>`
+   
+   |six| :ref:`Elements concerned to project<elementproject-today>`
+   
+   
+   
+The list of projects is limited to the extent of visibility of the logged in user.
+
+All the projects to which you are assigned will therefore be displayed in this list
+
+
+.. _scopenumbers-today:
+
+.. rubric:: |oneBLC| Scope of the numbers counted
+
+Checkboxes allow to filter displayed projects
+
+  * **To do:** Projects to do.
+  * **Not closed:** Projects to do and done.
+  * **All:** Projects to do, done and closed.
+
+ .. compound:: Projects name
+
+  Click on the name of a project will directly move to it. 
+
+
+.. _trend-today:
+
+.. rubric:: |twoBLC| Trend
+
+Manual indicator can be set on project.
+
+Trend and health status indicators are displayed.
+
+This icon allows to display the trend of the project.
+
+
+.. _healthstatus-today:
+
+.. rubric:: |threeBLC| Health status
+
+This icon allows to display the health status of the project.  
+
+
+.. _calculated-today:
+
+.. rubric:: |fourBLC| Calculated and overall progress
+
+Actual progress of the work of project and additional progress manually selected for the project
+
+* On mouse over the bar
+    
+    .. figure:: /images/GUI/TODAY_ZONE_Progress.png
+      :alt: Calculated progress
+      
+      Calculated progress
+      
+On each project shows part of “to do” (red) compared to “done and closed” (green).
+
+
+
+.. _otherprogress-today:
+
+.. rubric:: |fiveBLC| Other measure of progress
+
+* **Left:** Left work for the project.
+* **Margin:** Work margin.
+* **End date:** Planified end date of the project.
+* **Late:** Number of late days in project.
+ 
+ 
+ 
+.. _elementproject-today:
+ 
+.. rubric:: |sixBLC| Elements concerned to project
+
+Numbers of elements concerned to a project are displayed.
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+Tasks
+-----
+
+Here are listed, as a “To do list” all the items for which the connected user is either “assigned to”, “:term:`responsible` of”, “:term:`issuer` or :term:`requestor` of”.
+
+Click on an item will directly move to it.
+
+.. note:: 
+
+   **Max items to display Parameter**
+
+   Number of items listed here are limited to a value defined in :ref:`Global parameters<global-display-section>`.
+
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: 
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`id`
+     - Unique Id for the item. Id column displayed unique Id and specific icon for the item
+   * - Project
+     - The project concerned by the item.
+   * - Type
+     - Type of item.
+   * - Name
+     - Name of the item.
+   * - Due date
+     - Planned end date or due date.
+   * - Status
+     - Actual status of the item.
+   * - Issuer
+     - Flag on indicate the user is the issuer for the item.
+   * - Resp.
+     - Flag on indicate the user is the responsible for the item.
+
+
+.. raw:: latex
+
+    \newpage    
+
+
+.. _extending-today:
+
+Extending
+---------
+
+You can select any report to be displayed on the Today screen.
+
+.. rubric:: Add selected report
+
+* To do this, just go to the selected report, select parameters and display result (to check it is what you wish on today screen). 
+* Click on |Today| to insert this report with parameter on the Today screen.
+* Any unchanged parameter will be set as default value.
+* These reports will be displayed on Today screen like other pre-defined parts.
+
+See: :ref:`Favorite report on Today<today_report>`
+   
+   
+* Click on |Parameter| to set the location of the report (s) on the Today screen.
+
+* Click on the handles to move the item in the list
+
+* You can reorder like any other parts.
+
+* Click on |Delete| to completely remove them from the list.
+
+
+.. figure:: /images/GUI/TODAY_BOX_ParamReport.png
+   :alt: Display on today
+   
+   Display parameters on today
+
+ 
+
+
+ 
+
+
+

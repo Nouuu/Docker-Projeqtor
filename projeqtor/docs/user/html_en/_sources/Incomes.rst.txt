@@ -1,0 +1,1306 @@
+
+.. include:: ImageReplacement.txt
+
+.. title:: Incomes
+
+.. index:: Incomes
+
+.. _Incomes:
+
+Incomes
+*******
+
+Follow with the "Incomes" menu, incoming financial movements and your customers and all the elements revolving around them, such as contracts, quotations, bills, catalogs ...
+
+
+.. index:: Client contract 
+
+.. _client-contract:
+
+Client contract
+---------------
+  
+ProjeQtOr gives you the possibility to precisely manage and monitor your customer contracts.
+
+The customer contract is necessarily linked to a customer.
+
+
+.. figure:: /images/GUI/INCOMES_SCR_ClientContrat.png
+   :alt: Client contract screen
+   
+   Client contract screen
+
+
+
+.. rubric:: Section Description
+
+Complete the description of the contract.
+
+.. list-table:: Required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Name
+     - Name of the contract  
+   * - Number
+     - Reference number of the contract
+   * - |RequiredField| Client contract type
+     - List of types of the contracts
+   * - Project
+     - Project to which this contract will be attached
+   * - |RequiredField| Customer
+     - Customer concerned by the quotation
+   * - Contact  
+     - Customer contacts only. Contacts must be registered in advance on the customer's screen. Change customer, the contacts list is suitable. 
+   * - Client reference    
+     - Reference of the client
+   * - Phone number
+     - The field is of alphanumeric type. You can enter a telephone number with precision. Example:XXXXXXXXXX ext XX 
+   * - Origin    
+     - Allows to link the document defining the SLA
+   * - Description
+     - Descriptive text of the contract
+
+
+
+
+.. rubric:: Section Treatment
+
+Follow the state, the progress of your contract in this section.
+
+ .. compound:: Responsible
+   
+   * Choose a responsible
+   
+   * Its initials are displayed on the Gantt chart of contracts
+   
+
+ .. compound:: Workflow
+   
+   * The workflow is based on the default workflow. 
+   
+   * You can change or modify the current workflow.
+   
+   * See: :ref:`workflow`
+ 
+
+.. _renewal:
+ 
+ .. compound:: Renewal
+   
+   Defines the behavior of the renewal of a contract at the end of the initially planned duration
+   
+   * **Never:** the contract will never be renewed
+      
+   * **Tacit:** the contract will be renewed if there is no termination
+      
+   * **Express:** the contract is renewed and is the subject of a written or verbal act 
+
+
+ .. compound:: States
+   
+      * **Handled:** Date on which the contract is taken over. Effective. This date can be entered manually or by going to the Assigned state of the workflow
+      
+      * **Done:** Date the contract ends.
+      
+      * **Closed:** Date on which the contract was closed.
+
+      * **Cancelled:** Cancellation Date 
+
+
+
+.. rubric:: Section contact
+
+This section allows you to fill in the information relating to your contact with the client.
+
+.. list-table:: Required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Contact
+     - Name of the client contact
+   * - Phone Number
+     - Phone number of the client contact.The field is not numeric and lets you add textual information such as the extension number.
+   * - |RequiredField| Levels of service agreements
+     - Determines if you have levels of service agreements (:term:`SLA`) with the client for this contract. This check box is an indication.
+   * - Intervention time
+     - Periods during which services, contacts and interventions with the client will be possible. You can choose a time slot for weeks, Saturdays, as well as Sundays and holidays.
+
+
+
+
+
+
+
+.. rubric:: Section Progress
+
+In the Progress section, determine the different dates and deadlines for the contract, notice, deadlines, payments ...
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Contract dates
+     - Start and end date of the contract
+   * - Initial contract term
+     - Contract duration displayed according to the chosen unit: day, month, year
+   * - Notice period 
+     - Duration displayed according to the chosen unit: day, month, year
+   * - Notice date
+     - Exact date of notice
+   * - Due date
+     - End of contract validity
+   * - Periodicity of the contract (Month)
+     - Duration of the renewal of the contract is possible. Example 24-month subscription renewable after 12 months
+   * - Billing frequency (Month)
+     - Billing frequency during the term of the contract
+       
+
+
+
+
+Client contract Gantt chart
+===========================
+
+In addition to the contract management screen (list and details area), you can view your contracts in a time view on a Gantt chart. This is the "customer contract calendar"
+
+Each bar representing the different contracts, going from the start date to the end date of the contract.
+
+Notice dates and due dates are displayed as milestones. 
+
+Gantt bars for customer contracts turn red when the due date is higher than the end of contract date. 
+
+No calculation is made. This is an indication to show an inconsistency. 
+
+
+.. figure:: /images/GUI/INCOMES_SCR_ClientContratGANTT.png
+   :alt: Client contract gantt chart screen
+   
+   Client contract Gantt chart screen
+
+
+
+
+
+.. index:: Quotation 
+
+.. _quotation:
+.. _client-quotation:
+
+Client Quotation
+----------------
+  
+A quotation is a proposal estimate sent to customer to get approval of what’s to be done, and how must the customer will pay for it.
+
+On the quotation form, you can record all the information about the sent proposal, including attaching some file completely describing the proposal with details terms and conditions.
+
+.. rubric:: Transform quotation to order
+
+A quotation can be copied into an order when corresponding document is received as customer agreement.
+
+.. rubric:: Bill lines section
+
+This section allows to detail the quotation modality.
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Bill lines<manual-billing>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`  
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the bill.
+   * - |RequiredField| Name
+     - Short description of the bill.
+   * - |RequiredField| Client quotation type
+     - Type of the quotation to define the way the concerned activity should be billed
+   * - |RequiredField| Project
+     - The project concerned by the quotation
+   * - :term:`Origin`
+     - Element which is the origin of the quotation 
+   * - Recipient
+     - Name of entity receiving the quotation         
+   * - Customer
+     - Customer concerned by the quotation.
+   * - Contact
+     - Contact in customer organization to whom you sent the quotation.
+   * - :term:`Request<Description>`
+     - Request description.
+   * - Additional info.
+     - Any additional information about the quotation.
+
+.. note:: **Field "Customer"**
+     
+   Automatically updated from project field.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the quotation.
+   * - :term:`Responsible`
+     - Resource who is responsible for the quotation.
+   * - Sent date
+     - Date when quotation is sent to customer contact.
+   * - Send mode
+     - Delivery mode.
+   * - Offer validity
+     - Limit date of the validity of the proposal.
+   * - Likelihood
+     - The probability that the proposal will be accepted.
+   * - :term:`Handled`
+     - Box checked indicates that the quotation is taken in charge.
+   * - :term:`Done`
+     - Box checked indicates that the quotation is processed.
+   * - :term:`Closed`
+     - Box checked indicates that the quotation is archived.
+   * - Cancelled
+     - Box checked indicates that the quotation is cancelled. 
+   * - Planned end date
+     - Target end date of the activity object of the quotation.
+   * - Activity type
+     - Type of the activity object of the quotation.
+   * - Payment deadline
+     - The payment deadline is stated on the quotation.
+   * - Amount
+     - Total amount of the quotation.  
+   * - Estimated work
+     - Work days corresponding to the quotation.
+   * - Comments
+     - Comment about the treatment of the quotation.
+     
+     
+.. raw:: latex
+
+    \newpage
+
+.. index:: Orders (Client)
+
+.. _orders:
+
+.. _client-orders:
+
+Client Orders
+-------------
+
+An order (also called command) is the trigger to start work.
+
+On the order form, you can record all the information of the received order.
+
+.. rubric:: Scheduled work and budgeted cost of project
+
+* The scheduled work (field: "validated work") of the project will be initialized with the sum of total work from all orders.
+* The budgeted cost (field: "validated cost") of the project will be initialized with the sum of the total amount before taxes for all orders. 
+* See: :ref:`progress-section`
+
+.. rubric:: Bill lines section
+
+This section allows to detail the order modality.
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Bill lines<manual-billing>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`   
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the order.
+   * - |RequiredField| Name
+     - Short description of the order.
+   * - |RequiredField| Order type
+     - Type of order.
+   * - Project
+     - The project concerned by the order.
+   * - Customer
+     - Customer concerned by the order.
+   * - Contact
+     - Contact in customer organization to whom you sent the order.
+   * - |RequiredField| External reference
+     - :term:`External reference` of the order (as received).
+   * - Date of receipt
+     - Receipt date.
+   * - Receive mode
+     - Delivery mode. 
+   * - :term:`Origin`
+     - Element which is the origin of the order.
+   * - Description
+     - Complete description of the order.
+   * - Additional info.
+     - Any additional information about the order.
+
+.. note:: **Field Customer** 
+     
+   Automatically updated from project field.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the order.
+   * - :term:`Responsible`
+     - Resource who is responsible for the order.
+   * - :term:`Handled`
+     - Box checked indicates that the order is taken in charge.
+   * - :term:`Done`
+     - Box checked indicates that the order is processed.
+   * - :term:`Closed`
+     - Box checked indicates that the order is archived.
+   * - Cancelled
+     - Box checked indicates that the order is cancelled.
+   * - Activity type
+     - Type of the activity object of the order.
+   * - Linked activity
+     - Activity representing the execution of the order.
+   * - Initial
+     - Initial values.
+   * - Amendment
+     - Additional values.  
+   * - Total
+     - Sum of the initial values and amendment.  
+   * - Start date
+     - Initial start date of the execution of the order.
+   * - End date 
+     - Initial and validated end date of the execution of the order. 
+   * - Comments
+     - Comment about the treatment of the order.
+
+.. note:: **Fields behavior**
+
+   * **Fields Initial, Amendment and Total**
+
+      * **Ex VAT**: Amount before taxes.
+
+         * The column value is automatically updated with the sum of bill line amounts.
+
+      * **Tax**: Applicable tax.
+
+         * If the applicable tax isn’t set, the tax defined for the selected customer is used.
+ 
+      * **Full**: Amount with taxes.
+  
+      * **Work**: Work days corresponding to the order.
+ 
+         * The column value is automatically updated with the sum of bill lines quantities.
+      
+         * When the measure unit is "day". 
+
+   * **Field Amendment**
+
+   * The columns values "Ex VAT" and "Work" are automatically updated with the sum of billing lines with selected amendment checkboxes.
+
+   * **Fields Start and end date**
+
+   * **Initial** : Initial dates
+   * **Validated** : Validated dates
+
+.. warning:: Activity type
+
+   * The activity should be created only after approval.
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Bill (Term)
+
+.. _term:
+
+.. _client-billing-term:
+
+Client invoicing terms
+----------------------
+
+A term is a planned trigger for billing.
+
+You can define as many terms as you wish, to define the billing calendar.
+
+.. note::
+
+   Terms are mandatory to bill “Fixed price” project.
+   
+   A term can be used just one time. The bill name will be displayed.
+
+.. rubric:: A term has triggers
+
+* You can link the activities that should be billed at this term.
+* A summary of activities is displayed for validated and planned amount and end date.
+* Validated and planned values play the role of reminder.
+* You can use these values to set real amount and date.
+
+
+
+.. rubric:: Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Notes<note-section>`   
+   
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the term.
+   * - Name
+     - Short description of the term.
+   * - Project
+     - The project concerned with the term.
+   * - Bill
+     - Bill name that uses this term.
+   * - :term:`Closed`
+     - Flag to indicate that term is archived
+
+.. rubric:: Fixed price for term
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Real amount
+     - Defined amount for the term.
+   * - Real date
+     - Defined date for the term.
+   * - Validated amount 
+     - Sum of validated amounts of activities defined as triggers **(Read only)**.
+   * - Validated date
+     - Max of validated end dates of activities defined as triggers **(Read only)**.
+   * - Planned amount
+     - Sum of planned amounts of activities defined as triggers **(Read only)**.
+   * - Planned date
+     - Max of validated end dates of activities defined as triggers **(Read only)**.
+
+.. topic:: Fields Amount and Date (Planned & Validated)
+
+   * When a trigger is entered, the values of planned and validated are automatically updated with the sum and the max of triggered amounts.
+
+.. rubric:: Trigger elements for the term
+
+This section allows to manage element trigger.
+
+   
+   
+.. rubric:: Trigger element management
+
+* Click on |Add| to add an element trigger. 
+* Click on |Delete| to delete an element trigger.
+
+
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Linked element type
+     - Type of element to be selected (Activity, Meeting, Milestone, Project, Test session).
+   * - Linked element
+     - Item to be selected.
+
+
+.. _bill:
+
+.. _client-bill:
+
+Client invoices
+---------------
+   
+A bill is a request for payment for delivered work.
+
+Billing will depend on billing type defined for the project through project type.
+
+.. figure:: /images/GUI/INCOMES_SCR_InvoicesClient.png
+   :alt: Clients Bills
+   :align: center
+   
+   Clients Bills
+   
+
+.. _Billing_types:
+
+Invoice Type
+============
+
+.. figure:: /images/GUI/INCOMES_CAPT_SchemaBill.png
+   :align: center
+      
+   Schema bill
+
+* Each bill is linked to project, a project has a project type, and a project type is linked to a billing type.
+    
+* So the billing type is automatically defined for the selected project. 
+
+* Billing type will influence bill line format.
+
+
+
+      .. compound:: **At terms**
+
+         * A :ref:`term <term>` must be defined to generate the bill, generally following a billing calendar.
+         * Used for instance for: **Fixed price projects**.
+
+      .. compound:: **On produced work**
+
+         * No term is needed.
+         * The billing will be calculated based on produced work by resources 
+           on selected :ref:`activities <activity-price>` and on a selected period.
+         * Used for instance for **Time & Materials projects**.
+
+      .. compound:: **On capped produced work**
+
+         * No term is needed.
+         * The billing will be calculated based on produced work by resources  
+           on selected :ref:`activities <activity-price>` and on a selected period. 
+         * Taking into account that total billing cannot be more than project validated work.
+    
+         * Used for instance for **Capped Time & Materials projects**.
+
+      .. compound:: **Manual**
+ 
+         * Billing is defined manually, with no link to the project activity.
+         * Used, for instance for **Any kind of project where no link to activity is needed**.
+
+      .. compound:: **Not billed**
+
+         * No billing is possible for these kinds of projects.
+         * Used, for instance for **Internal projects & Administrative projects**.
+
+.. warning:: **Billing report**
+
+   Only bill with at least status "done" will be available for reporting.
+   
+   Before this status, they are considered as a draft.
+
+.. rubric:: Description section
+
+   
+.. sidebar:: Other sections
+
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`   
+  
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the bill.
+   * - |RequiredField| Name
+     - Short description of the bill.
+   * - |RequiredField| Bill type
+     - Type of bill.
+   * - |RequiredField| Project
+     - The project concerned by the bill.
+   * - Date
+     - Date of the bill.
+   * - Payment deadline
+     - Payment deadline.
+   * - Payment due date
+     - Due date for payment (read only).
+       The value is calculated with date of bill + payment deadline
+   * - Customer
+     - Customer who will pay for the bill.
+   * - Bill contact
+     - Contact who will receive the bill.
+     
+       Automatically updated from project fields
+   * - Recipient
+     - Recipient who will receive the payment for the bill.
+   * - :term:`Origin`
+     - Element which is the origin of the bill.
+   * - Billing type
+     - Project billing type.
+
+.. rubric:: Treatment Zone   
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table::  required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the bill.
+   * - :term:`Responsible`
+     - Resource who is responsible for the bill.
+   * - Sent date
+     - Date when bill is sent to customer contact.
+   * - Send mode
+     - Delivery mode.  
+   * - :term:`Done`
+     - Flag to indicate that the bill has been treated.
+   * - :term:`Closed`
+     - Flag to indicate that the bill is archived.
+   * - Cancelled
+     - Flag to indicate that the bill is cancelled.
+   * - Amount
+     - Total amount of the bill.
+   * - % of order
+     - Percentage of the bill balance over order amount. 
+   * - Payment
+     - Payment of bill.
+   * - :term:`Comments<Description>`
+     - Comments for the bill.
+
+.. topic:: Fields Amount
+
+   * **Ex VAT:** Amount without taxes.
+     
+     * The value is automatically updated with the sum of bill line amounts. 
+
+   * **Tax:** Applicable tax. 
+
+     * Automatically updated from customer field.  
+
+   * **Full:** Amount with taxes.
+
+.. topic:: Fields Payment
+
+   * **Date**: Date of payment.
+   * **Amount**: Payment amount.   
+   * **Complete**: Flag to indicate that complete payment. 
+
+
+Invoice lines
+=============
+
+.. figure:: /images/GUI/INCOMES_ZONE_InvoiceLines.png
+   :alt: Treatment
+   :align: center
+   
+   bill lines treatment
+   
+Input for each bill line depends on billing type.
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the bill line.
+   * - N°
+     - Number of the line for the bill.
+   * - Description
+     - Description of the line.
+   * - Detail
+     - Detail of the line.
+   * - Unit price
+     - Unitary price of billed element.
+   * - Quantity
+     - Quantity of billed element.
+   * - Sum
+     - Total price for the line (Price x Quantity).
+ 
+.. rubric:: Bill lines management
+
+* Click on |Add| to add a bill line. A different “Bill line” dialog box will be displayed depends on billing type.
+* Click on |Bill|  to add a formated line depending on billing mode
+* Click on |Edit| to modify an existing bill line.
+* Click on |Delete| to delete the bill line.
+
+.. rubric:: Bill line "At terms"
+
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - N°
+     - Number of the line for the bill.
+   * - |RequiredField| Term
+     - Project terms to be selected.
+   * - Description
+     - Description of line.
+   * - Detail
+     - Detail of the line Can be set on update.
+   * - Price
+     - Real amount of term.
+
+.. topic:: Field Description
+ 
+   * Automatically set with the term name.
+   * Can be modified on update.
+
+.. rubric:: Bill line On produced work & On capped produced work
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - N°
+     - Number of the line for the bill.
+   * - |RequiredField| Resource
+     - Project resources to be selected.
+   * - |RequiredField| Activity price
+     - Project activities price to be selected.
+   * - |RequiredField| Start date
+     - Start date of the period to take into account.
+   * - |RequiredField| End date
+     - End date of the period  to take into account.
+   * - Description
+     - Description of line.
+   * - Detail
+     - Detail of the line Can be set on update.
+   * - Price
+     - Price of the activity.
+   * - Quantity
+     - Quantity of element.
+   * - Amount
+     - Amount for the line (Price x Quantity).
+ 
+.. topic:: Field "Description"
+ 
+   * Automatically set with selected resource, activity price name and dates.
+   * Can be modified on update.
+
+
+.. _manual-billing:
+
+.. rubric:: **Bill line "Manual billing"**
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - N°
+     - Number of the line.
+   * - Amendment
+     - Flag to indicate this is an amendment line.
+   * - Description
+     - Description of the line.
+   * - Detail
+     - Detail of the line.
+   * - Price
+     - Unitary price of element / measure unit.
+   * - Quantity
+     - Quantity of element.
+   * - Amount
+     - Amount for the line (Price x Quantity).
+
+.. topic:: Field "Amendment" 
+     
+   * This field is used for amendment values in order detail.
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Bill (Payment)
+.. index:: Payment
+
+.. _client-payment:
+
+Client Payments
+---------------
+
+Allow to define payment of bills. 
+
+The bill keeps track of payment.
+
+.. figure:: /images/GUI/INCOMES_SCR_PaymentClient.png
+   :align: center
+
+.. rubric:: Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the payment.
+   * - |RequiredField| Name
+     - Short description of the payment.
+   * - |RequiredField| Payment type
+     - Type of payment.
+   * - Description
+     - Description of the payment.
+
+.. rubric:: Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Payment mode
+     - The mode of payment.
+   * - |RequiredField| Payment date**
+     - Date of payment.
+   * - |RequiredField| Payment amount**
+     - Amount of the payment.
+   * - Payment fee
+     - Payment of the fee.  
+   * - Payment credit
+     - Balance of payment amount less payment fee.
+   * - Bill
+     - Bill concerned with the payment.
+   * - Bill reference
+     - Reference of bill.
+   * - Customer
+     - Customer of bill.
+   * - Recipient
+     - Recipient of bill. 
+   * - Bill amount 
+     - Amount of bill.
+   * - :term:`Closed`
+     - Flag to indicate that payment is archived.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Bill (Activity Price)
+
+.. _activity-price:
+
+Activities prices
+-----------------
+
+Activity price defines daily price for activities of a given **activity type** and a given **project**.
+
+This is used to calculate a billing amount for billing type **On produced work** and **On capped produced work**.
+
+.. rubric:: Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::  required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the activity price.
+   * - Name
+     - Short description of the activity price.
+   * - |RequiredField| Project
+     - The project concerned with the activity price.
+   * - |RequiredField| Activity type
+     - Type of activities concerned with the activity price.
+   * - Price of the activity
+     - Daily price of the activities of the given activity type and the given project.
+   * - Sort order
+     - Number to define order of display in lists.
+   * - :term:`Closed`
+     - Flag to indicate that activity price is archived.
+
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Financial Galery
+
+.. _financial-gallery:
+
+Financial Gallery
+-----------------
+
+the financial gallery allows you to display in list form and by elements, 
+the different client quotation, invoices and orders recorded in ProjeQtOr, 
+per date, client or per type, partial, final and complete bill.
+
+Attachments are displayed grouped by element.
+
+Click on |View| to display attachment list.
+
+.. figure:: /images/GUI/INCOMES_ZONE_FinancialGallery.png
+   :alt: financial gallery
+   
+   Financial gallery
+
+
+
+.. rubric:: Filters
+
+Filters can be applied to the list.
+
+
+ .. compound:: **Element**
+
+   * Displays attachments for this element.
+
+ .. compound:: **Start and end date**
+
+   * Displays attachments for this period.
+   * Attachments will be displayed according a date defined in the element.
+
+     .. compound:: **Quotation**
+
+        * Done date
+
+     .. compound:: **Order**
+
+        * Validated start date
+
+     .. compound:: **Bill**
+
+        * Bill date
+
+
+ .. compound:: **Customer**
+
+   * Displays attachments for this customer name.
+
+ .. compound:: **Type**
+
+   * Displays attachments for this element type.
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Bill (Catalog)
+.. index:: Catalog
+
+.. _catalog:
+
+Financial catalog
+-----------------
+
+Catalog defines items (products or services) that can be obects of a quotation, an order or a bill.
+
+This is used on the quotation lines, order lines and invoice lines. 
+
+See: :ref:`Invoice lines<manual-billing>`.
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: required field |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the payment.
+   * - |RequiredField| Name
+     - Name of the catalog.
+   * - |RequiredField| Catalog type
+     - Type of catalog.
+   * - |RequiredField| Description
+     - Description of the catalog.
+   * - Detail
+     - Detail of the catalog.
+   * - Nomenclature
+     - Nomenclature of the catalog.
+   * - Specification
+     - Specification of the catalog.
+
+.. rubric:: Treatment
+
+.. list-table::
+   :header-rows: 1            
+     
+   * - Field
+     - Treatment
+   * - Unit price
+     - Type of unit.
+   * - Quantity
+     - Quantity of catalog.
+   * - Product
+     - Type of product.
+   * - Product version
+     - Version of the product.
+     
+
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Revenue managment
+
+.. _revenue-managment:
+
+Revenue Managment
+-----------------
+     
+You can manage the turnover of the project at completion, and its consistency with the orders and invoices on the project.
+
+
+A "Revenue management" section is visible on the projects screen in the Progress section after activation of the "Revenue management" module under the financial section.
+
+   
+**The following information is then accessible:**
+
+* The turnover at completion corresponds to the total amount that will be invoiced for this project.
+
+* Display of the sum of the project's customer orders
+
+* Display of the sum of customer invoices for the project
+
+* Method of valuation of turnover
+
+
+ .. compound:: Method of valuation of turnover fixed
+    
+   The turnover is fixed and is entered manually
+   
+
+
+ .. compound:: Method of valuation of turnover variable
+ 
+   Variable over time depending on the activities 
+
+   The turnover will then be calculated from the turnover of all the activities (not canceled) of the project and possibly of the sub-projects. In this case the activities will also have a turnover field to feed.
+
+   Projects with sub-projects will systematically have a “Variable” valuation mode, this mode will automatically consolidate the turnover of the sub-projects on the parent project.
+        
+
+.. rubric:: Consistency with project orders and invoices
+
+For projects with sub-projects, the sum of orders and invoices will consolidate the data of the sub-projects, that is to say, it will integrate the orders and invoices of the sub-projects in addition to the orders and invoices possibly on the project itself.
+
+The sum of the orders is in red if it is lower than the turnover.
+The sum of the invoices is in red if it is greater than the turnover.
+
+
+.. rubric:: Raise alerts
+
+You can create definable alerts for projects in the "unit indicators" section:
+
+   * Revenue upper than command's sums
+   * Revenue less than invoices sums
+
+In order to integrate this evolution into the community version, without disturbing the users who do not need this functionality, we will condition the behavior:
+   
+In order to transcribe the current use of the validated cost, a :ref:`global parameter<gp-revenue-work-unit>` will determine whether the turnover is automatically reported as validated cost on activities and projects.
+
+
+
+.. note:: 
+
+   This functionality is only visible if the Revenue Management module is activated via the access rights menu in :ref:`Modules management<module-management>`.
+   
+   The Revenue Managment is a sub-module of the financial module. 
+   
+   This new module will activate / desactivate the management of OUs and everything related to the management of OUs (see below). 
+   
+   This module will be disabled by default.
+    
+    
+    
+.. index:: Work unit catalog
+
+.. _work-unit-catalog:
+
+Work units catalog
+==================
+
+The objective is to define catalogs of work units, made up of work units, themselves broken down into several complexities. 
+
+This functionality will only be accessible if the :ref:`Revenue management<module-management>` module is activated.
+
+.. figure:: /images/GUI/INCOMES_ZONE_WorkUnitCatalog.png
+   :alt: Work units Catalog screen
+   
+   Work units Catalog screen
+   
+The catalog has no inheritance. It is only linked to one and the same project.
+
+If your catalog is attached to a parent project, the sub-projects of the latter will not have access to this catalog and vice versa.
+
+You can select an OU on an activity, if the project has a “Variable” turnover valuation mode.
+
+.. figure:: /images/GUI/INCOMES_ZONE_RevenueSectionActivity.png
+   :alt: Revenue section
+   
+   Revenue section on the activity screen
+   
+   
+      
+
+.. rubric:: Section Description
+
+.. list-table::
+   :header-rows: 1            
+     
+   * - Field
+     - Treatment
+   * - Name
+     - Name of the catalog.
+   * - Nomenclature
+     - Code usually a reference shared with the customer.
+   * - Project
+     - Unique - only one catalog per project.
+   * - Number of complexities 
+     - Maximum number of complexities, within the limit of the global parameter.
+   * - Complexities
+     - Text fields to fill in the complexities of the catalog   
+     
+     
+.. warning:: 
+
+   If the number of complexity isn't filled then the default number set in the :ref:`global parameters<gp-revenue-work-unit>` is applied.
+   
+   
+Then fill in the fields with the name of the complexities managed by this catalog.
+
+Click on |Add| to open the pop-up windows and complete the complexity details.
+
+You can fill in the following fields for each OU:
+
+   * Reference
+   * Description
+   * Incomes
+   * Deliverable 
+   * validity date 
+
+The description, incoming and deliverable fields are text editors in inline mode. Edit buttons appear when the cursor is in the field.
+
+.. figure:: /images/GUI/INCOMES_BOX_Detailscompexity.png
+   :alt: details complexities
+   
+   Pop-up of the complexities details
+   
+   
+For each complexity of the OU, we can define:
+
+* Validated load of complexity - 0 is allowed
+* Price (CA) of complexity
+* Duration in working days - optional
+
+
+It is not mandatory to fill in all the complexities for an OU. 
+
+The description, incoming and deliverable fields are text editors in "inline" mode. The edit buttons appear when the cursor is in the field.
+
+
+   
+.. rubric:: Use of a catalog of work units
+
+You can select an OU on an activity, only if the project has a Variable CA valuation mode.
+
+We will inform the OU, its complexity and the number of units:
+
+   * Entering the OU in the list of OUs in the catalog linked to the project. This will dynamically populate the list of OU complexities by displaying only those that have a charge and a price that is not zero but may be equal to zero.
+   * Entering complexity
+   * Entering the quantity number of work units
+   
+An activity will only be associated with a single OU / Complexity pair.
+
+If OU is selected, complexity and quantity are mandatory, otherwise they are prohibited, i.e. not enterable.
+
+The UO / Complexity / Quantity data will make it possible to value:
+   * The validated load = load of the OU / Complexity x Quantity
+   * The turnover of the activity = price of the OU / Complexity x Quantity
+   * The validated duration = duration of the OU / Complexity x Quantity
+
+Entering the validated duration will automatically calculate the validated end date if the validated start date is entered.
+
+.. note::
+   
+   This will only determine the planned duration of the activity if it is in "fixed duration" planning mode. Otherwise, the schedule will determine the planned duration from the assigned load and the availability of assigned resources.
+
+These 3 data (validated load, validated duration, CA) will then go into read-only since they are calculated.
+
+If the OU's expiry date has passed, an alert will be displayed on the activity, without this blocking the recording of the activity.
+
+If the global parameter "Report of turnover on the validated cost of activities" is activated, the turnover entered or entered through the OU is recopied in the validated cost of the activity.   
+
+
+
+.. rubric:: modification of data
+
+You can modify the catalog on the data of an OU, a Complexity or a Quantity however it is not possible to modify a unit of work from the catalog, if it is already used on an activity. 
+
+
+* Re-calculation of validated data: validated load, validated duration and turnover
+* If resources are assigned, application of the variation in the assigned load, in proportion to the load assigned to each resource and updating of the “still to do” accordingly (without ever being able to become negative).
+
+.. tip:: 
+
+   **For example:**
+   
+   In the case of an OU whose complexity generates 5 days of load with a quantity of 1, if A is assigned for 2 days and B assigned for 3 days, if we double the quantity (and therefore the validated load) A is then assigned 4 days and B is assigned 6 days.
+
+
+.. rubric:: Deletion of data
+
+You can delete the catalog on the data of an OU, a Complexity or a Quantity however it is not possible to delete a unit of work from the catalog, if it is already used on an activity. 
+
+* The validated load data, validated duration and CA become manually modifiable again
+* The calculated data is kept
+
+The project turnover will be updated from the sum of the turnover of the project activities, whether this data is entered from an OU or entered manually.
+
+The turnover of the activities and the UO, Complexity and Quantity data will only be accessible for "basic" activities (which do not have sub-activities). For "parent" activities, the turnover will be consolidated from the turnover of the sub-activities.
+
+
+
+

@@ -1,0 +1,1268 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Global Parameters &#8212; ProjeQtOr User guide 8.6.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Administration Console" href="Administration.html" />
+    <link rel="prev" title="User parameters" href="UserParameter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Administration.html" title="Administration Console"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="UserParameter.html" title="User parameters"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="global-parameters">
+<span id="index-0"></span><span id="id1"></span><h1>Global Parameters<a class="headerlink" href="#global-parameters" title="Permalink to this headline">¶</a></h1>
+<p>Global parameters screen allows configuration of application settings.</p>
+<p>depending on the modules installed, some tabs may not appear.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p><strong>Good to know</strong></p>
+<img alt="display infos" src="_images/GLOBALPARAM_ZONE_Tooltip.png" />
+<p class="last">Moving the mouse over the caption of a parameter will display a tooltip with more description about the parameter.</p>
+</div>
+<div class="section" id="tab-work-time">
+<span id="work"></span><h2>Tab Work time<a class="headerlink" href="#tab-work-time" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Work time sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#daily-work-hours-section"><span class="std std-ref">Daily work hours</span></a></li>
+<li><a class="reference internal" href="#open-day-section"><span class="std std-ref">Open day</span></a></li>
+<li><a class="reference internal" href="#unitforwork-section"><span class="std std-ref">Unit for work</span></a></li>
+<li><a class="reference internal" href="#realworkallocation-section"><span class="std std-ref">Timesheet</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="daily-work-hours-section">Daily work hours</p>
+<p>Definition of the hours of work applied in your company.</p>
+<p>Used to calculate delays based on “open hours”.</p>
+<p class="rubric" id="open-day-section">Open days</p>
+<p>Possibility to define the working days in the company.</p>
+<p>For each day of the week, you can choose between open days or off days.</p>
+<p>See: <a class="reference internal" href="Resource.html#calendars"><span class="std std-ref">Resource</span></a> section Calendars</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This parameter are taken into account in : <strong>working days on calendars</strong>,
+the working days on the calculation and the display, the working days on the display of real work allocation.</p>
+</div>
+<span class="target" id="index-1"></span><p class="rubric" id="unitforwork-section"><span id="index-2"></span>Units for work</p>
+<p>Parameters to determine the units used to calculate the actual work</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Unit for Timesheet (real work) &amp; Unit for Workload</p>
+<p class="compound-middle">Parameters to real work allocation and workload.</p>
+<p class="compound-last">The fields Unit for real work allocation and for all work data can be in days or hours.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Number of hours per day</p>
+<p class="compound-last">Allows to set number of hours per day.</p>
+</div>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li>If both values are different, rounding errors may occur.</li>
+<li>Remember that data is always stored in days.</li>
+<li>Duration will always be displayed in days, whatever the workload unit.</li>
+</ul>
+</div>
+<p class="rubric" id="realworkallocation-section"><span id="index-3"></span>Timesheet</p>
+<p>Defines behavior of tasks in the real work allocation screen.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Display only started tasks</p>
+<p class="compound-last">Display only tasks with the <a class="reference internal" href="CommonSections.html#treatment-section"><span class="std std-ref">Macro status</span></a> activated.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Set to first ‘in progress’ status</p>
+<p class="compound-last">Change the status of the task to the first “in progress” status when actual work is entered.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Set to first ‘done’ status</p>
+<p class="compound-last">Change status of the task to the first “done” status when no left work remains.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Show only notes on Activity Stream</p>
+<p class="compound-last">if so, you will not see the status change and item update.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Max days to book work (warning) :</p>
+<p class="compound-middle">Number of days that user can enter real work in the future before getting a warning.</p>
+<p class="compound-middle">Leave blank if you do not want warning.</p>
+<p class="compound-last">This parameter does not apply to administrative projects</p>
+</div>
+<div class="compound">
+<p class="compound-first">Max days to book work (blocking)</p>
+<p class="compound-middle">Number of days that user can enter real work in the future. This limit is blocking.</p>
+<p class="compound-middle">Leave blank if you do not want blocking.</p>
+<p class="compound-last">This parameter does not apply to administrative projects.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Alert resource on input done by someone else</p>
+<p class="compound-middle">Alert the resource when some real work is entered by someone else.</p>
+<p class="compound-last">Select your type of alert : Internal, Email, both or none.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Alert when timesheet canceled by other</p>
+<p class="compound-middle">Send an alert or mail when timesheet is cancelled by another resource.</p>
+<p class="compound-last">Select your type of alert : Internal, Email, both or none</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display pools on timesheet</p>
+<p class="compound-middle">Possibly to display the pool whose the resource belongs to.</p>
+<p class="compound-middle">You can manage different trigger settings per recipient</p>
+<div class="compound-last admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Resources that do not have access to the imputations screen do not receive these alerts</p>
+</div>
+</div>
+<div class="compound">
+<p class="compound-first">After submit, alert to project leader</p>
+<p class="compound-last">After submission what type of alert would you want to send to the project leader</p>
+</div>
+<div class="compound">
+<p class="compound-first">After submit, alert to team manager</p>
+<p class="compound-last">After submission what type of alert would you want to send to the team manager</p>
+</div>
+<div class="compound">
+<p class="compound-first">After submit, alert to organism manager</p>
+<p class="compound-last">After submission what type of alert would you want to send to the organism manager</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-activity">
+<span id="gp-tabactivity"></span><h2>Tab Activity<a class="headerlink" href="#tab-activity" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Activity tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#gp-planning-section"><span class="std std-ref">Planning</span></a></li>
+<li><a class="reference internal" href="#globalparam-tickets"><span class="std std-ref">Tickets</span></a></li>
+<li><a class="reference internal" href="#gp-organization-section"><span class="std std-ref">Organization</span></a></li>
+<li><a class="reference internal" href="#gp-pool-section"><span class="std std-ref">Pools of resources</span></a></li>
+<li><a class="reference internal" href="#globalparam-automation"><span class="std std-ref">Automation</span></a></li>
+<li><a class="reference internal" href="#gp-milestones-section"><span class="std std-ref">Milestones</span></a></li>
+<li><a class="reference internal" href="#gp-control-restict-section"><span class="std std-ref">Control and restriction</span></a></li>
+<li><a class="reference internal" href="#leaves-system"><span class="std std-ref">Leaves system</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="gp-planning-section">Planning</p>
+<p>Specific parameters about Gantt planning presentation.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Show resource in Gantt</p>
+<p class="compound-last">Select if the resource can be displayed in a Gantt chart, and format for display (name or initials or none).</p>
+</div>
+<div class="compound">
+<p class="compound-first">Max projects to display</p>
+<p class="compound-middle">Defines maximum number of projects to display.</p>
+<p class="compound-last">To avoid performance issues.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Apply strict mode for dependencies</p>
+<p class="compound-middle">Defines if a task can begin the same day as the preceding one.</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li>If yes, the successor should begin the next day</li>
+<li>If no, the successor can start the same day.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="compound">
+<p class="compound-first">Manual progress of fixed-duration activities</p>
+<p class="compound-last">Choose whether the progress should be calculated or entered manually.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Progress in unity of work.</p>
+<p class="compound-middle">Displays a technical progress in unit of work independent of the planning progress by the load.</p>
+<p class="compound-last">See: <a class="reference internal" href="CommonSections.html#technical-progress"><span class="std std-ref">Technical progress</span></a></p>
+</div>
+</div></blockquote>
+<blockquote id="gp-manualplan-workas">
+<div><div class="compound">
+<p class="compound-first">Manual planned interventions enter work as</p>
+<p class="compound-middle">Choose whether the work entered in the manual planning should be saved as real work or planned work.</p>
+<p class="compound-middle">See: <a class="reference internal" href="Gantt.html#mode-manualplanning"><span class="std std-ref">Manual planning mode</span></a></p>
+<p class="compound-last">See: <a class="reference internal" href="Gantt.html#planned-interventions"><span class="std std-ref">Planned Interventions</span></a></p>
+</div>
+</div></blockquote>
+<blockquote id="gp-effectcapacity">
+<div><div class="compound">
+<p class="compound-first">Effect of capacity on planned interventions</p>
+<ul class="compound-middle simple">
+<li><strong>Limit duration</strong></li>
+</ul>
+<p class="compound-middle">Limit duration a resource with capacity 0.8 can be planned only one half-day of 0.5d</p>
+<ul class="compound-middle simple">
+<li><strong>Determine Duration</strong></li>
+</ul>
+<p class="compound-middle">Determine duration a resource with capacity 0.8 can be planned on 2 half-days of 0.4d each</p>
+<ul class="compound-middle simple">
+<li><strong>none</strong></li>
+</ul>
+<p class="compound-last">A resource with capacité 0.8 can be planned on 2 half-days of 0.5d each</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="globalparam-tickets">Tickets</p>
+<p>Specific behavior for ticket management</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Only responsible works on ticket</p>
+<p class="compound-last">Only responsible can enter some real work on the ticket.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Ticket responsible from product Responsible</p>
+<p class="compound-last">Select if the product Responsible is displayed ( always, if empty, never) as Ticket Responsible on that screen</p>
+</div>
+<div class="compound">
+<p class="compound-first">Limit planning activity to those whit flag</p>
+<p class="compound-last">Display planning activity selected for the ticket</p>
+</div>
+<div class="compound">
+<p class="compound-first">Enable to filter ticket reports by priority</p>
+<p class="compound-last">Can display tickets on Report screen by level of priority</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display ticket at customer level</p>
+<p class="compound-last">Display of tickets on the Customer screen and on the Contacts screen</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display ticket at version level</p>
+<p class="compound-last">Display of tickets on the version screen</p>
+</div>
+<div class="compound">
+<p class="compound-first">Manage accontable on ticket</p>
+<p class="compound-last">Display the coordinator as Accountable, so the Responsible is the current actor</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-organization-section">Organization</p>
+<p>Specific parameter for Organization management</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Use budget feature for organizations</p>
+<p class="compound-last">If yes, can display and work on budget for an organization.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-pool-section">Pool of resource</p>
+<p>Specific parameter for Pool of resource</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Automatic allocation of pool resources</p>
+<p class="compound-middle">Automatic allocation of resources of the pool when allocating a pool to a project.</p>
+<p class="compound-middle">The explicit allocation will generate visible allocations that won’t be changed afterwards (if allocation of pool changes).</p>
+<p class="compound-last">The implicit allocation will generate invisible allocations that will follow changes of the pool (allocation of the pool to the project or of resources to the pool).</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="globalparam-automation">Automation</p>
+<p>Parameters to manage automations</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Consolidate validated work &amp; cost</p>
+<p class="compound-middle">Select if validated work &amp; cost are consolidated on top activities and therefore for projects :</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li><strong>Never</strong>: Not consolidated</li>
+<li><strong>Always</strong>: Values are replaced on activities and project.(erase parents)</li>
+<li><strong>Only is set</strong>: Replaces values ( excepted if set by null or stay not indicated,do not erase parents)</li>
+</ul>
+</div></blockquote>
+</div>
+</div></blockquote>
+<blockquote id="auto-responsible">
+<div><div class="compound">
+<p class="compound-first">Auto set Responsible if single resource:</p>
+<p class="compound-middle">Behavior about management of responsible, including automatic initialization of responsible.</p>
+<p class="compound-last">Automatically set Responsible if not set and by the only one resource allocated to the project</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto allocated the Manager to the project:</p>
+<p class="compound-last">Automatically create an allocation for the project Manager to the project. He should be a resource.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto set a Responsible if needed:</p>
+<p class="compound-last">Automatically set Responsible to current resource (as using the element) if not set and if a Responsible is required (respecting access rights)</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto assign Responsible to activity:</p>
+<p class="compound-last">Assign automatically the Responsible to activities</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto set parent activity status:</p>
+<p class="compound-last">Auto set status of parent activity from the status of children activity.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-milestones-section">Milestones</p>
+<p>Specific parameters for Milstones management</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Manage target milestone</p>
+<p class="compound-last">It updates the target (planned) date of the element (on Requirements, Tickets, Product Versions, Incomings, Deliverables and Deliveries) from the planned date of the milestone.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto link the milestone</p>
+<p class="compound-last">It optionally allows you to display the element linked to the milestone (The option above should be on “yes” to have access to the selection of milestone targetted)</p>
+</div>
+<div class="compound">
+<p class="compound-first">Set milestone from product version</p>
+<p class="compound-last">It optionally allows you to automatically retrieve the milestone from the milestone of the Project Version.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Update milestone from deliverable (Have to link elements)</p>
+<p class="compound-last">Update milestone Responsible automatically when the Responsible of deliverable has changed.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Update milestone from incoming (Have to link elements)</p>
+<p class="compound-last">Update milestone Responsible automatically when the Responsible of deliverable has changed.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Update deliverable from milestone (have to link elements)</p>
+<p class="compound-last">Update deliverable Responsible automatically when the Responsible of mielstone has changed.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Update incoming from milestone (have to link elements)</p>
+<p class="compound-last">Update incoming Responsible automatically when the Responsible of milestone has changed.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-control-restict-section">Controls and restrictions</p>
+<p>Specific parameters for the control and management of restrictions</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Allow the type restriction on project</p>
+<p class="compound-middle">Allow to define additional restriction’s type on each project additionally to restrictions defined at project type level.</p>
+<p class="compound-middle">If so, a Restrict Types button appears in the detail area and allows you to define the type restriction .</p>
+<img alt="_images/GLOBALPARAM_ZONE_RestrictType.png" class="compound-last" src="_images/GLOBALPARAM_ZONE_RestrictType.png" />
+</div>
+<div class="compound">
+<p class="compound-first">Restriction on types by profil hides items</p>
+<p class="compound-middle">If set to yes, users with profiles won’t see items of unselected types</p>
+<p class="compound-middle">If set to no, users will just not have possibility to create new items with such types</p>
+<div class="compound-last figure align-center" id="id2">
+<img alt="Restrict type box" src="_images/GLOBALPARAM_BOX_RestrictType.png" />
+<p class="caption"><span class="caption-text">Restrict type box</span></p>
+</div>
+</div>
+<div class="compound">
+<p class="compound-first">Limit the functions to those of the resource</p>
+<p class="compound-last">On assignments limit functions to those of the resource. Ones with cost and defaut one.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="leaves-system">Leaves system</p>
+<p>Allows you to determine who will be the administrator of regulated absences.</p>
+<p>The administrator of regulated absences can define the parameters and authorizations of the screens in this module.</p>
+</div>
+<div class="section" id="tab-display">
+<span id="display"></span><h2>Tab Display<a class="headerlink" href="#tab-display" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Display tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#global-display-section"><span class="std std-ref">Display</span></a></li>
+<li><a class="reference internal" href="#gp-localization-section"><span class="std std-ref">Localization</span></a></li>
+<li><a class="reference internal" href="#gp-default-values-section"><span class="std std-ref">Default values</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="global-display-section">Display</p>
+<p>Graphic interface behavior and generic display parameters.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Name of the instance</p>
+<p class="compound-last">Change the window’s name. The name appears at the top center of the window.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display in fading mode</p>
+<p class="compound-last">Transition between screen changes in flash or fade mode.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Max number of projects on today</p>
+<p class="compound-last">Limit the display of the “today list”. items are generally ordered by issue date increasing.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Quick filtering by status</p>
+<p class="compound-last">Display one button. Allow to filter on lists the element by status checking boxes. Refresh to make appear on boxe a new state just created on list .</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-localization-section">Localization</p>
+<p>Choose how the monetary units behave in your area</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Currency</p>
+<p class="compound-last">Choose your symbol displayed on each monetary box</p>
+</div>
+<div class="compound">
+<p class="compound-first">Currency position for cost display</p>
+<p class="compound-last">Symbol sets  before or after each monetary box</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-default-values-section">Default values for user parameters</p>
+<p>Default values for user</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">New interface</p>
+<p class="compound-last">Choose between interface v8.6 or the new interface v9.0</p>
+</div>
+<div class="compound">
+<p class="compound-first">Theme colors</p>
+<p class="compound-middle">The v9.0 interface is composed of two main colors which are declined throughout the application in different hues and saturation to keep the same charter spirit.</p>
+<blockquote class="compound-last">
+<div><div class="compound">
+<p class="compound-first">Interface main color</p>
+<p class="compound-last">Choose the main color that will be applied to the main architectural elements</p>
+</div>
+<div class="compound">
+<p class="compound-first">Interface secondary color</p>
+<p class="compound-last">Choose the secondary color that will be applied on the navigation and highlighting elements</p>
+</div>
+<div class="compound">
+<p class="compound-first">Color discs</p>
+<p class="compound-middle">You have pre-recorded color discs available. One offers the colors of classic ProjeQtOr. Two others are proposals. The fourth will take the colors that you have saved in the global settings for your instances.</p>
+<p class="compound-last">They are accelerators to apply your themes.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="compound">
+<p class="compound-first">Default language</p>
+<p class="compound-last">Choose among 19 languages / easy come back with translation in target language.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Default theme</p>
+<p class="compound-last">More than 30 themes choices. Available only with version v8.6.</p>
+</div>
+<div class="compound">
+<p class="compound-first">First page</p>
+<p class="compound-last">Choice of the first visible screen after the connection.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Icone size in menu</p>
+<p class="compound-last">Icon size are default : user can overwrite these values.  Available only with version v8.6.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display of the upper menu</p>
+<p class="compound-last">The top menu is invisible or not at each connection. Available only with version v8.6.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display of the left menu</p>
+<p class="compound-last">The top menu is invisible or not at each connection.  Available only with version v8.6.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Menu v9.0</p>
+<p class="last">To show or hide the icons of the new menu, right click on the menu.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display history</p>
+<blockquote class="compound-middle">
+<div><ul class="simple">
+<li>No</li>
+<li>Yes, yes with work indicated on the bottom of the page</li>
+<li>On request with a specific button</li>
+</ul>
+</div></blockquote>
+<p class="compound-middle">To show or hide the icons of the new menu, right click on the menu.</p>
+<p class="compound-last">The button <a class="reference internal" href="_images/iconHistory.png"><img alt="Show history" src="_images/iconHistory.png" style="width: 19.2px; height: 19.2px;" /></a> will then be displayed in the menu of the details area of each element.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Editor for rich text</p>
+<p class="compound-last">Choose your favorite text editor.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Activate the spell checker in CK editor</p>
+<p class="compound-middle">No will no longer allow highlighting of misspelled words.</p>
+<div class="compound-last admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">your browser also has an autocorrect option which may continue to highlight misspelled words</p>
+</div>
+</div>
+<div class="compound">
+<p class="compound-first">Not applicable value</p>
+<p class="compound-middle">Choice of the symbol defining the non-applicable values.</p>
+<p class="compound-last">On the global view the value of the field that has no applicable value for the given column will display this symbol</p>
+</div>
+<div class="compound">
+<p class="compound-first">Restric project list</p>
+<p class="compound-last">When creating an element, name of the project stays like than the one selected at the selector or on contrary offers choice on global list of projects</p>
+</div>
+<div class="compound">
+<p class="compound-first">Export in XLS or ODS</p>
+<p class="compound-last">Choose the format in which you want to export either in native excel format or with the ODS format of OpenDocument.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Displaying notes in discussion mode</p>
+<p class="compound-last">Display of notes in discussion mode with indentation for answers</p>
+</div>
+<div class="compound">
+<p class="compound-first">Not receive his own emails</p>
+<p class="compound-last">You don’t receive the emails you create.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Order notes ascending in mail model</p>
+<p class="compound-last">Choice of display of notes in the mail template.</p>
+</div>
+<div class="compound">
+<p class="compound-first">List quotations, commands and bills on client form</p>
+<p class="compound-middle">Display or not the list of financial elements related to the customer on the screen of the latter.</p>
+<p class="compound-last">Please note that the parameter also exists on the user side. If the latter is not activated also then the financial elements will not be visible.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-references">
+<span id="gp-reference"></span><h2>Tab References<a class="headerlink" href="#tab-references" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">References tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#format-reference-number"><span class="std std-ref">Format for reference numbering</span></a></li>
+<li><a class="reference internal" href="#format-reference-doc"><span class="std std-ref">Document reference format</span></a></li>
+<li><a class="reference internal" href="#format-reference-bill"><span class="std std-ref">Bill reference format</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="format-reference-number">Format for reference numbering</p>
+<p>Sections for format references</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Prefix format for reference</p>
+<p class="compound-middle">Allows to define reference formats for items of element, documents and bills.</p>
+<p class="compound-middle">Can contain prefix :</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li>{PROJ} for project code,</li>
+<li>{TYPE} for type code,</li>
+<li>{YEAR} for current year</li>
+<li>{MONTH} for current month.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="compound">
+<p class="compound-first">Number of digits for reference number</p>
+<p class="compound-last">Indicate the number of digits you want to appear in your reference.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Change reference on type or project change</p>
+<p class="compound-last">Change the reference on type change of element will generate missing numbers in reference.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="format-reference-doc">Document reference format</p>
+<p>Sections for document format references</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Document reference format</p>
+<p class="compound-middle">Format can contain :</p>
+<blockquote class="compound-middle">
+<div><ul class="simple">
+<li>{PROJ} for project code,</li>
+<li>{TYPE} for type code,</li>
+<li>{NUM} for number as computed for reference,</li>
+<li>{NAME} for document name.</li>
+</ul>
+</div></blockquote>
+<p class="compound-last">You can allow or forbid downloading locked files in this section.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Version reference suffix</p>
+<p class="compound-middle">Suffix can contain :</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li>{VERS} for version name.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="compound">
+<p class="compound-first">Separator for draft in version name</p>
+<p class="compound-last">Choose the sign for the separator of the draft.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Preserve uploaded file name</p>
+<p class="compound-middle">If yes, the file is downloaded with the name of original file.</p>
+<p class="compound-last">If no, the document take the reference formatted name.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Forbid download of locked document</p>
+<p class="compound-last">Forbid document download if yes is checked.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="format-reference-bill">Bill reference format</p>
+<p>Sections for bill format references</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Bill reference format</p>
+<p class="compound-last">Reference format : can contain {NUM} for version name.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Number of digit for bill number</p>
+<p class="compound-last">Choice of the number of digits to display in an invoice.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-configuration">
+<span id="configuration"></span><h2>Tab Configuration<a class="headerlink" href="#tab-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">References tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#gp-product-component-section"><span class="std std-ref">Product and component</span></a></li>
+<li><a class="reference internal" href="#gp-versions-section"><span class="std std-ref">Versions</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="gp-product-component-section">Product and Component</p>
+<p>This menu contains all the parameters for configuration management</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Display Business features</p>
+<p class="compound-last">Filter on date.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display language in Product/Component (Version)</p>
+<p class="compound-last">Enable language.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display contexts in Product/Component (Version)</p>
+<p class="compound-last">Enable contexts.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display Tenders on Products, Components, Versions</p>
+<p class="compound-last">Display a section to list linked Tenders on products, component, product version and component versions.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Include sub-products in structure</p>
+<p class="compound-last">Include sub-products in display of product structure (flat or not).</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-versions-section">Versions section</p>
+<p>This section allows you to manage more details in the behavior of the elements linked to the versions.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Display the start and delivery milestones</p>
+<p class="compound-last">Display start and delivery milestones for product/component version and delivery dates in flat structure.</p>
+</div>
+<div class="compound">
+<p class="compound-first">List of activity on component version</p>
+<p class="compound-last">Display the list of activity.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Direct access to product / component full list</p>
+<p class="compound-last">When selecting a component, we go directly to the full list (with filter capacity), without going through the pop-up window.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Automatic format of version name</p>
+<p class="compound-last">Ability to choose a preformatted format for version names.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Separator between name and number</p>
+<p class="compound-last">Choose the character of the separator for version names.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Auto subscription to versions</p>
+<p class="compound-last">Suscription automatic to versions or components when you suscribe to product or component.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Types of copy of Component Version</p>
+<p class="compound-middle">You can choose between :</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li>Free choice</li>
+<li>Copy structure from origin version</li>
+<li>Replace the origin version with new copied one</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="compound">
+<p class="compound-first">Enable Product Versions compatibility management</p>
+<p class="compound-last">Display compatibility section in product version details.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Display product version on delivery</p>
+<p class="compound-last">Allows to link a delivery to product version.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Sort versions combobox in descending order</p>
+<p class="compound-last">Change sort order for versions in combobox to have more recent first (descending on name).</p>
+</div>
+<div class="compound">
+<p class="compound-first">Sort version composition and structure on type</p>
+<p class="compound-last">Sort version composition and structure by type ascending and name descending.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Manage component on requirements</p>
+<p class="compound-last">Manage component and target component version on requirements.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Do not add closed and delivered versions to a project</p>
+<p class="compound-last">When adding a product to a project, do not add its closed and delivered versions.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Allow activities on delivered version</p>
+<p class="compound-last">Include delivered products versions in target product version list for activities.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Automatically set component version if unique</p>
+<p class="compound-last">Automatically set component version if there is only one component version of the selected component that is linked to the selected product version.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-financial">
+<span id="financial"></span><h2>Tab Financial<a class="headerlink" href="#tab-financial" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">References tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#gp-input-amount-expenses"><span class="std std-ref">Input of amounts for expenses</span></a></li>
+<li><a class="reference internal" href="#gp-input-amount-incomes"><span class="std std-ref">Input of amounts for incomes</span></a></li>
+<li><a class="reference internal" href="#deferral-expense"><span class="std std-ref">Automation of financial</span></a></li>
+<li><a class="reference internal" href="#gp-revenue-work-unit"><span class="std std-ref">Revenue &amp; work unit managment</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="gp-input-amount-expenses">Input of amounts for expenses</p>
+<p>Parameters for choosing the input method for expenditure amounts.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Input mode for amounts</p>
+<p class="compound-last">Defined for expenses items if the amounts must be entered without taxes and calculated in with taxes or vice versa.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Input mode for bill lines</p>
+<p class="compound-last">Defined for expenses items if the total bill lines feed the total with or without taxes. The parameter is priority if there a bill lines.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-input-amount-incomes">Input of amounts for incomes</p>
+<p>Parameters for choosing the method of entering income.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Input mode for amounts</p>
+<p class="compound-last">Defined for incomes items if the amounts must be entered without taxes and calculated in with taxes or vice versa.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Input mode for bill lines</p>
+<p class="compound-last">Defined for icomes items if the total bill lines feed the total with or without taxes. The parameter is priority if there a bill lines.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="deferral-expense">Automation of financial</p>
+<p><strong>The Deferral of expenses</strong> option occurs during the automatic generation of an expense from an offer, order or invoice.</p>
+<p>If the expense is linked to an offer, an order AND / OR an invoice, then this is carried over to the related elements. This update is recursive.</p>
+<p>Example: if the expense is generated from an invoice, it is reported on the order linked to the invoice and on the offer linked to the order.</p>
+<p class="rubric" id="gp-revenue-work-unit">Revenue and Work unit managment</p>
+<p>Parameters used in the unit of work catalog.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Number of complexities</p>
+<p class="compound-last">Parameter used to define the default maximum number used in the unit of work catalog.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Copy revenue into validated cost of activities.</p>
+<p class="compound-last">Copy revenue into validated cost of activities.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-mailing">
+<span id="mail"></span><span id="index-4"></span><h2>Tab Mailing<a class="headerlink" href="#tab-mailing" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">References tab’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#gp-emailing-section"><span class="std std-ref">Emailing</span></a></li>
+<li><a class="reference internal" href="#mail-titles"><span class="std std-ref">Mail titles</span></a></li>
+<li><a class="reference internal" href="#administration-emailing-group-label"><span class="std std-ref">Automatic emails grouping</span></a></li>
+<li><a class="reference internal" href="#gp-test-email-section"><span class="std std-ref">Test email configuration</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="gp-emailing-section"><span id="index-5"></span>Emailing</p>
+<p>Parameters to allow the application to send emails.</p>
+<p>You define the administrator’s email with the possibility of choosing a different address for “from” and “reply to” and the name to display</p>
+<p>You configure the SMTP serveur and port - the login name and password.</p>
+<p>You can also define the sendmail path or the send method.</p>
+<p>The maximum size not to be exceeded for sending emails is in bytes by default if you do not fill in the units.</p>
+<p>You can use bytes (O), megabytes (M) and gigabytes (G).</p>
+<p class="rubric" id="mail-titles">Mail titles</p>
+<div class="figure" id="id3">
+<img alt="Mail titles" src="_images/GLOBALPARAM_ZONE_MailsTitles.png" />
+<p class="caption"><span class="caption-text">Mail titles section</span></p>
+</div>
+<p>Parameters to define title of email depending on event.</p>
+<p>See: <a class="reference internal" href="#administration-emailing-group-label"><span class="std std-ref">Automatic emails grouping</span></a></p>
+<p>It is possible to use special fields to call a function or data of the project.</p>
+<p>See: <a class="reference internal" href="#administration-special-fields"><span class="std std-ref">Special Fields</span></a></p>
+<p class="rubric" id="administration-emailing-group-label"><span id="index-6"></span>Automatic emails grouping</p>
+<p>Parameters to define if the email group is active or not.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Activate email grouping</p>
+<p class="compound-last">When email grouping is enabled, automatic emails sent within the defined period are grouped into a single email.</p>
+</div>
+</div></blockquote>
+<p>For example when the status of an element has been modified several times in less than Xs then you will not receive an email for each change of state.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Grouping period (in seconds)</p>
+<p class="compound-middle">Defines the period (in seconds) during which if an email is send after another on same item.</p>
+<p class="compound-last">Then emails are grouped into single one.</p>
+</div>
+<div class="compound">
+<p class="compound-first">How to treat different formats</p>
+<p class="compound-middle">If grouped emails refer to different templates, you can :</p>
+<blockquote class="compound-middle">
+<div><ul class="simple">
+<li>send all messages, one for each template</li>
+<li>Only send the last message</li>
+<li>Merge all messages and send a single email</li>
+</ul>
+</div></blockquote>
+<p class="compound-last">You’ll can see this email in the <strong>email to send</strong> screen in the Tools menu.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-test-email-section">Test email configuration</p>
+<p>You can test the settings of your email submissions.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Send email to</p>
+<p class="compound-middle">Sent a email to check sptm configuration.</p>
+<div class="compound-last admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This operation saves global parameters.</p>
+</div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tab-authentication">
+<span id="authent"></span><h2>Tab Authentication<a class="headerlink" href="#tab-authentication" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Authentication’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#user-password"><span class="std std-ref">User and password</span></a></li>
+<li><a class="reference internal" href="#ldap-user"><span class="std std-ref">LDAP Management Parameters</span></a></li>
+<li><a class="reference internal" href="#sso-saml2"><span class="std std-ref">Single Sign On SAML2</span></a></li>
+<li><a class="reference internal" href="#gp-test-email-section"><span class="std std-ref">Test email configuration</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="user-password">User and password</p>
+<p>Parameters to manage how the connection behaves</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Security constraints about users and passwords</p>
+<p class="compound-middle">You can choose the default profile and password</p>
+<p class="compound-middle">You can choose to block the user after x connection attempts</p>
+<p class="compound-middle">You can define the behavior’s password with the min length ord the validy period</p>
+<p class="compound-middle">You can display or no the check box on the login screen “remember me”</p>
+<p class="compound-middle">You can initialize password on user creation</p>
+<p class="compound-middle">You can defined a new password to random value</p>
+<p class="compound-last">You can reset all the password with the <a class="reference internal" href="Gui.html#multipleupdate"><span class="std std-ref">multiple update fonction</span></a></p>
+</div>
+</div></blockquote>
+<p class="rubric" id="ldap-user">LDAP Management Parameters</p>
+<p>All the necessary parameters for connecting your projeqtor instances with your corporate LDAP</p>
+<div class="figure" id="id4">
+<img alt="LDAP" src="_images/GLOBALPARAM_ZONE_LDAP.png" />
+<p class="caption"><span class="caption-text">LDAP</span></p>
+</div>
+<p>Set the base dn, host, port, version…</p>
+<p>Default profile for Ldap users, message on creation new user from Ldap,</p>
+<p>Actions on LDAP user creation</p>
+<p>Project to allocate automatically…</p>
+<p class="rubric" id="sso-saml2">Single Sign On SAML2</p>
+<p>Single sign-on is a method that allows a user to access multiple computer applications (or secure websites) by performing a single authentication.</p>
+<div class="figure" id="id5">
+<img alt="Connexion screen with the protocol SSO" src="_images/GLOBALPARAM_ZONE_ConnexionSSO.png" />
+<p class="caption"><span class="caption-text">With the single sign on you do not go through the login screen of projeqtor but by a screen dedicated to single sign-on</span></p>
+</div>
+<p>When connected to the SSO service, the service tells each application that the user is logged on.</p>
+<p>This avoids having to connect to applications one by one.</p>
+<p>In concrete terms, the site or service to which the user is trying to connect makes a request to the server or the identity provider’s site. This one asks if the user is connected. If so, he transmits the information.</p>
+<p>Depending on the protocol used, the two sites exchange keys, signatures and / or other information to verify the identity of the user.</p>
+<div class="figure" id="id6">
+<img alt="disconnection screen" src="_images/GLOBALPARAM_ZONE_DeconnexionSSO.png" />
+<p class="caption"><span class="caption-text">Disconnection screen</span></p>
+</div>
+<p>When you want to disconnect from ProjeQtOr with the SSO method, the logout screen gives you several options.</p>
+<ul>
+<li><p class="first">local disconnection of projeqtor. I do not leave my SSO session</p>
+</li>
+<li><p class="first">Internal reconnection: I reconnect to ProjeQtOr locally. I leave my SSO session. I should identify myself again</p>
+</li>
+<li><p class="first">SSO disconnect. I leave my SSO session. I should identify myself again</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Parameters</p>
+<p class="compound-middle">This is an SSO connection via the SAML2 protocol</p>
+<div class="compound-middle figure" id="id7">
+<img alt="Global parameters: LDAP" src="_images/GLOBALPARAM_ZONE_SSO.png" />
+<p class="caption"><span class="caption-text">Global parameters: LDAP</span></p>
+</div>
+<ul class="compound-last simple">
+<li>Set the Entity ID, the IDP certificate, the single sign on and logout…</li>
+<li>Default profile for users, message on creation new user from SAML,</li>
+<li>And some parameters for users</li>
+</ul>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="tab-automation">
+<span id="automation"></span><h2>Tab Automation<a class="headerlink" href="#tab-automation" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Authentication’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#automated-service"><span class="std std-ref">Management of automated service</span></a></li>
+<li><a class="reference internal" href="#automatic-import"><span class="std std-ref">Automatic import of files</span></a></li>
+<li><a class="reference internal" href="#gp-automatic-import-replies"><span class="std std-ref">Automatic import of replies to emails</span></a></li>
+<li><a class="reference internal" href="#automatic-planning-calcul"><span class="std std-ref">Automatic planning calculation</span></a></li>
+<li><a class="reference internal" href="#automatic-history"><span class="std std-ref">Atuomatic archiving of history</span></a></li>
+<li><a class="reference internal" href="#gp-genereation-alert-realwork"><span class="std std-ref">Generation of alerts for real work</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="automated-service">Management of automated service</p>
+<p>Parameters for the <a class="reference internal" href="Glossary.html#term-cron"><span class="xref std std-term">Cron</span></a> process.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Defined frequency for these automatic functions</p>
+<p class="compound-middle">It will manage :</p>
+<blockquote class="compound-last">
+<div><ul class="simple">
+<li><strong>Alert generation:</strong> Frequency for recalculation of indicators values.</li>
+<li><strong>Check alert:</strong> Frequency for client side browser to check if alert has to be displayed.</li>
+<li><strong>Import:</strong> Automatic import parameters as below.</li>
+</ul>
+</div></blockquote>
+</div>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>Cron working directory</strong> should be set out of the path web..</p>
+</div>
+<p class="rubric" id="automatic-history">Automatic archiving of history</p>
+<p>This section allows you to manage the behavior of the history</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Archive history older than (in days)</p>
+<p class="compound-last">Determines how often your history is archived.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Start time of daily archiving</p>
+<p class="compound-last">Choose the time at which the daily archiving will start.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Archive all history for idle items</p>
+<p class="compound-last">Choose whether the history of closed items should be archived or not.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="automatic-import">Automatic import of files</p>
+<div class="figure" id="id8">
+<img alt="Automatic import of files" src="_images/GLOBALPARAM_ZONE_AutoImport.png" />
+<p class="caption"><span class="caption-text">Automatic import of files</span></p>
+</div>
+<p>Automatic import settings for <a class="reference internal" href="Glossary.html#term-cron"><span class="xref std std-term">cron</span></a> processes.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>Directory of automated integration files</strong> should be set out of the path web.</p>
+</div>
+<p class="rubric" id="gp-automatic-import-replies">Automatic import of replies to emails</p>
+<ul>
+<li><p class="first">Defined parameters for the “Reply to” process</p>
+</li>
+<li><p class="first">It will manage connection to IMAP INBOX to retrieve email answers.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Email input check cron delay (in seconds)</p>
+<p class="compound-last">Delay of -1 deactivates this functionality.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Email reception</p>
+<p class="compound-middle">When you have completed the IMAP settings for receiving emails, you receive your email with a new header. See the image below.</p>
+<div class="compound-middle figure" id="id9">
+<img alt="receiving an email before and after configuring IMAP settings" src="_images/GLOBALPARAM_BOX_Outlook.png" />
+<p class="caption"><span class="caption-text">receiving an email settings</span></p>
+</div>
+<p class="compound-middle">You always find the name of the item that is related to your application. A single click takes you to the item page.</p>
+<p class="compound-last">The line in the header tells you where your answer should be positioned to allow you to retrieve the response text in your ProjeQtor instance without the original message.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Signing start identifier</p>
+<p class="compound-middle">When you have completed the IMAP settings for receiving emails, you receive your email with a new header. See the image below.</p>
+<p class="compound-middle">The fields allows you to identify the beginning of your signature in order to avoid retrieving the signature in the response.</p>
+<p class="compound-last">For example, enter, so that ProjeQtOr recognizes that your signature begins with this word. He will not take back everything behind.</p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>IMAP host</strong></p>
+<ul class="last simple">
+<li>Must be an IMAP connection string.</li>
+<li>To connect to GMAIL input box, host must be: {imap.gmail.com:993/imap/ssl}INBOX</li>
+<li>You must set these parameters if you want to use the <a class="reference internal" href="UserParameter.html#up-automation"><span class="std std-ref">Not receive his own mails</span></a> option in the user settings</li>
+</ul>
+</div>
+<p class="rubric" id="automatic-planning-calcul">Automatic planning calculation</p>
+<div class="figure">
+<img alt="Enter real work with the recalculation" src="_images/GLOBALPARAM_ZONE_InputWork.png" />
+</div>
+<p>Activated or desactived this feature by simple click</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Differential calculation</p>
+<p class="compound-last">Project planning is recalculated only for those who need to be. A data or more has been changed into the project so a new calculation is expected.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Complete calculation</p>
+<p class="compound-last">All projects planning are recalculated.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Automatic feed of the real</p>
+<p class="compound-middle">You automatically fill in the actual work from the scheduled work up to a given date.</p>
+<p class="compound-middle">The automatic calculation of projects from the day after this date is triggered.</p>
+<p class="compound-middle">The actual work is automatically entered from the scheduled work until the day before the start of the schedule calculation.</p>
+<blockquote class="compound-middle">
+<div><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">For security, and to avoid overlapping with a manual input of reality, if the resource has reality for a given date, we do not copy the possible planned existing in reality.</p>
+</div>
+</div></blockquote>
+<p class="compound-middle">For each scheduled job found, if no job exists for the relevant resource on the date of the scheduled job, copies the scheduled job to an actual job.</p>
+<p class="compound-middle">We will mark the actual work entered automatically (technical zone type label) to distinguish between automatic feeding and manual feeding.</p>
+<p class="compound-last">This area will not be processed for screen renderings, but will analyze any unexpected behavior.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Frequency</p>
+<p class="compound-middle">Select the frequency on the calendar by clicking on the button <strong>defined parameters</strong> and choose the schedule, day, month.</p>
+<div class="compound-last figure" id="id10">
+<img alt="Define parameters" src="_images/GLOBALPARAM_BOX_DefineParameters.png" />
+<p class="caption"><span class="caption-text">Define parameters</span></p>
+</div>
+</div>
+<div class="compound">
+<p class="compound-first">Start date for</p>
+<img alt="_images/GLOBALPARAM_ZONE_StardDateFor.png" class="compound-middle" src="_images/GLOBALPARAM_ZONE_StardDateFor.png" />
+<p class="compound-last">Select when you want to recalculate project(s)according the date of today’s date</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-genereation-alert-realwork">Generation of alerts if real work is not entered</p>
+<p>Specific settings for alerts based on a profile.</p>
+<ul class="simple">
+<li>An email is sent on the agreed date.</li>
+<li>Click on the button <strong>Define Parameters</strong></li>
+<li>Select the frequency of the calendar with which the emails will be generated and sent to the profile.</li>
+<li>See: <a class="reference internal" href="#automated-service"><span class="std std-ref">Management of automated service</span></a> to set the send frequency.</li>
+</ul>
+<p class="rubric">When and How</p>
+<p>In addition to the sending frequency, you can refine the generation with several additional options.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Control input up to</p>
+<p class="compound-last">Select when you want to be controlled: current day, previous day or next days.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Number of days to control</p>
+<p class="compound-last">Choose how many days will be controled</p>
+</div>
+<div class="compound">
+<p class="compound-first">Send alert to resource</p>
+<p class="compound-last">Choose how alerts will be sent, Internal alert, email, both or none</p>
+</div>
+<div class="compound">
+<p class="compound-first">only incompletes imputation</p>
+<p class="compound-middle">The goal is to be able to send alerts on charges only if the entry is incomplete, not if it is greater than the capacity of the resource.</p>
+<p class="compound-last">With the option checked, when generating alerts, an entry greater than the capacity of the resource does not trigger an alert.</p>
+</div>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li>All days of the week, open or off days are taken into account.</li>
+<li>Off days in real work allocation will not send you an alert.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="tab-system">
+<span id="system"></span><h2>Tab System<a class="headerlink" href="#tab-system" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Authentication’s sections</p>
+<ul class="simple">
+<li><a class="reference internal" href="#file-directory-section"><span class="std std-ref">Files and directories service</span></a></li>
+<li><a class="reference internal" href="#localization-data-section"><span class="std std-ref">Localization data</span></a></li>
+<li><a class="reference internal" href="#gp-miscellaneous-section"><span class="std std-ref">Miscellaneous</span></a></li>
+<li><a class="reference internal" href="#gp-pdf-export-section"><span class="std std-ref">PDF export</span></a></li>
+<li><a class="reference internal" href="#gp-ssl-connect-database"><span class="std std-ref">SSL connection to database</span></a></li>
+</ul>
+</div>
+<p class="rubric" id="file-directory-section">Files and directories</p>
+<p>Definition of directories and other parameters used for Files and documents management.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p><strong>Attachments Directory</strong> and <strong>Root directory for documents</strong> Should be set out of web reach.</p>
+<p class="last"><strong>Temporary directory for reports</strong> Must be kept in web reach.</p>
+</div>
+<p class="rubric" id="localization-data-section">Localization data</p>
+<p>Parameters to define character sets, their encoding, their behavior … for saving files on the server</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Charset to save files on server</p>
+<p class="compound-middle">Keep empty for Linux servers, files names will be stored in UTF8.</p>
+<p class="compound-last">For windows OS server, define charset as “windows-1252” (for western europe) or similar corresponding to your localization.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Separator for CSV files</p>
+<p class="compound-last">Choose the field separator for csv exports</p>
+</div>
+<div class="compound">
+<p class="compound-first">Export CSV to UTF-8 format</p>
+<p class="compound-last">Preserve UTF-8 for exported csv files. If set no, will encode in CP1252 (recommended for windows in English and western Europe Languages)</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-miscellaneous-section">Miscellaneous</p>
+<p>Settings for the update</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Check for new version</p>
+<p class="compound-last">Auto check (or not) for existing new version of the tool (only administrator is informed);</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-pdf-export-section">PDF export</p>
+<p>Basic settings for PDF exports</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">Memory limit for PDF generation.</p>
+<p class="compound-last">Size In MB. Too small can lead to PDF error but too big can crash the server</p>
+</div>
+<div class="compound">
+<p class="compound-first">Font for PDF Export.</p>
+<p class="compound-last">Freesans give great portability for non ANSI characters - Helvetica give smaller PDF files.</p>
+</div>
+</div></blockquote>
+<p class="rubric" id="gp-ssl-connect-database">SSL connection to database</p>
+<p>Allows to set up a secure SSL connection:</p>
+<blockquote>
+<div><ul class="simple">
+<li>SSL Key</li>
+<li>SSL Certification</li>
+<li>SSL Certificate Authority</li>
+<li>Enter patch to corresponding files to enable SSL connection to the database.</li>
+</ul>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>Take care that these files must exist and be valid SSL files.</p>
+<p class="last">If values are incorrect, the application will not work any more, and you’ll have to manually fix parameters in the database.</p>
+</div>
+</div>
+</div>
+<div class="section" id="special-fields">
+<span id="administration-special-fields"></span><span id="index-7"></span><h1>Special Fields<a class="headerlink" href="#special-fields" title="Permalink to this headline">¶</a></h1>
+<p>Special fields can be used in the title and body mail to be replaced</p>
+<p>by item values :</p>
+<ul class="simple">
+<li><strong>${dbName}</strong> the display name of the instance</li>
+<li><strong>${id}</strong> id of the item</li>
+<li><strong>${item}</strong> the class of the item (for instance “Ticket”)</li>
+<li><strong>${name}</strong> name of the item</li>
+<li><strong>${status}</strong> the current status of the item</li>
+<li><strong>${project}</strong> the name of the project of the item</li>
+<li><strong>${type}</strong> the type of the item</li>
+<li><strong>${reference}</strong> the reference of the item</li>
+<li><strong>${externalReference}</strong> the <a class="reference internal" href="Glossary.html#term-external-reference"><span class="xref std std-term">external reference</span></a> of the item</li>
+<li><strong>${issuer}</strong> the name of the issuer of the item</li>
+<li><strong>${responsible}</strong> the name of the responsible for the item</li>
+<li><strong>${sender}</strong> the name of the sender of email</li>
+<li><strong>${sponsor}</strong> the name of the project sponsor</li>
+<li><strong>${projectCode}</strong> the project code</li>
+<li><strong>${contractCode}</strong> the contact code of project</li>
+<li><strong>${customer}</strong> Customer of project</li>
+<li><strong>${url}</strong> the URL for direct access to the item</li>
+<li><strong>${login}</strong> the user name</li>
+<li><strong>${password}</strong> the user password</li>
+<li><strong>${adminMail}</strong> the email of administrator</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Global Parameters</a><ul>
+<li><a class="reference internal" href="#tab-work-time">Tab Work time</a></li>
+<li><a class="reference internal" href="#tab-activity">Tab Activity</a></li>
+<li><a class="reference internal" href="#tab-display">Tab Display</a></li>
+<li><a class="reference internal" href="#tab-references">Tab References</a></li>
+<li><a class="reference internal" href="#tab-configuration">Tab Configuration</a></li>
+<li><a class="reference internal" href="#tab-financial">Tab Financial</a></li>
+<li><a class="reference internal" href="#tab-mailing">Tab Mailing</a></li>
+<li><a class="reference internal" href="#tab-authentication">Tab Authentication</a></li>
+<li><a class="reference internal" href="#tab-automation">Tab Automation</a></li>
+<li><a class="reference internal" href="#tab-system">Tab System</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#special-fields">Special Fields</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="UserParameter.html"
+                        title="previous chapter">User parameters</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Administration.html"
+                        title="next chapter">Administration Console</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Administration.html" title="Administration Console"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="UserParameter.html" title="User parameters"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015-2020, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.3.
+    </div>
+  </body>
+</html>

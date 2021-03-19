@@ -1,0 +1,447 @@
+
+.. title:: Planning elements
+.. include:: ImageReplacement.txt
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Planning elements
+
+.. _planning_element:
+    
+Planning elements
+*****************
+
+The planning elements :ref:`test-session` and :ref:`meeting` are described in their topics.
+
+.. index:: Project 
+
+.. _planningelem_project:
+
+Project
+-------
+
+The project is the primary entity of ProjeQtOr.
+
+It is also the top-level of visibility, depending on profiles.
+
+.. rubric:: Sub-projects 
+
+* You can define sub-projects on any project and this unlimited. 
+* On the parent project screen, you can view the children in the subproject section.
+* Then, the projects may not be real projects, but just organizational breakdown corresponding to an organization.
+
+
+.. rubric:: Fix planning 
+
+* When the "correct planning" box is checked, the project planning will not be recalculated.
+* This avoids modifying the expected values.
+* Planning will always be the same no matter what you do on other projects.
+
+.. warning:: This may lead to dependencies unconsistancies
+
+
+
+.. rubric:: Non extendable project 
+
+When project perimeter is fixed you can't:
+
+   * add new elements to this project
+   * delete elements from this project
+   * move elements to or from this project
+
+.. rubric:: Under construction
+
+* When a project is under construction, no :ref:`automatic emails<mail-on-event>` will be sent, no :ref:`notifications<notifications>` or :ref:`alerts<automation>` will be generated for the project elements.
+* A project can be under construction as long as it isn’t stated. Set to :term:`handled` status.
+* The resources don't see it on :ref:`timesheet<timesheet>`.
+
+
+
+.. rubric:: Exclude from global plan
+
+* Do not show the not plannable items for this project on the global planning view.
+* This means that only standard planning items will be displayed excluding:
+
+   * :ref:`Actions<action>`
+   * :ref:`Decisions<decision>`
+   * :ref:`Deliveries<deliveries>`
+   
+.. rubric:: Validated work treatment    
+
+Activates treatment of the validated work based on the sum of the work of the project orders otherwise it will be calculated on the sum of the validated work of the activities.
+
+
+
+.. rubric:: Manual indicators
+
+* Fields: :ref:`Health status<health-status>`, :ref:`Quality level<quality-level>`, :ref:`Trend<trend>` and :ref:`Overall progress<overall-progress>` are manual indicators.
+* They allow define visual way the general health, conformity, trend and progress of the project.
+* Some manual indicators are displayed on the :ref:`Today screen<today-screen>`. 
+
+.. figure:: /images/GUI/PLANNINGELEM_ZONE_ManualIndicator.png
+   :alt: Manual indicator on the Today screen
+   
+   Manual indicator on the Today screen
+
+.. rubric:: Special fields
+
+* The value of the fields the Project name, Sponsor, Project code and Contract code can be used as the substitute value of special fields.
+* See: :ref:`administration-special-fields`
+
+.. rubric:: Monitoring indicator
+
+* The :ref:`indicators<indicator>` can be defined on the :ref:`progress data<progress-section>`.
+
+
+
+
+.. _project-reserve:
+
+.. index:: Project (Reserve)
+
+.. rubric:: Project reserve
+
+* Project reserve is an amount reserved based on identifying :ref:`Risks<risk>` and :ref:`Opportunity<opportunity>`.
+* Calculated from contingency reserve of risks minus potential gain of opportunities.
+* ProjeQtOr uses a technique as "Expected monetary value (EMV)" to convert risks and opportunities into an amount.
+* The amount of project reserve will be added to remaining amount.
+
+.. rubric:: Section Description
+
+
+.. sidebar:: Other sections
+
+   * :ref:`Progress<progress-section-steering>`
+   * :ref:`Allocations<allocation-section>`
+   * :ref:`Versions linked to this project<Link-version-project-section>`  
+   * :ref:`Types restrictions<type-restriction-section>`  
+   * :ref:`Predecessor and Sucessor<predSuces-element-section>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>` 
+   
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the project.
+   * - |RequiredField| Name
+     - Short name of the project.
+   * - |RequiredField| Type
+     - Type of project.
+   * - Organization
+     - The organization of the project.
+   * - Customer
+     - The customer of the project.
+   * - Bill contact
+     - Billing contact.
+   * - Project code
+     - Code of the project.
+   * - Contract code
+     - Code of the contract of the project.
+   * - Customer code
+     - Code of the customer of the project.
+   * - Is sub-project of
+     - Name of the top project if this project is a sub-project. 
+   * - Sponsor
+     - Name of the sponsor of the project.
+   * - :term:`Manager<Project manager>`
+     - Name of the resource who manages the project.
+   * - Color
+     - Color of the project, to be displayed in some reports.
+   * - :term:`Description`
+     - Complete description of the project.
+   * - Objectives
+     - Objectives of the project.
+
+.. topic:: Field Customer
+
+   The value of the field is used in the :ref:`Quotations<quotation>`, :ref:`Orders<client-orders>` and :ref:`Invoices<client-bill>` concerned with the project.
+
+.. topic:: Field Bill contact
+
+   The value of the field is used in :ref:`Invoices<client-bill>` concerned with the project.
+
+
+
+.. rubric:: Section treatment
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the project.
+   * - Health status
+     - Global health status of the project.
+   * - Quality level
+     - Estimation of quality level of project (result of audits).
+   * - Trend
+     - Trend of global project health.
+   * - Overall progress
+     - Overall progress to be selected in a defined list.
+   * - Fix planning
+     - Box checked indicates the planning of the project is frozen, and its sub-projects.
+   * - Non extendable project 
+     - When project perimeter is fixed you can't addor delete elements to this project, move elements to or from this project.
+   * - Under construction
+     - Box checked indicates the project is under construction.
+   * - Exclude from global plan
+     - Do not show the not plannable items for this project on the global planning view. This means that only standard planning items will be displayed excluding actions, decisions, deliveries. 
+   * - Validated work treatment  
+     - Activates treatment of the validated work based on the sum of the work of the project orders otherwise it will be calculated on the sum of the validated work of the activities. 
+   * - :term:`handled`
+     - Box checked indicates the project is begun.
+   * - :term:`Done`
+     - Box checked indicates the project is finished.
+   * - :term:`Closed`
+     - Box checked indicates the project is archived.
+   * - Cancelled
+     - Box checked indicates the project is cancelled.
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Activity
+
+.. _activity:
+
+Activity
+--------
+
+.. sidebar:: Other sections
+
+   * :ref:`Assignment<assignment-section>`
+   * :ref:`Progress<progress-section>`
+   * :ref:`Predecessor and Sucessor<predSuces-element-section>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`
+   
+   
+An activity is a kind of task that must be planned, or that regroups other activities.
+
+An activity can be:
+
+* Planned tasks.
+* Change requests.
+* Phases.
+* Deliveries.
+* Versions or releases.
+
+.. rubric:: Assigned resources
+
+* :ref:`Resources<resource>` are assigned to activities.
+* During an :ref:`assignation<assignment-section>`, some work is initially planned on this activity for the resource.
+
+.. rubric:: Real work allocation
+
+* For a resource, assigned activities are tasks in which he can entry the :ref:`Real work<real-work-allocation>` 
+
+.. rubric:: Activities regroupment
+
+* Activities can have parents to regroup activities. 
+* So a :term:`WBS` (work breakdown structure number) is calculated for the activities.
+* Activities can be sorted inside their parent activity, on the :ref:`Gantt<Gantt_chart>` planning view, using drag and drop.
+* Parent activity must belong to the same project.
+
+.. _activity-planning:
+
+.. rubric:: Activity planning: work on tickets
+
+* :ref:`Tickets<ticket>` can be linked to an activity (task).
+* Work on tickets will be included in the activity.
+
+ .. compound:: **Assignment of resources to task**
+
+    * Resources who will work on the ticket doesn't need to be assigned to linked activity before.
+    * The assignment will be automatically created once that resource has entered the working time (real work) in the ticket.
+    * The assigned task and the sum of working time entries by resource in tickets will be available in its timesheet.
+
+.. rubric:: Fix planning 
+
+* When box “fix planning” is checked, the activity scheduling won’t be remade.
+* This will avoid change on planned values.
+* The planning will always be the same whatever you do on other projects.
+
+.. warning:: This may lead to dependencies unconsistancies
+
+
+.. rubric:: Filter on list
+
+Ability to filter activities by data or type, for instance by assigned resources
+
+.. rubric:: Monitoring indicator
+
+* The indicators can be defined in the :ref:`List of Values<list-of-values>`.
+
+* See: :ref:`health-status` and :ref:`overall-progress`
+
+ 
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the activity.
+   * - |RequiredField| Name
+     - Short description of the activity.
+   * - |RequiredField| Activity type
+     - Type of activity.
+   * - |RequiredField| Project
+     - The project concerned by the activity.
+   * - :term:`External reference`
+     - External reference of the activity.
+   * - :term:`Requestor`
+     - Contact at the origin of the activity.
+   * - :term:`Origin`
+     - Element which is the origin of the activity.
+   * - :term:`Description`
+     - Complete description of the activity.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Parent activity
+     - Parent activity for grouping purpose. 
+   * - |RequiredField| Status
+     - Actual :term:`status` of the activity.
+   * - :term:`Responsible`
+     - Resource who is responsible for the activity.
+   * - :term:`Handled`
+     - Box checked indicates the activity is taken over.
+   * - :term:`Done`
+     - Box checked indicates the activity has been treated.
+   * - :term:`Closed`
+     - Box checked indicates the activity is archived.
+   * - Cancelled
+     - Box checked indicates the activity is cancelled.
+   * - Target version
+     - The target version of the product allocated in delivery of the activity.	
+   * - :term:`Result`
+     - Complete description of the treatment done on the activity. 
+ 
+.. topic:: Field Target version
+
+   * Contains the list of :ref:`product versions<product-concept>` linked to the project.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Milestone
+
+.. _milestone:
+
+Milestone
+---------
+
+.. sidebar:: Other sections
+
+   * :ref:`Progress<progress-section-milestone>`
+   * :ref:`Predecessor and Sucessor<predSuces-element-section>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`   
+   
+A milestone is a flag in the planning, to point out key dates.
+
+Milestones are commonly used to check delivery dates.
+
+They can also be used to highlight the transition from one phase to the next.
+
+ProjeQtOr offers two types of milestone:
+
+ .. compound:: **Floating milestone**
+
+    * This milestone will automatically move to take into account dependencies.
+
+ .. compound:: **Fixed milestone**
+
+    * This milestone is fixed in the planning, not taking into account predecessor dependencies.
+    * This kind of milestone is interesting, for instance to set-up start date for some tasks.
+    * Fixed date is set by validated date.
+
+.. rubric:: Monitoring indicator
+
+* The indicators can be defined in the :ref:`List of Values<list-of-values>`.
+
+* See: :ref:`health-status` and :ref:`overall-progress`
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the milestone.
+   * - |RequiredField| Name
+     - Short description of the milestone.
+   * - |RequiredField| Milestone type**
+     - Type of milestone.
+   * - |RequiredField| Project
+     - The project concerned by the milestone.
+   * - :term:`Origin`
+     - Element which is the origin of the milestone.
+   * - :term:`Description`
+     - Long description of the milestone.
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Parent activity
+     - Parent activity for grouping purpose. 
+   * - |RequiredField| Status
+     - Actual :term:`status` of the milestone.
+   * - :term:`Responsible`
+     - Resource who is responsible for the milestone.
+   * - :term:`Handled`
+     - Box checked indicates the milestone is taken over.
+   * - :term:`Done`
+     - Box checked indicates the milestone has been treated.
+   * - :term:`Closed`
+     - Box checked indicates the milestone is archived.
+   * - Cancelled
+     - Box checked indicates the milestone is cancelled.
+   * - Target version
+     - The target version of the product allocated in delivery of the milestone.	
+   * - :term:`Result`
+     - Complete description of the treatment done on the milestone. 
+ 
+.. topic:: Field "Target version"
+
+   * Contains the list of :ref:`product versions<product-concept>` linked to the project.
+

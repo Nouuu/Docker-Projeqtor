@@ -1,0 +1,4250 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+/* ============================================================================
+ * Main css styles for Printing purpose of ProjeQtOr application.
+ * ============================================================================
+ */
+
+/* Imports ==================================================================== */
+
+@import "../../external/dojo/resources/dojo.css";
+@import "../../external/dijit/themes/dijit.css";
+/* @import "../../external/dijit/themes/tundra/tundra.css"; */
+@import "../../external/dijit/icons/commonIcons.css";
+@import "FileInput.css";
+@import "common.css";
+@import "projeqtorIcons.css";
+
+/* Main structure objects ===================================================== */
+
+html, body, #mainDiv, 
+#toolBarDiv, 
+#logoDiv,
+#contentDiv,  #listDiv, .container {
+  height: 100%; width: 100%; overflow: hidden;
+  border: 0; margin: 0px; padding: 0px;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  text-decoration: none;
+  text-align: left;
+}
+
+.siteH1 {
+  font-family: Segoe Print, Segoe UI, Brush Script MT, cursive, Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  font-weight: bold; 
+  font-size: 20pt; 
+  text-decoration: none; 
+  color: #E97B2C; 
+  text-shadow: 0.1em 0.1em 0.2em grey;
+}
+.siteH2 {
+  font-family: Segoe Print, Segoe UI, Brush Script MT, cursive, Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  font-weight: normal; 
+  font-size: 14pt; 
+  text-decoration: none; 
+  color: #545381; 
+}
+/* Specific style for debug purpose============================================ */
+html, body { 
+  /* overflow: auto; /* default is hidden, possibly set to auto for debug purpose */
+}
+
+/* DIV styles presented as included in pages ================================== */
+
+.loginFrame {
+ border: 2px solid #FFFFFF;
+ -moz-border-radius: 30px;
+ border-radius: 20px;
+ height: 280px;
+ width: 520px; text-align: center;
+ text-align:center;
+ box-shadow: 10px 10px 5px #333; 
+ -moz-box-shadow: 10px 10px 5px #333;
+ -webkit-box-shadow: 10px 10px 5px #333;
+ margin:0; padding:0;
+ z-index:999;
+}
+.loginMessageContainer {
+  position: absolute;
+  width: 33%;
+  top:0px;
+  left:0px;
+  height:100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+  border:1px solid w hite;
+  z-index:0;
+}
+.loginMessage {
+  background: rgba(255,255,255,1);
+  border: 1px solid #AAAAAA;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 10px;
+  width: 85%;
+  z-index:-1;
+  position: relative;
+  opacity:0;
+  -webkit-box-shadow: 0px 0px 15px #FFFFFF;
+  box-shadow: 0px 0px 15px #FFFFFF;
+}
+.loginMessageTitle{
+  position: absolute; top:0px; left:0px;
+  border-bottom:1px solid #AAAAAA;
+  width:100%;
+  text-align:center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  padding: 2px 0px;
+}
+
+#toolBarDiv {
+  height: 25px;
+  /* border-bottom: 1px solid #eeeeee; */
+}
+  .menuBarItem {
+    position:relative;
+    cursor:pointer;
+    margin:0px 0px 0px 4px;
+    width:50px; height:37px;
+    padding:15px 1px 0px 1px; 
+    border-radius: 10px 10px 0px 0px;
+    vertical-align:middle;
+    background: transparent;
+    background: rgba(255,255,255,0.5);
+    border: 0px solid #ffffff;
+    text-align:center;
+  }
+  
+    .menuBarItemSelected {
+    border-color: #a5a5a5;
+    border-bottom-color: #757575;
+    color: #3C3C3C;
+    background: #fcfdfd url(images/buttonHover.png) repeat-x bottom;    
+    background-color: #ffffff;
+    background: #ffffff url(images/buttonHover.png) repeat-x bottom left;
+  }
+  
+  .bottomNotification {
+    position:relative;
+    cursor:pointer;
+    margin:0px 0px 0px 4px;
+    width:22px; height:22px;
+    padding:15px 1px 0px 1px; 
+    border-radius: 10px 10px 0px 0px;
+    vertical-align:middle;
+    background: transparent;
+    background: rgba(255,255,255,0.5);
+    border: 0px solid #ffffff;
+    text-align:center;
+  }
+  
+  .menuBarItemNoWidth {
+     width:0px;
+  }
+  
+  .menuBarItemCaption {
+     font-size:6pt;
+     margin:auto; padding:0px 2px;
+     position:absolute;top:0px;left:0px;
+     width:48px; 
+     cursor:normal;
+     border-radius: 10px 10px 0px 0px;
+     text-shadow:1px 1px #FFF;
+     text-align:center;
+     color:#000;
+     background: transparent;
+     pointer-events:none;
+     background: rgba(255,255,255,0.7);
+     /*overflow:hidden;*/
+  }
+  .menuBarItem:hover, .bottomNotification:hover {
+    border-color: #a5a5a5;
+    border-bottom-color: #757575;
+    color: #3C3C3C;
+    background: #fcfdfd url(images/buttonHover.png) repeat-x bottom;    
+    background-color: #ffffff;
+    background: #ffffff url(images/buttonHover.png) repeat-x bottom left;
+  }
+  .menuBarSeparator {
+    width: 5px;
+    text-align: center;
+    margin:0px; 
+    padding:2px; 
+    /* background: url(images/splitV.gif) repeat-y left;*/
+    background: url(images/splitContainerSizerV-thumb.png) repeat-y left;
+  }
+#leftDiv {
+  width: 20%;
+  overflow: hidden;
+  border-bottom: 1px solid #A0A0A0;
+}
+  #logoDiv {
+    height: 50px;
+    cursor: pointer;  
+  }
+    #logoTitleDiv {
+      position: absolute; top: 0px; left: 0px; width: 300px; height: 54px;
+      background-size: contain;
+      opacity:0.9;filter:alpha(opacity=90);
+      overflow: hidden;
+    }
+  #mapDiv { 
+    border: 0px; margin: 0px; padding: 2px 0px 0px 5px; 
+  }
+  #messageDiv {
+    overflow: auto;
+    height: 30%; padding: 5px;
+  }
+
+#leftDiv_splitter{
+	-webkit-transition: top 0.3s linear, height 0.3s linear;
+  -moz-transition: top 0.3s linear, height 0.3s linear;
+  -o-transition: top 0.3s linear, height 0.3s linear;
+  -ms-transition: top 0.3s linear, height 0.3s linear;
+  transition: top 0.3s linear, height 0.3s linear;  
+}
+
+#centerDiv { /* do not include in global definition : width: 100% brings incorrect display on FireFox and Chrome */
+  overflow: hidden;
+  border: 0; margin: 0px; padding: 0px;
+  border-bottom: 1px solid #A0A0A0;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #A0A0A0;  
+  border-top: 1px solid #eeeeee;
+  -webkit-transition: top 0.3s linear, height 0.3s linear;
+  -moz-transition: top 0.3s linear, height 0.3s linear;
+  -o-transition: top 0.3s linear, height 0.3s linear;
+  -ms-transition: top 0.3s linear, height 0.3s linear;
+  transition: top 0.3s linear, height 0.3s linear;  
+}
+  #listDiv {
+    height: 40%;
+    overflow: hidden; 
+  }
+    #listHeaderDiv {
+      overflow: hidden; 
+     /* height: 27px; */
+    }
+    .dojoxGridScrollbox, .ganttDiv {
+      overflow: auto;
+    }
+    .dojoxGridView .dojoxGridScrollbox {
+      overflow-x:hidden;
+      overflow-y:auto;
+    }
+    #gridContainerDiv, #reportParametersDiv {
+      overflow: hidden;
+    }
+  #detailDiv {
+    border: 0px solid green;
+    margin: 0px; padding: 0px;
+    overflow: hidden; 
+  }
+    #buttonDiv, #buttonDivContainer {
+      height: 34px; overflow: hidden;
+      border: 0px solid red;
+      padding: 0px; margin: 0px;
+      vertical-align: middle;
+    }
+    #buttonDiv {  
+      border-bottom: 1px solid #ffffff;
+    }
+    #resultDivMain, #resultDiv, .resultDiv, #resultPopup{
+      max-height:220px;
+/*    width:48%;
+      position:absolute;
+      top:3px !important; left:57% !important; */
+      width:50%;
+      position:fixed;
+      top:8px !important; left:25% !important;
+      font-size:110%;
+      min-height:100px; 
+      overflow:hidden;
+      color: #555555;
+      text-align: center;
+      vertical-align: middle;
+      z-index:99999;
+      /* margin: 4px 8px 4px 8px;*/ 
+      padding: 0px 0px 25px 0px;
+      opacity:0;filter:alpha(opacity=00);
+      /* pointer-events: none; */ /* removed to be able to scroll on, the box when message is big */
+    }
+    #resultDiv {
+      pointer-events: none;
+    }
+
+    #comboDetailResult {
+      width:48%;
+      max-height:220px;
+      position:absolute;
+      top:0px !important; left:10px !important; 
+      overflow:hidden;
+      color: #555555;
+      text-align: center;
+      vertical-align: middle;
+      z-index:4;
+      /* margin: 4px 8px 4px 8px;*/ 
+      padding: 0px 0px 10px 0px;
+      pointer-events: none;
+    }
+    #formDiv {
+      overflow-y: scroll; 
+      overflow-x: hidden;
+      border: 0px solid red;
+      margin: 0px; padding: 5px 2px;
+    }
+    #detailFormDiv {
+      overflow: hidden;
+      height: 100%;
+      border: 0; margin: 0px; padding: 0px;
+    }
+    #workDiv {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+.NewGuiTab {
+	float: left;
+	width: 10%;
+	text-align: center;
+	white-space:nowrap;
+}
+
+.NewGuiTabBar {
+	width: 50%;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.NewGuiTabBar a{
+    display: block; /*Toute la surface sera cliquable*/
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le d�calage des �l�ments sous le menu � cause de la bordure en :hover*/
+}
+
+.NewGuiTabBar a:hover{
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
+}
+
+.NewGuiTabSelected a{
+    border-bottom: 2px solid var(--color-dark);
+}
+
+#statusBarDiv {
+  border: 0px; margin: 0px; padding: 1px;
+  overflow: hidden;
+  height: 28px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #A0A0A0;
+  vertical-align:middle;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear; 
+}
+#statusBarMessageDiv {
+  font-size:125%;
+  text-shadow: 2px 2px 5px #AAAAAA;
+}
+
+#menuBarShow {
+  display: none; 
+  height: calc(100% -31px);
+  height: -moz-calc(100% -31px);
+  float: left;
+  top: 0px; left: 0px;
+  z-index: 900;
+  border-right:1px solid #505050;
+  border-top: 1px solid #ffffff;
+}
+#menuBarIcon {
+  display: block;
+  margin: -7px 0px;
+  top: 50%; left: 1px;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: url(images/spriteRoundedIconsSmall.png) no-repeat left top ;
+  background-position: -30px top;
+}
+
+#listBarShow {
+  display: none;
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  top: 0px; left: 0px;
+  z-index: 8888;
+}
+#listBarIcon {
+  display: block;
+  margin: 0px -7px;
+  top: 1px; left: 50%;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: url(images/spriteRoundedIconsSmall.png) no-repeat left top ;
+  background-position: -15px top;
+}
+#detailBarShow {
+  display: none;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: -1px; left: -1px;
+  z-index: 99999;
+}
+#detailBarIcon {
+  display: block;
+  margin: 0px -7px;
+  left: 50%;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: url(images/spriteRoundedIconsSmall.png) no-repeat left top ;
+  background-position: -45px top;
+}
+.leftBarIcon {
+  display: block;
+  margin: 0px 0px;
+  position: relative;
+  height: 48px;
+  width: 14px;
+  background: url(images/leftBarIcon.png) no-repeat left top ;
+}
+.rightBarIcon {
+  display: block;
+  margin: 0px 0px;
+  position: relative;
+  height: 48px;
+  width: 14px;
+  background: url(images/rightBarIcon.png) no-repeat left top ;
+}
+#printPreview {
+      overflow: hidden; 
+      border: 1px solid #555555;
+      margin: 0px; padding: 0px;
+}
+.nobr {
+  white-space: nowrap;
+}
+
+#wait, #waitLogin {
+  position: absolute;
+  background-image: url(images/spinner10.gif); background-repeat: no-repeat;
+  border: 0px solid #555555;
+  margin: -25px -25px;
+  height: 50px; width: 50px;
+  top: 50%; left: 50%; 
+  z-index: 999;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  opacity:0.5;filter:alpha(opacity=50);
+}
+#downloadProgress{
+  position: absolute;
+  margin: -25px -25px;
+  width: 20%;
+  top: 30px; right: 400px; 
+  z-index: 9999;
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+  /*opacity:0.9;filter:alpha(opacity=90);*/
+}
+
+#loginResultDiv, #passwordResultDiv {
+  /*overflow: auto !important;*/
+  /* position:absolute !important; top: 0px; left: 150px !important; 
+    max-width: 350px;
+  */
+  width:20%;
+  position:fixed;
+  top:70% !important; left:40% !important;
+  font-size:110%;
+  min-height:100px; 
+  /* overflow: visible !important;*/
+  z-index:9999;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  max-height:225px;
+  vertical-align: middle;
+}
+  
+#dialogMessageLegal {
+  z-index:950;
+  position:absolute; 
+  bottom:0; right:0; 
+  height: 300px;
+  border-radius:0px 0px 0px 0px;
+  background: #FFFFFF;
+  border: 2px solid #909090;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}  
+
+.iconArrowMessageLegal {
+  background-image: url('../img/iconArrowMessageLegal.png');
+  background-repeat: no-repeat;
+  width: 85px;
+  height: 140px;
+  background-size: 85px 140px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#dialogReminder {
+  z-index:9999;
+  position:absolute; 
+  bottom:0; right:0; 
+  width:300px; height: 200px;
+  background: #FFAAAA;
+  visibility:hidden;
+  display:none;
+  padding: 10px;
+  border: 2px solid #909090;
+  border-radius: 15px;
+}
+.displayHtml {
+  margin: 1px;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 1px;
+  background: #fff url(images/validationInputBg.gif) repeat-x top left;
+  border: 1px solid #b3b3b3;
+  line-height: normal; 
+}
+
+.buttonDivCreationInfoEdit {
+  /*width:120px;*/
+  height:32px;
+}
+.buttonDivCreationInfoEdit:hover {
+  background: url(images/smallButtonEdit.png) no-repeat top right;
+}
+
+.ProjeQtOrNewGui .buttonDivCreationInfoEdit {
+  /*width:120px;*/
+  height:32px;
+}
+
+.ProjeQtOrNewGui .buttonDivCreationInfoEdit:hover {
+  background: url(customIcons/new/iconEditBlack.svg) no-repeat top right;
+  background-size: 16px 16px;
+}
+
+/* Specific attributes on common nodes ======================================== */
+
+table {
+  border-collapse: collapse; border: 0px; 
+}
+
+tr {
+  /* border: 1px solid green; padding: 0px !important; margin: 0px !important; /* for debug purpose */
+}
+
+td {
+  margin: 0; padding: 0; cellspacing: 0; cellpadding: 0;
+  border-collapse: collapse; border: 0px;
+  /* border: 1px solid yellow; padding: 0px !important; margin: 0px !important;/* for debug purpose */
+}
+
+a, a:visited {
+ text-decoration: none !important;
+}
+
+
+.hyperlink, .simpleText {
+  color: #333333;
+}
+.simpleText {
+  font-size:10pt;
+}
+.simpleText.bold {
+  font-weight:bold;
+}
+.simpleText.bold.big  {
+  font-size:150%;
+}
+.hyperlink:hover {
+  font-weight: bold;
+  color: #000000;
+}
+.streamLink {
+	color: #e97b2c;
+	cursor:pointer;
+	    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.streamLink:hover {
+  color: #ffffff !important;
+  cursor:pointer;
+  background-color: #e97b2c
+}
+label, .label, .smallLabel, .labelMultiple {
+  font-weight: 400;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  text-align: right; vertical-align: top;
+  width: 145px;
+  padding: 3px 1px 2px 0px;
+  float:left;
+  border: 1px;
+  text-shadow: 1px 1px #FFFFFF;
+}
+.labelMultiple {
+	width:245px;
+}
+.longLabel {
+	width: 245px;
+}
+div#reportParametersDiv .label, div#reportParametersDiv label {
+	width:180px;
+}
+
+.labelWithThumb {
+  width: 120px !important
+}
+.largeLabel {
+  width: 300px;
+}
+.smallLabel {
+  width: 77px !important;
+}
+.notLabel {
+  float:none;
+}
+.smallRadioLabel {
+  width:95px;
+  font-weight: normal;
+}
+.dialogLabel {
+  color: #707070; 
+}
+.adminLabel {
+  margin-top:3px;
+  vertical-align: middle;
+} 
+.shortlabel {
+  width: 75px;
+}
+.checkLabel {
+  font-weight: normal;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  text-align: left; vertical-align: top;
+  padding: 0px 0px 0px 0px;
+  float:none;
+  border: 0px;
+  cursor: pointer;
+  }
+
+#menuSelector.menuSelect .dijitReset.dijitStretch.dijitButtonContents {
+  border-style: none;
+  padding: 0px 5px 0px 5px;
+  font-weight: bold;
+}
+
+/*.dijitMenuItem, .dijitMenuItemHover, .dijitMenuItemSelected {
+  padding:0px;
+  margin:0px;
+  height:10px;
+}*/
+#menuSelector_menu tbody tr.dijitMenuItem td {
+  padding: 0;
+}
+#menuSelector_menu tbody tr.dijitMenuItem {
+   border-bottom:1px solid #dddddd;
+}
+.menuSelectList{
+   margin:0;
+   padding:5px 0px 5px 10px;
+} 
+#menuSelector .menuSelectList{
+ color:#ffffff; padding:2px 2px 1px 5px;
+}
+.menuSelectList:hover{
+  color:#ffffff !important;
+} 
+.menuBarCustom {
+  background-image: url(images/smallIconFavorite.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.customMenuAddRemove {
+  display:none;
+  position:absolute;
+  top:10px;
+  color:#000000;
+  background:#F5F6CE; 
+  border:2px solid #E6E6E6;
+  padding:3px 5px;
+  z-index:99999;
+  cursor:pointer;
+}
+.menuBarCustom:hover {
+  background-image: url(images/smallIconFavorite.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.disconnectClass {
+ height:24px; width:24px; position: relative; top: 1px;
+ background-image: url(../img/disconnect.png) ;
+ background-size: 24px 24px;
+}
+
+.verticalLayoutClass {
+  height:24px; width:24px; position: relative; top: 1px;
+ background-image: url(images/verticalLayout.png) ;
+ background-size: 24px 24px;
+}
+
+.horizontalLayoutClass {
+  height:24px; width:24px; position: relative; top: 1px;
+ background-image: url(images/horizontalLayout.png) ;
+ background-size: 24px 24px;
+}
+
+
+.changeActivityStreamClass {
+  height:24px; width:24px; position: relative; top: 1px;
+ background-image: url(images/changeActivityStream.png) ;
+ background-size: 24px 24px;
+}
+
+.changeActivityStreamBotClass {
+  height:24px; width:24px; position: relative; top: 1px;
+ background-image: url(images/changeActivityStreamBot.png) ;
+ background-size: 24px 24px;
+}
+
+
+/* Specific classes =========================================================== */
+
+.title {
+    font-size: 12pt; 
+    font-weight: bold;
+    max-height: 2em;
+    white-space: nowrap;
+}
+
+.titleProject {
+    font-size: 10pt; 
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 5px 2px 0px 0px;
+}
+
+.input {
+  font-weight: normal;
+  color: #000;
+  width: 400px;
+  margin: 1px; padding: 0px;
+  border: 1px solid #b3b3b3;
+  line-height: normal;
+}
+.inputLogin{
+  font-weight: normal;
+  color: #000;
+  margin: 0px; padding: 5px;
+  border: 1px solid #b3b3b3;
+  line-height: normal;
+  border-radius:0px 5px 5px 0px;
+  barckground: url() !important;
+  barckground-color: #ffffff !important;
+  width:195px;
+  height:17px;
+}
+.inputLoginIcon {
+  float:left;
+  font-weight: normal;
+  color: #000;
+  padding: 3px 4px 2px 4px ; 
+  border: 1px solid #b3b3b3;
+  line-height: normal;
+  border-radius:5px 0px 0px 5px;
+  barckground: url() !important;
+  barckground-color: #ffffff !important;
+  background-position: 3px 3px;
+  height:22px;
+  width:32px;
+}
+
+.display {
+  background-image: url(images/noimage.png);
+  background-repeat: no-repeat;
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  width: 100%;
+  margin: 1px; padding: 0px; 
+  cursor: default !important;
+}
+.displayTransparent {
+  background-image: url(images/noimage.png);
+  background-repeat: no-repeat;
+  font-weight: normal;
+  color: #000 !important;
+  background-color: transparent !important;
+  background: none !important;
+  border: 0px;
+  text-align: right;
+  width: 400px;
+  margin: 1px; padding: 0px; 
+  cursor: default !important;
+}
+.display .pointer {
+  cursor: pointer !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.detail {
+  width: 1px;
+  height: 1px;
+  margin:0px; padding:0px; 
+}
+ .affectationIdleClass {
+  background-color: #EEEEEE !important; 
+  /*text-decoration: line-through;*/
+}
+.menuTree {
+  background-image: url(images/noimage.png);
+  background-repeat: no-repeat;
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  width: 400px;
+  margin: 1px; padding: 0px; 
+  border: 0px;
+  cursor: pointer !important;
+}
+.menuTree:hover {
+  background-color: #DDDDDD !important ;
+
+}
+
+.tabLabel {
+  font-weight: bold;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  text-align: center;
+  border: none; padding: 0px; spacing: 0px;
+  width: 75px;
+}
+.smallTabLabel, .smallTabLabelRight {
+  font-weight: normal;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  text-align: left;
+  border: none; padding: 0px; spacing: 0px;
+  width: 90px;
+}
+.smallTabLabelRight {
+  text-align: right;
+}
+
+.messageOK, .messageNO_CHANGE, .messageINVALID, .messageERROR, .messageWARNING, .messageINCOMPLETE {
+  top:0px;
+  overflow:visible;
+  /*text-align: center;*/
+  vertical-align: middle;
+  padding: 20px 5px;
+  color:#555555; 
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  min-height:16px; 
+  max-height:200px;
+  min-width: 100px;
+  overflow-y:auto; overflox-x: hidden;
+  width:95%;
+  height:100%;
+  box-shadow: 3px 3px 5px #656565;
+  z-index:0;
+}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.messageNotificationInfo, .messageNotificationInformation, .messageNotificationAlert, .messageNotificationWarning, .messageNotificationTotal {
+  top:0px;
+  overflow:visible;
+  vertical-align: middle;
+  padding: 5px 5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  min-height:16px; max-height:200px;
+  min-width: 100px;
+  overflow-y:auto; overflox-x: hidden;
+  width:95%;
+  height:100%;
+  box-shadow: 5px 5px 10px #656565;
+  font-weight: 600;
+  background-repeat:no-repeat;
+}
+.messageNotificationTotal {
+  text-align:center;
+  color:#000000; 
+  background-position:top;
+  background-color: #F0F0F0;
+  background-image: url(images/iconNotification.png);
+}
+.messageNotificationAlert {
+  text-align: left;
+  color:#FFFFFF; 
+  background-position: right;
+  background-color: #FF0000;
+  background-image: url(images/iconAlert.png);
+}
+.messageNotificationWarning {
+  text-align: left;
+  color:#000000; 
+  background-position: right;
+  background-color: #FFDDDD;
+  background-image: url(images/iconWarning.png);
+}
+.messageNotificationInfo, .messageNotificationInformation {
+  text-align: left;
+  color:#FFFFFF; 
+  background-position: right;
+  background-color: #0000FF;
+  background-image: url(images/iconInformation.png);}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+.messageOK {
+  background: #DDFFDD url();
+  font-weight: 600;
+}
+.messageERROR {
+  background: #FF0000 url();
+  color: #FFFFFF;
+  text-shadow: 1px 1px #555555;
+}
+.messageWARNING, .messageINCOMPLETE {
+  background: #FFDDDD url();
+}
+.messageNO_CHANGE {
+  background: #F0F0F0 url();
+}
+.messageINVALID {
+  background: #FFDDDD url();
+}
+
+.messageClosebox {
+  position: absolute;
+  z-index: 99999;
+  float: right;
+}
+.colorSelector {
+  background-image: url(images/colorSelector.png);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+}
+
+.colorDisplay {
+  background-image: url(images/noimage.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.colorHealth {
+  width:10px;
+  height:10px;
+  margin:1px;padding:0;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #AAAAAA;
+}
+.checkBox {
+  background-image: url(images/checkmark.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: 0px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+
+.imputationTable {
+  padding: 0px; margin: 0px;
+  width: 100%; overflow: hidden;
+  text-align: left;
+  font-weight: normal;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+  vertical-align: top;
+
+}
+
+.dijitReset, .dijitRight, .dijitInline, .dijitReset, .dijitInline, .dijitButtonNode, .link {
+  cursor: pointer; 
+}
+.link:hover {
+  background-color: #eeeeee;
+  text-decoration: underline;
+}
+.filterField {
+  color: #555555;  
+}
+
+.selectList {
+    border:1px solid #AAAAAA;
+    padding:2px 5px 2px 5px; 
+    cursor:pointer;
+    height:200px; 
+    width:400px;
+    font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 8pt;
+}
+.selectableList {
+  cursor:pointer;
+  height:100%;
+  padding:0px 5px 5px 5px;
+  vertical-align:top;
+}
+.selectableList:hover {
+  background:#eeeeee;
+}
+.crossTable {
+  border: 0px solid black;
+}
+.crossTableHeader {
+ border: 0px solid blue;
+ witdh: 100px;
+ text-align: center;
+}
+.crossTableLine {
+  border: 0px solid red;
+  text-align: right;
+  height: 30px;
+}
+.crossTablePivot {
+  border: 0px solid green;
+  text-align: center;
+}
+
+.section {
+  text-align: center;
+  font-weight: 200;
+  width: 100%;
+  min-height: 18px;
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+  text-shadow: 1px 1px #FEFEFE;
+}
+
+.kanbanBadge {
+  position: relative;
+  bottom:7px;
+  right:0px;
+  width:15px;
+  height: 0px;
+  padding:0px 13px;
+  text-align: center;
+  display: inline;
+  font-size:8pt;
+  font-weight:normal;zoom:0.9; 
+  -moz-transform: scale(0.9);
+  cursor: pointer;
+}
+
+.sectionBadge {
+  position: absolute;
+  top:3px; right:7px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  display: inline;
+  border: 1px solid #FFFFFF;
+  border-radius:12px;
+  font-size:7pt;
+
+}
+
+.dijitTitlePane .dijitTitlePaneTitle {
+  height: 18px;
+}
+
+.calendar {
+  font-size: 7pt;
+  background: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+}
+.offDay {
+  background: #DDDDDD;
+}
+
+.calendar .offDay {
+  background: #DDDDDD;
+}
+
+
+.historyHeader, .noteHeader, .attachmentHeader, .messageHeader, .linkHeader, .assignHeader, 
+.dependencyHeader, .workflowHeader, .filterHeader, .calendarHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 1px 1px #FFFFFF;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x !important;
+  color: #505050;
+  height: 20px;
+}
+.workflowHeader {
+  font-size: 90%;
+}
+.largeReportHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+}
+.largeReportData {
+  border: 1px solid #AAAAAA;
+  font-weight: normal;
+  background: #FFFFFF;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+  vertical-align: top;
+}
+.largeReportDataDone {
+  border: 1px solid #AAAAAA;
+  font-weight: normal;
+  background: #E0E0E0;
+  color: #505050;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+  vertical-align: top;
+}
+.reportHeader {
+  border: 0px solid #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x;
+}
+.reportTableHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 5px 3px 5px;
+  background: url(images/titleBarDark.png) #909090 top repeat-x;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #505050;
+}
+
+.reportTableHeaderAsset {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  background: url(images/titleBarDark.png) #909090 top repeat-x;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #505050;
+}
+
+.reportTableColumnHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  padding: 1px 3px 1px 3px;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x;
+}
+.reportTableLineHeader {
+  border: 1px solid #AAAAAA;
+  padding: 0px 3px 0px 3px;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x;
+}
+.reportTableData, .reportTableDataSpanned {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  padding: 0px 1px 0px 1px;
+  background: #FFFFFF;
+}
+.reportTableDataSpanned {
+  padding: 3px 5px;  
+}
+.reportTableDataBorderRight {
+  border-right: 1px solid #AAAAAA;
+}
+  
+.reportTableDataLeft {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: normal;
+  padding: 0px 1px 0px 1px;
+  background: #FFFFFF;
+}
+
+.reportTableDataFull {
+  border: 1px solid #AAAAAA;
+  text-align: left;
+  vertival-align: middle;
+  font-weight: normal;
+  padding: 0px 0px 0px 0px;
+  background: #FFFFFF;
+  width: 20px; height: 20px;
+}
+
+.reportTableDataSimple {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  padding: 0px 1px 0px 1px;
+}
+
+.historyData, .noteData, .attachmentData, .messageData, .messageDataValue, .linkData, .assignData, 
+.dependencyData, .workflowData, .filterData, .messageDataValueGrey {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  border: 1px solid #AAAAAA;
+  vertical-align: top;
+  background-color: #FFFFFF;
+}
+.colorNameData {
+	padding:0;
+	height:10px;
+}
+td.noteData div table tr td, td.noteData div div table tr td {
+	border: 1px solid;
+}
+
+@-moz-document url-prefix() {
+    .colorNameData {
+        height: 100%;
+    }
+}
+.centerData {
+	text-align: center;
+}
+.verticalCenterData {
+  vertical-align: middle;
+}
+.messageDataValueGrey {
+  background-color: #EEEEEE;
+  color: #505050;
+}
+
+.workflowData {
+  font-size: 80%;
+}
+.workflowDetail {
+  border-top: 1px solid #D0D0D0; 
+}
+
+.messageDataValue {
+  text-align: center;  
+}
+
+.historyDataNewOperation {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 1px solid #AAAAAA;
+  background-color: #FFFFFF;
+}
+.historyDataContinueOperation {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+  border-top: 0px solid #FFFFFF;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 1px solid #AAAAAA;
+  background-color: #FFFFFF;
+}
+.historyDataClosetable, .noteDataClosetable , .attachmentDataClosetable, .linkDataCloseTable, .assignDataCloseTable {
+  font-size: 1pt;
+  padding: 0px 0px 0px 0px;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 0px solid #FFFFFF;
+  border-right: 0px solid #FFFFFF;
+}
+.halfLine {
+  font-size: 4pt;
+  padding: 0px;
+  border-top: 0px;
+}
+
+.smallButton {
+  height: 12px; width: 12px;
+  cursor: pointer !important;
+}
+.largeTextButton {
+  width:200px; 
+  height:20px;
+}
+.mediumTextButton {
+  width:100px; 
+  height:20px;
+}
+.smallTextButton {
+  width:50px; 
+  height:20px;
+}
+.dynamicTextButton {
+  height:20px;
+}
+.thumbBigImageTitle, .thumbBigImageTitleAlone {
+  position:absolute;
+  right:-0px;
+  /*text-shadow:1px 1px #ffffff;*/ 
+  white-space:nowrap;
+  background:rgba(255,255,255,0.9);
+  border: 1px solid #AAAAAA;
+  box-shadow: 5px 5px 10px #555555; 
+  /*border-radius:5px;*/
+  /*padding: 0px 5px 2px 5px;*/
+  padding: 5px 10px;
+}
+.thumbBigImageTitle{
+  bottom:-20px;
+}
+.thumbBigImageTitleAlone {
+  top:35px;
+}
+
+
+.iconPlan {
+  background-image: url(images/plan.gif);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.iconPlanStopped {
+  background-image: url(images/planStopped.gif);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size:30px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.iconHelp {
+  background-image: url('images/iconHelp.png');
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.iconHelpTitle {
+  background-image: url('../img/help.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 22px 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */ 
+.menuBarNotificationCount {
+  font-weight: bold; 
+  font-size: 12pt;
+  color: #D2691E; 
+  text-align: center;
+  vertical-align: middle;
+}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.menuBarNotificationCount:hover {
+  cursor: pointer;    
+}
+
+.gridRowCount, .gridRowCountShadow1, .gridRowCountShadow2 {
+  font-weight: bold; 
+  font-size: 15pt;
+  position:absolute; 
+}
+.gridRowCount {
+  color: #CECECE; 
+  left: 8px; top: 4px;
+}
+
+.gridRowCountShadow1 {
+  color: #FFFFFF; 
+  left: 7px; top: 3px;
+}
+.gridRowCountShadow2 {
+  color: #000000; 
+  left: 9px; top: 5px;
+}
+
+.legend {
+ padding: 0px 0px 0px 5px; 
+}
+
+.dialogSection {
+  text-align:center;
+  font-weight: bold;
+  background-color: #F0F0F0;
+  color: #505050;
+}
+.ganttTaskgroup:Hover, .ganttTaskrow:hover, .ganttTaskmile:Hover, .ganttRowHover {
+  background-color: #ffffaa;
+}
+
+.wfUpArrow {
+  opacity:0.6;filter:alpha(opacity=60);
+  width:7px; height:4px; 
+  background: url(images/grid_sort_up.gif) no-repeat;
+  position:absolute; left:-4px; top:0px;
+}
+.wfDownArrow {
+  opacity:0.6;filter:alpha(opacity=60);
+  width:7px; height:4px; 
+  background: url(images/grid_sort_down.gif) no-repeat;
+  position:absolute; left:-4px; bottom:0px;
+}
+
+.imputationSubmitted {
+  font-size:8px;
+  background-color: #dAd5e4;
+  border: 1px solid grey;
+}
+.imputationValidated {
+  font-size:8px;
+  background-color: #dAe5d4 !important;
+  border: 1px solid grey;
+}
+.imputationInvalidCapacity {
+  background-color : #ff7777 !important;
+  color : #ff0000 !important;
+  font-weight: normal;
+}
+.imputationValidCapacity {
+  background-color : #77ff77 !important;
+  color : #ff0000 !important;
+  font-weight: normal !important;
+}
+.imputationHasValue{
+	background: #ffffaa !important;
+}
+
+.parametersButton {
+  width:35px; 
+  text-align: center;
+  float: right;
+  icon: selector;
+  cursor: pointer;
+}
+
+.buttonDiary {
+    background: #ececec url(images/buttonActive.png) repeat-x bottom left;
+    cursor:pointer;
+    margin:0px; 
+    padding:2px; 
+    border: 1px solid #c0c0c0;
+    border-bottom: 1px solid #9b9b9b;
+    vertical-align:middle;
+    text-align: center;
+}
+.buttonDiary:hover {
+    border-color: #a5a5a5;
+    border-bottom-color: #757575;
+    color: #3C3C3C;
+    background: #fcfdfd url(images/buttonHover.png) repeat-x bottom;
+}
+
+.rounded, #widget_dojox_form__NewPWBox_0, #widget_dojox_form__VerifyPWBox_0 {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.roundedLeft {
+  -webkit-border-top-left-radius: 10px  !important;
+  -webkit-border-bottom-left-radius: 10px !important;
+  -moz-border-radius-topleft: 10px  !important;
+  -moz-border-radius-bottomleft: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  padding-left: 7px;
+}
+
+/* SPECIFIC ROUND BUTTON */
+.smallButtonsGroup {
+  white-space:nowrap;
+  text-align:center;
+}
+.roundedButton {
+  height:20px; width:20px;
+  /*background: #eee url(images/buttonEnabled.png) repeat-x bottom left;*/
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.roundedButtonSmall:hover {
+  /* height:14px; width:14px; */
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+.roundedButton, .roundedButtonSmall {
+  border: 1px solid transparent;
+}
+.roundedVisibleButton {
+  background: #eee url(images/buttonEnabled.png) repeat-x bottom left;
+  border: 1px solid #c0c0c0;
+}
+.roundedButton.disabled, .roundedButtonSmall.disabled {
+  border-color: #d5d5d5 #d5d5d5 #bdbdbd #d5d5d5;
+  background: #e4e4e4 url(images/buttonDisabled.png) top repeat-x;
+  cursor: default;
+}
+.roundedButton:hover, .roundedButtonSmall:hover {
+  border: 1px solid #c0c0c0;
+  border-color: #a5a5a5;
+  border-bottom-color: #757575;
+  color: #3C3C3C;
+  background: #fcfdfd url(images/buttonHover.png) repeat-x bottom;
+}
+.roundedButton:active, .roundedButtonSmall:active {
+  border: 1px solid #c0c0c0;
+    border-color:#366dba;
+    background: #ededed url(images/buttonActive.png) bottom repeat-x;
+}
+.pseudoButton {
+  background: transparent;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #ffffff;
+  border-radius:5px;
+  z-index:3000;
+  color: #000000;
+  text-shadow: 1px 1px #FFFFFF  ;
+  cursor:pointer;
+  height: 26px;
+}
+.pseudoButton:hover {
+  background: rgba(255,255,255,1);
+  color: #000000;
+  text-shadow: 1px 1px #FFFFFF  ;
+}
+
+.pseudoButtonFullScreen {
+  background: transparent;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #ffffff;
+  z-index:3000;
+  color: #000000;
+  text-shadow: 1px 1px #FFFFFF  ;
+  cursor:pointer;
+  height: 26px;
+}
+.pseudoButtonFullScreen:hover {
+  background: rgba(255,255,255,1);
+  color: #000000;
+  text-shadow: 1px 1px #FFFFFF  ;
+}
+
+.simuToolBar {
+	background: #EEEEEE;
+}
+
+.directAttachment .dijitButtonText {
+  margin:auto;
+  padding:0;
+  line-height: 90%;
+  vertical-align:middle;
+}
+.directAttachment .dijitButtonText i {
+  font-size:90%;
+  vertical-align: middle;
+  margin: auto;
+}
+#attachmentFile  {
+  width:100px;
+}
+.dijitUploader .dijitReset.dijitInline.dijitButtonNode:hover {
+  /* height:100px !important;*/ 
+}
+.closeBoxIcon { 
+  position: absolute;
+  right: 45px;
+  top: 5px; 
+  cursor:pointer; 
+  height:24px; width:24px;
+  background-image: url(images/iconClose.png);
+  pointer-events: auto;
+}
+
+.dijitSplitter {
+ z-index:2;
+}
+/* =============================================================================== */
+/* SPECIFIC BLUE THEME                                                             */
+/* =============================================================================== */
+
+.blue html, .blue body, .blue #leftDiv, .blue #logoDiv,
+.blue #buttonDiv,
+.blue .dijitSplitterH, .blue .dijitGutterH, .blue .dijitSplitterV, .blue .dijitGutterV,
+.blue .dijitMenuItemHover,
+.blue .dijitMenuPassive .dijitMenuItemHover,
+.blue .dijitMenuItemSelected,
+.blue .loginBackground    {
+  background-color: #545281;
+  color:#ffffff;
+}
+
+.blue #mapDiv, .blue #messageDiv, .blue #listDiv, .blue #detailDiv, .blue #formDiv, .blue .display, .blue .background,
+.blue .dijitTitlePaneContentInner, .blue .dijitTabPane,
+.blue #mainDiv,  .blue #contentDiv, .blue #centerDiv {
+  background-color: #C3C3EB;
+}
+.blue .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #C3C3EB;
+  border-bottom-color: #C3C3EB;
+}
+.blue .dijitTabPaneWrapper {
+  border: 1px solid #ffffff;
+  border-top:none;
+}
+.blue .dijitTabChecked, .blue .dijitTab, .blue .dijitTabContainerTop-tabs{
+  border-color: #ffffff;
+}
+.blue #toolBarDiv, .blue #statusBarDiv, .blue .statusBar, .blue .dojoxGridRowSelected, .blue .listTitle,
+.blue .section, .blue .dijitTitlePane .dijitTitlePaneTitle, .blue .title {
+  background-color: #545281;  color: #EEEEEE;  
+}
+
+.blue .tabLabel, .blue .label, .blue .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3C3EB; color: #545281;
+}
+
+.blue .display, .blue #printPreview {
+  border: 1px solid #C3C3EB;
+}
+
+.blue .titleProject {
+ color: #C3C3EB;  
+}
+
+.blue #mainDiv {
+    /*scrollbar-face-color: #C3C3EB;
+    scrollbar-shadow-color: #C3C3EB;
+    scrollbar-highlight-color: #C3C3EB;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #C3C3EB;
+    scrollbar-arrow-color: #545281;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC RED THEME                                                              */
+/* =============================================================================== */
+
+.red html, .red body, .red #leftDiv, .red #logoDiv,
+.red #buttonDiv,
+.red .dijitSplitterH, .red .dijitGutterH, .red .dijitSplitterV, .red .dijitGutterV,
+.red .dijitMenuItemHover,
+.red .dijitMenuPassive .dijitMenuItemHover,
+.red .dijitMenuItemSelected,
+.red .loginBackground    {
+  background-color: #9B5353;
+}
+
+.red #mapDiv, .red #messageDiv, .red #listDiv, .red #detailDiv, .red #formDiv, .red .display, .red .background,
+.red .dijitTitlePaneContentInner, .red .dijitTabPane,
+.red #mainDiv, .red #contentDiv, .red #centerDiv {
+  background-color: #EBC3C3;
+}
+.red .dijitTabPaneWrapper {
+  border: 1px solid #ffffff;
+  border-top:none;
+}
+.red .dijitTabChecked, .red .dijitTab, .red .dijitTabContainerTop-tabs{
+  border-color: #ffffff;
+}
+.red .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #EBC3C3;
+  border-bottom-color: #EBC3C3;
+}
+.red #toolBarDiv, .red #statusBarDiv, .red .statusBar, .red .dojoxGridRowSelected, .red .listTitle,
+.red .section, .red .dijitTitlePane .dijitTitlePaneTitle, .red .title {
+  background-color: #9B5353;  color: #FFFFFF;   
+}
+
+.red .tabLabel, .red .label, .red .dojoxGridRowOver .dojoxGridCell {
+  background-color: #EBC3C3; color: #9B5353;
+}
+
+.red .display, .red #printPreview {
+  border: 1px solid #EBC3C3;
+}
+
+.red .titleProject {
+ color: #EBC3C3;  
+}
+
+.red #mainDiv {
+    /*scrollbar-face-color: #EBC3C3;
+    scrollbar-shadow-color: #EBC3C3;
+    scrollbar-highlight-color: #EBC3C3;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #EBC3C3;
+    scrollbar-arrow-color: #9B5353;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC GREEN THEME                                                            */
+/* =============================================================================== */
+.green html, .green body, .green #leftDiv, .green #logoDiv,
+.green #buttonDiv,
+.green .dijitSplitterH, .green .dijitGutterH, .green .dijitSplitterV, .green .dijitGutterV,
+.green .dijitMenuItemHover,
+.green .dijitMenuPassive .dijitMenuItemHover,
+.green .dijitMenuItemSelected,
+.green .loginBackground    {
+  background-color: #539B53;
+}
+
+.green #mapDiv, .green #messageDiv, .green #listDiv, .green #detailDiv, .green #formDiv, .green .display, .green .background,
+.green .dijitTitlePaneContentInner, .green .dijitTabPane,
+.green #mainDiv,  .green #contentDiv, .green #centerDiv {
+  background-color: #C3EBC3;
+}
+.green .dijitTabPaneWrapper {
+  border: 1px solid #ffffff;
+  border-top:none;
+}
+.green .dijitTabChecked, .green .dijitTab, .green .dijitTabContainerTop-tabs{
+  border-color: #ffffff;
+}
+.green .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #C3EBC3;
+  border-bottom-color: #C3EBC3;
+}
+.green #toolBarDiv, .green #statusBarDiv, .green .statusBar, .green .dojoxGridRowSelected, .green .listTitle,
+.green .section, .green .dijitTitlePane .dijitTitlePaneTitle, .green .title {
+  background-color: #539B53;  color: #EEEEEE;  
+}
+
+.green .tabLabel, .green .label, .green .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3EBC3; color: #539B53;
+}
+
+.green .display, .green #printPreview {
+  border: 1px solid #C3EBC3;
+}
+
+.green .titleProject {
+ color: #C3EBC3;  
+}
+
+.green #mainDiv {
+    /*scrollbar-face-color: #C3EBC3;
+    scrollbar-shadow-color: #C3EBC3;
+    scrollbar-highlight-color: #C3EBC3;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #C3EBC3;
+    scrollbar-arrow-color: #539B53;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC GREY THEME                                                             */
+/* =============================================================================== */
+
+.grey html, .grey body, .grey #leftDiv, .grey #logoDiv,
+.grey #buttonDiv,
+.grey .dijitSplitterH, .grey .dijitGutterH, .grey .dijitSplitterV, .grey .dijitGutterV,
+.grey .dijitMenuItemHover,
+.grey .dijitMenuPassive .dijitMenuItemHover,
+.grey .dijitMenuItemSelected,
+.grey .loginBackground    {
+  background-color: #9B9B9B;
+}
+
+.grey #mapDiv, .grey #messageDiv, .grey #listDiv, .grey #detailDiv, .grey #formDiv, .grey .display, .grey .background,
+.grey .dijitTitlePaneContentInner, .grey .dijitTabPane,
+.grey #mainDiv,  .grey #contentDiv, .grey #centerDiv {
+  background-color: #C3C3C3;
+}
+.grey .dijitTabPaneWrapper {
+  border: 1px solid #ffffff;
+  border-top:none;
+}
+.grey .dijitTabChecked, .grey .dijitTab, .grey .dijitTabContainerTop-tabs{
+  border-color: #ffffff;
+}
+.grey .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #C3C3C3;
+  border-bottom-color: #C3C3C3;
+}
+.grey #toolBarDiv, .grey #statusBarDiv, .grey .statusBar, .grey .dojoxGridRowSelected, .grey .listTitle,
+.grey .section, .grey .dijitTitlePane .dijitTitlePaneTitle, .grey .title {
+  background-color: #9B9B9B;  color: #FFFFFF;  
+}
+
+.grey .tabLabel, .grey .label, .grey .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3C3C3; color: #535353;
+}
+
+.grey .display, .grey #printPreview {
+  border: 1px solid #C3C3C3;
+}
+
+.grey .titleProject {
+ color: #C3C3C3;  
+}
+
+.grey #mainDiv {
+    /*scrollbar-face-color: #C3C3C3;
+    scrollbar-shadow-color: #C3C3C3;
+    scrollbar-highlight-color: #C3C3C3;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #C3C3C3;
+    scrollbar-arrow-color: #535353;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC ORANGE THEME                                                           */
+/* =============================================================================== */
+
+.orange html, .orange body, .orange #leftDiv, .orange #logoDiv,
+.orange #buttonDiv,
+.orange .dijitSplitterH, .orange .dijitGutterH, .orange .dijitSplitterV, .orange .dijitGutterV,
+.orange .dijitMenuItemHover,
+.orange .dijitMenuPassive .dijitMenuItemHover,
+.orange .dijitMenuItemSelected,
+.orange .loginBackground    {
+  background-color: #D98F0E;
+}
+
+.orange #mapDiv, .orange #messageDiv, .orange #listDiv, .orange #detailDiv, .orange #formDiv, .orange .display, .orange .background,
+.orange .dijitTitlePaneContentInner, .orange .dijitTabPane,
+.orange #mainDiv,  .orange #contentDiv, .orange #centerDiv {
+  background-color: #F6C672;
+}
+.orange .dijitTabPaneWrapper {
+  border: 1px solid #ffffff;
+  border-top:none;
+}
+.orange .dijitTabChecked, .orange .dijitTab, .orange .dijitTabContainerTop-tabs{
+  border-color: #ffffff;
+}
+.orange .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #F6C672;
+  border-bottom-color: #F6C672;
+}
+.orange #toolBarDiv, .orange #statusBarDiv, .orange .statusBar, .orange .dojoxGridRowSelected, .orange .listTitle,
+.orange .section, .orange .dijitTitlePane .dijitTitlePaneTitle, .orange .title {
+  background-color: #D98F0E;  color: #FFFFFF;  
+}
+
+.orange .tabLabel, .orange .label, .orange .dojoxGridRowOver .dojoxGridCell {
+  background-color: #F6C672; color: #D98F0E;
+}
+
+.orange .display, .orange #printPreview {
+  border: 1px solid #F6C672;
+}
+
+.orange .titleProject {
+ color: #F6C672;  
+}
+
+.orange #mainDiv {
+    /*scrollbar-face-color: #F6C672;
+    scrollbar-shadow-color: #F6C672;
+    scrollbar-highlight-color: #F6C672;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #F6C672;
+    scrollbar-arrow-color: #D98F0E;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC WHITE THEME                                                            */
+/* =============================================================================== */
+
+.white html, .white body, .white #leftDiv,
+.white .dijitSplitterH, .white .dijitGutterH , .white .dijitSplitterV, .white .dijitGutterV,
+.white .dijitMenuItemHover, .white #buttonDiv, .white #logoDiv,
+.white .dijitMenuPassive .dijitMenuItemHover,
+.white .dijitMenuItemSelected,
+.white .loginBackground   {
+  background-color: #000000;
+}
+
+.white #mapDiv, .white #messageDiv, .white #listDiv, .white #detailDiv, .white #formDiv, .white .display, 
+.white #mainDiv, .white #contentDiv, .white #centerDiv {
+  background-color: #FFFFFF;
+}
+
+.white #toolBarDiv, .white #statusBarDiv, .white .statusBar, .white .dojoxGridRowSelected, .white .listTitle,
+.white .section, .white .dijitTitlePane .dijitTitlePaneTitle, .white .title {
+  background-color: #000000;  color: #FFFFFF;  
+}
+
+.white .tabLabel, .white .label,
+.white .dijitTitlePaneContentInner, .white .dijitTabPane  {
+  background-color: #FFFFFF; color: #000000;
+}
+.white .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.white .dojoxGridRowOver .dojoxGridCell {
+    background-color: #DDDDDD; color: #000000;
+}
+.white .display, .white #printPreview {
+  border: 1px solid #FFFFFF;
+}
+.white .titleProject {
+ color: #FFFFFF;  
+}
+.white #mainDiv {
+    /*scrollbar-face-color: #FFFFFF;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #CCCCCC;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #000000;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC LIGHT BLUE THEME                                                             */
+/* =============================================================================== */
+
+.blueLight html, .blueLight body, .blueLight #leftDiv, .blueLight #logoDiv,
+.blueLight #buttonDiv,
+.blueLight .dijitSplitterH, .blueLight .dijitGutterH, .blueLight .dijitSplitterV, .blueLight .dijitGutterV,
+.blueLight .dijitMenuItemHover,
+.blueLight .dijitMenuPassive .dijitMenuItemHover,
+.blueLight .dijitMenuItemSelected,
+.blueLight .loginBackground    {
+  background-color: #C3C3EB;
+}
+
+.blueLight #mapDiv, .blueLight #messageDiv, .blueLight #listDiv, .blueLight #detailDiv, .blueLight #formDiv, .blueLight .display, .blueLight .background,
+.blueLight .dijitTitlePaneContentInner, .blueLight .dijitTabPane,
+.blueLight #mainDiv,  .blueLight #contentDiv, .blueLight #centerDiv {
+  background-color: #EEEEFF;
+}
+.blueLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #EEEEFF;
+  border-bottom-color: #EEEEFF;
+}
+.blueLight #toolBarDiv, .blueLight #statusBarDiv, .blueLight .statusBar, .blueLight .dojoxGridRowSelected, .blueLight .listTitle,
+.blueLight .section, .blueLight .dijitTitlePane .dijitTitlePaneTitle, .blueLight .title  {
+  background-color: #C3C3EB;  color: #545281;  
+}
+
+.blueLight .tabLabel, .blueLight .label, .blueLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #EEEEFF; color: #545281;
+}
+
+.blueLight .display, .blueLight #printPreview {
+  border: 1px solid #EEEEFF;
+}
+
+.blueLight .titleProject {
+ color: #EEEEFF;  
+}
+.blueLight #mainDiv {
+    /*scrollbar-face-color: #EEEEFF;
+    scrollbar-shadow-color: #EEEEFF;
+    scrollbar-highlight-color: #EEEEFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #EEEEFF;
+    scrollbar-arrow-color: #C3C3EB;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC CONTRASTED BLUE THEME                                                             */
+/* =============================================================================== */
+
+.blueContrast html, .blueContrast body, .blueContrast #leftDiv, .blueContrast #logoDiv,
+.blueContrast #buttonDiv,
+.blueContrast .dijitSplitterH, .blueContrast .dijitGutterH, .blueContrast .dijitSplitterV, .blueContrast .dijitGutterV,
+.blueContrast .dijitMenuItemHover,
+.blueContrast .dijitMenuPassive .dijitMenuItemHover,
+.blueContrast .dijitMenuItemSelected,
+.blueContrast .loginBackground    {
+  background-color: #545281;
+}
+
+.blueContrast #mapDiv, .blueContrast #messageDiv, .blueContrast #listDiv, .blueContrast #detailDiv, .blueContrast #formDiv, .blueContrast .display, .blueContrast .background,
+.blueContrast .dijitTitlePaneContentInner, .blueContrast .dijitTabPane,
+.blueContrast #mainDiv,  .blueContrast #contentDiv, .blueContrast #centerDiv {
+  background-color: #FFFFFF;
+}
+.blueContrast .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+
+.blueContrast #toolBarDiv, .blueContrast #statusBarDiv, .blueContrast .statusBar, .blueContrast .dojoxGridRowSelected, .blueContrast .listTitle,
+.blueContrast .section, .blueContrast .dijitTitlePane .dijitTitlePaneTitle, .blueContrast .title  {
+  background-color: #545281;  color: #FFFFFF;  
+}
+
+.blueContrast .tabLabel, .blueContrast .label, .blueContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFFF; color: #545281;
+}
+.blueContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3C3EB; color: #545281;
+}
+
+.blueContrast .display, .blueContrast #printPreview {
+  border: 1px solid #FFFFFF;
+}
+
+.blueContrast .titleProject {
+ color: #FFFFFF;  
+}
+.blueContrast #mainDiv {
+    /*scrollbar-face-color: #EEEEFF;
+    scrollbar-shadow-color: #EEEEFF;
+    scrollbar-highcontrasted-color: #EEEEFF;
+    scrollbar-3dcontrasted-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #EEEEFF;
+    scrollbar-arrow-color: #C3C3EB;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC LIGHT RED THEME                                                              */
+/* =============================================================================== */
+
+.redLight html, .redLight body, .redLight #leftDiv, .redLight #logoDiv,
+.redLight #buttonDiv,
+.redLight .dijitSplitterH, .redLight .dijitGutterH, .redLight .dijitSplitterV, .redLight .dijitGutterV,
+.redLight .dijitMenuItemHover,
+.redLight .dijitMenuPassive .dijitMenuItemHover,
+.redLight .dijitMenuItemSelected,
+.redLight .loginBackground    {
+  background-color: #EBC3C3;
+}
+
+.redLight #mapDiv, .redLight #messageDiv, .redLight #listDiv, .redLight #detailDiv, .redLight #formDiv, .redLight .display, .redLight .background,
+.redLight .dijitTitlePaneContentInner, .redLight .dijitTabPane,
+.redLight #mainDiv, .redLight #contentDiv, .redLight #centerDiv {
+  background-color: #FFEEEE;
+}
+.redLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFEEEE;
+  border-bottom-color: #FFEEEE;
+}
+
+.redLight #toolBarDiv, .redLight #statusBarDiv, .redLight .statusBar, .redLight .dojoxGridRowSelected, .redLight .listTitle,
+.redLight .section, .redLight .dijitTitlePane .dijitTitlePaneTitle, .redLight .title {
+  background-color: #EBC3C3;  color: #9B5353;   
+}
+
+.redLight .tabLabel, .redLight .label, .redLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFEEEE; color: #9B5353;
+}
+
+.redLight .display, .redLight #printPreview {
+  border: 1px solid #FFEEEE;
+}
+
+.redLight .titleProject {
+ color: #FFEEEE;  
+}
+
+.redLight #mainDiv {
+    /*scrollbar-face-color: #FFEEEE;
+    scrollbar-shadow-color: #FFEEEE;
+    scrollbar-highlight-color: #FFEEEE;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #FFEEEE;
+    scrollbar-arrow-color: #EBC3C3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC CONTRASTED RED THEME                                                              */
+/* =============================================================================== */
+
+.redContrast html, .redContrast body, .redContrast #leftDiv, .redContrast #logoDiv,
+.redContrast #buttonDiv,
+.redContrast .dijitSplitterH, .redContrast .dijitGutterH, .redContrast .dijitSplitterV, .redContrast .dijitGutterV,
+.redContrast .dijitMenuItemHover,
+.redContrast .dijitMenuPassive .dijitMenuItemHover,
+.redContrast .dijitMenuItemSelected ,
+.redContrast .loginBackground   {
+  background-color: #9B5353;
+}
+
+.redContrast #mapDiv, .redContrast #messageDiv, .redContrast #listDiv, .redContrast #detailDiv, .redContrast #formDiv, .redContrast .display, .redContrast .background,
+.redContrast .dijitTitlePaneContentInner, .redContrast .dijitTabPane,
+.redContrast #mainDiv,  .redContrast #contentDiv, .redContrast #centerDiv {
+  background-color: #FFFFFF;
+}
+.redContrast .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.redContrast #toolBarDiv, .redContrast #statusBarDiv, .redContrast .statusBar, .redContrast .dojoxGridRowSelected, .redContrast .listTitle,
+.redContrast .section, .redContrast .dijitTitlePane .dijitTitlePaneTitle, .redContrast .title  {
+  background-color: #9B5353;  color: #FFFFFF;  
+}
+
+.redContrast .tabLabel, .redContrast .label, .redContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFFF; color: #9B5353;
+}
+.redContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #EBC3C3; color: #9B5353;
+}
+
+.redContrast .display, .redContrast #printPreview {
+  border: 1px solid #FFFFFF;
+}
+
+.redContrast .titleProject {
+ color: #FFFFFF;  
+}
+.redContrast #mainDiv {
+    /*scrollbar-face-color: #FFEEEE;
+    scrollbar-shadow-color: #FFEEEE;
+    scrollbar-highcontrasted-color: #FFEEEE;
+    scrollbar-3dcontrasted-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #FFEEEE;
+    scrollbar-arrow-color: #EBC3C3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC LIGHT green THEME                                                             */
+/* =============================================================================== */
+
+.greenLight html, .greenLight body, .greenLight #leftDiv, .greenLight #logoDiv,
+.greenLight #buttonDiv,
+.greenLight .dijitSplitterH, .greenLight .dijitGutterH, .greenLight .dijitSplitterV, .greenLight .dijitGutterV,
+.greenLight .dijitMenuItemHover,
+.greenLight .dijitMenuPassive .dijitMenuItemHover,
+.greenLight .dijitMenuItemSelected,
+.greenLight .loginBackground    {
+  background-color: #C3EBC3;
+}
+
+.greenLight #mapDiv, .greenLight #messageDiv, .greenLight #listDiv, .greenLight #detailDiv, .greenLight #formDiv, .greenLight .display, .greenLight .background,
+.greenLight .dijitTitlePaneContentInner, .greenLight .dijitTabPane,
+.greenLight #mainDiv,  .greenLight #contentDiv, .greenLight #centerDiv {
+  background-color: #EEFFEE;
+}
+.greenLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #EEFFEE;
+  border-bottom-color: #EEFFEE;
+}
+.greenLight #toolBarDiv, .greenLight #statusBarDiv, .greenLight .statusBar, .greenLight .dojoxGridRowSelected, .greenLight .listTitle,
+.greenLight .section, .greenLight .dijitTitlePane .dijitTitlePaneTitle, .greenLight .title  {
+  background-color: #C3EBC3;  color: #539B53;  
+}
+
+.greenLight .tabLabel, .greenLight .label, .greenLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #EEFFEE; color: #539B53;
+}
+
+.greenLight .display, .greenLight #printPreview {
+  border: 1px solid #EEFFEE;
+}
+
+.greenLight .titleProject {
+ color: #EEFFEE;  
+}
+.greenLight #mainDiv {
+    /*scrollbar-face-color: #EEFFEE;
+    scrollbar-shadow-color: #EEFFEE;
+    scrollbar-highlight-color: #EEFFEE;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #EEFFEE;
+    scrollbar-arrow-color: #C3EBC3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC CONTRASTED green THEME                                                             */
+/* =============================================================================== */
+
+.greenContrast html, .greenContrast body, .greenContrast #leftDiv, .greenContrast #logoDiv,
+.greenContrast #buttonDiv,
+.greenContrast .dijitSplitterH, .greenContrast .dijitGutterH, .greenContrast .dijitSplitterV, .greenContrast .dijitGutterV,
+.greenContrast .dijitMenuItemHover,
+.greenContrast .dijitMenuPassive .dijitMenuItemHover,
+.greenContrast .dijitMenuItemSelected,
+.greenContrast .loginBackground    {
+  background-color: #539B53;
+}
+
+.greenContrast #mapDiv, .greenContrast #messageDiv, .greenContrast #listDiv, .greenContrast #detailDiv, .greenContrast #formDiv, .greenContrast .display, .greenContrast .background,
+.greenContrast .dijitTitlePaneContentInner, .greenConstrast .dijitTabPane,
+.greenContrast #mainDiv,  .greenContrast #contentDiv, .greenContrast #centerDiv {
+  background-color: #FFFFFF;
+}
+.greenContrast .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.greenContrast #toolBarDiv, .greenContrast #statusBarDiv, .greenContrast .statusBar, .greenContrast .dojoxGridRowSelected, .greenContrast .listTitle,
+.greenContrast .section, .greenContrast .dijitTitlePane .dijitTitlePaneTitle, .greenContrast .title  {
+  background-color: #539B53;  color: #FFFFFF;  
+}
+
+.greenContrast .tabLabel, .greenContrast .label, .greenContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFFF; color: #539B53;
+}
+.greenContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3EBC3; color: #539B53;
+}
+
+.greenContrast .display, .greenContrast #printPreview {
+  border: 1px solid #FFFFFF;
+}
+
+.greenContrast .titleProject {
+ color: #FFFFFF;  
+}
+.greenContrast #mainDiv {
+    /*scrollbar-face-color: #EEFFEE;
+    scrollbar-shadow-color: #EEFFEE;
+    scrollbar-highcontrasted-color: #EEFFEE;
+    scrollbar-3dcontrasted-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #EEFFEE;
+    scrollbar-arrow-color: #C3EBC3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC LIGHT orange THEME                                                             */
+/* =============================================================================== */
+
+.orangeLight html, .orangeLight body, .orangeLight #leftDiv, .orangeLight #logoDiv,
+.orangeLight #buttonDiv,
+.orangeLight .dijitSplitterH, .orangeLight .dijitGutterH, .orangeLight .dijitSplitterV, .orangeLight .dijitGutterV,
+.orangeLight .dijitMenuItemHover,
+.orangeLight .dijitMenuPassive .dijitMenuItemHover,
+.orangeLight .dijitMenuItemSelected  ,
+.orangeLight .loginBackground  {
+  background-color: #F6C672;
+}
+
+.orangeLight #mapDiv, .orangeLight #messageDiv, .orangeLight #listDiv, .orangeLight #detailDiv, .orangeLight #formDiv, .orangeLight .display, .orangeLight .background,
+.orangeLight .dijitTitlePaneContentInner, .orangeLight .dijitTabPane,
+.orangeLight #mainDiv,  .orangeLight #contentDiv, .orangeLight #centerDiv {
+  background-color: #FFFFDD;
+}
+.orangeLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFDD;
+  border-bottom-color: #FFFFDD;
+}
+.orangeLight #toolBarDiv, .orangeLight #statusBarDiv, .orangeLight .statusBar, .orangeLight .dojoxGridRowSelected, .orangeLight .listTitle,
+.orangeLight .section, .orangeLight .dijitTitlePane .dijitTitlePaneTitle, .orangeLight .title  {
+  background-color: #F6C672;  color: #D98F0E;  
+}
+
+.orangeLight .tabLabel, .orangeLight .label, .orangeLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFDD; color: #D98F0E;
+}
+
+.orangeLight .display, .orangeLight #printPreview {
+  border: 1px solid #FFFFDD;
+}
+
+.orangeLight .titleProject {
+ color: #FFFFDD;  
+}
+.orangeLight #mainDiv {
+    /*scrollbar-face-color: #FFFFDD;
+    scrollbar-shadow-color: #FFFFDD;
+    scrollbar-highlight-color: #FFFFDD;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #FFFFDD;
+    scrollbar-arrow-color: #F6C672;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC CONTRASTED orange THEME                                                             */
+/* =============================================================================== */
+
+.orangeContrast html, .orangeContrast body, .orangeContrast #leftDiv, .orangeContrast #logoDiv,
+.orangeContrast #buttonDiv,
+.orangeContrast .dijitSplitterH, .orangeContrast .dijitGutterH, .orangeContrast .dijitSplitterV, .orangeContrast .dijitGutterV,
+.orangeContrast .dijitMenuItemHover,
+.orangeContrast .dijitMenuPassive .dijitMenuItemHover,
+.orangeContrast .dijitMenuItemSelected ,
+.orangeContrast .loginBackground   {
+  background-color: #D98F0E;
+}
+
+.orangeContrast #mapDiv, .orangeContrast #messageDiv, .orangeContrast #listDiv, .orangeContrast #detailDiv, .orangeContrast #formDiv, .orangeContrast .display, .orangeContrast .background,
+.orangeContrast .dijitTitlePaneContentInner, .orengeContrast .dijitTabPane,
+.orangeContrast #mainDiv,  .orangeContrast #contentDiv, .orangeContrast #centerDiv {
+  background-color: #FFFFFF;
+}
+.orangeContrast .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.orangeContrast #toolBarDiv, .orangeContrast #statusBarDiv, .orangeContrast .statusBar, .orangeContrast .dojoxGridRowSelected, .orangeContrast .listTitle,
+.orangeContrast .section, .orangeContrast .dijitTitlePane .dijitTitlePaneTitle, .orangeContrast .title  {
+  background-color: #D98F0E;  color: #FFFFFF;  
+}
+
+.orangeContrast .tabLabel, .orangeContrast .label, .orangeContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFFF; color: #D98F0E;
+}
+.orangeContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #F6C672; color: #D98F0E;
+}
+
+.orangeContrast .display, .orangeContrast #printPreview {
+  border: 1px solid #FFFFFF;
+}
+
+.orangeContrast .titleProject {
+ color: #FFFFFF;  
+}
+.orangeContrast #mainDiv {
+    /*scrollbar-face-color: #FFFFDD;
+    scrollbar-shadow-color: #FFFFDD;
+    scrollbar-highcontrasted-color: #FFFFDD;
+    scrollbar-3dcontrasted-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #FFFFDD;
+    scrollbar-arrow-color: #F6C672;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC LIGHT grey THEME                                                              */
+/* =============================================================================== */
+
+.greyLight html, .greyLight body, .greyLight #leftDiv, .greyLight #logoDiv,
+.greyLight #buttonDiv,
+.greyLight .dijitSplitterH, .greyLight .dijitGutterH, .greyLight .dijitSplitterV, .greyLight .dijitGutterV,
+.greyLight .dijitMenuItemHover,
+.greyLight .dijitMenuPassive .dijitMenuItemHover,
+.greyLight .dijitMenuItemSelected ,
+.greyLight .loginBackground   {
+  background-color: #C3C3C3;
+}
+
+.greyLight #mapDiv, .greyLight #messageDiv, .greyLight #listDiv, .greyLight #detailDiv, .greyLight #formDiv, .greyLight .display, .greyLight .background,
+.greyLight .dijitTitlePaneContentInner, .greyLight .dijitTabPane,
+.greyLight #mainDiv, .greyLight #contentDiv, .greyLight #centerDiv {
+  background-color: #F0F0F0;
+}
+.greyLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #F0F0F0;
+  border-bottom-color: #F0F0F0;
+}
+.greyLight #toolBarDiv, .greyLight #statusBarDiv, .greyLight .statusBar, .greyLight .dojoxGridRowSelected, .greyLight .listTitle,
+.greyLight .section, .greyLight .dijitTitlePane .dijitTitlePaneTitle, .greyLight .title {
+  background-color: #C3C3C3;  color: #9B9B9B;   
+}
+
+.greyLight .tabLabel, .greyLight .label, .greyLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #F0F0F0; color: #9B9B9B;
+}
+
+.greyLight .display, .greyLight #printPreview {
+  border: 1px solid #F0F0F0;
+}
+
+.greyLight .titleProject {
+ color: #F0F0F0;  
+}
+
+.greyLight #mainDiv {
+    /*scrollbar-face-color: #F0F0F0;
+    scrollbar-shadow-color: #F0F0F0;
+    scrollbar-highlight-color: #F0F0F0;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #F0F0F0;
+    scrollbar-arrow-color: #C3C3C3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC CONTRASTED grey THEME                                                             */
+/* =============================================================================== */
+
+.greyContrast html, .greyContrast body, .greyContrast #leftDiv, .greyContrast #logoDiv,
+.greyContrast #buttonDiv,
+.greyContrast .dijitSplitterH, .greyContrast .dijitGutterH, .greyContrast .dijitSplitterV, .greyContrast .dijitGutterV,
+.greyContrast .dijitMenuItemHover,
+.greyContrast .dijitMenuPassive .dijitMenuItemHover,
+.greyContrast .dijitMenuItemSelected ,
+.greyContrast .loginBackground   {
+  background-color: #9B9B9B;
+}
+
+.greyContrast #mapDiv, .greyContrast #messageDiv, .greyContrast #listDiv, .greyContrast #detailDiv, .greyContrast #formDiv, .greyContrast .display, .greyContrast .background,
+.greyContrast .dijitTitlePaneContentInner, .greyContrast .dijitTabPane,
+.greyContrast #mainDiv,  .greyContrast #contentDiv, .greyContrast #centerDiv {
+  background-color: #FFFFFF;
+}
+.greyContrast .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+.greyContrast #toolBarDiv, .greyContrast #statusBarDiv, .greyContrast .statusBar, .greyContrast .dojoxGridRowSelected, .greyContrast .listTitle,
+.greyContrast .section, .greyContrast .dijitTitlePane .dijitTitlePaneTitle, .greyContrast .title  {
+  background-color: #9B9B9B;  color: #FFFFFF;  
+}
+
+.greyContrast .tabLabel, .greyContrast .label, .greyContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #FFFFFF; color: #9B9B9B;
+}
+.greyContrast .dojoxGridRowOver .dojoxGridCell {
+  background-color: #C3C3C3; color: #9B9B9B;
+}
+
+.greyContrast .display, .greyContrast #printPreview {
+  border: 1px solid #FFFFFF;
+}
+
+.greyContrast .titleProject {
+ color: #FFFFFF;  
+}
+.greyContrast #mainDiv {
+    /*scrollbar-face-color: #F0F0F0;
+    scrollbar-shadow-color: #F0F0F0;
+    scrollbar-highcontrasted-color: #F0F0F0;
+    scrollbar-3dcontrasted-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #F0F0F0;
+    scrollbar-arrow-color: #C3C3C3;*/
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Default (OCEAN) THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOr html, .ProjeQtOr body, .ProjeQtOr #leftDiv, .ProjeQtOr #logoDiv,
+.ProjeQtOr .dijitSplitterH, .ProjeQtOr .dijitGutterH, .ProjeQtOr .dijitSplitterV, .ProjeQtOr .dijitGutterV,
+.ProjeQtOr .loginBackground {
+  background-color: #545281; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjeQtOr .dijitMenuItemHover,
+.ProjeQtOr .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOr .dijitMenuItemSelected  {
+  background-color: #545281;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #545281; */  
+  
+}
+
+.ProjeQtOr #mapDiv, .ProjeQtOr #messageDiv, .ProjeQtOr #listDiv, .ProjeQtOr #formDiv, .ProjeQtOr .display, .ProjeQtOr .background,
+.ProjeQtOr .dijitTitlePaneContentInner, .ProjeQtOr .dijitTabPane,
+.ProjeQtOr #mainDiv, .ProjeQtOr #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOr .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOr #toolBarDiv, .ProjeQtOr #statusBarDiv, .ProjeQtOr .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkBlue.png) #545281 top repeat-x !important;
+}
+.ProjeQtOr .tabLabel, .ProjeQtOr .label {
+  background-color: #fafafa; color: #545281;
+}
+.ProjeQtOr .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #545281 !important;
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+} 
+
+.ProjeQtOr #buttonDiv { /**toolbar**/
+  background-color: #545281;  color: #FFFFFF;  
+}
+
+.ProjeQtOr .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOr .listTitle {
+  /* background-color: #545281;  color: #EEEEEE; */  
+  background-color: #545281;  
+  color: #FFFFFF;
+}
+.ProjeQtOr .dojoxGridRowSelected { /**selected lines**/
+  background-color: #545281;  color: #EEEEEE; 
+}
+.ProjeQtOr .display, .ProjeQtOr #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOr .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOr #logoDiv {
+  background: url(images/titleBarDarkBlueReverse.png) #545281 bottom repeat-x !important;
+  /*background: #545281 bottom repeat-x !important;*/
+}
+
+.ProjeQtOr .listTitle,
+.ProjeQtOr .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOr .dojoxGridRowSelected, .ProjeQtOr #buttonDiv  {
+  background: url(images/titleBarDarkBlue.png) #545281 top repeat-x !important;
+}
+.ProjeQtOr .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOr .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Fire THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrFire html, .ProjeQtOrFire body, .ProjeQtOrFire #leftDiv, .ProjeQtOrFire #logoDiv,
+.ProjeQtOrFire .dijitSplitterH, .ProjeQtOrFire .dijitGutterH, .ProjeQtOrFire .dijitSplitterV, .ProjeQtOrFire .dijitGutterV,
+.ProjeQtOrFire .loginBackground {
+  background-color: #6f2525; 
+}
+
+.ProjeQtOrFire .dijitMenuItemHover,
+.ProjeQtOrFire .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrFire .dijitMenuItemSelected  {
+  background-color: #6f2525;  color: #EEEEEE; 
+}
+
+.ProjeQtOrFire #mapDiv, .ProjeQtOrFire #messageDiv, .ProjeQtOrFire #listDiv, .ProjeQtOrFire #formDiv, .ProjeQtOrFire .display, .ProjeQtOrFire .background,
+.ProjeQtOrFire .dijitTitlePaneContentInner,  .ProjeQtOrFire .dijitTabPane,
+.ProjeQtOrFire #mainDiv, .ProjeQtOrFire #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrFire .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrFire #toolBarDiv, .ProjeQtOrFire #statusBarDiv, .ProjeQtOrFire .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkRed.png) #6f2525 top repeat-x !important;
+}
+.ProjeQtOrFire .tabLabel, .ProjeQtOrFire .label {
+  background-color: #fafafa; color: #6f2525;
+}
+.ProjeQtOrFire .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #6f2525 !important;
+} 
+
+.ProjeQtOrFire #buttonDiv { /**toolbar**/
+  background-color: #6f2525;  color: #FFFFFF;  
+}
+
+.ProjeQtOrFire .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrFire .listTitle {
+  background-color: #6f2525;  
+  color: #FFFFFF;
+}
+.ProjeQtOrFire .dojoxGridRowSelected { /**selected lines**/
+  background-color: #6f2525;  color: #EEEEEE;   
+}
+.ProjeQtOrFire .display, .ProjeQtOrFire #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrFire .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOrFire #logoDiv,.ProjeQtOrFire .listTitle,
+.ProjeQtOrFire .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrFire .dojoxGridRowSelected, .ProjeQtOrFire #buttonDiv  {
+  background: url(images/titleBarDarkRed.png) #6f2525 top repeat-x !important;
+}
+.ProjeQtOrFire .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFire .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Forest THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrForest html, .ProjeQtOrForest body, .ProjeQtOrForest #leftDiv, .ProjeQtOrForest #logoDiv,
+.ProjeQtOrForest .dijitSplitterH, .ProjeQtOrForest .dijitGutterH, .ProjeQtOrForest .dijitSplitterV, .ProjeQtOrForest .dijitGutterV,
+.ProjeQtOrForest .loginBackground {
+  background-color: #194C25; 
+}
+
+.ProjeQtOrForest .dijitMenuItemHover,
+.ProjeQtOrForest .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrForest .dijitMenuItemSelected  {
+  background-color: #194C25;  color: #EEEEEE; 
+}
+
+.ProjeQtOrForest #mapDiv, .ProjeQtOrForest #messageDiv, .ProjeQtOrForest #listDiv, .ProjeQtOrForest #formDiv, .ProjeQtOrForest .display, .ProjeQtOrForest .background,
+.ProjeQtOrForest .dijitTitlePaneContentInner, .ProjeQtOrForest .dijitTabPane,
+.ProjeQtOrForest #mainDiv, .ProjeQtOrForest #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrForest .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrForest #toolBarDiv, .ProjeQtOrForest #statusBarDiv, .ProjeQtOrForest .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkGreen.png) #194C25 top repeat-x !important;
+}
+.ProjeQtOrForest .tabLabel, .ProjeQtOrForest .label {
+  background-color: #fafafa; color: #194C25;
+}
+.ProjeQtOrForest .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #194C25 !important;
+} 
+
+.ProjeQtOrForest #buttonDiv { /**toolbar**/
+  background-color: #194C25;  color: #FFFFFF;  
+}
+
+.ProjeQtOrForest .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrForest .listTitle {
+  background-color: #194C25;  
+  color: #FFFFFF;
+}
+.ProjeQtOrForest .dojoxGridRowSelected { /**selected lines**/
+  background-color: #194C25;  color: #EEEEEE;   
+}
+.ProjeQtOrForest .display, .ProjeQtOrForest #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrForest .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOrForest #logoDiv,.ProjeQtOrForest .listTitle,
+.ProjeQtOrForest .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrForest .dojoxGridRowSelected, .ProjeQtOrForest #buttonDiv  {
+  background: url(images/titleBarDarkGreen.png) #194C25 top repeat-x !important;
+}
+.ProjeQtOrForest .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrForest .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Earth THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrEarth html, .ProjeQtOrEarth body, .ProjeQtOrEarth #leftDiv, .ProjeQtOrEarth #logoDiv,
+.ProjeQtOrEarth .dijitSplitterH, .ProjeQtOrEarth .dijitGutterH, .ProjeQtOrEarth .dijitSplitterV, .ProjeQtOrEarth .dijitGutterV,
+.ProjeQtOrEarth .loginBackground {
+  background-color: #50371A; 
+}
+
+.ProjeQtOrEarth .dijitMenuItemHover,
+.ProjeQtOrEarth .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrEarth .dijitMenuItemSelected  {
+  background-color: #50371A;  color: #EEEEEE; 
+}
+
+.ProjeQtOrEarth #mapDiv, .ProjeQtOrEarth #messageDiv, .ProjeQtOrEarth #listDiv, .ProjeQtOrEarth #formDiv, .ProjeQtOrEarth .display, .ProjeQtOrEarth .background,
+.ProjeQtOrEarth .dijitTitlePaneContentInner, .ProjeQtOrEarth .dijitTabPane,
+.ProjeQtOrEarth #mainDiv, .ProjeQtOrEarth #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrEarth .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrEarth #toolBarDiv, .ProjeQtOrEarth #statusBarDiv, .ProjeQtOrEarth .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkBrown.png) #50371A top repeat-x !important;
+}
+.ProjeQtOrEarth .tabLabel, .ProjeQtOrEarth .label {
+  background-color: #fafafa; color: #50371A;
+}
+.ProjeQtOrEarth .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #50371A !important;
+} 
+
+.ProjeQtOrEarth #buttonDiv { /**toolbar**/
+  background-color: #50371A;  color: #FFFFFF;  
+}
+
+.ProjeQtOrEarth .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrEarth .listTitle {
+  background-color: #50371A;  
+  color: #FFFFFF;
+}
+.ProjeQtOrEarth .dojoxGridRowSelected { /**selected lines**/
+  background-color: #50371A;  color: #EEEEEE;   
+}
+.ProjeQtOrEarth .display, .ProjeQtOrEarth #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrEarth .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOrEarth #logoDiv,.ProjeQtOrEarth .listTitle,
+.ProjeQtOrEarth .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrEarth .dojoxGridRowSelected, .ProjeQtOrEarth #buttonDiv  {
+  background: url(images/titleBarDarkBrown.png) #50371A top repeat-x !important;
+}
+.ProjeQtOrEarth .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrEarth .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Water THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrWater html, .ProjeQtOrWater body, .ProjeQtOrWater #leftDiv, .ProjeQtOrWater #logoDiv,
+.ProjeQtOrWater .dijitSplitterH, .ProjeQtOrWater .dijitGutterH, .ProjeQtOrWater .dijitSplitterV, .ProjeQtOrWater .dijitGutterV,
+.ProjeQtOrWater .loginBackground {
+  background-color: #194C4C; 
+}
+
+.ProjeQtOrWater .dijitMenuItemHover,
+.ProjeQtOrWater .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrWater .dijitMenuItemSelected  {
+  background-color: #194C4C;  color: #EEEEEE; 
+}
+
+.ProjeQtOrWater #mapDiv, .ProjeQtOrWater #messageDiv, .ProjeQtOrWater #listDiv, .ProjeQtOrWater #formDiv, .ProjeQtOrWater .display, .ProjeQtOrWater .background,
+.ProjeQtOrWater .dijitTitlePaneContentInner, .ProjeQtOrWater .dijitTabPane,
+.ProjeQtOrWater #mainDiv, .ProjeQtOrWater #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrWater .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrWater #toolBarDiv, .ProjeQtOrWater #statusBarDiv, .ProjeQtOrWater .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkWater.png) #194C4C top repeat-x !important;
+}
+.ProjeQtOrWater .tabLabel, .ProjeQtOrWater .label {
+  background-color: #fafafa; color: #194C4C;
+}
+.ProjeQtOrWater .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #194C4C !important;
+} 
+
+.ProjeQtOrWater #buttonDiv { /**toolbar**/
+  background-color: #194C4C;  color: #FFFFFF;  
+}
+
+.ProjeQtOrWater .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrWater .listTitle {
+  background-color: #194C4C;  
+  color: #FFFFFF;
+}
+.ProjeQtOrWater .dojoxGridRowSelected { /**selected lines**/
+  background-color: #194C4C;  color: #EEEEEE;   
+}
+.ProjeQtOrWater .display, .ProjeQtOrWater #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrWater .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOrWater #logoDiv,.ProjeQtOrWater .listTitle,
+.ProjeQtOrWater .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrWater .dojoxGridRowSelected, .ProjeQtOrWater #buttonDiv  {
+  background: url(images/titleBarDarkWater.png) #194C4C top repeat-x !important;
+}
+.ProjeQtOrWater .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrWater .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Wine THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrWine html, .ProjeQtOrWine body, .ProjeQtOrWine #leftDiv, .ProjeQtOrWine #logoDiv,
+.ProjeQtOrWine .dijitSplitterH, .ProjeQtOrWine .dijitGutterH, .ProjeQtOrWine .dijitSplitterV, .ProjeQtOrWine .dijitGutterV,
+.ProjeQtOrWine .loginBackground {
+  background-color: #501C55; 
+}
+
+.ProjeQtOrWine .dijitMenuItemHover,
+.ProjeQtOrWine .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrWine .dijitMenuItemSelected  {
+  background-color: #501C55;  color: #EEEEEE; 
+}
+
+.ProjeQtOrWine #mapDiv, .ProjeQtOrWine #messageDiv, .ProjeQtOrWine #listDiv, .ProjeQtOrWine #formDiv, .ProjeQtOrWine .display, .ProjeQtOrWine .background,
+.ProjeQtOrWine .dijitTitlePaneContentInner, .ProjeQtOrWine .dijitTabPane,
+.ProjeQtOrWine #mainDiv, .ProjeQtOrWine #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrWine .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrWine #toolBarDiv, .ProjeQtOrWine #statusBarDiv, .ProjeQtOrWine .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDarkPurple.png) #501C55 top repeat-x !important;
+}
+.ProjeQtOrWine .tabLabel, .ProjeQtOrWine .label {
+  background-color: #fafafa; color: #501C55;
+}
+.ProjeQtOrWine .dojoxGridRowOver .dojoxGridCell {
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #501C55 !important;
+} 
+
+.ProjeQtOrWine #buttonDiv { /**toolbar**/
+  background-color: #501C55;  color: #FFFFFF;  
+}
+
+.ProjeQtOrWine .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrWine .listTitle {
+  background-color: #501C55;  
+  color: #FFFFFF;
+}
+.ProjeQtOrWine .dojoxGridRowSelected { /**selected lines**/
+  background-color: #501C55;  color: #EEEEEE;   
+}
+.ProjeQtOrWine .display, .ProjeQtOrWine #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrWine .titleProject {
+ color: #EEEEEE;
+ text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.ProjeQtOrWine #logoDiv,.ProjeQtOrWine .listTitle,
+.ProjeQtOrWine .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrWine .dojoxGridRowSelected, .ProjeQtOrWine #buttonDiv  {
+  background: url(images/titleBarDarkPurple.png) #501C55 top repeat-x !important;
+}
+.ProjeQtOrWine .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrWine .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Contrasted THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrDark html, .ProjeQtOrDark body, .ProjeQtOrDark #leftDiv, .ProjeQtOrDark #logoDiv,
+.ProjeQtOrDark #buttonDiv,
+.ProjeQtOrDark .dijitSplitterH, .ProjeQtOrDark .dijitGutterH, .ProjeQtOrDark .dijitSplitterV, .ProjeQtOrDark .dijitGutterV,
+.ProjeQtOrDark .dijitMenuItemHover,
+.ProjeQtOrDark .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrDark .dijitMenuItemSelected,
+.ProjeQtOrDark .loginBackground    {
+  background-color: #545281;
+}
+
+.ProjeQtOrDark #mapDiv, .ProjeQtOrDark #messageDiv, .ProjeQtOrDark #listDiv, .ProjeQtOrDark #detailDiv, .ProjeQtOrDark #formDiv, .ProjeQtOrDark .display, .ProjeQtOrDark .background,
+.ProjeQtOrDark .dijitTitlePaneContentInner, .ProjeQtOrDark .dijitTabPane,
+.ProjeQtOrDark #mainDiv,  .ProjeQtOrDark #contentDiv, .ProjeQtOrDark #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrDark .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrDark #statusBarDiv, .ProjeQtOrDark .statusBar, 
+.ProjeQtOrDark .dojoxGridRowSelected, .ProjeQtOrDark .listTitle,   
+.ProjeQtOrDark .section, .ProjeQtOrDark .dijitTitlePane .dijitTitlePaneTitle {
+  background-color: #545281;  color: #EEEEEE;  
+}
+
+.ProjeQtOrDark .tabLabel, .ProjeQtOrDark .label {
+  background-color: #fafafa; color: #545281;
+}
+.ProjeQtOrDark .dojoxGridRowOver .dojoxGridCell {
+ /*background-color: #aaaaaa; color: #545281;*/
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #545281 !important;
+} 
+.ProjeQtOrDark .title {
+  font-weight: 600;
+  text-shadow: 1px 1px #000000;
+}
+
+.ProjeQtOrDark .display, .ProjeQtOrDark #printPreview {
+  border: 1px solid #fafafa;
+}
+.ProjeQtOrDark #toolBarDiv {
+  color: #545281;
+  background-color: #545281; 
+}
+.ProjeQtOrDark .titleProject {
+ color: #fafafa;  
+}
+.ProjeQtOrDark .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.ProjeQtOrDark #toolBarDiv, .ProjeQtOrDark #statusBarDiv, .ProjeQtOrDark .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+}
+
+.ProjeQtOrDark #logoDiv,
+.ProjeQtOrDark .listTitle,
+.ProjeQtOrDark .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrDark .dojoxGridRowSelected, 
+.ProjeQtOrDark #buttonDiv  {
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+}
+.ProjeQtOrDark .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrDark .section {
+  color: #FEFEFE !important;
+  text-shadow: 1px 1px #606060;
+}
+
+/* =============================================================================== */
+/* SPECIFIC ProjeQtOr Light THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrLight html, .ProjeQtOrLight body, .ProjeQtOrLight #leftDiv, .ProjeQtOrLight #logoDiv,
+.ProjeQtOrLight #buttonDiv,
+.ProjeQtOrLight .dijitSplitterH, .ProjeQtOrLight .dijitGutterH, .ProjeQtOrLight .dijitSplitterV, .ProjeQtOrLight .dijitGutterV,
+.ProjeQtOrLight .dijitMenuItemHover,
+.ProjeQtOrLight .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrLight .dijitMenuItemSelected,
+.ProjeQtOrLight .loginBackground    {
+  background-color: #d4d5da;
+}
+
+.ProjeQtOrLight #mapDiv, .ProjeQtOrLight #messageDiv, .ProjeQtOrLight #listDiv, .ProjeQtOrLight .display, .ProjeQtOrLight .background,
+.ProjeQtOrLight .dijitTitlePaneContentInner, .ProjeQtOrLight .dijitTabPane,
+.ProjeQtOrLight #detailDiv, .ProjeQtOrLight #formDiv,
+.ProjeQtOrLight #mainDiv,  .ProjeQtOrLight #contentDiv, .ProjeQtOrLight #centerDiv {
+  background-color: #fcfcfc;
+}
+.ProjeQtOrLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fcfcfc;
+  border-bottom-color: #fcfcfc;
+}
+.ProjeQtOrLight #toolBarDiv, .ProjeQtOrLight #statusBarDiv, .ProjeQtOrLight .statusBar, 
+.ProjeQtOrLight .dojoxGridRowSelected, .ProjeQtOrLight .listTitle,
+.ProjeQtOrLight .section, .ProjeQtOrLight .dijitTitlePane .dijitTitlePaneTitle  {
+  background-color: #d4d5da;  color: #545281;  
+}
+.ProjeQtOrLight #toolBarDiv, .ProjeQtOrLight #statusBarDiv, .ProjeQtOrLight .statusBar { /**toolbar**/
+   color: #505050;
+   background: url(images/titleBar.png) #dedede top repeat-x !important;
+}
+
+.ProjeQtOrLight .tabLabel, .ProjeQtOrLight .label {
+  background-color: #fcfcfc; color: #545281;
+}
+.ProjeQtOrLight .dojoxGridRowOver .dojoxGridCell {
+ /*background-color: #aaaaaa; color: #545281;*/
+ background: url(images/titleBar.png) #dedede top repeat-x !important;
+ color: #545281 !important;
+} 
+
+.ProjeQtOrLight .title {
+  font-weight: 600;
+  text-shadow: 1px 1px #FEFEFE;
+}
+
+.ProjeQtOrLight .display, .ProjeQtOrLight #printPreview {
+  border: 1px solid #fcfcfc;
+}
+
+.ProjeQtOrLight .titleProject {
+ color: #545281;  
+}
+.ProjeQtOrLight .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+.ProjeQtOrLight #logoDiv,
+.ProjeQtOrLight .listTitle,
+.ProjeQtOrLight .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrLight .dojoxGridRowSelected, 
+.ProjeQtOrLight #buttonDiv  {
+  background: url(images/titleBar.png) #dedede top repeat-x !important;
+}
+
+/* =============================================================================== */
+/* OLD PROJECTORRIA CONTRASTED THEME                                                             */
+/* =============================================================================== */
+
+.ProjectOrRiaContrasted html, .ProjectOrRiaContrasted body, .ProjectOrRiaContrasted #leftDiv, .ProjectOrRiaContrasted #logoDiv,
+.ProjectOrRiaContrasted #buttonDiv,
+.ProjectOrRiaContrasted .dijitSplitterH, .ProjectOrRiaContrasted .dijitGutterH, .ProjectOrRiaContrasted .dijitSplitterV, .ProjectOrRiaContrasted .dijitGutterV,
+.ProjectOrRiaContrasted .dijitMenuItemHover,
+.ProjectOrRiaContrasted .dijitMenuPassive .dijitMenuItemHover,
+.ProjectOrRiaContrasted .dijitMenuItemSelected,
+.ProjectOrRiaContrasted .loginBackground    {
+  background-color: #545281;
+}
+
+.ProjectOrRiaContrasted #mapDiv, .ProjectOrRiaContrasted #messageDiv, .ProjectOrRiaContrasted #listDiv, .ProjectOrRiaContrasted #detailDiv, .ProjectOrRiaContrasted #formDiv, .ProjectOrRiaContrasted .display, .ProjectOrRiaContrasted .background,
+.ProjectOrRiaContrasted #printPreview, .ProjectOrRiaContrasted .dijitTitlePaneContentInner, .ProjectOrRiaContrasted .dijitTabPane,
+.ProjectOrRiaContrasted #mainDiv,  .ProjectOrRiaContrasted #contentDiv, .ProjectOrRiaContrasted #centerDiv {
+  background-color: #ececec;
+}
+.ProjectOrRiaContrasted .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #ececec;
+  border-bottom-color: #ececec;
+}
+.ProjectOrRiaContrasted #statusBarDiv, .ProjectOrRiaContrasted .statusBar, 
+.ProjectOrRiaContrasted .dojoxGridRowSelected, .ProjectOrRiaContrasted .listTitle,   
+.ProjectOrRiaContrasted .section, .ProjectOrRiaContrasted .dijitTitlePane .dijitTitlePaneTitle, .ProjectOrRiaContrasted .title {
+  background-color: #545281;  color: #EEEEEE;  
+}
+
+.ProjectOrRiaContrasted .tabLabel, .ProjectOrRiaContrasted .label, .ProjectOrRiaContrasted .dojoxGridRowOver .dojoxGridCell {
+  background-color: #ececec; color: #545281;
+}
+
+.ProjectOrRiaContrasted .display, .ProjectOrRiaContrasted #printPreview {
+  border: 1px solid #ececec;
+}
+.ProjectOrRiaContrasted #toolBarDiv {
+  color: #545281;
+  background-color: #545281; 
+}
+.ProjectOrRiaContrasted .titleProject {
+ color: #ececec;  
+}
+
+.ProjectOrRiaContrasted #mainDiv {
+    /*scrollbar-face-color: #ececec;
+    scrollbar-shadow-color: #ececec;
+    scrollbar-highlight-color: #ececec;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #ececec;
+    scrollbar-arrow-color: #545281;*/
+}
+
+/* =============================================================================== */
+/* OLD PROJECTORRIA LIGHT THEME                                                             */
+/* =============================================================================== */
+
+.ProjectOrRiaLight html, .ProjectOrRiaLight body, .ProjectOrRiaLight #leftDiv, .ProjectOrRiaLight #logoDiv,
+.ProjectOrRiaLight #buttonDiv,
+.ProjectOrRiaLight .dijitSplitterH, .ProjectOrRiaLight .dijitGutterH, .ProjectOrRiaLight .dijitSplitterV, .ProjectOrRiaLight .dijitGutterV,
+.ProjectOrRiaLight .dijitMenuItemHover,
+.ProjectOrRiaLight .dijitMenuPassive .dijitMenuItemHover,
+.ProjectOrRiaLight .dijitMenuItemSelected,
+.ProjectOrRiaLight .loginBackground    {
+  background-color: #d4d5da;
+}
+
+.ProjectOrRiaLight #mapDiv, .ProjectOrRiaLight #messageDiv, .ProjectOrRiaLight #listDiv, .ProjectOrRiaLight .display, .ProjectOrRiaLight .background,
+.ProjectOrRiaLight #printPreview, .ProjectOrRiaLight .dijitTitlePaneContentInner, .ProjectOrRiaLight .dijitTabPane,
+.ProjectOrRiaLight #detailDiv, .ProjectOrRiaLight #formDiv,
+.ProjectOrRiaLight #mainDiv,  .ProjectOrRiaLight #contentDiv, .ProjectOrRiaLight #centerDiv {
+  background-color: #ececec;
+}
+.ProjectOrRiaLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #ececec;
+  border-bottom-color: #ececec;
+}
+.ProjectOrRiaLight #toolBarDiv, .ProjectOrRiaLight #statusBarDiv, .ProjectOrRiaLight .statusBar, 
+.ProjectOrRiaLight .dojoxGridRowSelected, .ProjectOrRiaLight .listTitle,
+.ProjectOrRiaLight .section, .ProjectOrRiaLight .dijitTitlePane .dijitTitlePaneTitle, .ProjectOrRiaLight .title  {
+  background-color: #d4d5da;  color: #545281;  
+}
+
+.ProjectOrRiaLight .tabLabel, .ProjectOrRiaLight .label, .ProjectOrRiaLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #ececec; color: #545281;
+}
+
+.ProjectOrRiaLight .display, .ProjectOrRiaLight #printPreview {
+  border: 1px solid #ececec;
+}
+
+.ProjectOrRiaLight .titleProject {
+ color: #545281;  
+}
+.ProjectOrRiaLight #mainDiv {
+    /*scrollbar-face-color: #ececec;
+    scrollbar-shadow-color: #ececec;
+    scrollbar-highlight-color: #ececec;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #ececec;
+    scrollbar-arrow-color: #d4d5da;*/
+}
+/* =============================================================================== */
+/* OLD PROJECT'OR RIA THEME                                                             */
+/* =============================================================================== */
+
+.ProjectOrRia html, .ProjectOrRia body, .ProjectOrRia #leftDiv, .ProjectOrRia #logoDiv,
+.ProjectOrRia .dijitSplitterH, .ProjectOrRia .dijitGutterH, .ProjectOrRia .dijitSplitterV, .ProjectOrRia .dijitGutterV,
+.ProjectOrRia .loginBackground {
+  background-color: #545281; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjectOrRia .dijitMenuItemHover,
+.ProjectOrRia .dijitMenuPassive .dijitMenuItemHover,
+.ProjectOrRia .dijitMenuItemSelected  {
+  background-color: #545281;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #545281; */  
+}
+
+.ProjectOrRia #mapDiv, .ProjectOrRia #messageDiv, .ProjectOrRia #listDiv, .ProjectOrRia #detailDiv, .ProjectOrRia #formDiv, .ProjectOrRia .display, .ProjectOrRia .background,
+.ProjectOrRia #printPreview, .ProjectOrRia .dijitTitlePaneContentInner, .ProjectOrRia .dijitTabPane,
+.ProjectOrRia #mainDiv,  .ProjectOrRia #contentDiv, .ProjectOrRia #centerDiv {
+  background-color: #ececec;
+}
+.ProjectOrRia .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #ececec;
+  border-bottom-color: #ececec;
+}
+.ProjectOrRia #buttonDiv { /**toolbar**/
+  background-color: #d4d5da;  color: #545281;  
+}
+.ProjectOrRia #toolBarDiv, .ProjectOrRia #statusBarDiv, .ProjectOrRia .statusBar { /**toolbar**/
+  /*background-color: #545281;  color: #EEEEEE; */ 
+   background-color: #d4d5da;  color: #545281;
+}
+  
+.ProjectOrRia .dojoxGridRowSelected { /**selected lines**/
+  background-color: #545281;  color: #EEEEEE; 
+  /* background-color: #d4d5da;  color: #545281; */   
+} 
+
+.ProjectOrRia .listTitle {
+  /* background-color: #545281;  color: #EEEEEE; */  
+  background-color: #d4d5da;  color: #545281; 
+}
+
+.ProjectOrRia .tabLabel, .ProjectOrRia .label, .ProjectOrRia .dojoxGridRowOver .dojoxGridCell {
+  background-color: #ececec; color: #545281;
+}
+  
+.ProjectOrRia .dijitTitlePane .dijitTitlePaneTitle {
+  background-color: #d4d5da;  color: #545281;
+  border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.ProjectOrRia .section {
+  background-color: #d4d5da;  color: #545281;
+  border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #A0A0A0; 
+  border-right: 1px solid #A0A0A0;
+}
+
+.ProjectOrRia .display, .ProjectOrRia #printPreview {
+  border: 1px solid #ececec;
+}
+
+.ProjectOrRia .titleProject {
+ color: #545281;  
+}
+
+.ProjectOrRia #mainDiv {
+    /*scrollbar-face-color: #ececec;
+    scrollbar-shadow-color: #ececec;
+    scrollbar-highlight-color: #ececec;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #000000; 
+    scrollbar-track-color: #ececec;
+    scrollbar-arrow-color: #545281;*/
+}
+/* =============================================================================== */
+/* ProjectomLight THEME                                                             */
+/* =============================================================================== */
+
+.ProjectomLight html, .ProjectomLight body, .ProjectomLight #leftDiv, .ProjectomLight #logoDiv,
+.ProjectomLight .dijitSplitterH, .ProjectomLight .dijitGutterH, .ProjectomLight .dijitSplitterV, .ProjectomLight .dijitGutterV,
+.ProjectomLight .loginBackground {
+  background-color: #545281; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjectomLight .dijitMenuItemHover,
+.ProjectomLight .dijitMenuPassive .dijitMenuItemHover,
+.ProjectomLight .dijitMenuItemSelected  {
+  background-color: #545281;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #545281; */  
+}
+
+.ProjectomLight #mapDiv, .ProjectomLight #messageDiv, .ProjectomLight #listDiv, 
+.ProjectomLight #detailDiv, .ProjectomLight #formDiv, .ProjectomLight .display, .ProjectomLight .background,
+.ProjectomLight #printPreview, .ProjectomLight .dijitTitlePaneContentInner, .ProjectomLight .dijitTabPane,
+.ProjectomLight #mainDiv,  .ProjectomLight #contentDiv, .ProjectomLight #centerDiv {
+  background-color: #ececec;
+}
+.ProjectomLight .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #ececec;
+  border-bottom-color: #ececec;
+}
+.ProjectomLight #buttonDiv { /**toolbar**/
+  background-color: #d4d5da;  color: #545281;  
+}
+.ProjectomLight #toolBarDiv, .ProjectomLight #statusBarDiv, .ProjectomLight .statusBar { /**toolbar**/
+  /*background-color: #545281;  color: #EEEEEE; */ 
+   background-color: #d4d5da;  color: #545281;
+}
+  
+.ProjectomLight .dojoxGridRowSelected { /**selected lines**/
+  background-color: #545281;  color: #EEEEEE; 
+  /* background-color: #d4d5da;  color: #545281; */   
+} 
+
+.ProjectomLight .listTitle {
+  /* background-color: #545281;  color: #EEEEEE; */  
+  background-color: #d4d5da;  color: #545281; 
+}
+
+.ProjectomLight .tabLabel, .ProjectomLight .label, .ProjectomLight .dojoxGridRowOver .dojoxGridCell {
+  background-color: #ececec; color: #545281;
+}
+  
+.ProjectomLight .dijitTitlePane .dijitTitlePaneTitle {
+  background-color: #d4d5da;  color: #545281;
+  border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.ProjectomLight .section {
+  background-color: #d4d5da;  color: #545281;
+  border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #A0A0A0; 
+  border-right: 1px solid #A0A0A0;
+}
+
+.ProjectomLight .display, .ProjectomLight #printPreview {
+  border: 1px solid #ececec;
+}
+
+.ProjectomLight .titleProject {
+ color: #545281;  
+}
+
+.ProjectomLight html, .ProjectomLight body, .ProjectomLight #leftDiv, .ProjectomLight #logoDiv, 
+.ProjectomLight .dijitGutterH, .ProjectomLight .dijitGutterV, .ProjectomLight .loginBackground {
+    background-color: #545254;
+    background: -moz-linear-gradient(center top , #666 0%, #999 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666), color-stop(100%,#999)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #666 0%,#999 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #666 0%,#999 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #666 0%,#999 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #666 0%,#999 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666', endColorstr='#999',GradientType=0 ); /* IE6-9 */
+}
+.ProjectomLight #toolBarDiv, .ProjectomLight #statusBarDiv, .ProjectomLight .statusBar {
+    background-color: #eee;
+}
+.ProjectomLight #toolBarDiv, .ProjectomLight #statusBarDiv, .ProjectomLight .statusBar {
+    color: #545254;
+}
+
+.ProjectomLight #toolBarDiv, .ProjectomLight #statusBarDiv, .ProjectomLight .statusBar {
+    background-color: #e1e1e1;
+    color: #545254;
+}
+
+.ProjectomLight .menuBarItem, .ProjectomLight .bottomNotification {
+    /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    border-color: #c0c0c0 #c0c0c0 #9b9b9b;
+    border-image: none;
+    border-style: solid;
+    border-width: 0;
+    /*margin: 0;
+    padding: 2px;
+    vertical-align: middle;*/
+}
+
+.ProjectomLight .menuBarSeparator {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+}
+.ProjectomLight .titleProject {
+    color: #545254;
+}
+
+.ProjectomLight .dojoxGridRowSelected {
+    background-color: #ad6;
+    color: #000;
+}
+
+
+.ProjectomLight .dijitTitlePane .dijitTitlePaneTitle {
+    color: #545254;
+}
+
+.ProjectomLight .listTitle {
+    background-color: #e9e9e9;
+    color: #545254;
+}
+
+
+.ProjectomLight #messageDiv {
+    background: none repeat scroll 0 0 #ffddbb;
+}
+
+.ProjectomLight #menuTree {
+    background: none repeat scroll 0 0 #ecffc8;
+}
+
+.ProjectomLight .dijitTitlePane .dijitTitlePaneTitle {
+    background: -moz-linear-gradient(center top , #ddd 0%, #bbb 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddd), color-stop(100%,#bbb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ddd 0%,#bbb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ddd 0%,#bbb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ddd 0%,#bbb 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ddd 0%,#bbb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#bbb',GradientType=0 ); /* IE6-9 */
+color : #333;
+}
+
+.ProjectomLight #buttonDiv {
+background: -moz-linear-gradient(center top , #dfdfdf 30%, #d0d0cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#dfdfdf), color-stop(100%,#d0d0cf)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* IE10+ */
+background: linear-gradient(to bottom, #dfdfdf 30%,#d0d0cf 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#d0d0cf',GradientType=0 ); /* IE6-9 */
+color : #333;
+
+}
+
+.ProjectomLight .listTitle {
+background: -moz-linear-gradient(center top , #dfdfdf 30%, #d0d0cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#dfdfdf), color-stop(100%,#d0d0cf)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #dfdfdf 30%,#d0d0cf 100%); /* IE10+ */
+background: linear-gradient(to bottom, #dfdfdf 30%,#d0d0cf 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#d0d0cf',GradientType=0 ); /* IE6-9 */
+    color: #333;
+}
+.ProjectomLight #toolBarDiv {
+    border-bottom: none;
+}
+.ProjectomLight #globalContainer {
+    background: none repeat scroll 0 0 #dfdfdf;
+}
+
+.ProjectomLight #logoDiv {
+    background-color: #545254;
+    background: -moz-linear-gradient(center top , #666 0%, #999 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666), color-stop(100%,#999)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #666 0%,#999 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #666 0%,#999 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #666 0%,#999 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #666 0%,#999 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666', endColorstr='#999',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* =============================================================================== */
+/* ProjectomLight THEME END                                                             */
+/* =============================================================================== */
+
+/* =============================================================================== */
+/* Projectom THEME                                                             */
+/* =============================================================================== */
+
+.Projectom html, .Projectom body, .Projectom #leftDiv, .Projectom #logoDiv,
+.Projectom .dijitSplitterH, .Projectom .dijitGutterH, .Projectom .dijitSplitterV, .Projectom .dijitGutterV,
+.Projectom .loginBackground {
+  background-color: #404952; 
+}
+
+.Projectom .dijitMenuItemHover,
+.Projectom .dijitMenuPassive .dijitMenuItemHover,
+.Projectom .dijitMenuItemSelected  {
+  background-color: #404952;  color: #EEEEEE; 
+}
+
+.Projectom #mapDiv, .Projectom #messageDiv, .Projectom #listDiv, .Projectom #detailDiv, .Projectom #formDiv, .Projectom .display, .Projectom .background,
+.Projectom #printPreview, .Projectom .dijitTitlePaneContentInner, .Projectom .dijitTabPane,
+.Projectom #mainDiv,  .Projectom #contentDiv, .Projectom #centerDiv {
+  background-color: #f1f1f1;
+}
+.Projectom .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #f1f1f1;
+  border-bottom-color: #f1f1f1;
+}
+.Projectom #mainDiv, .Projectom #contentDiv, .Projectom #centerDiv {
+    background-color: #f1f1f1;
+}
+
+.Projectom #buttonDiv { /**toolbar**/
+  background-color: #dadada;  color: #404952;  
+}
+.Projectom #toolBarDiv, .Projectom #statusBarDiv, .Projectom .statusBar { /**toolbar**/
+   background-color: #d4d5da;  color: #545281;
+}
+  
+.Projectom .dojoxGridRowSelected { /**selected lines**/
+  background-color: #545281;  color: #EEEEEE; 
+} 
+
+.Projectom .listTitle {
+  /* background-color: #545281;  color: #EEEEEE; */  
+  background-color: #dadada;  color: #333; 
+}
+
+.Projectom .tabLabel, .Projectom .label, .Projectom .dojoxGridRowOver .dojoxGridCell {
+  background-color: #f1f1f1; color: #333;
+}
+  
+.Projectom .dijitTitlePane .dijitTitlePaneTitle {
+  background-color: #e3e3e3;  color: #404952;
+  border: 1px solid #ccc;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.Projectom .dijitTitlePane .dijitTitlePaneTitle, .Projectom .section {
+    border-color: #d1d1d1;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    font-weight: 600 !important;
+}
+
+.Projectom .section {
+    background: none repeat scroll 0 0 #d4d5da !important;
+    border-color: #a0a0a0;
+    border-style: solid;
+    border-width: 1px;
+    color: #404952;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.Projectom .reportTableColumnHeader {
+    background: none repeat scroll 0 0 #d4d5da;
+}
+
+.Projectom .display, .Projectom #printPreview {
+  border: 1px solid #ececec;
+}
+
+.Projectom .titleProject {
+ color: #fff;  
+}
+
+.Projectom .dijitAccordionTitle {
+    background: none repeat scroll 0 0 #eeeeee;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
+
+.Projectom .dojoxGridHeader .dojoxGridCell {
+    background: none repeat scroll 0 0 #eee !important;
+    border: 1px solid #ccc;
+}
+
+.Projectom html, .Projectom body, .Projectom #leftDiv, .Projectom #logoDiv, .Projectom .dijitGutterH, .Projectom .dijitGutterV, .Projectom .loginBackground {
+    background: #404952;
+}
+.Projectom #toolBarDiv, .Projectom #statusBarDiv, .Projectom .statusBar {
+    background-color: #404952;
+    color: #fff;
+}
+
+
+
+.Projectom .menuBarItem,.Projectom .bottomNotification {    /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    border-color: #c0c0c0 #c0c0c0 #9b9b9b;
+    border-image: none;
+    border-style: solid;
+    border-width: 0;
+    /*margin: 0;
+    padding: 2px;
+    vertical-align: middle;*/
+}
+
+.Projectom .menuBarSeparator {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+}
+
+
+.Projectom .dojoxGridRowSelected {
+    background-color: #d4dad9;
+    color: #000;
+}
+
+
+.Projectom .dijitTitlePane .dijitTitlePaneTitle {
+    color: #545254;
+}
+
+
+.Projectom #messageDiv {
+    background: none repeat scroll 0 0 #ffddbb;
+}
+
+.Projectom #menuTree {
+    background: none repeat scroll 0 0 #eeeff2;
+}
+
+.Projectom .dijitTitlePane .dijitTitlePaneTitle {
+color : #404952;
+}
+
+.Projectom .listTitle {
+   color: #404952;
+}
+.Projectom #toolBarDiv {
+    border-bottom: none;
+}
+.Projectom #globalContainer {
+    background: none repeat scroll 0 0 #dfdfdf;
+}
+
+.Projectom #logoDiv {
+    background: #404952;
+
+}
+
+.Projectom .dijitTreeRowSelected .dijitTreeLabel, .Projectom .dijitTreeRowSelected{
+    background: none repeat scroll 0 0 #d4dad9;
+}
+
+.Projectom .dijitTitlePane .dijitArrowNode {
+    background-image: url("images/spriteArrowsGrey.png");
+    }
+
+.Projectom .ganttLeftTitle, .Projectom .ganttRightTitle {
+    background: none repeat scroll 0 0 #9099a2 !important;
+    border-left: 1px solid #aaa;
+ }
+ 
+ .Projectom .ganttHeight {
+    background: none repeat scroll 0 0 #707982 !important;
+    }
+
+.Projectom .imputationTable .ganttHeight td.label{
+ background: none repeat scroll 0 0 #707982 !important;
+    color: #fff;
+}
+    
+ .Projectom.ganttLeftTopLine {
+    border-bottom: 1px solid #bbb !important;
+    }
+    
+ .Projectom .ganttTaskgroup:hover,
+ .Projectom .ganttTaskrow:hover, 
+ .Projectom .ganttTaskmile:hover, 
+ .Projectom .ganttRowHover {
+    background-color: #e0e3e9 !important;
+}
+
+ .Projectom .reportTableHeader {
+    background: none repeat scroll 0 0 #9099a2;
+}
+
+ .Projectom .reportHeader {
+    background: none repeat scroll 0 0 #404952;
+        color: #fff;
+}
+    
+/* =============================================================================== */
+/* Projectom THEME END                                                             */
+/* =============================================================================== */
+
+/* =============================================================================== */
+/* COMMON                                                                          */
+/* =============================================================================== */ 
+
+.dijitTitlePane .dijitTitlePaneTitle, .section {
+  /*border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #FFFFFF; 
+  border-right: 1px solid #FFFFFF;*/
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 2px 5px 2px 5px;
+  font-weight: 600 !important;
+}
+#resultDivMultiple span.messageOK, #resultDivMultiple span.messageERROR {
+  text-shadow: 1px 1px #FFFFFF;
+}
+#resultDivMultiple span.messageWARNING {
+  text-shadow: 1px 1px #000000;
+}
+.dojoxGridRowOver .dojoxGridCell {
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+} 
+
+.input.required {
+  /*background: #FFFFDD !important;*/
+  border-left: 3px solid #FF0000 !important;
+}
+/* CKE */
+/* .cke_toolgroup {
+  margin: 0px 4px 4px 0px !important;
+}
+.cke_top {
+  padding: 4px 0px 0px 4px ! important;
+}
+.cke_combo_text {
+  padding-left: 5px !important;
+  width: auto !important;
+}
+a.cke_combo_button {
+  margin: 0px 4px 4px 0px !important;
+}
+.cke_editable {
+  margin: 0px !important;
+} 
+.cke_dialog_ui_input_file {
+  height: auto !important;
+  padding-top: 3px !important;
+}*/
+.cke_button__source_label {
+	display:none !important;
+}
+.cke_combo_text {
+  width: auto !important;
+}
+div#cke_noteNote a.cke_button.cke_button__maximize.cke_button_off {
+	display:none !important;
+} 
+
+p {
+ font-size: 1em;
+ margin-top: 0 !important;
+ margin-bottom: 0 !important;
+ line-height: normal !important;
+}
+
+.bmenu{
+    padding: 0px;
+    position: relative;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:0px;
+    width:100%;
+}
+
+.bmenu li{
+    display:table-cell;
+    cursor:pointer;
+    color: #505050 !important;
+    display: block;
+    width:250px;
+    float:left;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(89,22,20,0.3);
+    text-align:center;
+    margin: 2px;
+    height:30px;
+    padding:0px;
+    background: rgba(255,255,255,0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.bmenuText {
+  font-size: 11px;
+  display:table-cell;
+  width:250px;
+  height: 30px;
+  vertical-align: middle;
+  font-weight:normal;
+  text-transform: none;
+  letter-spacing:0px;
+  padding:0px;
+}
+.bmenuCategText {
+  padding: 0px 10px;
+  display:table-cell;
+  width:250px;
+  height: 28px;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  font-weight:borld;  
+}
+
+.bmenu li:hover{
+  background-color: #e97b2c  !important;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.bmenu li .reportSelected, .reportSelected {
+  font-size:105%;
+  font-weight:bold;
+  background-color: #e97b2c  !important;
+}
+.reportSelected .bmenuText{
+  font-size:105%;
+  font-weight:bold;
+  background-color: #e97b2c  !important;
+}
+
+.headerReport{
+  color:black;
+  font-size: 22px; 
+  font-family: Verdana,"Arial Black", Arial, sans-serif;
+  font-weight: bold;
+  border:0px;
+  position:absolute;
+  top:3px;
+  text-align:center;
+  background:transparent;
+  left:40px;
+  width:470px;
+}
+
+.contextMenuDiv{
+	background-color: white;
+	border:2px solid black;
+	border-radius:5px;
+	border-color:#656565;
+	width:225px;
+}
+
+.inputParameter{
+	font-size:8pt;
+	width:170px;
+	height:20px;
+}
+
+li.section {
+  border-radius:0px;
+}
+
+.largeReportHeader2 {
+	-webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.activityStreamNoteContent {
+	color:black;
+	margin-top:15px;
+	max-width:100%;
+	width:100%;
+	overflow-x:auto;
+	overflow-y:hidden;
+	position:relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.graphStatusDiv {
+	background-color:#ffffff;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	z-index:999;
+}
+.graphStatusContentDiv {
+	height:auto;
+	z-index:9999;
+	position:fixed;
+	margin-right:0;
+  padding:0;
+	margin-left:-85px;
+	margin-top:23px;
+}
+
+#projectSelectorDiv .dijitReset.dijitRight.dijitButtonNode,
+#userMenuPopup .dijitReset.dijitRight.dijitButtonNode{
+  height:20px;
+}
+
+.absActivityRow:hover {
+	background:#eeeeee;
+}
+
+.emailHistorical:hover {
+	background-color: #545281;  color: #EEEEEE;
+}
+.selectPlan .dojoxCheckedMultiSelectWrapper{
+  width: 500px;
+}
+/*Florent*/
+progress {
+  display: block; /* default: inline-block */
+  width: 300px;
+  border: 0 none;
+  border-radius: 10px;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+progress::-moz-progress-bar {
+  border-radius: 10px;
+  background: #37A346;
+}
+
+progress::-ms-fill {
+  border-radius: 10px;
+  background: #37A346;
+}
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  progress {
+    height: 10px;
+     background: #D3D2D2;
+  }
+}
+progress::-webkit-progress-bar {
+    background: transparent;
+}  
+
+progress::-webkit-progress-value {  
+  border-radius: 10px;
+  background: #37A346;
+} 
+
+.dijitReset.dijitMenuItemLabel div.sectionBadge {
+	display:none;
+	/* position : relative; left:5px;*/
+}
+
+/* =============================================================================== */
+/* Extra CSS for custom Kanban                                                     */
+/* =============================================================================== */
+
+.kanbanTextTitle {color:#656565;}
+.ProjeQtOrFlatBlue .kanbanTextTitle {color:#545381;}
+.ProjeQtOrFlatRed .kanbanTextTitle {color:#833e3e;}
+.ProjeQtOrFlatGreen .kanbanTextTitle {color:#537665;}
+.ProjeQtOrFlatGrey .kanbanTextTitle {color:#656565;}
+
+
+.ticketKanBanStyle{
+  vertical-align: top;
+  /*border-radius:3px;*/
+  display:inline-block !important; 
+  box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color:#FFF;
+  width:47%;
+  max-width:250px;
+  
+  margin-left:2px;
+  margin-right:2px;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 0px !important;
+  /*word-break: break-all;
+  word-wrap:break-word;*/
+  overflow: hidden;
+}
+.dojoDndMove .dojoDndAvatar .ticketKanBanStyle {
+	width: 95%;
+}
+#title{
+  text-align:left;
+}
+.kanbanTitleTicket {
+  position:absolute;
+  cursor:move;
+  padding:3px !important;
+  width: 100%;
+  border-radius:3px 3px 0 0;
+  max-height:31px;
+  box-sizing: border-box;
+  overflow:hidden;
+  display:block;
+  text-align:center;
+  background-color:#F1F1F1; 
+  border-bottom: 1px solid #AAAAAA;
+  min-height:32px;
+}
+
+.kanbanTitleTicket:hover {
+  max-height:100%;
+}
+
+/* LARGE MODE */
+
+.ticketKanBanStyleFull{
+  display:inline-table ! important;
+  /*border-radius:6px;*/
+  box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color:#FFF;
+  color:#000; 
+  position:relative;
+  width:100%;
+  max-width:590px;
+  min-width:290px;
+  margin-top:2px;
+  margin-bottom:8px;
+  cursor:move;
+  /*word-wrap:break-word;
+  word-break: break-all;*/
+}
+
+.kanbanTitleTicketFull {
+  cursor:move;
+  padding:3px;
+  border-radius:3px 3px 0 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+td.kanbanColumn div.ticketKanbanCustom{
+  width:32%;
+  box-sizing:border-box;
+  margin-left:0.8%;
+  margin-right:0.2%;
+}
+
+td.kanbanColumn div.ticketKanbanCustomTwo{
+  width:47%;
+  margin-left:1%;
+  margin-right:0.5%;
+  box-sizing:border-box;
+}
+
+td.kanbanColumn div.ticketKanbanCustomThree{
+  width:100%;
+  box-sizing:border-box;
+}
+
+td.kanbanColumn div.ticketKanbanCustomMin{
+  width:100%;
+  max-width:300px;
+  box-sizing:border-box;
+  margin:5px;
+}
+
+div.ticketKanbanCustomThree .princItem{
+  width: calc(100% - 48px);
+}
+div.ticketKanbanCustomThree .kanbanVersion{
+  /*max-width: 200px;*/
+}
+div.ticketKanbanCustomThree .kanbanActivity{
+  max-width: 200px;
+  margin-left:5px;
+}
+
+div.ticketKanbanCustomMin .kanbanVersion{
+  width: 200px;
+}
+
+div.ticketKanbanCustomTwo .kanbanVersion{
+  
+}
+
+div.ticketKanbanCustom .kanbanVersion{
+  
+}
+
+#dropFilesInfoDiv {
+  text-align:center;
+  font-size:24pt;
+  z-index:99998;
+  width:100%; height:100%;
+  position:absolute;top:0px;left:0px;
+  border:5px dashed grey;
+  background-color:#EEEEEE;
+  opacity:0%;
+  display:none;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.amountTableDiv {
+  overflow:hidden;
+  white-space:nowrap;
+  padding:1px 3px 1px 0px;
+  width:90px;
+}
+.amountTableHeaderDiv {
+  overflow:hidden;
+  width:95px;
+}
+.amountTableTD {
+	text-align:right;
+	width:85px;
+}
+.amountTableHeaderTD {
+  text-align:center;
+  width:95px;
+  padding:0;
+}
+
+/* TAGS MANAGEMENT */
+.searchLine {
+  height: 30px;
+  vertical-align:top;
+}
+.docLine {
+  height:20px !important;
+  text-align:left;
+}
+.docColName {
+  font-weight:bold;
+  color: #FFFFFF;
+  background-color: #7b769c;
+  background-color: #e97b2c;
+  text-shadow: none;
+  padding-left: 5px;
+  font-size:110%
+}
+.docLineTable {
+  width:100%;
+}
+.docLineDiv {
+  overflow:auto;
+  max-height:80px;
+}
+
+.docLineDivFix {
+  overflow:hidden;
+  max-height:80px;
+}
+
+.docLineProject {
+  background: url(../../view/css/images/iconProject16.png) no-repeat left center;
+  width:20px;height:16px;
+}
+.docLineType {
+  background: url(../../view/css/images/iconType16.png) no-repeat left center;
+  width:20px;height:16px;
+}
+.docLineProduct {
+  background: url(../../view/css/images/iconProduct16.png) no-repeat left center;
+  width:20px;height:16px;
+}
+.docLineDirectory {
+  background: url(../../view/css/images/iconDocumentDirectory16.png) no-repeat left center;
+  width:20px;height:16px;
+}
+.docLineTag, .docLineTagNew {
+  background: #EEEEEE;
+  border: 1px solid #CCCCCC;
+  border-radius:10px;
+  float:left;
+  padding: 1px 3px;
+  margin:1px;
+  /*color:#F0F0F0;*/
+}
+.docLineTagNew {
+  background: #EEFEEE;
+}
+.docLineTagDouble {
+  background: #FEEEEE;
+}
+.docLineTagRemove {
+   cursor:pointer;
+   background-color:#AAAAAA;
+   border-radius:8px;
+   min-height:16px; min-width:16px;
+   max-height:5px;
+   float:right;
+   text-align: center;
+}
+.docLineTagContainer, .docLineLinkContainer {
+  height: 78px;
+  width:100%;
+  vertical-align:top;
+  overflow-y:auto;
+}
+.docLineLink {
+  padding: 3px;
+  border: 1px solid #e97b2c;
+}
+.docLineLink:hover {
+  curso:pointer;
+  background-color: #e97b2c;
+  color: #FFFFFF;
+}
+.docLineDate, .docLineSize {
+  color: #AAAAAA;
+  font-size:80%;
+  text-align:center;
+  width:50%;
+}
+.docLineImage {
+  text-align:center;
+}
+.mobile body {
+	font-size:10pt;
+}
+.mobile body.nonMobile {
+  font-size:8pt;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+
+.labelMessageEmptyArea {
+  width:100%;
+  height:50%;
+  text-align:center;
+  font-size:100%;
+  font-style:italic;
+  color:#aaaaaa;
+  position:absolute;
+  top:40px;
+}
+
+.menuBarItemSelectedModule {
+	color: grey !important;
+  background-color: lightgray !important;
+}
+
+.resizerEnd{
+	width: 34px;
+    height: 13px;
+/*     right: -21px; */
+    top: 4px;
+    position: absolute;
+    cursor: e-resize;
+    background-position: center;
+    background-image: url(customIcons/new/iconRightGantt.png);
+    background-repeat: no-repeat;
+    z-index:55000;
+}
+
+.resizerStart{
+    width: 34px;
+    height: 13px;
+/*     left: -21px; */
+    top: 4px;
+    position: absolute;
+    cursor: e-resize;
+    background-position: center;
+    background-image: url(customIcons/new/iconLeftGantt.png);
+    background-repeat: no-repeat;
+    z-index: 55000;
+}
+
+.imageColorBlack{
+	-webkit-filter : brightness(0) invert(0);
+  filter : brightness(0) invert(0);
+  background-color: transparent;
+  opacity: 1;
+}
+
+.divDateGantBarResizeRight{
+	border: 1px solid black;
+	background:white;
+    width: 80px;
+    height: 13px;
+    top: -22px;
+    right: -40px;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+     z-index: 55000;
+}
+
+.divDateGantBarResizeleft{
+	border: 1px solid black;
+	background:white;
+	width: 80px;
+    height: 13px;
+    top: -22px;
+    left: -40px;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;	
+     z-index: 55000;
+}

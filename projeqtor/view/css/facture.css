@@ -1,0 +1,179 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+table#bill {
+	background-color:white;
+	width:570px;
+	height:843px;
+}
+
+table#billadress {
+	background-color:#e8e8e8;
+	margin-left:10px;
+}
+
+table#billadress th {
+	text-align:center;
+	font-weight:bold;
+	font-size: 11pt;
+	width:300px;
+	height:5%;
+}
+
+table#billadress td {
+	text-align:center;
+}
+
+table#billadress td.adress {
+	font-weight:bold;
+	font-size: 10pt;
+}
+
+table#details {
+	background-color:#e8e8e8;
+	text-align:right;
+	width:95%;
+	align:center;
+	width:200px;
+}
+
+table#details td {
+	height:20px;
+}
+
+table#adressCustomer {
+	color:#3274d3;
+	text-align:center;
+	font-size:10pt;
+	margin-left:20px;
+}
+
+table#adressCustomer td {
+	height:20px;
+	border-bottom:1px dotted;
+	
+}
+
+table#adressCustomer th {
+	height:20px;
+	font-weight:bold;
+	text-align:center;
+	border-bottom:1px dotted;
+}
+
+table#list {
+	background-color:#e8e8e8;
+	width:95%;
+	align:center;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+table#list th {
+	background-color:#808080;
+	text-align:center;
+	height:20px;
+	border:2px solid black;
+}
+
+table#list th.1 {
+	width:10%;
+}
+
+table#list th.2 {
+	width:40%;
+}
+
+table#list th.3 {
+	width:20%;
+}
+
+table#list th.4 {
+	width:15%;
+}
+
+table#list th.5 {
+	width:15%;
+}
+
+table#list td.1 {
+	text-align:center;
+}
+
+table#list td {
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+
+table#list td.bottom {
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+}
+
+table#payment {
+	background-color:#e8e8e8;
+	width:300px;
+	height:100px;
+	align:center;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+table#payment th {
+	background-color:#808080;
+	text-align:center;
+	height:20px;
+	border:1px solid black;	
+}
+
+table#amount {
+	background-color:#e8e8e8;
+	text-align:center;
+	width:200px;
+	margin-left:50px;
+}
+
+table#amount th {
+	background-color:#808080;
+	text-align:center;
+	height:20px;
+	border:1px solid black;	
+}
+
+table#amount td.1 {
+	height:20px;
+	border:1px dashed blue;	
+}
+
+table#amount td {
+	height:20px;
+}
+	
+	
+	
+	
+	
+	

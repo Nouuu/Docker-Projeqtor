@@ -1,0 +1,110 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+/* ============================================================================
+ * css styles for LEAVE SYSTEM.
+ * ============================================================================
+ */
+
+/* Imports ==================================================================== */
+@import "projeqtorHRIcons.css";
+
+.closeBoxIconLeave { 
+  background-repeat: no-repeat;
+  background-position: right top;
+  pointer-events: auto;
+  position: absolute;
+  right: 45px;
+  top: 5px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  background-image: url(images/iconClose.png);
+}
+
+
+.bg {
+    background-color: transparent !important;
+    color: black;
+    border-style: none;
+}
+
+.calendarDayOff {
+    background-color: black !important;
+    opacity: 0.33 !important; 
+}
+
+.leaveType {
+    border: solid 1px black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.leaveStatus {
+    border: solid 1px black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    height: 30px !important;
+}
+
+.ProjeQtOrFlatGrey .rightsLvTypeOfContractTypeHeader {
+  background-image: url() !important;
+  background: url() #D4D1D1 !important;
+  color: #656565;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatBlue .rightsLvTypeOfContractTypeHeader {
+  background-image: url();
+  background: url() #cdcadb !important;
+  color: #545381;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatRed .rightsLvTypeOfContractTypeHeader {
+  background-image: url();
+  background: url() #ddcdce !important;
+  color: #833e3e;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatGreen .rightsLvTypeOfContractTypeHeader {
+  background-image: url();
+  background: url() #c9dbce !important;
+  color: #537665;
+  text-shadow: none;
+}
+
+.rightsLvTypeOfContractTypeHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 1px 1px #FFFFFF;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x !important;
+  color: #505050;
+  height: 20px;
+}

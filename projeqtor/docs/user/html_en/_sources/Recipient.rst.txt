@@ -1,0 +1,75 @@
+.. include:: ImageReplacement.txt
+
+.. raw:: latex
+
+    \newpage
+
+.. title:: Recipients
+
+.. index:: Recipient
+.. index:: Bill (Recipient) 
+
+.. _recipient:
+
+Recipients
+----------
+
+The recipient is the beneficiary of bill payments.
+
+Recipients are mainly defined to store billing information. 
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the recipient.
+   * -  Name
+     - Short name of the recipient.
+   * - Company number
+     - Company number, to be displayed on the bill.
+   * - Legal notice
+     - Legal notice for the recipient.
+   * - Tax number
+     - Tax reference number, to be displayed on the bill.
+   * - Tax free
+     - Flag to indicate that tax is automatically set to zero for this recipient.
+   * - Contact name
+     - Name of contact for the recipient.
+   * - Contact email
+     - Email of contact for the recipient.
+   * - Contact phone
+     - Phone of contact for the recipient.
+   * - :term:`Closed`
+     - Flag to indicate that the recipient is archived.
+ 
+.. rubric:: Section International Bank Account Number
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: 
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Bank
+     - Bank name.
+   * - International number (IBAN)
+     - IBAN for the recipient.
+   * - Bank code (BIC)
+     - BIC for the recipient. 
+   * - National account number
+     - Full account number defining the BBAN account code.
+
+.. rubric:: Section Address
+
+Full address of the recipient.
+
+

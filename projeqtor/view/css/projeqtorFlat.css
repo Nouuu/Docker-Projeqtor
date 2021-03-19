@@ -1,0 +1,2190 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.ProjeQtOr.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+
+/* =============================================================================== */
+/* ProjeqtorFlatBlue THEME                                                             */
+/* =============================================================================== */
+.ProjeQtOrFlatBlue .dijitFolderOpened {
+  background: url('customIcons/blue/folderOpened.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatBlue .dijitFolderClosed {
+  background: url('customIcons/blue/folderClosed.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatBlue html, .ProjeQtOrFlatBlue body, .ProjeQtOrFlatBlue #leftDiv, .ProjeQtOrFlatBlue #logoDiv,
+.ProjeQtOrFlatBlue .dijitSplitterH, .ProjeQtOrFlatBlue .dijitGutterH, .ProjeQtOrFlatBlue .dijitSplitterV, .ProjeQtOrFlatBlue .dijitGutterV,
+.ProjeQtOrFlatBlue .loginBackground {
+  background-color: #545281; 
+}
+
+.ProjeQtOrFlatBlue .dijitMenuItemHover,
+.ProjeQtOrFlatBlue .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrFlatBlue .dijitMenuItemSelected  {
+  background-color: #545281;  color: #EEEEEE;   
+}
+
+.ProjeQtOrFlatBlue #mapDiv, .ProjeQtOrFlatBlue #messageDiv, .ProjeQtOrFlatBlue #listDiv, .ProjeQtOrFlatBlue #formDiv, .ProjeQtOrFlatBlue .display, .ProjeQtOrFlatBlue .background,
+.ProjeQtOrFlatBlue .dijitTitlePaneContentInner, .ProjeQtOrFlatBlue .dijitTabPane,
+.ProjeQtOrFlatBlue #mainDiv, .ProjeQtOrFlatBlue #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrFlatBlue .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrFlatBlue #toolBarDiv, .ProjeQtOrFlatBlue #statusBarDiv, .ProjeQtOrFlatBlue .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: #545281 !important;
+}
+.ProjeQtOrFlatBlue .tabLabel, .ProjeQtOrFlatBlue .label {
+  background-color:  #fafafa; color: #545281;
+}
+.ProjeQtOrFlatBlue .dojoxGridRowOver .dojoxGridCell {
+ background: #aca0bc !important;
+ color: #545281 !important;
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+}
+
+.ProjeQtOrFlatBlue #buttonDiv { /**toolbar**/
+  background-color: #545281;  color: #FFFFFF;  
+}
+
+.ProjeQtOrFlatBlue .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ProjeQtOrFlatBlue .listTitle {
+  /* background-color: #545281;  color: #EEEEEE; */  
+  background-color: #545281;  
+  color: #FFFFFF;
+}
+.ProjeQtOrFlatBlue .dojoxGridRowSelected { /**selected lines**/
+  background-color: #545281;  color: #EEEEEE; 
+}
+.ProjeQtOrFlatBlue .display, .ProjeQtOrFlatBlue #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrFlatBlue .titleProject {
+ color: #EEEEEE;
+ text-shadow: none;
+}
+
+.ProjeQtOrFlatBlue #logoDiv {
+  background: #545281 !important;
+}
+
+.ProjeQtOrFlatBlue .listTitle,
+.ProjeQtOrFlatBlue .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrFlatBlue .dojoxGridRowSelected, .ProjeQtOrFlatBlue #buttonDiv  {
+  background:#545281 !important;
+}
+
+.ProjeQtOrFlatBlue .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatBlue .section {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #7b769c !important; 
+}
+
+.ProjeQtOrFlatBlue .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatBlue .reportTableHeader, 
+.ProjeQtOrFlatBlue .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #7b769c !important; 
+}
+
+.ProjeQtOrFlatBlue .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatBlue .reportTableHeaderAsset, 
+.ProjeQtOrFlatBlue .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #7b769c !important; 
+}
+
+.ProjeQtOrFlatBlue .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatBlue .reportTableHeaderAsset, 
+.ProjeQtOrFlatBlue .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #7b769c !important; 
+}
+ 
+.ProjeQtOrFlatBlue .iconHighlight  {
+  background: rgba(255,255,255,0.7) ;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatBlue .menuBarNotificationCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatBlue  .menuBarNotificationCount:hover {
+    font-size: 200%;
+}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatBlue .gridRowCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatBlue .gridRowCountShadow1, .ProjeQtOrFlatBlue .gridRowCountShadow2 {
+  color:#dedae6;
+}
+.ProjeQtOrFlatBlue  #gridRowCount:hover {
+    font-size: 300%;
+  top: -5px;    
+}
+ 
+.ProjeQtOrFlatBlue .menuBarCustom, .ProjeQtOrFlatBlue .menuBarCustom:hover {
+  background-image: url(customIcons/blue/favorite.png);
+  background-size: 16px 16px;
+}
+
+.ProjeQtOrFlatBlue .pseudoButton {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #545281;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+}
+
+.ProjeQtOrFlatBlue .simuToolBar {
+  color: #545281;
+  background: #cdcadb;
+}
+
+.ProjeQtOrFlatBlue .pseudoButton:hover {
+  background: rgba(255,255,255,1);
+}
+
+.ProjeQtOrFlatBlue .whiteBackground {
+  background-color:#a6a0bc;
+  border-radius : 0px;
+}
+
+.ProjeQtOrFlatBlue .dijitButtonIconSwitchMode {
+}
+
+:focus {
+  outline: #ffffff;
+}
+.ProjeQtOrFlatBlue .menuBarItemCaption {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #545281;
+  font-weight: 600;
+}
+
+.ProjeQtOrFlatBlue .menuBarItem {
+  border-radius : 0px;
+  height:35px;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatBlue .bottomNotification {
+  border-radius : 0px;
+  height:22px;
+}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatBlue .dijitSplitter {
+  background: #545281;
+} 
+.ProjeQtOrFlatBlue .dijitSplitterH {
+  border-bottom: 1px solid #cdcadb;
+  border-top: 1px solid #cdcadb;
+}
+
+.ProjeQtOrFlatBlue .dojoxGridRowOdd {
+  background-color: #ecebf2;
+}
+.ProjeQtOrFlatBlue .dojoxGridHeader .dojoxGridCell {
+    background: none repeat scroll 0 0 #a6a0bc !important;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fefefe;
+    color: #ffffff !important;
+    text-shadow: none;  
+    font-size:120%;
+    padding-top:0px;
+}
+
+.ProjeQtOrFlatBlue #statusBarMessageDiv {
+  text-shadow:none;
+}
+.ProjeQtOrFlatBlue .kanbanBadge {
+  position: relative;
+  bottom:7px;
+  right:0px;
+  width:15px;
+  height: 0px;
+  padding:0px 13px;
+  text-align: center;
+  display: inline;
+  font-size:8pt;
+  color:#545281;
+  font-weight:normal;zoom:0.9; 
+  -moz-transform: scale(0.9);
+}
+
+.ProjeQtOrFlatBlue .sectionBadge {
+  background: #545281;
+  position: absolute;
+  top:3px; right:7px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  display: inline;
+  border: 1px solid #FFFFFF;
+  border-radius:12px;
+  font-size:7pt;
+  color:white;
+}
+
+.ProjeQtOrFlatBlue .messageHeader {
+  background: url() #a6a0bc !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-right:  #ffffff solid 1px;
+}
+.ProjeQtOrFlatBlue .messageData {
+  color: #545281;
+}
+.ProjeQtOrFlatBlue .dijitAccordionTitle, .ProjeQtOrFlatBlue .reportTableColumnHeader, .ProjeQtOrFlatBlue .largeReportHeader  {
+  background: url() #a6a0bc !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #a6a0bc;
+  border-bottom: 1px solid #7b769c ;
+}
+
+.ProjeQtOrFlatBlue .dijitAccordionTitle2, .ProjeQtOrFlatBlue .reportTableColumnHeader2, .ProjeQtOrFlatBlue .largeReportHeader2   {
+  background: url() #cdcadb !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #a6a0bc;
+  border-bottom: 1px solid #7b769c ;
+}
+
+.ProjeQtOrFlatBlue .reportTableColumnHeader {
+  border: 1px solid #cdcadb;
+}
+
+.ProjeQtOrFlatBlue .dijitAccordionContainer {
+  border : none;
+}
+
+.ProjeQtOrFlatBlue .disconnectClass {
+  background-image: url(customIcons/blue/disconnect.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+
+.ProjeQtOrFlatBlue .disconnectTextClass {
+  color: #e97b2c;
+}
+
+.ProjeQtOrFlatBlue .dijitButtonIcon {
+    background-image: url(customIcons/blue/editorButtonsEnabled.png);
+}
+
+.ProjeQtOrFlatBlue .dijitDisabled .dijitButtonIcon  {
+    background-image: url(customIcons/blue/editorButtonsDisabled.png);
+}
+.ProjeQtOrFlatBlue .iconNewtab {
+  background-image: url(images/iconNewtab.png);
+  width:60px; height: 16px;
+}
+.ProjeQtOrFlatBlue .dijitReset.dijitInline.dijitButtonNode {
+  border-radius:0px;
+}
+.ProjeQtOrFlatBlue .dijitTreeRow {
+  color: #545281;
+}
+.ProjeQtOrFlatBlue .dijitTreeRow2 {
+  color: #545281;
+}
+
+.ProjeQtOrFlatBlue .dijitTreeRow3 {
+  color: #545281;
+  
+}
+.ProjeQtOrFlatBlue .dijitTreeRow:hover {
+  background-image: url();
+  background: #cdcadb;
+  color: #545281;
+}
+
+.ProjeQtOrFlatBlue .dijitTreeRow2:hover {
+  background-image: url();
+  background: #a6a0bc;
+  color: #ffffff;
+}
+
+.ProjeQtOrFlatBlue .dijitTreeRowSelected .dijitTreeLabel {  
+  background: none;
+  font-weight: bold;
+}
+.ProjeQtOrFlatBlue .dijitTreeRowSelected .dijitTreeLabel::after { 
+  content: "  •";
+  color: #e97b2c;
+  font-size:150%;
+  font-weight: bold;
+  position:relative; top:2px;
+}
+.ProjeQtOrFlatBlue .linkHeader, .ProjeQtOrFlatBlue .attachmentHeader, .ProjeQtOrFlatBlue .noteHeader, .ProjeQtOrFlatBlue .dependencyHeader,
+.ProjeQtOrFlatBlue .historyHeader, .ProjeQtOrFlatBlue .assignHeader,
+.ProjeQtOrFlatBlue .messageHeader, .ProjeQtOrFlatBlue .workflowHeader, .ProjeQtOrFlatBlue .filterHeader, .ProjeQtOrFlatBlue .calendarHeader,
+.ProjeQtOrFlatBlue .reportTableLineHeader {
+  background-image: url();
+  background: url() #cdcadb !important;
+  color: #545381;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatBlue .linkData, .ProjeQtOrFlatBlue .attachmentData, .ProjeQtOrFlatBlue .noteData, .ProjeQtOrFlatBlue .dependencyData,
+.ProjeQtOrFlatBlue .historyData, .ProjeQtOrFlatBlue .assignData {
+  color: #545381;
+}
+
+.ProjeQtOrFlatBlue .hyperlink, .ProjeQtOrFlatBlue .simpleText {
+  color: #545381;
+}
+
+.ProjeQtOrFlatBlue .hyperlink:hover {
+  color: #545381;
+}
+
+.ProjeQtOrFlatBlue #menuBarShow {
+  border-right:1px solid #545381;
+}
+
+.ProjeQtOrFlatBlue .menuBarItem, .ProjeQtOrFlatBlue .bottomNotification {
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ProjeQtOrFlatBlue .menuBarItem:hover, .ProjeQtOrFlatBlue .bottomNotification:hover {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    /* height:170px; */
+}
+
+#menuBarShow {
+  display: none; 
+  height: calc(100% -31px);
+  height: -moz-calc(100% -31px);
+  float: left;
+  top: 0px; left: 0px;
+  z-index: 900;
+  border-right:1px solid #505050;
+}
+
+.ProjeQtOrFlatBlue .dijitButtonNode, .ProjeQtOrFlatBlue .dijitReset.dijitInline.dijitButtonNode {
+  background: #cdcadb;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ProjeQtOrFlatBlue .dijitButtonNode:hover, .ProjeQtOrFlatBlue .dijitReset.dijitInline.dijitButtonNode:hover {
+  background: #ffffff;
+}
+
+.ProjeQtOrFlatBlue .dijitButtonDisabled .dijitButtonNode, .ProjeQtOrFlatBlue .dijitButtonDisabled .dijitReset.dijitInline.dijitButtonNode { 
+  background: rgba(128,128,128,0.2) !important; 
+}
+
+.ProjeQtOrFlatBlue .dijitDisabled .dijitButtonText {
+  color: #aaaaaa !important;
+} 
+
+/* Scrollbars */
+.ProjeQtOrFlatBlue ::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #dcdae6;
+}
+
+.ProjeQtOrFlatBlue ::-webkit-scrollbar-thumb {
+    background: #7b769c;
+}
+
+body .ProjeQtOrFlatBlue {
+    scrollbar-face-color: #7b769c;
+    scrollbar-track-color: #dcdae6 ;
+}
+
+.ProjeQtOrFlatBlue .roundedButtonSmall, .ProjeQtOrFlatBlue .roundedButton, .ProjeQtOrFlatBlue .roundedVisibleButton.roundedButton.generalColClass {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ProjeQtOrFlatBlue .roundedButtonSmall:hover, .ProjeQtOrFlatBlue .roundedButton:hover {
+   transform: rotate(-22.5deg);
+}
+
+.ProjeQtOrFlatBlue .roundedVisibleButton.roundedButton.generalColClass {
+  color: #545381;
+  background: url() #cdcadb ;
+}
+
+.ProjeQtOrFlatBlue .roundedVisibleButton.roundedButton.generalColClass:hover {
+  transform: none;
+  background: url() #ffffff ;
+}
+
+.ProjeQtOrFlatBlue .dijitDialogTitleBar {
+  background-image: url();
+  background: url() #7b769c !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatBlue .cke_top, .ProjeQtOrFlatBlue .cke_bottom {
+  background: #cdcadb !important;
+  background-image: url();
+}
+
+.ProjeQtOrFlatBlue .cke_toolgroup, .ProjeQtOrFlatBlue a.cke_combo_button {
+  background: #dcdae6 !important;
+  background-image: url();
+  
+}
+
+.ProjeQtOrFlatBlue a.cke_button:hover, .ProjeQtOrFlatBlue a.cke_combo_button:hover {
+  background: #a6a0bc !important;
+  background-image: url();
+}
+.ProjeQtOrFlatBlue .contextMenuDiv{
+  border-color: #545381;
+}
+/* ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatBlue .iconButtonClose16 { background-image: url(customIcons/blue/iconClose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonUnClose16 { background-image: url(customIcons/blue/iconUnclose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonSubOrganization16 { background-image: url(customIcons/blue/iconSubOrganization.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* END ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatBlue .iconButtonArrowRight16 { background-image: url(customIcons/blue/iconArrowRight.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonBlocked16 { background-image: url(customIcons/blue/iconBlocked.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonHistory16 { background-image: url(customIcons/blue/iconHistory.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+.ProjeQtOrFlatBlue .iconButtonListApprover16 { background-image: url(customIcons/blue/iconButtonListApprover.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonList16 { background-image: url(customIcons/blue/iconButtonList.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+.ProjeQtOrFlatBlue .iconGotoWhite16 { background-image: url(customIcons/blue/iconGotoWhite.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconGotoWhite22 { background-image: url(customIcons/blue/iconGotoWhite.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconGotoWhite24 { background-image: url(customIcons/blue/iconGotoWhite.png);  background-repeat: no-repeat; width: 24px; height: 24px; background-size: 24px 24px;}
+.ProjeQtOrFlatBlue .iconGotoWhite32 { background-image: url(customIcons/blue/iconGotoWhite.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatBlue .iconButtonSubscribe16 { background-image: url(customIcons/blue/iconSubscribe.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatBlue .iconButtonMark24 { background-image: url(customIcons/blue/iconMark.png);  background-repeat: no-repeat; width: 24px; height: 24px; background-size: 24px 24px;}
+.ProjeQtOrFlatBlue .iconButtonMark16 { background-image: url(customIcons/blue/iconMark.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+.ProjeQtOrFlatBlue .ganttRightTitle, .ProjeQtOrFlatBlue .ganttLeftTopLine, .ProjeQtOrFlatBlue .ganttLeftTitle {
+  background: url() #a6a0bc;
+}
+.ProjeQtOrFlatBlue .ganttTaskgroup {
+  /* background: #dedae6; */
+  background: #ecebf2;
+}
+.ProjeQtOrFlatBlue .ganttTaskgroup:Hover, .ProjeQtOrFlatBlue .ganttTaskrow:hover, .ProjeQtOrFlatBlue .ganttTaskmile:Hover, .ProjeQtOrFlatBlue .ganttRowHover {
+  background-color: #ffffaa !important;
+  color:#000000;
+}
+
+.ProjeQtOrFlatBlue .iconMenuBarCustom16 { background-image: url(customIcons/blue/favorite.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+
+
+
+
+
+
+/* =============================================================================== */
+/* ICONS                                                                           */
+/* =============================================================================== */ 
+
+.ProjeQtOrFlatBlue .iconTranslation32 { background-image: url(customIcons/blue/iconTranslation.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconTranslation22 { background-image: url(customIcons/blue/iconTranslation.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconTranslation16 { background-image: url(customIcons/blue/iconTranslation.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatBlue .iconPredefinedAction32 { background-image: url(customIcons/blue/iconPredefinedAction.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconPredefinedAction22 { background-image: url(customIcons/blue/iconPredefinedAction.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconPredefinedAction16 { background-image: url(customIcons/blue/iconPredefinedAction.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatBlue .iconPeriod32 { background-image: url(customIcons/blue/iconPeriod.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconPeriod22 { background-image: url(customIcons/blue/iconPeriod.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconPeriod16 { background-image: url(customIcons/blue/iconPeriod.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatBlue .iconRequestor32 { background-image: url(images/iconRequestor32.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconRequestor22 { background-image: url(images/iconRequestor22.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconRequestor16 { background-image: url(images/iconRequestor16.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatBlue .iconRight { background-image: url(images/iconRight.png);  background-repeat: no-repeat;}
+
+.ProjeQtOrFlatBlue .iconNotifiable32 { background-image: url(customIcons/green/iconNotifiable.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconNotifiable22 { background-image: url(customIcons/green/iconNotifiable.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconNotifiable16 { background-image: url(customIcons/green/iconNotifiable.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatBlue .iconSelect { background-image: url(images/iconSelect.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+.ProjeQtOrFlatBlue .iconContractUnit32 { background-image: url(customIcons/blue/iconUnity.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatBlue .iconContractUnit22 { background-image: url(customIcons/blue/iconUnity.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatBlue .iconContractUnit16 { background-image: url(customIcons/blue/iconUnity.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+.iconRight { background-image: url(images/iconRight.png);  background-repeat: no-repeat;}
+
+/* =============================================================================== */
+/* ProjeqtorFlatRed THEME                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrFlatRed .dijitFolderOpened {
+  background: url('customIcons/red/folderOpened.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatRed .dijitFolderClosed {
+  background: url('customIcons/red/folderClosed.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatRed html, .ProjeQtOrFlatRed body, .ProjeQtOrFlatRed #leftDiv, .ProjeQtOrFlatRed #logoDiv,
+.ProjeQtOrFlatRed .dijitSplitterH, .ProjeQtOrFlatRed .dijitGutterH, .ProjeQtOrFlatRed .dijitSplitterV, .ProjeQtOrFlatRed .dijitGutterV,
+.ProjeQtOrFlatRed .loginBackground {
+  background-color: #833e3e; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjeQtOrFlatRed .dijitMenuItemHover,
+.ProjeQtOrFlatRed .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrFlatRed .dijitMenuItemSelected  {
+  background-color: #833e3e;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #833e3e; */  
+  
+}
+
+.ProjeQtOrFlatRed #mapDiv, .ProjeQtOrFlatRed #messageDiv, .ProjeQtOrFlatRed #listDiv, .ProjeQtOrFlatRed #formDiv, .ProjeQtOrFlatRed .display, .ProjeQtOrFlatRed .background,
+.ProjeQtOrFlatRed .dijitTitlePaneContentInner, .ProjeQtOrFlatRed .dijitTabPane,
+.ProjeQtOrFlatRed #mainDiv, .ProjeQtOrFlatRed #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrFlatRed .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrFlatRed #toolBarDiv, .ProjeQtOrFlatRed #statusBarDiv, .ProjeQtOrFlatRed .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: #833e3e !important;
+}
+.ProjeQtOrFlatRed .tabLabel, .ProjeQtOrFlatRed .label {
+  background-color: #fafafa; color: #833e3e;
+}
+.ProjeQtOrFlatRed .dojoxGridRowOver .dojoxGridCell {
+ background: #bcaca0 !important;
+ color: #833e3e !important;
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+}
+
+.ProjeQtOrFlatRed #buttonDiv { /**toolbar**/
+  background-color: #833e3e;  color: #FFFFFF;  
+}
+
+.ProjeQtOrFlatRed .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ProjeQtOrFlatRed .listTitle {
+  /* background-color: #833e3e;  color: #EEEEEE; */  
+  background-color: #833e3e;  
+  color: #FFFFFF;
+}
+.ProjeQtOrFlatRed .dojoxGridRowSelected { /**selected lines**/
+  background-color: #833e3e;  color: #EEEEEE; 
+}
+.ProjeQtOrFlatRed .display, .ProjeQtOrFlatRed #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrFlatRed .titleProject {
+ color: #EEEEEE;
+ text-shadow: none;
+   
+}
+
+.ProjeQtOrFlatRed #logoDiv {
+  background: #833e3e !important;
+
+}
+
+.ProjeQtOrFlatRed .listTitle,
+.ProjeQtOrFlatRed .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrFlatRed .dojoxGridRowSelected, .ProjeQtOrFlatRed #buttonDiv  {
+  background:#833e3e !important;
+}
+.ProjeQtOrFlatRed .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatRed .section {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #b07878 !important; 
+}
+
+.ProjeQtOrFlatRed .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatRed .reportTableHeader, 
+.ProjeQtOrFlatRed .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #b07878 !important; 
+}
+
+.ProjeQtOrFlatRed .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatRed .reportTableHeaderAsset, 
+.ProjeQtOrFlatRed .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #b07878 !important; 
+}
+ 
+.ProjeQtOrFlatRed .iconHighlight  {
+  background: rgba(255,255,255,0.7) ;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatRed .menuBarNotificationCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatRed  .menuBarNotificationCount:hover {
+    font-size: 200%;
+}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatRed .gridRowCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatRed .gridRowCountShadow1, .ProjeQtOrFlatRed .gridRowCountShadow2 {
+  color:#dedae6;
+}
+.ProjeQtOrFlatRed  #gridRowCount:hover {
+    font-size: 300%;
+  top: -5px;
+    
+}
+ 
+.ProjeQtOrFlatRed .menuBarCustom, .ProjeQtOrFlatRed .menuBarCustom:hover {
+  background-image: url(customIcons/red/favorite.png);
+  background-size: 16px 16px;
+}
+.ProjeQtOrFlatRed .pseudoButton {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #833e3e;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+}
+
+.ProjeQtOrFlatRed .simuToolBar {
+  color: #833e3e;
+  background: #ddcdce;
+}
+
+.ProjeQtOrFlatRed .pseudoButton:hover {
+  background: rgba(255,255,255,1);
+}
+.ProjeQtOrFlatRed .whiteBackground {
+  background-color:#bda1a6;
+  border-radius : 0px;
+}
+
+.ProjeQtOrFlatRed .dijitButtonIconSwitchMode {
+  
+}
+:focus {
+  outline: #ffffff;
+}
+.ProjeQtOrFlatRed .menuBarItemCaption {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #833e3e;
+  font-weight: 600;
+}
+.ProjeQtOrFlatRed .menuBarItem {
+  border-radius : 0px;
+  height:35px;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatRed .bottomNotification {
+  border-radius : 0px;
+  height:22px;
+}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatRed .dijitSplitter {
+  background: #833e3e;
+} 
+.ProjeQtOrFlatRed .dijitSplitterH {
+  border-bottom: 1px solid #ddcdce;
+  border-top: 1px solid #ddcdce;
+}
+
+.ProjeQtOrFlatRed .dojoxGridRowOdd {
+  background-color: #f2ebeb;
+}
+.ProjeQtOrFlatRed .dojoxGridHeader .dojoxGridCell {
+    background: none repeat scroll 0 0 #bda1a6 !important;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fefefe;
+    color: #ffffff !important;
+    text-shadow: none;  
+    font-size:120%;
+    padding-top:0px;
+}
+
+
+.ProjeQtOrFlatRed #statusBarMessageDiv {
+  text-shadow:none;
+}
+
+.ProjeQtOrFlatRed .kanbanBadge {
+  position: relative;
+  bottom:7px;
+  right:0px;
+  width:15px;
+  height: 0px;
+  padding:0px 13px;
+  text-align: center;
+  display: inline;
+  font-size:8pt;
+  color:#833e3e;
+  font-weight:normal;zoom:0.9; 
+  -moz-transform: scale(0.9);
+}
+
+.ProjeQtOrFlatRed .sectionBadge {
+  background: #833e3e;
+  position: absolute;
+  top:3px; right:7px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  display: inline;
+  border: 1px solid #FFFFFF;
+  border-radius:12px;
+  font-size:7pt;
+  color:white;
+}
+.ProjeQtOrFlatRed .messageHeader {
+  background: url() #bda1a6 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-right:  #ffffff solid 1px;
+}
+.ProjeQtOrFlatRed .messageData {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .dijitAccordionTitle, .ProjeQtOrFlatRed .reportTableColumnHeader, .ProjeQtOrFlatRed .largeReportHeader {
+  background: url() #bda1a6 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #bda1a6;
+  border-bottom: 1px solid #833e3e;
+}
+.ProjeQtOrFlatRed .dijitAccordionTitle2, .ProjeQtOrFlatRed .reportTableColumnHeader2, .ProjeQtOrFlatRed .largeReportHeader2{
+  background: url() #ddcdce !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #bda1a6;
+  border-bottom: 1px solid #833e3e;
+}
+.ProjeQtOrFlatRed .reportTableColumnHeader {
+  border: 1px solid #ddcdce;
+}
+.ProjeQtOrFlatRed .dijitAccordionContainer {
+  border : none;
+}
+
+.ProjeQtOrFlatRed .disconnectClass {
+  background-image: url(customIcons/red/disconnect.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+
+.ProjeQtOrFlatRed .disconnectTextClass {
+  color: #e97b2c;
+}
+
+.ProjeQtOrFlatRed .dijitButtonIcon {
+    background-image: url(customIcons/red/editorButtonsEnabled.png);
+}
+.ProjeQtOrFlatRed .dijitDisabled .dijitButtonIcon  {
+    background-image: url(customIcons/red/editorButtonsDisabled.png);
+}
+.ProjeQtOrFlatRed .iconNewtab {
+  background-image: url(images/iconNewtab.png);
+  width:60px; height: 16px;
+}
+.ProjeQtOrFlatRed .dijitReset.dijitInline.dijitButtonNode {
+  border-radius:0px;
+}
+.ProjeQtOrFlatRed .dijitTreeRow {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .dijitTreeRow2 {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .dijitTreeRow3 {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .dijitTreeRow:hover {
+  background-image: url();
+  background: #ddcdce;
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .dijitTreeRow2:hover {
+  background-image: url();
+  background: #bda1a6;
+  color: #ffffff;
+}
+.ProjeQtOrFlatRed .dijitTreeRowSelected .dijitTreeLabel {  
+  background: none;
+  font-weight: bold;
+}
+.ProjeQtOrFlatRed .dijitTreeRowSelected .dijitTreeLabel::after { 
+  content: "  •";
+  color: #833e3e;
+  font-size:150%;
+  font-weight: bold;
+  position:relative; top:2px;
+}
+.ProjeQtOrFlatRed .linkHeader, .ProjeQtOrFlatRed .attachmentHeader, .ProjeQtOrFlatRed .noteHeader, .ProjeQtOrFlatRed .dependencyHeader,
+.ProjeQtOrFlatRed .historyHeader, .ProjeQtOrFlatRed .assignHeader,
+.ProjeQtOrFlatRed .messageHeader, .ProjeQtOrFlatRed .workflowHeader, .ProjeQtOrFlatRed .filterHeader, .ProjeQtOrFlatRed .calendarHeader,
+.ProjeQtOrFlatRed .reportTableLineHeader {
+  background-image: url();
+  background: url() #ddcdce !important;
+  color: #833e3e;
+  text-shadow: none;
+}
+.ProjeQtOrFlatRed .linkData, .ProjeQtOrFlatRed .attachmentData, .ProjeQtOrFlatRed .noteData, .ProjeQtOrFlatRed .dependencyData,
+.ProjeQtOrFlatRed .historyData, .ProjeQtOrFlatRed .assignData {
+  color: #833e3e;
+}
+
+.ProjeQtOrFlatRed .hyperlink, .ProjeQtOrFlatRed .simpleText {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed .hyperlink:hover {
+  color: #833e3e;
+}
+.ProjeQtOrFlatRed #menuBarShow {
+  border-right:1px solid #833e3e;
+}
+
+.ProjeQtOrFlatRed .menuBarItem, .ProjeQtOrFlatRed .bottomNotification  {
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatRed .menuBarItem:hover, .ProjeQtOrFlatRed .bottomNotification:hover {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    /* height:170px; */
+}
+
+.ProjeQtOrFlatRed .dijitButtonNode, .ProjeQtOrFlatRed .dijitReset.dijitInline.dijitButtonNode {
+  background: #ddcdce;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatRed .dijitButtonNode:hover, .ProjeQtOrFlatRed .dijitReset.dijitInline.dijitButtonNode:hover {
+  background: #ffffff;
+}
+.ProjeQtOrFlatRed .dijitButtonDisabled .dijitButtonNode, .ProjeQtOrFlatRed .dijitButtonDisabled .dijitReset.dijitInline.dijitButtonNode { 
+  background: rgba(128,128,128,0.2) !important;
+  
+}
+.ProjeQtOrFlatRed .dijitDisabled .dijitButtonText {
+  color: #aaaaaa !important;
+} 
+/* Scrollbars */
+
+.ProjeQtOrFlatRed ::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #dcdae6;
+}
+
+.ProjeQtOrFlatRed ::-webkit-scrollbar-thumb {
+    background: #b07878;
+}
+
+body .ProjeQtOrFlatRed {
+    scrollbar-face-color: #b07878;
+    scrollbar-track-color: #dcdae6 ;
+}
+
+.ProjeQtOrFlatRed .roundedButtonSmall, .ProjeQtOrFlatRed .roundedButton, .ProjeQtOrFlatRed .roundedVisibleButton.roundedButton.generalColClass {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ProjeQtOrFlatRed .roundedButtonSmall:hover, .ProjeQtOrFlatRed .roundedButton:hover {
+   transform: rotate(-22.5deg);
+}
+.ProjeQtOrFlatRed .roundedVisibleButton.roundedButton.generalColClass {
+  color: #833e3e;
+  background: url() #ddcdce ;
+}
+.ProjeQtOrFlatRed .roundedVisibleButton.roundedButton.generalColClass:hover {
+  transform: none;
+  background: url() #ffffff ;
+}
+
+.ProjeQtOrFlatRed .dijitDialogTitleBar {
+  background-image: url();
+  background: url() #b07878 !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatRed .cke_top, .ProjeQtOrFlatRed .cke_bottom {
+  background: #ddcdce !important;
+  background-image: url();
+}
+.ProjeQtOrFlatRed .cke_toolgroup, .ProjeQtOrFlatRed a.cke_combo_button {
+  background: #e6dcda !important;
+  background-image: url();
+  
+}
+/*.ProjeQtOrFlatRed a.cke_button, .ProjeQtOrFlatRed a.cke_combo_button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}*/
+.ProjeQtOrFlatRed a.cke_button:hover, .ProjeQtOrFlatRed a.cke_combo_button:hover {
+  background: #bda1a6 !important;
+  background-image: url();
+}
+.ProjeQtOrFlatRed .contextMenuDiv{
+  border-color: #833e3e;
+}
+/* ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatRed .iconButtonClose16 { background-image: url(customIcons/red/iconClose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonUnClose16 { background-image: url(customIcons/red/iconUnclose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonSubOrganization16 { background-image: url(customIcons/red/iconSubOrganization.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* END ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatRed .iconButtonArrowRight16 { background-image: url(customIcons/red/iconArrowRight.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonBlocked16 { background-image: url(customIcons/red/iconBlocked.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonHistory16 { background-image: url(customIcons/red/iconHistory.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+.ProjeQtOrFlatRed .iconButtonListApprover16 { background-image: url(customIcons/red/iconButtonListApprover.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonList16 { background-image: url(customIcons/red/iconButtonList.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatRed .iconNotificationManual16 { background-image: url(customIcons/red/iconNotificationManual.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconNotificationManual22 { background-image: url(customIcons/red/iconNotificationManual.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconNotificationManual32 { background-image: url(customIcons/red/iconNotificationManual.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconSum16 { background-image: url(customIcons/red/iconSum.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconSum22 { background-image: url(customIcons/red/iconSum.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconSum32 { background-image: url(customIcons/red/iconSum.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatRed .iconButtonSubscribe16 { background-image: url(customIcons/red/iconSubscribe.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatRed .iconButtonMark24 { background-image: url(customIcons/red/iconMark.png);  background-repeat: no-repeat; width: 24px; height: 24px; background-size: 24px 24px;}
+.ProjeQtOrFlatRed .iconButtonMark16 { background-image: url(customIcons/red/iconMark.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+.ProjeQtOrFlatRed .ganttRightTitle, .ProjeQtOrFlatRed .ganttLeftTopLine, .ProjeQtOrFlatRed .ganttLeftTitle {
+  background: url() #bda1a6;
+}
+.ProjeQtOrFlatRed .ganttTaskgroup {
+  /* background: #dedae6; */
+  background: #f2ebeb;
+}
+.ProjeQtOrFlatRed .ganttTaskgroup:Hover, .ProjeQtOrFlatRed .ganttTaskrow:hover, .ProjeQtOrFlatRed .ganttTaskmile:Hover, .ProjeQtOrFlatRed .ganttRowHover {
+  background-color: #ffffaa !important;
+}
+
+.ProjeQtOrFlatRed .iconMenuBarCustom16 { background-image: url(customIcons/red/favorite.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+/* =============================================================================== */
+/* ICONS                                                                           */
+/* =============================================================================== */
+
+ 
+
+.ProjeQtOrFlatRed .iconNotifiable32 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconNotifiable22 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconNotifiable16 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconNotificationType32 { background-image: url(customIcons/red/iconNotificationType.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconNotificationType22 { background-image: url(customIcons/red/iconNotificationType.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconNotificationType16 { background-image: url(customIcons/red/iconNotificationType.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconSelect { background-image: url(images/iconSelect.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+.ProjeQtOrFlatRed .iconContractUnit32 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconContractUnit22 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconContractUnit16 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+
+.ProjeQtOrFlatRed .iconActionQuestionDecision32 { background-image: url(customIcons/red/iconActionQuestionDecision.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconActionQuestionDecision22 { background-image: url(customIcons/red/iconActionQuestionDecision.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconActionQuestionDecision16 { background-image: url(customIcons/red/iconActionQuestionDecision.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconConfirm32 { background-image: url(customIcons/red/iconConfirm.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconConfirm22 { background-image: url(customIcons/red/iconConfirm.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconConfirm16 { background-image: url(customIcons/red/iconConfirm.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconInformation32 { background-image: url(customIcons/red/iconInfo.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconInformation22 { background-image: url(customIcons/red/iconInfo.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconInformation16 { background-image: url(customIcons/red/iconInfo.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconInvoice32 { background-image: url(images/iconInvoice32.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconInvoice22 { background-image: url(images/iconInvoice22.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconInvoice16 { background-image: url(images/iconInvoice16.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconInvoiceType32 { background-image: url(images/iconInvoiceType32.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconInvoiceType22 { background-image: url(images/iconInvoiceType22.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconInvoiceType16 { background-image: url(images/iconInvoiceType16.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconTranslation32 { background-image: url(customIcons/red/iconTranslation.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconTranslation22 { background-image: url(customIcons/red/iconTranslation.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconTranslation16 { background-image: url(customIcons/red/iconTranslation.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconPredefinedAction32 { background-image: url(customIcons/red/iconPredefinedAction.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconPredefinedAction22 { background-image: url(customIcons/red/iconPredefinedAction.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconPredefinedAction16 { background-image: url(customIcons/red/iconPredefinedAction.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconPeriod32 { background-image: url(customIcons/red/iconPeriod.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconPeriod22 { background-image: url(customIcons/red/iconPeriod.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconPeriod16 { background-image: url(customIcons/red/iconPeriod.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconRequestor32 { background-image: url(images/iconRequestor32.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconRequestor22 { background-image: url(images/iconRequestor22.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconRequestor16 { background-image: url(images/iconRequestor16.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconRight { background-image: url(images/iconRight.png);  background-repeat: no-repeat;}
+
+.ProjeQtOrFlatRed .iconNotifiable32 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconNotifiable22 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconNotifiable16 { background-image: url(customIcons/red/iconNotifiable.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatRed .iconSelect { background-image: url(images/iconSelect.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+.ProjeQtOrFlatRed .iconContractUnit32 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatRed .iconContractUnit22 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatRed .iconContractUnit16 { background-image: url(customIcons/red/iconUnity.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+/* =============================================================================== */
+/* ProjeqtorFlatGreen THEME                                                             */
+/* =============================================================================== */
+.ProjeQtOrFlatGreen .dijitFolderOpened {
+  background: url('customIcons/green/folderOpened.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatGreen .dijitFolderClosed {
+  background: url('customIcons/green/folderClosed.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatGreen html, .ProjeQtOrFlatGreen body, .ProjeQtOrFlatGreen #leftDiv, .ProjeQtOrFlatGreen #logoDiv,
+.ProjeQtOrFlatGreen .dijitSplitterH, .ProjeQtOrFlatGreen .dijitGutterH, .ProjeQtOrFlatGreen .dijitSplitterV, .ProjeQtOrFlatGreen .dijitGutterV,
+.ProjeQtOrFlatGreen .loginBackground {
+  background-color: #537665; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjeQtOrFlatGreen .dijitMenuItemHover,
+.ProjeQtOrFlatGreen .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrFlatGreen .dijitMenuItemSelected  {
+  background-color: #537665;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #537665; */  
+  
+}
+
+.ProjeQtOrFlatGreen #mapDiv, .ProjeQtOrFlatGreen #messageDiv, .ProjeQtOrFlatGreen #listDiv, .ProjeQtOrFlatGreen #formDiv, .ProjeQtOrFlatGreen .display, .ProjeQtOrFlatGreen .background,
+.ProjeQtOrFlatGreen .dijitTitlePaneContentInner, .ProjeQtOrFlatGreen .dijitTabPane,
+.ProjeQtOrFlatGreen #mainDiv, .ProjeQtOrFlatGreen #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrFlatGreen .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrFlatGreen #toolBarDiv, .ProjeQtOrFlatGreen #statusBarDiv, .ProjeQtOrFlatGreen .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: #537665 !important;
+}
+.ProjeQtOrFlatGreen .tabLabel, .ProjeQtOrFlatGreen .label {
+  background-color: #fafafa; color: #537665;
+}
+.ProjeQtOrFlatGreen .dojoxGridRowOver .dojoxGridCell {
+ background: #acbca0 !important;
+ color: #537665 !important;
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+}
+
+.ProjeQtOrFlatGreen #buttonDiv { /**toolbar**/
+  background-color: #537665;  color: #FFFFFF;  
+}
+
+.ProjeQtOrFlatGreen .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ProjeQtOrFlatGreen .listTitle {
+  /* background-color: #537665;  color: #EEEEEE; */  
+  background-color: #537665;  
+  color: #FFFFFF;
+}
+.ProjeQtOrFlatGreen .dojoxGridRowSelected { /**selected lines**/
+  background-color: #537665;  color: #EEEEEE; 
+}
+.ProjeQtOrFlatGreen .display, .ProjeQtOrFlatGreen #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrFlatGreen .titleProject {
+ color: #EEEEEE;
+ text-shadow: none;
+   
+}
+
+.ProjeQtOrFlatGreen #logoDiv {
+  background: #537665 !important;
+
+}
+
+.ProjeQtOrFlatGreen .listTitle,
+.ProjeQtOrFlatGreen .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrFlatGreen .dojoxGridRowSelected, .ProjeQtOrFlatGreen #buttonDiv  {
+  background:#537665 !important;
+}
+.ProjeQtOrFlatGreen .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGreen .section {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #779a84 !important; 
+}
+
+.ProjeQtOrFlatGreen .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGreen .reportTableHeader, 
+.ProjeQtOrFlatGreen .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #779a84 !important; 
+}
+
+.ProjeQtOrFlatGreen .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGreen .reportTableHeaderAsset, 
+.ProjeQtOrFlatGreen .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #779a84 !important; 
+}
+
+.ProjeQtOrFlatGreen .iconHighlight  {
+  background: rgba(255,255,255,0.7) ;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGreen .menuBarNotificationCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGreen  .menuBarNotificationCount:hover {
+    font-size: 200%;
+}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatGreen .gridRowCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGreen .gridRowCountShadow1, .ProjeQtOrFlatGreen .gridRowCountShadow2 {
+  color:#dedae6;
+}
+.ProjeQtOrFlatGreen  #gridRowCount:hover {
+    font-size: 300%;
+  top: -5px;
+    
+}
+ 
+.ProjeQtOrFlatGreen .menuBarCustom, .ProjeQtOrFlatGreen .menuBarCustom:hover {
+  background-image: url(customIcons/green/favorite.png);
+  background-size: 16px 16px;
+}
+.ProjeQtOrFlatGreen .pseudoButton {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #537665;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+}
+
+.ProjeQtOrFlatGreen .simuToolBar {
+  color: #537665;
+  background: #c9dbce;
+}
+
+.ProjeQtOrFlatGreen .pseudoButton:hover {
+  background: rgba(255,255,255,1);
+}
+.ProjeQtOrFlatGreen .whiteBackground {
+  background-color:#86a790;
+  border-radius : 0px;
+}
+
+.ProjeQtOrFlatGreen .dijitButtonIconSwitchMode {
+  
+}
+:focus {
+  outline: #ffffff;
+}
+.ProjeQtOrFlatGreen .menuBarItemCaption {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #537665;
+  font-weight: 600;
+}
+.ProjeQtOrFlatGreen .menuBarItem {
+  border-radius : 0px;
+  height:35px;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGreen .bottomNotification {
+  border-radius : 0px;
+  height:22px;
+}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatGreen .dijitSplitter {
+  background: #537665;
+} 
+.ProjeQtOrFlatGreen .dijitSplitterH {
+  border-bottom: 1px solid #c9dbce;
+  border-top: 1px solid #c9dbce;
+}
+
+.ProjeQtOrFlatGreen .dojoxGridRowOdd {
+  background-color: #ecf2eb;
+}
+.ProjeQtOrFlatGreen .dojoxGridHeader .dojoxGridCell {
+    background: none repeat scroll 0 0 #86a790 !important;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fefefe;
+    color: #ffffff !important;
+    text-shadow: none;  
+    font-size:120%;
+    padding-top:0px;
+}
+
+
+.ProjeQtOrFlatGreen #statusBarMessageDiv {
+  text-shadow:none;
+}
+
+.ProjeQtOrFlatRed .kanbanBadge {
+  position: relative;
+  bottom:7px;
+  right:0px;
+  width:15px;
+  height: 0px;
+  padding:0px 13px;
+  text-align: center;
+  display: inline;
+  font-size:8pt;
+  color:#537665;
+  font-weight:normal;zoom:0.9; 
+  -moz-transform: scale(0.9);
+}
+
+.ProjeQtOrFlatGreen .sectionBadge {
+  background: #537665;
+  position: absolute;
+  top:3px; right:7px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  display: inline;
+  border: 1px solid #FFFFFF;
+  border-radius:12px;
+  font-size:7pt;
+  color:white;
+}
+.ProjeQtOrFlatGreen .messageHeader {
+  background: url() #86a790 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-right:  #ffffff solid 1px;
+}
+.ProjeQtOrFlatGreen .messageData {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .dijitAccordionTitle, .ProjeQtOrFlatGreen .reportTableColumnHeader, .ProjeQtOrFlatGreen .largeReportHeader {
+  background: url() #86a790 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #86a790;
+    border-bottom: 1px solid #537665;
+}
+.ProjeQtOrFlatGreen .dijitAccordionTitle2, .ProjeQtOrFlatGreen .reportTableColumnHeader2, .ProjeQtOrFlatGreen .largeReportHeader2 {
+  background: url() #c9dbce !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #86a790;
+    border-bottom: 1px solid #537665;
+}
+.ProjeQtOrFlatGreen .reportTableColumnHeader {
+  border: 1px solid #c9dbce;
+}
+.ProjeQtOrFlatGreen .dijitAccordionContainer {
+  border : none;
+}
+
+.ProjeQtOrFlatGreen .disconnectClass {
+  background-image: url(customIcons/green/disconnect.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+
+.ProjeQtOrFlatGreen .disconnectTextClass {
+  color: #e97b2c;
+}
+
+.ProjeQtOrFlatGreen .dijitButtonIcon {
+    background-image: url(customIcons/green/editorButtonsEnabled.png);
+}
+.ProjeQtOrFlatGreen .dijitDisabled .dijitButtonIcon  {
+    background-image: url(customIcons/green/editorButtonsDisabled.png);
+}
+.ProjeQtOrFlatGreen .iconNewtab {
+  background-image: url(images/iconNewtab.png);
+  width:60px; height: 16px;
+}
+.ProjeQtOrFlatGreen .dijitReset.dijitInline.dijitButtonNode {
+  border-radius:0px;
+}
+.ProjeQtOrFlatGreen .dijitTreeRow {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .dijitTreeRow2 {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .dijitTreeRow3 {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .dijitTreeRow:hover {
+  background-image: url();
+  background: #c9dbce;
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .dijitTreeRow2:hover {
+  background-image: url();
+  background: #86a790;
+  color: #ffffff;
+}
+.ProjeQtOrFlatGreen .dijitTreeRowSelected .dijitTreeLabel {  
+  background: none;
+  font-weight: bold;
+}
+.ProjeQtOrFlatGreen .dijitTreeRowSelected .dijitTreeLabel::after { 
+  content: "  •";
+  color: #537665;
+  font-size:150%;
+  font-weight: bold;
+  position:relative; top:2px;
+}
+.ProjeQtOrFlatGreen .linkHeader, .ProjeQtOrFlatGreen .attachmentHeader, .ProjeQtOrFlatGreen .noteHeader, .ProjeQtOrFlatGreen .dependencyHeader,
+.ProjeQtOrFlatGreen .historyHeader, .ProjeQtOrFlatGreen .assignHeader,
+.ProjeQtOrFlatGreen .messageHeader, .ProjeQtOrFlatGreen .workflowHeader, .ProjeQtOrFlatGreen .filterHeader, .ProjeQtOrFlatGreen .calendarHeader,
+.ProjeQtOrFlatGreen .reportTableLineHeader {
+  background-image: url();
+  background: url() #c9dbce !important;
+  color: #537665;
+  text-shadow: none;
+}
+.ProjeQtOrFlatGreen .linkData, .ProjeQtOrFlatGreen .attachmentData, .ProjeQtOrFlatGreen .noteData, .ProjeQtOrFlatGreen .dependencyData,
+.ProjeQtOrFlatGreen .historyData, .ProjeQtOrFlatGreen .assignData {
+  color: #537665;
+}
+
+.ProjeQtOrFlatGreen .hyperlink, .ProjeQtOrFlatGreen .simpleText {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen .hyperlink:hover {
+  color: #537665;
+}
+.ProjeQtOrFlatGreen #menuBarShow {
+  border-right:1px solid #537665;
+}
+
+.ProjeQtOrFlatGreen .menuBarItem, .ProjeQtOrFlatGreen .bottomNotification {
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGreen .menuBarItem:hover, .ProjeQtOrFlatGreen .bottomNotification:hover {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    /* height:170px; */
+}
+
+.ProjeQtOrFlatGreen .dijitButtonNode, .ProjeQtOrFlatGreen .dijitReset.dijitInline.dijitButtonNode {
+  background: #c9dbce;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGreen .dijitButtonNode:hover, .ProjeQtOrFlatGreen .dijitReset.dijitInline.dijitButtonNode:hover {
+  background: #ffffff;
+}
+.ProjeQtOrFlatGreen .dijitButtonDisabled .dijitButtonNode, .ProjeQtOrFlatGreen .dijitButtonDisabled .dijitReset.dijitInline.dijitButtonNode { 
+  background: rgba(128,128,128,0.2) !important;
+  
+}
+.ProjeQtOrFlatGreen .dijitDisabled .dijitButtonText {
+  color: #aaaaaa !important;
+} 
+/* Scrollbars */
+
+.ProjeQtOrFlatGreen ::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #dcdae6;
+}
+
+.ProjeQtOrFlatGreen ::-webkit-scrollbar-thumb {
+    background: #779a84;
+}
+
+body .ProjeQtOrFlatGreen {
+    scrollbar-face-color: #779a84;
+    scrollbar-track-color: #dcdae6 ;
+}
+
+.ProjeQtOrFlatGreen .roundedButtonSmall, .ProjeQtOrFlatGreen .roundedButton, .ProjeQtOrFlatGreen .roundedVisibleButton.roundedButton.generalColClass {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ProjeQtOrFlatGreen .roundedButtonSmall:hover, .ProjeQtOrFlatGreen .roundedButton:hover {
+   transform: rotate(-22.5deg);
+}
+.ProjeQtOrFlatGreen .roundedVisibleButton.roundedButton.generalColClass {
+  color: #537665;
+  background: url() #c9dbce ;
+}
+.ProjeQtOrFlatGreen .roundedVisibleButton.roundedButton.generalColClass:hover {
+  transform: none;
+  background: url() #ffffff ;
+}
+
+.ProjeQtOrFlatGreen .dijitDialogTitleBar {
+  background-image: url();
+  background: url() #779a84 !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatGreen .cke_top, .ProjeQtOrFlatGreen .cke_bottom {
+  background: #c9dbce !important;
+  background-image: url();
+}
+.ProjeQtOrFlatGreen .cke_toolgroup, .ProjeQtOrFlatGreen a.cke_combo_button {
+  background: #dce6da !important;
+  background-image: url();
+  
+}
+/*.ProjeQtOrFlatGreen a.cke_button, .ProjeQtOrFlatGreen a.cke_combo_button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}*/
+.ProjeQtOrFlatGreen a.cke_button:hover, .ProjeQtOrFlatGreen a.cke_combo_button:hover {
+  background: #86a790 !important;
+  background-image: url();
+}
+.ProjeQtOrFlatGreen .contextMenuDiv{
+  border-color: #537665;
+}
+/* ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatGreen .iconButtonClose16 { background-image: url(customIcons/green/iconClose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonUnClose16 { background-image: url(customIcons/green/iconUnclose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonSubOrganization16 { background-image: url(customIcons/green/iconSubOrganization.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* END ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+
+.ProjeQtOrFlatGreen .iconButtonArrowRight16 { background-image: url(customIcons/green/iconArrowRight.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonBlocked16 { background-image: url(customIcons/green/iconBlocked.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonHistory16 { background-image: url(customIcons/green/iconHistory.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+.ProjeQtOrFlatGreen .iconButtonListApprover16 { background-image: url(customIcons/green/iconButtonListApprover.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonList16 { background-image: url(customIcons/green/iconButtonList.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGreen .iconNotificationManual16 { background-image: url(customIcons/green/iconNotificationManual.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconNotificationManual22 { background-image: url(customIcons/green/iconNotificationManual.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatGreen .iconNotificationManual32 { background-image: url(customIcons/green/iconNotificationManual.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatGreen .iconSum16 { background-image: url(customIcons/green/iconSum.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconSum22 { background-image: url(customIcons/green/iconSum.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatGreen .iconSum32 { background-image: url(customIcons/green/iconSum.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGreen .iconButtonSubscribe16 { background-image: url(customIcons/green/iconSubscribe.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGreen .iconButtonMark24 { background-image: url(customIcons/green/iconMark.png);  background-repeat: no-repeat; width: 24px; height: 24px; background-size: 24px 24px;}
+.ProjeQtOrFlatGreen .iconButtonMark16 { background-image: url(customIcons/green/iconMark.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+.ProjeQtOrFlatGreen .ganttRightTitle, .ProjeQtOrFlatGreen .ganttLeftTopLine, .ProjeQtOrFlatGreen .ganttLeftTitle {
+  background: url() #86a790;
+}
+.ProjeQtOrFlatGreen .ganttTaskgroup {
+  /* background: #dedae6; */
+  background: #ecf2eb;
+}
+.ProjeQtOrFlatGreen .ganttTaskgroup:Hover, .ProjeQtOrFlatGreen .ganttTaskrow:hover, .ProjeQtOrFlatGreen .ganttTaskmile:Hover, .ProjeQtOrFlatGreen .ganttRowHover {
+  background-color: #ffffaa !important;
+}
+
+.ProjeQtOrFlatGreen .iconMenuBarCustom16 { background-image: url(customIcons/green/favorite.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+/* =============================================================================== */
+/* ICONS                                                                           */
+/* =============================================================================== */
+
+.ProjeQtOrFlatGreen .iconRight32 { background-image: url(customIcons/green/iconRight.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatGreen .iconRight22 { background-image: url(customIcons/green/iconRight.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatGreen .iconRight16 { background-image: url(customIcons/green/iconRight.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+.ProjeQtOrFlatGreen .iconSelect { background-image: url(images/iconSelect.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+.ProjeQtOrFlatGreen .iconContractUnit32 { background-image: url(customIcons/green/iconUnity.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatGreen .iconContractUnit22 { background-image: url(customIcons/green/iconUnity.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatGreen .iconContractUnit16 { background-image: url(customIcons/green/iconUnity.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+/* =============================================================================== */
+/* ProjeqtorFlatGrey THEME                                                  */
+/* =============================================================================== */
+.ProjeQtOrFlatGrey .dijitFolderOpened {
+  background: url('customIcons/grey/folderOpened.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatGrey .dijitFolderClosed {
+  background: url('customIcons/grey/folderClosed.png') no-repeat;
+  width:16px; height: 16px;
+}
+
+.ProjeQtOrFlatGrey html, .ProjeQtOrFlatGrey body, .ProjeQtOrFlatGrey #leftDiv, .ProjeQtOrFlatGrey #logoDiv,
+.ProjeQtOrFlatGrey .dijitSplitterH, .ProjeQtOrFlatGrey .dijitGutterH, .ProjeQtOrFlatGrey .dijitSplitterV, .ProjeQtOrFlatGrey .dijitGutterV,
+.ProjeQtOrFlatGrey .loginBackground {
+  background-color: #656565; 
+  /* background-color: #d4d5da; */
+}
+
+.ProjeQtOrFlatGrey .dijitMenuItemHover,
+.ProjeQtOrFlatGrey .dijitMenuPassive .dijitMenuItemHover,
+.ProjeQtOrFlatGrey .dijitMenuItemSelected  {
+  background-color: #656565;  color: #EEEEEE; 
+  /* background-color: #d4d5da; color: #656565; */  
+  
+}
+
+.ProjeQtOrFlatGrey #mapDiv, .ProjeQtOrFlatGrey #messageDiv, .ProjeQtOrFlatGrey #listDiv, .ProjeQtOrFlatGrey #formDiv, .ProjeQtOrFlatGrey .display, .ProjeQtOrFlatGrey .background,
+.ProjeQtOrFlatGrey .dijitTitlePaneContentInner, .ProjeQtOrFlatGrey .dijitTabPane,
+.ProjeQtOrFlatGrey #mainDiv, .ProjeQtOrFlatGrey #centerDiv {
+  background-color: #fafafa;
+}
+.ProjeQtOrFlatGrey .dijitTabContainerTop-tabs .dijitTabChecked {
+  background-color: #fafafa;
+  border-bottom-color: #fafafa;
+}
+.ProjeQtOrFlatGrey #toolBarDiv, .ProjeQtOrFlatGrey #statusBarDiv, .ProjeQtOrFlatGrey .statusBar { /**toolbar**/
+   color: #EEEEEE;
+   background: #656565 !important;
+}
+.ProjeQtOrFlatGrey .tabLabel, .ProjeQtOrFlatGrey .label {
+ color: #656565;
+}
+.ProjeQtOrFlatGrey .dojoxGridRowOver .dojoxGridCell {
+ background: #acacac !important;
+ color: #656565 !important;
+ -moz-opacity: 0.7;
+ opacity: 0.7;
+ filter: Alpha(Opacity = 70);
+}
+
+.ProjeQtOrFlatGrey #buttonDiv { /**toolbar**/
+  background-color: #656565;  color: #FFFFFF;  
+}
+
+.ProjeQtOrFlatGrey .title {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+.ProjeQtOrFlatGrey .listTitle {
+  /* background-color: #656565;  color: #EEEEEE; */  
+  background-color: #656565;  
+  color: #FFFFFF;
+}
+.ProjeQtOrFlatGrey .dojoxGridRowSelected { /**selected lines**/
+  background-color: #656565;  color: #EEEEEE; 
+}
+.ProjeQtOrFlatGrey .display, .ProjeQtOrFlatGrey #printPreview {
+  border: 1px solid #fafafa;
+}
+
+.ProjeQtOrFlatGrey .titleProject {
+ color: #EEEEEE;
+ text-shadow: none;
+   
+}
+
+.ProjeQtOrFlatGrey #logoDiv {
+  background: #656565 !important;
+
+}
+
+.ProjeQtOrFlatGrey .listTitle,
+.ProjeQtOrFlatGrey .dijitTitlePane .dijitTitlePaneTitle,
+.ProjeQtOrFlatGrey .dojoxGridRowSelected, .ProjeQtOrFlatGrey #buttonDiv  {
+  background:#656565 !important;
+}
+.ProjeQtOrFlatGrey .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGrey .section {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #898989 !important; 
+}
+
+.ProjeQtOrFlatGrey .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGrey .reportTableHeader, 
+.ProjeQtOrFlatGrey .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #898989 !important; 
+}
+
+.ProjeQtOrFlatGrey .dijitTitlePane .dijitTitlePaneTitle, .ProjeQtOrFlatGrey .reportTableHeaderAsset, 
+.ProjeQtOrFlatGrey .reportHeader {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #898989 !important; 
+}
+ 
+.ProjeQtOrFlatGrey .iconHighlight  {
+  background: rgba(255,255,255,0.7) ;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGrey .menuBarNotificationCount {
+  color:#e97b2c;
+  font-weight: bold;
+  vertical-align: middle;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGrey  .menuBarNotificationCount:hover {
+    font-size: 200%;
+}
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatGrey .gridRowCount {
+  color:#e97b2c;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGrey .gridRowCountShadow1, .ProjeQtOrFlatGrey .gridRowCountShadow2 {
+  color:#dedae6;
+}
+.ProjeQtOrFlatGrey  #gridRowCount:hover {
+    font-size: 300%;
+  top: -5px;
+    
+}
+ 
+.ProjeQtOrFlatGrey .menuBarCustom, .ProjeQtOrFlatGrey .menuBarCustom:hover {
+  background-image: url(customIcons/grey/favorite.png);
+  background-size: 16px 16px;
+}
+.ProjeQtOrFlatGrey .pseudoButton {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #656565;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+}
+
+.ProjeQtOrFlatGrey .simuToolBar {
+  color: #656565;
+  background: #d4d1d1;
+}
+
+.ProjeQtOrFlatGrey .pseudoButton:hover {
+  background: rgba(255,255,255,1);
+}
+.ProjeQtOrFlatGrey .whiteBackground {
+  background-color:#AEAEAE;
+  border-radius : 0px;
+}
+
+.ProjeQtOrFlatGrey .dijitButtonIconSwitchMode {
+  
+}
+:focus {
+  outline: #ffffff;
+}
+.ProjeQtOrFlatGrey .menuBarItemCaption {
+  text-shadow: none;
+  border-radius : 0px;
+  color: #656565;
+  font-weight: 600;
+}
+.ProjeQtOrFlatGrey .menuBarItem {
+  border-radius : 0px;
+  height:35px;
+}
+
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGrey .bottomNotification {
+  border-radius : 0px;
+  height:22px;
+}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+
+.ProjeQtOrFlatGrey .dijitSplitter {
+  background: #656565;
+} 
+.ProjeQtOrFlatGrey .dijitSplitterH {
+  border-bottom: 1px solid #D4D1D1;
+  border-top: 1px solid #D4D1D1;
+}
+
+.ProjeQtOrFlatGrey .dojoxGridRowOdd {
+  background-color: #ececec;
+}
+.ProjeQtOrFlatGrey .dojoxGridHeader .dojoxGridCell {
+    background: none repeat scroll 0 0 #AEAEAE !important;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fefefe;
+    color: #ffffff !important;
+    text-shadow: none;  
+    font-size:120%;
+    padding-top:0px;
+}
+
+
+.ProjeQtOrFlatGrey #statusBarMessageDiv {
+  text-shadow:none;
+}
+
+.ProjeQtOrFlatRed .kanbanBadge {
+  position: relative;
+  bottom:7px;
+  right:0px;
+  width:15px;
+  height: 0px;
+  padding:0px 13px;
+  text-align: center;
+  display: inline;
+  font-size:8pt;
+  color:#656565;
+  font-weight:normal;zoom:0.9; 
+  -moz-transform: scale(0.9);
+}
+
+.ProjeQtOrFlatGrey .sectionBadge {
+  background: #656565;
+  position: absolute;
+  top:3px; right:7px;
+  width: 40px;
+  height: 12px;
+  text-align: center;
+  display: inline;
+  border: 1px solid #FFFFFF;
+  border-radius:12px;
+  font-size:7pt;
+  color:white;
+}
+.ProjeQtOrFlatGrey .messageHeader {
+  background: url() #AEAEAE !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-right:  #ffffff solid 1px;
+}
+.ProjeQtOrFlatGrey .messageData {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .dijitAccordionTitle, .ProjeQtOrFlatGrey .reportTableColumnHeader, .ProjeQtOrFlatGrey .largeReportHeader {
+  background: url() #AEAEAE !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #AEAEAE;
+  border-bottom: 1px solid #656565;
+}
+.ProjeQtOrFlatGrey .dijitAccordionTitle2, .ProjeQtOrFlatGrey .reportTableColumnHeader2, .ProjeQtOrFlatGrey .largeReportHeader2{
+  background: url() #D4D1D1 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border-top: 0px solid #AEAEAE;
+  border-bottom: 1px solid #656565;
+}
+.ProjeQtOrFlatGrey .reportTableColumnHeader {
+  border: 1px solid #D4D1D1;
+}
+.ProjeQtOrFlatGrey .dijitAccordionContainer {
+  border : none;
+}
+/*
+.ProjeQtOrFlatGrey .disconnectClass {
+  background-image: url(customIcons/grey/disconnect.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+*/
+
+.ProjeQtOrFlatGrey .disconnectTextClass {
+  color: #e97b2c;
+}
+
+.ProjeQtOrFlatGrey .dijitButtonIcon {
+    background-image: url(customIcons/grey/editorButtonsEnabled.png);
+}
+.ProjeQtOrFlatGrey .dijitDisabled .dijitButtonIcon  {
+    background-image: url(customIcons/grey/editorButtonsDisabled.png);
+}
+.ProjeQtOrFlatGrey .iconNewtab {
+  background-image: url(images/iconNewtab.png);
+  width:60px; height: 16px;
+}
+.ProjeQtOrFlatGrey .dijitReset.dijitInline.dijitButtonNode {
+  border-radius:0px;
+}
+.ProjeQtOrFlatGrey .dijitTreeRow {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .dijitTreeRow2 {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .dijitTreeRow3 {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .dijitTreeRow:hover {
+  background-image: url();
+  background: #D4D1D1;
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .dijitTreeRow2:hover {
+  background-image: url();
+  background: #AEAEAE;
+  color: #ffffff;
+}
+.ProjeQtOrFlatGrey .dijitTreeRowSelected .dijitTreeLabel {  
+  background: none;
+  font-weight: bold;
+}
+.ProjeQtOrFlatGrey .dijitTreeRowSelected .dijitTreeLabel::after { 
+  content: "  •";
+  color: #656565;
+  font-size:150%;
+  font-weight: bold;
+  position:relative; top:2px;
+}
+.ProjeQtOrFlatGrey .linkHeader, .ProjeQtOrFlatGrey .attachmentHeader, .ProjeQtOrFlatGrey .noteHeader, .ProjeQtOrFlatGrey .dependencyHeader,
+.ProjeQtOrFlatGrey .historyHeader, .ProjeQtOrFlatGrey .assignHeader,
+.ProjeQtOrFlatGrey .messageHeader, .ProjeQtOrFlatGrey .workflowHeader, .ProjeQtOrFlatGrey .filterHeader, .ProjeQtOrFlatGrey .calendarHeader,
+.ProjeQtOrFlatGrey .reportTableLineHeader {
+  background-image: url() !important;
+  background: url() #D4D1D1 !important;
+  color: #656565;
+  text-shadow: none;
+}
+.ProjeQtOrFlatGrey .linkData, .ProjeQtOrFlatGrey .attachmentData, .ProjeQtOrFlatGrey .noteData, .ProjeQtOrFlatGrey .dependencyData,
+.ProjeQtOrFlatGrey .historyData, .ProjeQtOrFlatGrey .assignData {
+  color: #656565;
+}
+
+.ProjeQtOrFlatGrey .hyperlink, .ProjeQtOrFlatGrey .simpleText {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey .hyperlink:hover {
+  color: #656565;
+}
+.ProjeQtOrFlatGrey #menuBarShow {
+  border-right:1px solid #656565;
+}
+
+.ProjeQtOrFlatGrey .menuBarItem, .ProjeQtOrFlatGrey .bottomNotification {
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGrey .menuBarItem:hover, .ProjeQtOrFlatGrey .bottomNotification:hover {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    /* height:170px; */
+}
+
+.ProjeQtOrFlatGrey .dijitButtonNode, .ProjeQtOrFlatGrey .dijitReset.dijitInline.dijitButtonNode {
+  background: #D4D1D1;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ProjeQtOrFlatGrey .dijitButtonNode:hover, .ProjeQtOrFlatGrey .dijitReset.dijitInline.dijitButtonNode:hover {
+  background: #ffffff;
+}
+.ProjeQtOrFlatGrey .dijitButtonDisabled .dijitButtonNode, .ProjeQtOrFlatGrey .dijitButtonDisabled .dijitReset.dijitInline.dijitButtonNode { 
+  background: rgba(128,128,128,0.2) !important;
+  
+}
+.ProjeQtOrFlatGrey .dijitDisabled .dijitButtonText {
+  color: #aaaaaa !important;
+} 
+/* Scrollbars */
+
+.ProjeQtOrFlatGrey ::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #dcdae6;
+}
+
+.ProjeQtOrFlatGrey ::-webkit-scrollbar-thumb {
+    background: #898989;
+}
+
+body .ProjeQtOrFlatGrey {
+    scrollbar-face-color: #898989;
+    scrollbar-track-color: #dcdae6 ;
+}
+
+.ProjeQtOrFlatGrey .roundedButtonSmall, .ProjeQtOrFlatGrey .roundedButton, .ProjeQtOrFlatGrey .roundedVisibleButton.roundedButton.generalColClass {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ProjeQtOrFlatGrey .roundedButtonSmall:hover, .ProjeQtOrFlatGrey .roundedButton:hover {
+   transform: rotate(-22.5deg);
+}
+.ProjeQtOrFlatGrey .roundedVisibleButton.roundedButton.generalColClass {
+  color: #656565;
+  background: url() #D4D1D1 ;
+}
+.ProjeQtOrFlatGrey .roundedVisibleButton.roundedButton.generalColClass:hover {
+  transform: none;
+  background: url() #ffffff ;
+}
+
+.ProjeQtOrFlatGrey .dijitDialogTitleBar {
+  background-image: url();
+  background: url() #898989 !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ProjeQtOrFlatGrey .cke_top, .ProjeQtOrFlatGrey .cke_bottom {
+  background: #D4D1D1 !important;
+  background-image: url();
+}
+.ProjeQtOrFlatGrey .cke_toolgroup, .ProjeQtOrFlatGrey a.cke_combo_button {
+  background: #ececec !important;
+  background-image: url();
+}
+/*.ProjeQtOrFlatGrey a.cke_button, .ProjeQtOrFlatGrey a.cke_combo_button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}*/
+.ProjeQtOrFlatGrey a.cke_button:hover, .ProjeQtOrFlatGrey a.cke_combo_button:hover {
+  background: #AEAEAE !important;
+  background-image: url();
+}
+.ProjeQtOrFlatGrey .contextMenuDiv{
+  border-color: #656565;
+}
+/* ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE - SUB ORGANIZATION */
+.ProjeQtOrFlatGrey .iconButtonClose16 { background-image: url(customIcons/grey/iconClose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGrey .iconButtonUnClose16 { background-image: url(customIcons/grey/iconUnclose.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGrey .iconButtonSubOrganization16 { background-image: url(customIcons/grey/iconSubOrganization.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* END ADD BY Marc TABARY - 2017-03-15 - ICON BUTTON CLOSE - UNCLOSE SUB ORGANIZATION */
+.ProjeQtOrFlatGrey .iconButtonArrowRight16 { background-image: url(customIcons/grey/iconArrowRight.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGrey .iconButtonBlocked16 { background-image: url(customIcons/grey/iconBlocked.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGrey .iconButtonHistory16 { background-image: url(customIcons/grey/iconHistory.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+.ProjeQtOrFlatGrey .iconButtonListApprover16 { background-image: url(customIcons/grey/iconButtonListApprover.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+.ProjeQtOrFlatGrey .iconButtonList16 { background-image: url(customIcons/grey/iconButtonList.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+/* BEGIN - ADD BY TABARY - NOTIFICATION SYSTEM */
+/* END - ADD BY TABARY - NOTIFICATION SYSTEM */
+.ProjeQtOrFlatGrey .iconButtonSubscribe16 { background-image: url(customIcons/grey/iconSubscribe.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+.ProjeQtOrFlatGrey .iconButtonMark24 { background-image: url(customIcons/grey/iconMark.png);  background-repeat: no-repeat; width: 24px; height: 24px; background-size: 24px 24px;}
+.ProjeQtOrFlatGrey .iconButtonMark16 { background-image: url(customIcons/grey/iconMark.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+
+
+.ProjeQtOrFlatGrey .ganttRightTitle, .ProjeQtOrFlatGrey .ganttLeftTopLine, .ProjeQtOrFlatGrey .ganttLeftTitle {
+  background: url() #AEAEAE;
+}
+.ProjeQtOrFlatGrey .ganttTaskgroup {
+  /* background: #dedae6; */
+  background: #ececec;
+}
+.ProjeQtOrFlatGrey .ganttTaskgroup:Hover, .ProjeQtOrFlatGrey .ganttTaskrow:hover, .ProjeQtOrFlatGrey .ganttTaskmile:Hover, .ProjeQtOrFlatGrey .ganttRowHover {
+  background-color: #ffffaa !important;
+}
+
+.ProjeQtOrFlatGrey .iconMenuBarCustom16 { background-image: url(customIcons/grey/favorite.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+
+
+
+
+
+/* =============================================================================== */
+/* ICONS                                                                           */
+/* =============================================================================== */
+
+
+.ProjeQtOrFlatGrey .iconSelect { background-image: url(images/iconSelect.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px;}
+
+.ProjeQtOrFlatGrey .iconContractUnit32 { background-image: url(customIcons/grey/iconUnity.png);  background-repeat: no-repeat; width: 32px; height: 32px; background-size: 32px 32px;}
+.ProjeQtOrFlatGrey .iconContractUnit22 { background-image: url(customIcons/grey/iconUnity.png);  background-repeat: no-repeat; width: 22px; height: 22px; background-size: 22px 22px;}
+.ProjeQtOrFlatGrey .iconContractUnit16 { background-image: url(customIcons/grey/iconUnity.png);  background-repeat: no-repeat; width: 16px; height: 16px; background-size: 16px 16px; }
+
+
+/* =============================================================================== */
+/* ProjeQtOr THEME END                                                             */
+/* =============================================================================== */
+
+.ProjeQtOrFlatBlue #wait, .ProjeQtOrFlatBlue #waitLogin,
+.ProjeQtOrFlatRed #wait, .ProjeQtOrFlatRed #waitLogin,
+.ProjeQtOrFlatGreen #wait, .ProjeQtOrFlatGreen #waitLogin,
+.ProjeQtOrFlatGrey #wait, .ProjeQtOrFlatGrey #waitLogin {
+  background-image: url(images/spinner16.gif); background-repeat: no-repeat;
+  margin: -50px -50px;
+  height: 100px; width: 100px;
+  background-size:100px 100px;
+  /*opacity:1.0;filter:alpha(opacity=100);*/
+}

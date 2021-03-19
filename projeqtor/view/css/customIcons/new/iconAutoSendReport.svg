@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Calque_1">
+	
+		<circle fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="93.013" cy="91.877" r="33.534"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		93.016,75.267 93.016,93.283 108.218,108.488 	"/>
+</g>
+<g id="Calque_2_1_">
+	<g>
+		
+			<rect x="5.631" y="82.868" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="24.308" height="41.758"/>
+		
+			<polyline fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			61.473,118.5 61.473,124.626 37.166,124.626 37.166,59.129 61.473,59.129 61.473,66.833 		"/>
+		
+			<circle fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="17.786" cy="51.297" r="6.241"/>
+		
+			<circle fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="49.319" cy="29.122" r="6.242"/>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M80.855,33.922c3.45,0,6.242,2.796,6.242,6.243c0,3.446-2.792,6.242-6.242,6.242c-3.444,0-6.24-2.796-6.24-6.242
+			C74.615,36.718,77.411,33.922,80.855,33.922z"/>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M112.391,6.456c3.45,0,6.242,2.793,6.242,6.242c0,3.447-2.792,6.24-6.242,6.24c-3.444,0-6.24-2.793-6.24-6.24
+			C106.15,9.25,108.946,6.456,112.391,6.456z"/>
+		
+			<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85.544" y1="36.083" x2="107.688" y2="16.793"/>
+		
+			<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="55.208" y1="31.184" x2="74.971" y2="38.103"/>
+		
+			<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.889" y1="47.708" x2="44.216" y2="32.711"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,1392 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Common sections
+
+.. index:: Common sections
+
+.. _common-sections:
+
+Common sections
+***************
+
+Some sections are displayed on almost all screens in the detail area.
+
+Those sections allows to set information or add information to an item of the element.
+
+.. figure:: /images/GUI/COMMON_SCR_CommonSection.png
+   :alt: A view of ProjeQtOr's global interface
+   
+   A view of ProjeQtOr's global interface
+
+
+
+.. topic:: Interface areas:
+
+   |one| :ref:`description-section`
+   
+   |two| :ref:`allocation-section` [Project]
+   
+   |two| :ref:`assignment-section` [Activity]
+   
+   |three| :ref:`treatment-section`
+   
+   |four| :ref:`Configuration<configuration-project>`
+   
+   |five| :ref:`display-sub-project-activity`
+   
+   |six| :ref:`predSuces-element-section`
+   
+   |seven| :ref:`progress-section` 
+   
+   |eight| :ref:`linkelement-section`
+   
+   |nine| :ref:`attachment-section`
+   
+   |ten| :ref:`note-section`
+   
+
+
+
+
+
+
+
+
+
+.. _description-section:
+
+Description section
+-------------------
+
+This section allows to identify items of the element.
+
+Each element has its own description section. The description fields are not the same depending on the element or even its type.
+
+Most of the fields available for each element offer the possibility of having a search view and an accelerator to access other elements.
+
+See: :ref:`Combo list fields<combo-list-fields>`
+
+    
+
+
+
+
+   
+     
+     
+    
+
+
+
+
+
+
+.. index:: Project Allocation, Allocation section
+
+.. _allocation-section:
+
+Allocations section
+-------------------
+
+.. figure:: /images/GUI/COMMON_ZONE_AllocationSection.png
+   :alt: Allocation section
+   
+   Allocation section
+
+This section allows to manage resource allocation to projects.
+
+
+.. sidebar:: Concepts 
+
+   * :ref:`profiles-definition`
+   * :ref:`allocation-to-project`
+   
+   
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the allocation.
+   * - Resource
+     - Name of the allocated resource.
+   * - Profile
+     - Selected profile. Determine the profile on this project. A resource can have a different profile on each of the projects to which it is assigned.
+   * - Start date
+     - Start date of allocation. The software will take these dates into account for the work calculation.
+   * - End date
+     - End date of allocation. The software will take these dates into account for the work calculation.
+   * - Rate
+     - Allocation rate for the project (%).
+
+
+
+
+* Click on |Add| to create a new allocation. 
+* Click on |Edit| to update an existing allocation.
+* Click on |Delete| to delete the corresponding allocation.
+* Click on |Switch| to :ref:`replace resource<replace-resource-allocation>` on the corresponding allocation. 
+
+
+Closed assignments are indicated with a gray background.
+
+The contact and users sections only display those who only have this role.   
+   
+Click on the resource name to go directly to the selected resource.
+
+
+
+
+
+
+      
+.. _replace-resource-allocation:
+
+ .. compound:: Replace resource
+   
+   * Replace resource on an allocation: all tasks assigned will be transferred to the new resource with assigned and left work.
+   
+   * Work done on tasks still belongs the old resource.
+   
+   .. figure:: /images/GUI/COMMON_BOX_ReplaceAffectation.png
+      :alt: Dialog box - Replace allocation 
+      :align: center
+      
+      Replace allocation dialog window
+
+
+   .. tabularcolumns:: |l|l|
+   
+   .. list-table:: Replace allocation dialog box - Required field |ReqFieldLegend| 
+      :header-rows: 1
+   
+      * - Field
+        - Description
+      * - |RequiredField| Resource
+        - Resource list.
+      * - Capacity (FTE)
+        - The capacity of the resource selected
+      * - |RequiredField| Profile
+        - Profile list.
+      * - |RequiredField| Rate
+        - Rate (in %) of the allocation to the project
+      * - Start date
+        - Start date of allocation
+      * - End date
+        - End date of allocation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. index:: Assigment section
+
+.. _assignment-section:
+
+Assignment section
+------------------
+
+This section allows to manage assignment of resources to tasks.
+
+Assigning a resource to a task makes it possible to define its function on the latter and its daily cost, if defined during the creation of the resource.
+
+.. figure:: /images/GUI/COMMON_ZONE_PageAssignment.png
+   :alt: activity page with assigment
+
+   Activity page with assigment
+
+.. important::
+    * Only project resources can be assigned to project tasks.
+    * If actual work exists for an assignment, it cannot be deleted.
+    
+.. figure:: /images/GUI/COMMON_ZONE_AssignmentSection.png
+   :alt: assignment section
+   
+   Assignment section 
+    
+.. sidebar:: Concepts 
+
+   * :ref:`resource-function-cost`
+   * :ref:`PeriodandRate`
+
+.. list-table:: Fields of assignment list
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Resource
+     - Name of the resource assigned to the task.
+   * - Rate (%)
+     - Rate planned for this resource to the task.
+   * - Assigned
+     - The work initially planned for this resource to the task.
+   * - Real
+     - Sum of work done by this resource to the task.
+   * - Left
+     - Remaining work to this resource to complete the task.
+
+
+* Click on |Add| to assign a new resource.
+* Click on |Team| to assign an entire  team to the activity
+* Click on |Organization| to assign an entire organization to the activity
+* Click on |Edit| to modify the assignment.
+* Click on |Delete| to delete the assignment.
+* Click on |Split| to divide the assignment (two equal parts between two resources) 
+* Click on |Goto| to go directly to the allocation sheet for this resource. 
+* You may have this button at the top of the assignment area if you are assigned to the item yourself.
+* Click on the name of the resource to access the details on the resource screen.
+* The closed assignments are displayed on a gray background.
+
+.. note:: 
+
+   * If the person assigned to the projet as contact is also a resource, then it will appear in resource. 
+
+   * The contact and user lines will only display people who are only contact or user.
+
+   
+   
+.. rubric:: Multiple assignment to a task
+
+* A resource can be assigned more than once to a task.
+* Allows to assign the resource to the same task with a different function (different daily cost).
+* Allows to add extra work without modifying initial assignment.
+
+
+
+
+.. rubric:: Add a new assignment
+
+.. figure:: /images/GUI/COMMON_BOX_Assignment.png
+   :alt: Dialog box - Assignment 
+   :align: center
+   
+   Assignment dialog box
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Fields - Assignment dialog box
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Resource
+     - Resource list.
+   * - Function
+     - Function list. The main function defined for the resource will be display first.
+   * - Cost
+     - Daily cost defined for the resource and its function.
+   * - Rate
+     - The max rate (%) to schedule the resource on the task by day.
+   * - Assigned work
+     - The work initially planned for this resource to the task.
+   * - Real work
+     - Sum of work done by this resource to the task.
+   * - Left work
+     - Remaining work to this resource to complete the task.
+   * - Reassessed work
+     - The new total work planned to complete the task.
+   * - Comments
+     - Any comment on the allocation.
+
+  
+
+.. topic:: Field Left work
+
+   .. code:: 
+   
+      [Left work] = [Assigned Work] – [Real Work]
+   
+   Project leaders can adjust this value to estimate the work needed to complete the task by the resource.
+
+.. topic:: Field Reassessed work
+
+   .. code:: 
+   
+      [Reassessed work] = [Real Work] + [Left Work]
+
+.. topic:: Field Comments
+
+   When a comment exists, |Comment| will appear on the assignment list, and on the description of the activity on the “real work allocation” screen.
+   
+   Moving the mouse over the icon will display the comment.  
+
+
+
+
+
+
+
+
+
+
+
+
+.. _recurrent-mode-assign:
+
+Recurrent mode assignment
+=========================
+
+The recurring planning mode is the only mode that, by default, covers the entire duration of the project.
+
+If the project is lengthened, then the task in recurring mode will lengthen accordingly.
+
+.. figure:: /images/GUI/GANTT_BOX_RecurrentAssignment.png
+   :alt: Recurring assignment
+   
+   Recurring assignment
+
+
+During the assignment, you distribute the workload of your resource on a weekly basis.
+
+You can enter a different value for each day of the week.
+
+The :kbd:`copy` is an accelerator to copy the entered value on Monday every other day.
+
+The total load will be calculated after validation according to the duration of your project and the assigned times.
+
+.. warning:: 
+
+   * It is a priority planning method.
+   * Using this mode can add a significant workload!.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. _plannedintervention-assign:
+
+Planned Interventions assignment
+================================
+
+The assigned workload is no longer determined but will be entered on a calendar which can be clicked, per half-day.
+
+See: :ref:`Planned interventions assignment<plannedintervention-assign>`
+
+ .. compound:: Display Manual planning calendar  
+
+   * Click on |Add| to add a new assignment. 
+   
+   * To see the workload distribution table, select the resource and confirm. Then click on the edit button.
+
+      * If the assignment already exists, click directly on the |Edit|.
+
+      * The calendar will then be displayed in the assignment window..
+   
+   * The display starts in the current month and spans the next six months.
+   
+   * Each box is divided into two half days. The assigned work is then automatically the sum of the selected half-days.
+   
+
+   
+
+.. figure:: /images/GUI/GANTT_BOX_PlanningManual-Assignment.png
+   :alt: Assigment with the Manual planning mode
+   
+   Assigment with the Manual planning mode
+   
+The workload saved in this window will be displayed to the :ref:`planned interventions<planned-interventions>` screen.
+
+
+
+
+ .. compound:: Distribution of the workload for a new assignment 
+
+   * click on a box to enter a workload.
+
+     Depending on the :ref:`global parameter<GP-effectCapacity>`, this workload will be either planned work or real work. 
+   
+   * Each day is represented by two half-days (am and pm)
+
+   * You can plan for the 6 months following the date of the assignment
+
+   * The half-days filled in will be visible on the screen of planned interventions
+
+   * Save this data with the save button
+   
+  
+
+.. _treatment-section: 
+
+Treatment section
+-----------------
+
+This section contains information on the treatment of articles, ie on the life and progress of the element.
+
+It usually contains status information, macro reports, situations or those responsible for the work of this element.   
+   
+
+Depending on the item, this section may display different fields.
+
+All the lists in this section are customizable.  
+
+
+ .. compound:: Macro status
+ 
+    The macros states work thanks to levers.
+    
+    Several states are populated directly based on the information you record.
+   
+   
+    .. compound:: in progress
+    
+      The field is filled in when you fill in the first charge on your timesheet.
+
+      Please note, the date recorded in the in progress field is the date on which the charge is entered and not the day on which it is entered.
+    
+    .. compound:: Done
+    
+      The field is filled in when you fill in the last charge on your timesheet.
+
+      The remaining time MUST therefore be at 0 for this field to be completed.
+    
+    .. compound:: Closed
+    
+      The field is filled in when you close an element
+    
+    .. compound:: Cancelled
+
+      The field is filled in when you cancel the element via the status of your workflow
+
+
+
+
+.. _configuration-project:
+
+Configuration section
+---------------------
+
+
+.. figure:: /images/GUI/COMMON_ZONE_Configuration.png
+   :alt: Configuration section
+   
+   Configuration section
+   
+   
+You can view the products and product versions related to this project.
+
+Click on the product name or product version to go to their respective screens.
+
+See: :ref:`Configuration Management<ConfigurationManagement>`
+   
+   
+   
+   
+   
+
+
+.. index:: Progress section
+
+.. _progress-section:
+
+Progress section
+----------------
+
+This section allows all at once, define planning and follow-up the progress.
+
+All planning elements have a progress section.
+
+.. figure:: /images/GUI/COMMON_ZONE_ProgressSection.png
+   :alt: Progress Section
+   :align: center
+   
+   Progress section
+   
+
+Description of the different sections is grouped by the planning elements that have common fields and behavior.
+
+Progress data are displayed in the same format, **but according to the planning element, fields can have another meaning or behavior.**
+
+Below is the definition of the different columns that make up the Progress section.
+
+
+
+.. _progress-section-date-duration:
+
+Dates and duration
+==================
+
+The dates and durations section allow you to record and display different time information on your element.
+
+
+.. rubric:: Validated
+
+Validated dates are used for:
+
+* Define the input parameters according to the selected planning mode - See: :ref:`Planning mode<planning-mode-gantt>`
+
+* Define the initial due dates as a reference in order to check any drifts in your project
+
+* Set a deadline by which the work must be completed.
+
+
+
+.. rubric:: Planned
+
+Planned dates can be defined with:
+
+ .. compound:: **Requested or validated dates**
+
+    The planned dates can be initialized with validated dates or requested dates (whether validated dates are not specified).
+
+ .. compound:: **Planning calculation**
+
+    The planned dates can be determined during the planning calculation.
+    
+    The planning calculation is done according to tasks assigned to resources and their predecessors.
+
+    .. note:: **Planning mode "Fixed duration"**
+
+      The planned dates of tasks will be calculated depending on their predecessors and their specified duration.
+
+    .. warning:: **Planned dates of parent element**
+      
+      At parent element level, dates are adjusted with the first planned start date and the last planned end date from all sub-elements.
+
+      The planned start date is adjusted to the real start date when work began.
+
+
+
+
+.. rubric:: Real
+
+These are the dates of work actually carried out. The work actually charged
+
+The real start date is set when work began (handled).
+
+The real end date is set when no more remaining work (done).
+
+.. note:: Real dates of parent element 
+
+   The real start date will be propagated to parent elements up to project.
+   
+   The real end date for parent element will be initialized, when all sub-element have been completed.
+   
+   
+
+.. rubric:: Requested
+
+Allows you to define forecast dates. These are generally the dates agreed with your client or the beneficiary of your activity..
+
+
+
+.. rubric:: Duration
+
+The durations correspond to the number of days between the start and end dates.
+
+They are calculated automatically.
+
+But you can also enter a start date and a number of days, the end date will be automatically calculated.
+
+
+.. rubric:: Delay display
+
+If the dates entered in the validated dates are lower than the dates calculated by the software - the planned dates, then the planned end date box is red as well as the bar of the Gantt chart corresponding to the element.
+
+This then reflects a possible delay.
+
+.. figure:: /images/GUI/COMMON_ZONE_DelayDates.png
+   :alt: planned dates greater than validated dates
+   
+   The planned dates are greater than validated dates 
+
+
+.. _progress-section-resource:
+
+Costs and works
+===============
+
+The cost of resources is calculated thanks to the workload allocated to each resource on the tasks.
+
+You must fill in a function associated with a daily cost for your resources.
+
+See: :ref:`Function and cost<function-cost-resource>` on the resources screen
+
+
+
+
+
+.. rubric:: Validated
+
+Allows to define scheduled work and budgeted cost of resources.
+
+ .. compound:: **Work**
+ 
+    This value is used for calculation of the expected progress and project margin (work).
+
+ .. compound:: **Cost**
+
+    This value is used for calculation of project margin (cost).
+
+.. note:: **Project**
+
+   The values of work and cost can be initialized with the sum of total work and amount of all project orders.
+   
+   See: :ref:`Incomes<orders>`
+
+.. rubric:: Assigned
+
+Sum of planned work assigned to resources and estimated cost.
+
+.. rubric:: Real
+
+Sum of work done by resources and cost incurred.
+
+.. rubric:: Left
+
+Sum of estimated remaining work to complete tasks and ensuing costs.
+
+Left work should be re-evaluated by resource while entering the real work on real work allocation screen.
+
+Left work can also be changed on assignment, at project management level.
+
+.. rubric:: Reassessed
+
+Sum of resource total work that will be needed from start to end and the ensuing costs.
+
+   .. code::
+    
+      [Reassessed] = [Real] + [Left]
+
+.. topic:: Work on tickets
+
+   * Sum of work done on tickets and costs is included in work of activity linked through the “planning activity” of tickets.
+   * Sum of work done on tickets that don't link to any activity will be integrated in the work of the project.
+
+
+
+
+
+
+.. _progress-section-expense-reserve:
+
+
+Expense tracking
+================
+This section is used by Project.
+
+See: :ref:`Project reserve<project-reserve>`
+
+.. rubric:: Validated (Expense)
+
+Allows to set the budgeted cost of project expenses.
+
+This value is used for calculation of project margin (cost).
+
+
+.. rubric:: Assigned (Expense)
+
+Project expenses planned.
+
+Sum of "planned amount" for all expenses on project.
+
+.. rubric:: Real (Expense)
+
+Project expenses committed.
+
+Sum of "real amount" for all expenses on project.
+
+.. rubric:: Left (Expense)
+
+Project expenses not committed yet.
+
+Sum of "planned amount" for expenses  for which "real amount" is not defined yet.
+
+.. rubric:: Reassessed (Expense)
+
+Spending projections.
+
+Sum of Real + Left
+
+.. rubric:: Left (Reserve)
+
+Project reserve.
+
+.. note:: **Total columns**
+
+   Total is the sum of resources cost, expenses and reserve of their corresponding column.
+
+
+
+
+.. _technical-progress:
+
+Technical Progress
+==================
+
+The Technical Progress section allows you to display an advancement in units of work.
+
+
+.. figure:: /images/GUI/COMMON_ZONE_TechnicalProgress.png
+   :alt: Technical progress section
+   
+   Technical progress section
+   
+   
+.. warning:: To display the technical progression section, which corresponds to an advancement in Unit of Work, you must position the option in the global parameters.
+   
+   See: :ref:`Global Parameters<gp_planning-section>`
+
+The section technical progress is displayed on **Project** and **Activity** screen.
+
+You determine the number of units of work to be performed on the activity.
+
+The progress and the rest will be consolidated towards the father project and / or the mother activity. 
+
+
+.. rubric:: Number of units
+
+As for the dates and durations, you can enter several values for the realization of your units of works.
+
+ .. compound:: To delivred
+
+  Number of units to be delivered.
+   
+ .. compound:: To realise
+
+  Number of units to be produced.
+
+   
+ .. compound:: Realised
+ 
+  Number of units actually produced.
+  
+ .. compound:: Progress
+ 
+  For advancement in unit of work, you can choose the way so it will be evaluated.
+  
+   .. compound:: Calculated
+   
+     Progress as a percentage is calculated by software.
+     
+   .. compound:: Manual
+   
+     You define yourself the progress of the realization of your units of works.    
+
+ .. compound:: Weight
+ 
+  The weight defines a certain importance on the realization of these units.
+
+  It determines how the calculation of the progress of the work units will be calculated and consolidated.
+      
+   .. compound:: Manual
+   
+     You enter a value manually according to the unit of work to be done.
+     
+   .. compound:: Unity of work
+   
+     It is the number of units to deliver or to realize.  
+     
+        
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. _progress-section-steering:
+
+Steering
+========
+  
+   
+.. rubric:: Progress
+
+Percentage of actual progress.
+
+Calculated by the sum of the work done divided by sum of work reassessed.
+
+   .. code:: 
+      
+      [Progress %] = [real work] / [reassessed work] 
+      
+      = [real work] / ( [real work] + [left work] )
+
+ .. compound:: Expected
+
+   Percentage of expected progress.
+   
+   Calculated by the sum of the work done divided by scheduled work.
+   
+      .. code:: 
+         
+         [Expected %] = [real work] / [validated work]
+
+ .. compound:: WBS
+
+   Hierarchical position in the global planning.
+
+.. rubric:: Priority
+
+Allows to define priority to a project or activity.
+  
+A project or an activity with a priority 
+
+By default, the value is set to "500" (medium priority).
+  
+1 being the highest priority and 999 the lowest priority.
+
+See: :ref:`Scheduling priority<scheduling-priority>`.
+
+See: :ref:`Steering section for activity<gantt-details-area>`
+
+
+
+.. rubric:: Color
+ 
+You can set a color on an element.
+  
+This color will be displayed on the bars of the Gantt chart.
+  
+
+
+Steering section Activity
+'''''''''''''''''''''''''
+
+.. figure:: /images/GUI/COMMON_ZONE_SteeringActivity.png
+   :alt: Steering section on Project screen
+   
+   Steering section on activity screen
+   
+   
+   
+.. _progress-section-planning-mode:
+
+.. rubric:: Planning mode
+
+Used by Activity & Test session.
+
+Depending on the planning mode selected, the calculation of your planning will not be executed in the same way.
+
+* See :ref:`Concepts<planning-mode-concept>`
+* See :ref:`Planning modes<planning-mode-gantt>`
+
+  
+.. rubric:: Minimum threshold
+ 
+When this value is set, the activity will only be scheduled on the day that the daily availability will be greater than or equal to this threshold.
+
+You also have the option to add a new property to a "not splitted work" task.
+
+This will require defining the minimum work to be allocated each day and thus filling in the minimum threshold field
+
+Planning will require finding consecutive days with at least the given value possible.
+
+See: :ref:`Minimum threshold<minimum-threshold>`
+
+
+.. rubric:: Fix planning
+ 
+Fix planning will avoid the recalculation of planning for an activity.
+  
+To fix the project see: :ref:`treatment-section`
+
+
+.. _progress-section-ticket:
+
+.. rubric:: Ticket
+
+.. figure:: /images/GUI/COMMON_ZONE_SteeringTickets.png
+   :alt: Attached tickets
+   
+   Attached tickets
+   
+Allows tracking of tickets attached to the activity throught the "planning activity" field of tickets. 
+
+
+.. topic:: Field Estimated and  Left
+
+   The Estimated field will be highlighted when the sum of estimated work on the tickets is higher than the planned work on the activity.
+
+   The Left field will be highlighted when the sum of remaining work on the tickets is higher than the remaining planned work on the activity.
+
+
+.. rubric:: Show tickets attached
+
+* Click on |View| to show ticket list attached to the activity.
+* Click on a ticket name to directly move to it.
+
+.. figure:: /images/GUI/COMMON_BOX_ListOfTicket.png
+   :alt: Dialog box - List of tickets 
+   
+   List of tickets
+   
+.. _margin:
+
+Steering section Project
+''''''''''''''''''''''''
+
+.. figure:: /images/GUI/COMMON_ZONE_SteeringProject.png
+   :alt: Steering section on Project screen
+   
+   Steering section on Project screen
+   
+    
+.. rubric:: Margin
+
+The margin is only displayed in the control section of the project screen.
+   
+   
+  .. compound:: Margin (work)
+  
+    Used by Project.
+    
+    Calculated by the scheduled work minus the sum of work reassessed.
+
+    .. code:: 
+   
+      [Margin] = [Validated work] - [Reassessed work]
+   
+      [Margin(%)] = ([Validated work] - [Reassessed work]) / [Validated work] 
+
+
+  .. compound:: Margin (cost)
+
+    Calculated by the budgeted cost (resource & expense) minus the total of reassessed cost.
+
+    .. code:: 
+
+      [Margin] = [Validated cost] - [Reassessed cost]
+ 
+      [Margin(%)] = ([Validated cost] - [Reassessed cost]) / [Validated cost] 
+
+
+
+
+
+
+
+
+
+
+
+   
+
+.. _progress-section-milestone:
+
+Progress section Milestone
+''''''''''''''''''''''''''
+.. figure:: /images/GUI/COMMON_ZONE_SteeringMilestone.png
+   :alt: Steering section on milestone screen
+   
+   Steering section on milestone screen
+   
+This section allows to define planning and follow progress on a milestone.
+
+
+.. rubric:: Requested
+
+Allows to define the initial due date for the milestone.
+
+Have no impact on planning.
+
+.. rubric:: Validated
+
+Allows to define the due date at which the milestone must be completed.
+
+.. _planning-mode-milestone:
+
+.. rubric:: Planned
+
+Defined according to the selected planning mode.
+
+ .. compound:: **Fixed milestone**
+
+    * Planned due date is the value from validated due date field.
+    * The milestone will not move, and may have successors.
+
+ .. compound:: **Floating milestone**
+
+    * Calculation of planned due date takes into account dependencies with tasks.
+    * The milestone will move depending on predecessors.
+
+.. rubric:: Real
+
+Determined when the status of the milestone is “done”.
+
+
+.. rubric:: Planning mode
+
+Fixed milestone
+
+Floating milestone
+
+.. note::
+   
+   A milestone has no duration, so there are no start and end dates for a milestone, just a single date.
+   
+   
+.. rubric:: WBS
+
+Hierarchical position of the milestone in the global planning.
+
+
+.. rubric:: Color
+
+You can set a color on a milestone.
+  
+This color will be displayed on the bars of the Gantt chart.
+   
+
+.. raw:: latex
+
+    \newpage
+
+
+.. _progress-section-meeting:
+
+Progress section Meeting
+''''''''''''''''''''''''
+
+.. figure:: /images/GUI/COMMON_ZONE_SteeringMeeting.png
+   :alt: Steering section on meeting screen
+   
+   Steering section on meeting screen
+   
+This section allows to define priority and follow progress on a meeting.
+
+ .. compound:: Validated
+
+   Allows to define scheduled work and budgeted cost.
+
+   Used to consolidate validated work and cost to the project.
+
+ .. compound:: Assigned
+
+   Sum of planned work assigned to attendees and the planned cost.
+
+ .. compound:: Real
+
+   Sum of work done by attendees and the cost.
+
+ .. compound:: Left
+
+   Sum of planned work remaining and the remaining amount.
+
+
+ .. compound:: Color
+
+   You can set a color on a meeting. 
+  
+   This color will be displayed on the bars of the Gantt chart.
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. _display-sub-project-activity:
+
+Sub-Project and Sub-Activity
+----------------------------
+
+On the projects screen, this section allows you to display the sub-projects linked to the selected one.
+
+Click on the name of the sub-project to access its dedicated screen.
+
+.. figure:: /images/GUI/COMMON_ZONE_SubProject.png
+   :alt: display of sub projects
+   
+   Display of sub projects
+ 
+ 
+In the same way, you can display on the activities screen, the sub-activities linked to the selected activity.
+
+Click on the name of the sub-activity to access its dedicated screen.
+
+.. figure:: /images/GUI/COMMON_ZONE_SubActivity.png
+   :alt: display of sub activities
+   
+   Display of sub activities
+   
+   
+   
+   
+   
+ 
+.. raw:: latex
+
+    \newpage
+
+.. _predSuces-element-section:
+
+Predecessor and Sucessor
+------------------------
+
+This section allows to manage dependency link between planning elements.
+
+A dependency can be created from the predecessor and/or successor planning element.
+
+The dependency link can be created in the Gantt chart.
+
+Click on the name of a predecessor or successor to go directly to the element.
+  
+.. seealso:: 
+
+  * :ref:`Dependencies<dependency-links>`
+  
+  * :ref:`Milestones on the Gantt Chart View<milestones-gantt>`
+
+.. figure:: /images/GUI/COMMON_ZONE_Success&Predecessor.png
+   :alt: Predecessor and Successor section
+   :align: center
+   
+   Predecessor and Successor section
+
+
+* Click on |Add| on the corresponding section to add a dependency link.
+* Click on |Edit| to edit the dependency link.
+* Click on |Delete| to delete the corresponding dependency link. 
+
+
+In the NAME field, icons are displayed to indicate the type of dependencies
+
+* |DependancyEE| End End dependency
+
+* |DependancyES| End start dependency
+
+* |DependancySS| Start start dependency
+
+
+
+.. note:: 
+
+   Recursive loops are controlled on saving.
+   
+
+   **Linked element list of values**
+   
+   By default, the list of values shows items of the same project.
+
+   But, it is possible to link items from different projects.
+   
+   Click on |Search| to get the list of elements of all projects.   
+   
+
+   **Multi-value selection**
+
+   Multi-line selection is possible using :kbd:`Control` or :kbd:`Shift` key while clicking.
+   
+
+   **Delay (late)**
+
+   Days between predecessor end and successor start.
+   
+
+.. figure:: /images/GUI/COMMON_ZONE_Success&Predecessor_REDDate.png
+   :alt: highlighting the date
+   
+   highlighting the date
+   
+Highlighting the date that will most constrain the next activity
+
+.. raw:: latex
+
+    \newpage
+
+.. _linkelement-section:
+
+Linked Elements section
+-----------------------
+
+This section allows to manage link between ProjeQtOr elements.
+
+.. figure:: /images/GUI/COMMON_ZONE_LinkedElement.png
+   :alt: Linked element section
+   
+   Linked element section
+
+
+You associate items on different elements in the same project.
+
+A project can be linked with other.
+
+Click on an item name to directly move to it.
+
+   * Click on |Add| to create a new link.
+   * Click on |Delete| to delete the corresponding link.
+
+      
+
+ .. compound:: Reciprocally interrelated
+
+   If Item A is linked to Item B, Item B is automatically linked to Item A.
+   
+   A link between items has no impact on them treatment.
+   
+      
+ .. compound:: Linked element list of values
+   
+      By default, the list of values shows items of the same project. 
+      
+      But, it is possible to link items from different projects.
+      
+      Click on |Search| to get the list of elements of all projects.    
+
+
+
+ .. compound:: Link with Document
+ 
+   .. figure:: /images/GUI/COMMON_BOX_LinkedElement.png
+      :alt: Add a new link to a document
+      
+      Add a new link to a document
+
+  When a link to a document is selected. The document version can be selected.
+   
+   
+  .. image:: /images/GUI/COMMON_ZONE_LinkedDocument.png
+
+  Linked documents are available directly in linked elements list.
+  
+
+
+
+    .. compound:: Specified version
+   
+       A link with a document element offer the possibility to select a specific version.
+       
+       A direct link to version of the document is created.
+   
+    .. compound:: Not specified version
+   
+       If the version is not specified, the last version will be selected.
+       
+       The download will transfer always the last version of the document.
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Attachment section
+
+.. _attachment-section:
+
+Attachments section
+-------------------
+
+This section allows you to attach files or hyperlinks to the selected item.
+
+
+.. figure:: /images/GUI/COMMON_ZONE_AttachmentSection.png
+   :alt: Attachments section
+   :align: center
+   
+   Attachment section
+
+You can attach all types of files
+
+
+ .. compound:: Add a new file
+
+   There are several ways to add a file.
+   
+   * In the section table of attached files
+   
+      * Click on |Add| to add an attachment file to an item.
+      * Click on |Link| to add a hyperlink to an item.
+     
+   * In the attached files area in the toolbar of the details area
+   
+   * Directly on the detail area of ​​the element by dragging and dropping
+   
+   
+      
+   .. figure:: /images/GUI/COMMON_BOX_attachmentFile.png
+      :alt: Add an attachment file window
+      :align: center
+      
+      Add an attachment file window
+   
+   * Filled in the description to give a name to the document will be attached.
+   
+   * Hover over the icon |Comment| to see the exact name of the document. Otherwise, the exact name of the document will be displayed.
+     
+     * Click on |Delete| to remove an attachment.
+     * Click on |Download| to download the attached file.
+     * Click on |Link| to access the hyperlink.
+   
+   
+   You can select one or more files of different types with the shortcuts :kbd:`CTRL` when the files are not consecutive or :kbd:`SHIFT` for those that follow.
+
+
+
+.. _file attached:
+
+ .. compound:: Download a file
+   
+   Attachments are stored on the server side.
+   
+   The attachment directory is defined in: ref:`Global Settings<file-directory-section>`.
+
+
+
+
+
+
+
+
+
+
+
+.. index:: Notes (section)
+
+.. _note-section:
+
+Notes section
+-------------
+
+This section allows to add notes on items of elements.
+
+Notes are comments, that can be shared to track some information or progress.
+
+* Click on |Add| to add a note to an item. 
+* Click on |Edit| to edit the note.
+* Click on |Delete| to delete the note.
+
+  .. compound:: Predefined note
+   
+   The list of values appears whether a predefined note exists for an element or an element type.
+   
+   Selecting a predefined note  will automatically fill in the note text field.
+   
+   Predefined notes are defined in :ref:`predefined-notes`.
+   
+  .. compound:: Note visibility
+   
+   * **Public:** Visible by all members assigned to the project.
+   * **Team:** Visible to every member of the creator’s team.
+   * **Private:**  Visible only to the creator.
+
+
+
+

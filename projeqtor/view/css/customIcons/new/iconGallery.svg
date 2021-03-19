@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		109.073,121.02 74.938,84.234 41.653,122.137 	"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		61.551,99.508 36.258,70.654 5.233,105.896 	"/>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M66.566,49.471c-6.672,0-12.073-5.405-12.073-12.082l0,0c0-6.667,5.402-12.077,12.073-12.077h17.586
+			c6.678,0,12.08,5.407,12.08,12.077l0,0"/>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M66.566,49.471h17.586c6.678,0,12.08,5.412,12.08,12.083l0,0c0,6.676-5.402,12.078-12.08,12.078H66.566
+			c-6.672,0-12.073-5.402-12.073-12.078"/>
+	</g>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="75.359" y1="25.312" x2="75.359" y2="14.044"/>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="75.359" y1="84.899" x2="75.359" y2="73.632"/>
+</g>
+<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M122.657,113.768c0,5.367-4.313,9.72-9.632,9.72h-98.16c-5.32,0-9.632-4.353-9.632-9.72V15.55c0-5.369,4.312-9.721,9.632-9.721
+	h98.16c5.318,0,9.632,4.352,9.632,9.721V113.768z"/>
+</svg>

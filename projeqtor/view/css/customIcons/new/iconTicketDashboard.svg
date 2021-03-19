@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Layer_1" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="iconTicketDashboard.svg" display="none">
+	
+		<sodipodi:namedview  pagecolor="#ffffff" inkscape:zoom="2.8710938" showgrid="false" objecttolerance="10" guidetolerance="10" bordercolor="#666666" inkscape:cx="128" inkscape:cy="128" id="namedview13" borderopacity="1" gridtolerance="10" inkscape:pageopacity="0" inkscape:window-x="-8" inkscape:current-layer="Layer_1" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:window-y="-8" inkscape:window-maximized="1">
+		</sodipodi:namedview>
+	
+		<path display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M76.314,116.844h43.375c2.018,0,3.648-1.633,3.648-3.648V9.148c0-2.015-1.634-3.648-3.648-3.648H8.947
+		c-2.015,0-3.649,1.634-3.649,3.648v52.568"/>
+	
+		<circle display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" cx="26.948" cy="75.227" r="12.239"/>
+	
+		<path display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M5.401,104.415c0,0-1.764-10.373,9.31-10.373c11.072,0,27.291-0.667,27.291-0.667s9.228,0.852,9.228,11.043
+		c0,10.189,0,17.197,0,17.197l22.359-17.197"/>
+</g>
+<g id="Calque_3_1_">
+	<g id="Calque_3">
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M26.286,58.643v12.855c0,0,8.012-1.055,8.012,9.154c0,8.554-8.012,8.554-8.012,8.554V99.5h75.428V89.206
+			c0,0-8.522-0.452-8.522-8.553s8.522-9.153,8.522-9.153V58.643H26.286z"/>
+		<g>
+			<g>
+				
+					<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,10" x1="78.433" y1="58.643" x2="78.433" y2="99.498"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Calque_2">
+	<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M122.479,114.452c0,5.269-4.469,9.538-9.979,9.538
+		H14.69c-5.512,0-9.98-4.27-9.98-9.538V13.36c0-5.268,4.468-9.537,9.98-9.537h97.808c5.514,0,9.98,4.271,9.98,9.537V114.452
+		L122.479,114.452z"/>
+	<circle fill="#FF0000" cx="22.75" cy="20.25" r="7.25"/>
+	<circle fill="#FF0000" cx="43.75" cy="20.25" r="7.25"/>
+	<circle fill="#FF0000" cx="63" cy="20.25" r="7.25"/>
+	<line fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" x1="4.71" y1="33.5" x2="122.479" y2="33.5"/>
+</g>
+</svg>

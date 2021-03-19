@@ -1,0 +1,2010 @@
+
+.. include:: ImageReplacement.txt
+
+.. title:: Graphical User Interface
+
+.. raw:: latex
+
+    \newpage
+        
+.. _graphic-user-interface:
+
+
+
+.. _GUI:
+
+Graphical User Interface 9.0
+****************************
+
+
+
+.. _overview-9.0:
+
+ProjeQtOr interface is divided into several areas.
+
+.. figure:: /images/GUI/GUI_SCR_Overview.png
+   :alt: Overview
+   :align: center
+   
+   Overview graphical user interface screen
+
+.. topic:: Interface areas:
+
+   |one| :ref:`top-bar`
+   
+   |two| :ref:`infosbar` 
+   
+   |three| :ref:`custommenu`
+   
+   |four| :ref:`Menu<menu>`
+   
+   |five| :ref:`Secondary menu<secondary-menu>` 
+   
+   |six| :ref:`List Area<list-window>` 
+   
+   |seven| :ref:`Details area<detail-window>`
+   
+   |eight| :ref:`Activity Stream<activity-stream>`
+
+.. note:: Area separation
+
+   .. figure:: /images/GUI/GUI_SCR_Splitters.png
+      :scale: 15 %
+      :alt: Windows splitters
+      :align: center   
+      
+      The splitters allow resizing areas in the interface.
+   
+      The position of splitters is saved and retrieved on each connection.
+
+
+
+
+
+.. _top-bar:
+
+Top bar
+-------
+
+.. figure:: /images/GUI/GUI_ZONE_TopBar.png
+   :alt: Top bar
+   :align: center
+
+.. topic:: Interface areas:
+
+   |one| :ref:`Navigation buttons<navigation-buttons>`
+   
+   |two| :ref:`New tab<buttons-newtab>` 
+   
+   |three|  :ref:`Project selector<project-selector>` 
+   
+   |four| :ref:`Instance name<name-topbar>` 
+   
+ 
+
+
+
+.. _navigation-buttons:
+
+.. rubric:: |oneBLC| Navigation buttons
+
+The navigation buttons |buttonIconBackNavigation9| |buttonIconForwardNavigation9| give access to previous and next pages in the history.
+
+
+
+
+
+.. _buttons-newtab:
+
+.. rubric:: |twoBLC| Button New tab 
+
+The new tab button |newtab| allows to open a new tab within the same session.
+
+
+
+   
+.. index:: Project (Selector)
+.. _project-selector:
+
+.. rubric:: |threeBLC| Project selector
+
+.. figure:: /images/GUI/GUI_ZONE_ProjectSelector.png
+   :alt: Project Selector
+   :align: center
+   
+Allows to select the project to work on.
+
+Limited visibility of all elements of the selected project, including sub-projects if applicable.
+
+Definition of the "default" project for new elements.
+
+.. note:: 
+
+   **User parameter**
+
+   **default project** Defines the project that will be selected and display by default into the project selector
+   
+   See: :ref:`User parameters - section automation<UP-automation>`
+
+
+
+
+.. compound:: Project selector parameters
+
+   Click on |Parameter| to display the project selector parameters dialog box, you can select :
+   
+   
+   .. figure:: /images/GUI/GUI_BOX_ProjectSelect-Param.png
+      :alt: Dialog box - Project selector parameters
+      :align: center
+      :scale: 60
+      
+      Dialog box - Project selector parameters
+   
+   * View closed projects and handled projects.
+   * Change the project list display mode.
+   * Refresh the list.
+
+
+    .. compound:: Show / hide
+   
+     Choose which types of projects to display from the project selector list.
+   
+      .. compound:: show closed items
+    
+        This option allows you to enter the archive mode of the project selector.
+   
+        Closed projects will then appear in the selector list.
+      
+        When archive mode is activated then icon |Archive| is displayed in the top bar. Click on it to stop the process.
+   
+        .. image:: /images/GUI/GUI_ZONE_ModeArchive.png
+     
+        For them to appear in the list box you must activate the check box "closed" in this same area.
+   
+      .. compound:: Display the handled projects
+    
+        This option allows to display only in the list of the project selector, the projects with the macro state :term:`handled`.
+        
+        
+        
+    .. compound:: Project list display mode
+   
+     ProjeQtOr offers the possibility to display the list of projects in different ways.
+  
+  
+      .. compound:: Standard reflecting WBS structure
+      
+         * List of project and sub-project are displayed according to WBS structure.
+         * Only multi selection mode
+         * You can choose to display multiple projects by checking the corresponding boxes.
+        
+   
+         .. figure:: /images/GUI/GUI_ZONE_ProjectSelect-StandardMode.png
+            :alt: Example - Project list display mode standard
+            :align: center
+            
+            Project list display mode standard
+   
+   
+      .. compound:: Filtering select with autocomplete
+      
+         * List of project and sub-project are displayed according to entered text.
+         * Search criteria works in a "starts with" mode
+         * Autocompletion is active
+   
+         .. figure:: /images/GUI/GUI_ZONE_ProjectSelect-AutoCompMode.png
+            :alt: Example - Filtering select (with autocomplete)
+            :align: center
+            
+            Filtering select with autocomplete
+   
+      .. compound:: Filtering select with search
+      
+         * List of project and sub-project are displayed according to search criteria.
+         * Search criteria works in a "contains" mode
+         * Autocompletion is **not** active
+   
+         .. figure:: /images/GUI/GUI_ZONE_ProjectSelect-SearchMode.png
+            :alt: Example - Filtering select (with search)
+            :align: center
+            
+            Filtering select with search
+
+
+
+
+.. compound:: Selector of the current item
+
+   * Click on the button |Project| to select current project in the project selector. 
+   * Click once, from any element to display in the selector the project linked to the element.
+   * Double click to display all projects again
+
+.. compound:: Project selector search
+
+   Click on |Search| to search projects and subprojects from any screen with the same search functions as on the projects screen
+
+   .. figure:: /images/GUI/GUI_BOX_ProjectSelectorSearch.png
+      :alt: Project selector search mode
+      
+      Project selector search window
+         
+         
+     
+.. _name-topbar:
+
+.. rubric:: |fourBLC| Instance name
+
+you can rename the name of the ProjeQtOr instance via the global parameters in the View tab.
+
+See: :ref:`display`
+
+
+
+
+
+.. _infosbar:
+
+Infos bar
+---------
+
+.. figure:: /images/GUI/GUI_ZONE_InfosBar.png
+   :alt: Top bar
+   :align: center
+
+.. topic:: Interface areas:
+
+   |one| :ref:`CRON button<cron-button>` 
+   
+   |two| :ref:`Version button<version-button>` 
+   
+   |three| :ref:`About menu<about-menu>` 
+   
+   |four| :ref:`Display layout<menu-display>` 
+   
+   |five| :ref:`Session menu<menu-session>`
+
+
+
+
+
+.. _cron-button:
+
+.. rubric:: |oneBLC| CRON button
+
+The CRON activation button allows you to quickly see if your CRON is launched or not.
+
+The button is only visible for Administrator profile.
+
+|CronRunning| the CRON is running
+
+|CronPause| In request for closure. The next refresh turns it red.
+
+|CronStopped| the CRON is stopped
+
+Click on the button to start or stop CRON in the same way as on the Administration page.
+
+See: :ref:`background-task`
+
+
+.. _version-button:
+
+.. rubric:: |twoBLC| Version button
+
+Displays the version of ProjeQtOr installed
+
+Click on the button to access the site of ProjeQtOr.org
+
+
+
+.. _about-menu:
+
+.. rubric:: |threeBLC| About menu
+
+
+This menu allows you to have access to real-time information with a notification system for news.
+
+.. figure:: /images/GUI/GUI_BOX_AboutMenu.png
+   :alt: About menu 
+   
+   About menu
+
+
+The button |reportbug| sends you to the forum of the ProjeQtOr site in order to post the possible anomaly.
+
+ .. compound:: Links
+ 
+   The links indicated allow you to display: 
+   
+   * the software manual, 
+   * the manual page concerning the keyboard shortcuts taken into account in ProjeQtOr, 
+   * the version information on the external libraries used in ProjeQtOr.
+
+
+ .. compound:: News
+ 
+   Find all the information about ProjeQtOr in real time.
+   
+   Hover over the desired information with the mouse to preview it.
+   
+   Click to view full information.
+   
+   A navigation system allows you to consult all the information.
+   
+   
+ .. compound:: Access
+
+   Access ProjeQtOr's plugin store and forum summary with just one click.
+   
+   
+   
+   
+   
+   
+   
+   
+.. _menu-display:
+
+.. rubric:: |fourBLC| Screen layout
+
+The layout of the screens allows you to choose how you want to display the ProjeQtOr interface
+
+The arrangement not chosen appears in gray
+
+.. figure:: /images/GUI/GUI_ZONE_ScreenLayout.png
+   :alt: Screen layout 
+   
+   Screen layout
+
+Many modes are available!
+
+
+      .. compound:: |switchmode| switched mode 
+   
+        Allows to enable or disable switched mode that allows to switch between list and detail windows. Window selected is displayed in "full screen" mode.
+         
+        Hidden window are replaced by a gray bar. Click on the gray bar to switch between windows. 
+   
+      .. compound:: |horizontalLayout| Horizontal mode - |verticalLayout| vertical layout
+   
+        The horizontal mode corresponds to the historical presentation of ProjeQtOr. 
+    
+        List area at the top of the screen and the detail area below.
+    
+        Vertical mode allows you to have the list box on the left of the screen and the details box on the right.
+         
+      .. compound:: |LayoutList| Mode List
+   
+        Column mode corresponds to the historical presentation of ProjeQtOr, where the different parts making up the details area are displayed in one, two or three columns
+   
+      .. compound:: |LayoutTab| Mode Tab
+   
+        The sections present in the columns are dispatched under tabs with the tab mode.
+   
+      
+      .. compound:: |ActivityStream| Show/Hide Activity Stream
+   
+        Show or hide globally (on all screens), the notes area for each element.
+   
+        To display notes only on a specific screen, choose |ActivityStream| from the details area toolbar.
+   
+        See: :ref:`Activity stream<activity-stream>`
+        
+        See: :ref:`Tools details area<gui-activity-stream>`
+   
+      .. compound:: |FullScreen| Full screen mode
+   
+        With this mode, you make your browser invisible, the menus, navigation bar, buttons ... are hidden. You can enjoy your ProjeQtOr instance in full screen mode.
+
+        
+        
+        
+.. _menu-session:
+
+.. rubric:: |fiveBLC| Session menu
+
+.. figure:: /images/GUI/GUI_ZONE_SessionMenu.png
+   :alt: Session menu 
+   
+   Session menu
+
+The connection window offers some settings and information at user level.
+
+ .. compound:: Profile
+ 
+   The profile section tells you:
+
+   - The common name in the software
+   - The connection identifier
+   - The profile assigned in the software with this account
+   - The organization to which the user belongs
+ 
+   You can assign a profile picture in the :ref:`user settings<photo>`.
+   
+   
+ .. compound:: interface Parameters
+ 
+   The configuration section allows you to choose and modify at your leisure:
+   
+        - the language of your personal session
+        - the home page which will be displayed when you log in
+        - the colors of your personal interface
+        - Your password
+   
+   
+   You can access full user settings from this window.
+   
+   And it is in this window that you end your session using the disconnect button.
+
+   These changes only impact your session and will apply over the global settings defined by your administrator.
+
+
+      .. compound:: Interface colors
+    
+         You choose two colors which will be declined thanks to subtle colorimetric games throughout the software.
+   
+         The main color corresponds to the color that will be displayed in the background of the menus, title and separation elements.
+         
+         The secondary color is applied for everything related to selection, navigation or position.
+        
+        
+            .. compound:: Color discs
+         
+          
+               These discs are shortcuts for applying a color scheme. Basic four color discs are available including one with the original colors of ProjeQtOr.
+      
+               The other three discs are suggestions on our part.
+               You can display your colors by saving them in the global settings on the Display tab.
+               The next time you reconnect, the last color disc will have your colors.
+    
+
+
+
+
+.. _custommenu:
+
+Custom Menu
+-----------
+
+.. figure:: /images/GUI/GUI_ZONE_FavorisBar.png
+   :alt: bookmarks bar
+   :align: center
+   
+   Bookmarks Bar
+
+.. topic:: Interface areas:
+
+   |one| :ref:`New element<newelement>`
+   
+   |two| :ref:`Bookmarks<bookmarks>` 
+   
+   |three| :ref:`Recents<recentbar>` 
+   
+
+
+
+.. _newelement:
+
+.. rubric:: |oneBLC| New element
+
+
+This button allows you to quickly create a new element from any screen. 
+
+.. figure:: /images/GUI/GUI_BOX_NewElement.png
+   :alt: Create a new element 
+   
+   Create a new element   
+   
+You can create:
+
+* a project
+* a resource
+* an activity
+* a ticket
+* a meeting
+* a milestone
+
+
+The switch button "create on pop-up" allows you to define how to initiate the creation.
+
+If the button is activated, a pop-up opens over the current screen on the screen of the element you want to create.
+   
+      
+  .. figure:: /images/GUI/GUI_BOX_PopUpCreateElement.png
+   :alt: Create a new element 
+   
+   Create a new element 
+
+
+
+If the button is disabled, you go directly to the screen of the element you want to create.   
+
+
+
+
+
+.. index:: Bookmarks
+
+.. _bookmarks:
+
+.. rubric:: |twoBLC| Bookmarks
+
+you can mark certain screens and organize them in the favorites bars to create a personalized menu.
+
+You can create up to 5 favorite bars.
+
+Click on |iconFavoris| to display in the display zone the list of screens of the elements that you have put in favorites.
+
+
+.. figure:: /images/GUI/GUI_ZONE_DisplayFavoris.png
+   :alt: Display bookmarks 
+   
+   Display bookmarks
+   
+Right clicking on the display area allows you to display and organize the 5 favorite bars and choose how to display them.
+   
+   
+    .. compound:: |favoristxt| Bookmarks text
+    
+      You view bookmarks in text mode only
+      
+      .. figure:: /images/GUI/GUI_ZONE_FavorisTXT.png
+      
+         
+    .. compound:: |favorisimg| Bookmarks icon
+     
+      You display bookmarks in icon mode only
+      
+      .. figure:: /images/GUI/GUI_ZONE_FavorisIMG.png
+      
+      
+    .. compound:: |favoristxtimg| Bookmarks icon and text  
+      
+      You display bookmarks with icon and text  
+      
+      .. figure:: /images/GUI/GUI_ZONE_FavorisIMGTXT.png
+
+      
+      The number displayed corresponds to the number of the favorites bar on which you are.
+      
+      To change bookmarks bar, use your mouse wheel when you are positioned on the bar.
+      
+      Or click on the up and down navigation arrows at the right end of the bar.       
+      
+      
+ .. compound:: Add, Organize and remove bookmarks
+
+   To add a bookmarks, click on the star to the right of each menu screen
+   
+   .. image:: /images/GUI/GUI_ZONE_StarBookmark.png
+   
+   The star is filled with the secondary color of your interface once added to the favorites bar  
+   
+   .. image:: /images/GUI/GUI_ZONE_StarBookmarkFiled.png
+   
+   To organize your favorites, right click on the bar or click on |Edit| to display your 5 bars, then click and drag and drop the screens to the desired bars. 
+ 
+   .. image:: /images/GUI/GUI_ZONE_DragDrop.png
+ 
+   A green bar tells you that you can drop the favorites from your screen, a red bar tells you that it is impossible.
+
+   To remove a bookmark, right click on the bookmark and clik on the button remove from the custom menu bar
+   
+   .. image:: /images/GUI/GUI_BOX_RemoveBookmark.png
+   
+   
+       
+.. _recentbar:
+
+.. rubric:: |threeBLC| Recents bar
+
+The recent screens bar allows you to keep in memory the screens you have browsed since the connection.
+It acts like a kind of limited history.
+
+
+.. figure:: /images/GUI/GUI_ZONE_Recent.png
+   :alt: Recent bar
+   
+   Recent bar
+
+Indeed, the number of recent screens depends on your screen resolution.
+for example: between 12 and 16 screens displayed for a 2K screen and between 6 and 10 for an HD screen.
+
+
+
+
+
+
+
+
+.. _menu:
+
+Menu
+----
+
+.. figure:: /images/GUI/GUI_ZONE_Menu.png
+   :alt: Menu
+   :align: center
+   
+   Menu
+   
+.. topic:: Interface areas:
+
+   |one| :ref:`Main menu<mainmenu>`
+   
+   |two| :ref:`Section indication <section-indication>` 
+   
+   |three| :ref:`Breadcrumb<breadcrumb>` 
+   
+   |four| :ref:`Show / Hide menu<showmenu>` 
+   
+   |five| :ref:`Search menu<search-menu>` 
+   
+      
+.. _mainmenu:
+
+.. rubric:: |oneBLC| Main menu
+
+The menu takes up the overall scope of project management.
+Each section represents a part of this perimeter.
+
+The menu is designed to highlight the main screens in each section. These are often the screens most used by project management professionals.
+
+The secondary screens appear under sub-menus and the navigation is deeper.
+   
+   
+   
+.. _section-indication:
+
+.. rubric:: |twoBLC| Section indication  
+
+When browsing, each time you select a section or subsection, the icon corresponding to the latter is displayed in this area.
+
+
+.. _breadcrumb:
+
+.. rubric:: |threeBLC| Breadcrumb  
+
+Breadcrumb generally refers to the breadcrumb trail of website navigation. 
+
+This item tells the user where they are in the menu hierarchy.
+
+In ProjeQtOr, the Breadcrum shows you the previous section of the one where you are.
+
+By clicking on the breadcrumb, you return to the mother section, until you reach the reception. 
+
+
+
+.. _showmenu:
+
+.. rubric:: |fourBLC| Show / Hide menu 
+
+Click on |HideMenu| to hide the menu
+
+Click on |ShowMenu| to bring up the menu 
+
+.. _search-menu:
+
+.. rubric:: |fiveBLC| Search menu    
+
+You have the possibility to do a search directly in the menu.
+
+The search takes into account the name of the element screens, but also certain tags, which do not know how to be enriched.
+
+.. figure:: /images/GUI/GUI_ZONE_SearchTag.png
+   :alt: Search with tags
+   
+   Search performed with the tag GANTT
+   
+   
+The search also allows you to display the reports related to the keywords entered in a separate section.
+
+When you click on a screen resulting from your search, the screen is displayed but you do not change the section in the menu, which allows you to return at any time to the screens of the section where you were.
+
+To return to your section after a search, click the reset icon in the search field.
+
+
+
+
+
+
+
+
+.. _secondary-menu:
+
+Secondary Menu
+--------------
+
+The secondary menu can be seen as the right hand side of the menu.
+
+It allows you to display a lot of information about your project, your navigation or your organization.
+
+.. figure:: /images/GUI/GUI_ZONE_SecondaryMenu.png
+   :alt: Menu
+   :align: center
+   
+   Menu
+   
+.. topic:: Interface areas:
+
+   |one| :ref:`Parameters<secondarymenu-parameters>`
+   
+   |two| :ref:`Links<secondarymenu-links>` 
+   
+   |three| :ref:`Repertory and Document<secondarymenu-docs>`
+   
+   |four| :ref:`Console<secondarymenu-console>` 
+      
+   |five| :ref:`Notifications<secondarymenu-notifications>` 
+   
+
+
+.. _secondarymenu-parameters:
+
+.. rubric:: |oneBLC| Parameters
+
+the parameters displayed in the secondary menu are linked to the selected screen.
+
+In the example above, the user selected the Activity screen.
+We then see that the parameters are in direct correlation with the activities.
+
+If the user selects the project screen, then the parameters will be adapted for those.
+
+.. image:: /images/GUI/GUI_ZONE_SecondaryMenuProject.png
+
+.. _secondarymenu-links:
+
+.. rubric:: |twoBLC| Links
+
+Display hyperlinks to remote web pages.
+
+These links are defined as hyperlink attachments on projects.
+
+Links displayed here depend on the selected project.
+
+.. image:: /images/GUI/GUI_ZONE_SecondaryMenuLinks.png
+
+
+.. _secondarymenu-docs:
+
+.. rubric:: |threeBLC| Repertory and Document
+
+Document directories give direct access to documents contained in the directory.
+
+See also: :ref:`document-directory` screen.
+
+.. image:: /images/GUI/GUI_ZONE_SecondaryMenuDocs.png
+
+.. _secondarymenu-console:
+
+.. rubric:: |fourBLC| Console
+
+Displays information about main actions: insert, update, delete. 
+
+The timestamp indicates when the action was done.
+
+.. warning::
+
+   Messages displayed here are not stored and will be flushed when user logout.
+
+.. image:: /images/GUI/GUI_ZONE_SecondaryMenuConsole.png
+
+
+.. _secondarymenu-notifications:
+
+.. rubric:: |fiveBLC| Notifications   
+
+In the secondary menu
+
+      .. figure:: /images/GUI/CONTROLAUTO_ZONE_NotifRecap.png
+         :alt: notification area
+         
+         Notifications 
+
+      
+      
+ 
+      A tree whose title indicates the number of unread notifications intended for the user.
+       
+      **This tree has the following levels:**
+      
+      * Level 1: The types of notifications
+      
+      * Level 2: The trigger for notifications
+      
+      * Level 3: The Notification Definition to Product Notifications
+      
+      * Level 4: The id of the element that generated the notification. Allows direct access to the item.
+      
+      The icon |Refresh| allows you to refresh notifications without waiting for the scheduled update.
+      
+      The icon |Notif| provides direct access to the notifications screen.
+      
+      Numbers indicate the number of unread notifications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. _list-window:
+
+List Area
+---------
+
+.. figure:: /images/GUI/GUI_ZONE_ListWindows.png
+   :alt: List window
+   :align: center
+
+
+.. topic:: Interface areas:
+
+   |one| :ref:`Element identifier<element-identifier>` 
+   
+   |two| :ref:`Tools<tools-list>` 
+   
+   |three| :ref:`Items list<items-list>` 
+
+
+.. _element-identifier:
+
+.. rubric:: |oneBLC| Element identifier
+
+Displays the element name and the count of items in the list.  
+
+Each element is identified with a distinctive icon.
+
+.. _tools-list:
+
+.. rubric:: |twoBLC| Tools
+
+
+.. figure:: /images/GUI/GUI_ZONE_ToolsList.png
+   :alt: List window
+   :align: center
+
+
+* Click on |New| to create a new element
+* Click on |Refresh| to refresh the list
+* Click on |Filters| :ref:`to apply many filters<filters>`
+* Click on |Column| :ref:`to organize the columns<columns>`
+* Click on |SubMenu| to open the sub-menu
+* Click on |Print| to print the list area as it appear on the window
+* Click on |PDF| :ref:`to export the list area to PDF<exportpdf>`
+* Click on |CSV| :ref:`to export the list area to CSV<exportcsv>`
+* Click on |MultipleUpdate| :ref:`to open the multiple update<multipleupdate>`
+
+Swith the button clos to make appear all the handled element
+
+
+
+
+
+
+
+.. _filters:
+
+ .. compound:: |Filters| The filters
+ 
+   .. figure:: /images/GUI/GUI_BOX_Filters.png
+      :alt: Filters
+      
+      Filters windows
+      
+      
+   The first filters offered are basic filters.
+   
+   
+    .. compound:: The rapid filters
+    
+      You can choose to always display them in the toolbar of the list box by activating the switch button.   
+      
+    
+   
+      .. figure:: /images/GUI/GUI_ZONE_FiltersVisible.png
+        :alt: Filters always visible
+      
+        Filters always visible
+   
+      You can choose to always display them in the toolbar of the list box by activating the switch button.   
+
+      You can restrict the display:
+   
+      * by ID
+      * by name
+      * by type 
+   
+   
+    .. compound:: The Quick search
+    
+      fill in the quick search field then click on the magnifying glass to launch the search in all the available fields of the list box AND details.
+
+      Click the reset button to clear your search and restore the original display.
+      
+      .. note:: Accents are not taken into account
+      
+
+
+    .. compound:: States filters
+    
+      Switch the button **Display states to filter directly**
+      
+      .. figure:: /images/GUI/GUI_ZONE_StateFilters.png
+         :alt: States filter
+         
+         States filter
+      
+      Only existing status are visible if their are used.
+      
+      Choice one of them and the item list will be filter.
+      
+      This is a quick filter list by status
+      
+
+
+
+    .. compound:: The advanced filters
+    
+      Click on the button to display the advanced filters window.
+      
+      .. figure:: /images/GUI/GUI_BOX_AdvancedFilters.png
+         :alt: Advanced filters
+         
+         Advanced filters definition
+      
+      
+      Several sections are available
+
+         .. compound:: Active filter
+      
+           Define the clauses of filter or sort in “Add a filter or sort clause”.
+         
+           Select the name of the field, the operator and the value to the clause.
+         
+           * Click on |Add| to add additional criteria.
+               
+           * Name the filter to save and click on |Save| for later reuse.
+            
+           * Click on |Search| to filter the filter list.
+      
+           * Click on OK button to apply the filter.
+         
+           * Click on Cancel button to revert to previous filter.
+               
+           * Click on Clear button to reset the active filter.
+               
+                        
+               
+               .. compound:: Logical operator
+            
+                  Possibility to select the logical operator OR between the criteria of a filter instead of AND.
+         
+                  Applies logical operator with preceeding criteria (by default AND). 
+                    
+                  Be careful, operator AND is applies before OR. 
+                    
+                    
+         
+               .. compound:: Dynamic value
+                  
+                  When the selected value is dynamic, then you do not select anything in the list.
+                    
+                  The value will then be entered when the filter is called and will be fully activated when the filter is chosen.
+   
+   
+   
+   
+   
+   
+   
+         .. compound:: Saved filters
+           
+           This section allows to manage saved filters.
+           
+           * Click on a saved filter to retrieve its definition.
+           
+           * Click on |Delete| from a saved filter to delete it.
+                   
+           * Click on |Drag| to reorganize the filters.
+           
+           * Click on |Share| to shared a filter with your employees
+           
+           
+           When your collaborators share filters, they appear below the list of saved filters.
+   
+           Click on the list to display all filters and their author.
+   
+   
+           .. figure:: /images/GUI/GUI_ZONE_SharedFilters.png
+               :alt: Shared filters
+            
+               Shared filters
+   
+   
+   
+   
+   
+         .. compound:: List of filters
+           
+           The filter list allows to select a stored filter.
+           
+           To see the filter list, move the cursor over the advanced filter icon.
+           
+           .. figure:: /images/GUI/GUI_BOX_FiltersList.png
+               :alt: List of filters
+            
+               List of filters 
+   
+   
+   
+           * Click on the filter name to apply.
+   
+           * Click on **no filter clause** to reset the filter.
+   
+   
+
+.. _columns:
+
+ .. compound:: |Column| The columns
+ 
+   .. figure:: /images/GUI/GUI_BOX_Columns.png
+      :alt: Columns Organizer 
+      
+      Columns Organizer
+      
+      
+      
+   This functionality allows to define columns displayed in the list for this element.
+   
+   The columns display is defined for the user.
+   
+   The definition will be automatically applied in the next connection.
+
+   * Click on OK button to apply changes.
+
+   * Click on Reset button to reset the list to its default format
+
+
+      .. compound:: Column section
+      
+         Use checkboxes to select or unselect columns to display.
+
+         .. Note:: Id and name are mandatory fields. They cannot be removed from display.
+        
+
+      .. compound:: Columns order
+
+         Use the selector area Button icon drag to reorder fields with drag & drop feature.
+
+      .. compound:: Column size
+
+         Use the spinner buttons to change the width of the field.
+         
+         Width is in % of the total list width.
+         
+         The minimum width is 1%.
+         
+         The maximum width is 50%.
+         
+         .. note:: **Field Name**
+         
+            * The width of the field is automatically adjusted so that the total list width is 100%.
+              
+            * The width of the field cannot be less than 10%.
+         
+         .. warning:: **Total width over 100%**
+           
+            * The total width must be limited to a maximum 100%.
+              
+            * The exceedance will be highlighted beside the buttons.
+              
+            * This may lead to strange display, over page width, on list, reports and PDF export, depending on the browser.
+
+
+.. _exportpdf:
+
+  .. compound:: |Pdf| Export to PDF format
+
+
+      Allows to export data of list to PDF format.
+            
+      Export contains all details and links between tasks.
+
+      Export can be done horizontally (landscape) or vertically (portrait) in A4 and / or A3 format with high quality of details
+
+      
+
+
+
+
+.. _exportcsv:
+
+  .. compound:: |Csv| Export to CSV format
+
+      This functionality allows to export data of list in a CSV file.
+            
+      The fields are regrouped and presented in the order as they appear in the item description.
+      
+      * Click on **OK** button to export data.
+      * Click on **Cancel** button to close the dialog box.
+               
+      The export definition is defined for each user. 
+         
+      The same definition can be applied in the next export.
+      
+      .. figure:: /images/GUI/GUI_BOX_Export.png
+         :alt: Dialog box - Export 
+         :align: center
+            
+         Dialog box - Export
+         
+               
+      * Use the checkbox to select or unselect all fields.
+      * Click on **Select list columns** button to restrict selected fields to the ones that are currently displayed in the list.
+      * For fields that reference another item, you can select to export either the id or the clear name for the referenced item.
+      * Box checked indicating that HTML tags in a long text field will be kept during export.
+      
+      
+      .. note:: **Import Datas**
+         
+         The active filter defined will be applied to export data.
+                  
+         The CSV exported files can directly be imported through the import functionality. 
+                  
+         See: :ref:`import-data`
+         
+
+.. _multipleupdate:
+
+  .. compound:: |MultipleUpdate| Multiple update
+
+   .. figure:: /images/GUI/GUI_ZONE_MultipleModeList.png
+      :alt: Multiple mode item selection
+      :align: center
+               
+      Multiple mode item selection
+                  
+   Allows to update several items in one operation.
+   
+   * The fields that can be updated depends on the selected element.
+   
+   * The fields are grouped by section.
+  
+
+      
+    .. compound:: **Apply updates**
+      
+      * Selection of items can be done by selecting one or more items in the list window. |one|
+      * You can use the shift key or the control key to select several consecutive lines or not.
+      * Click to select the item, click again to deselect
+      * The count of items selected is displayed. |two|
+      * Or use checkboxes to select/unselect all items in the list. |three|
+      * Click on |Save| to save updates on selection. |four|
+      * Click on |Delete| to delete all selected items. |four|
+      * The update will be applied to all the items (if possible) and a report will be displayed on the right. |five|
+      * Click on |Quit| to quit the multiple mode window. |four|
+
+
+      .. note:: 
+      
+         * Target milestones can be modified with "multiple update" tickets and activity screens
+         
+         * You can bulk close items that do not have status (assigned, closed, recorded ...) as resources
+               
+         * The passwords of all users can be reset at the same time: 
+
+            * On the users screen, In the update area, click on the Reset button. 
+         
+            * An email will be send to the selected users.
+
+
+ 
+         
+.. _items-list:         
+            
+.. rubric:: |threeBLC| Items list         
+         
+         
+Click a column header to sort the list on that column (first ascending, then descending).
+
+Sorting is not always on the name displayed.
+
+If the sorted column is linked to a reference list with sort order value, the sorting is executed on this sort value.
+
+Sorting on the “Status” allows to sort values such as defined in the workflow.
+
+Click on a line (any column) will display the corresponding item in the detail window.
+
+
+
+
+
+         
+         
+         
+         
+   
+.. _detail-window:
+
+Details Area
+------------
+
+.. figure:: /images/GUI/GUI_ZONE_DetailWindow.png
+   :alt: Details area
+   :align: center
+   
+   Details Area
+   
+   
+.. topic:: Interface areas:
+
+   |one| :ref:`Item identifier<item-identifier>` 
+   
+   |two| :ref:`Creation information<creation-information>` 
+   
+   |three| :ref:`Buttons<detail-window-button>` 
+   
+   |four| :ref:`Text Editor<dw-text-editor>`
+   
+   |five| :ref:`Sections<detail-window-sections>`
+   
+   |six| :ref:`Special fields<specialfields>`
+     
+
+
+
+.. _item-identifier:
+
+.. rubric:: |oneBLC| Item identifier
+
+Identifies the item with the element type and the item id and name.
+
+Each element is identified with a distinctive icon.
+
+.. _creation-information:
+
+.. rubric:: |twoBLC| Creation information
+
+You can see at a glance the status, update and creation information of the element.
+
+* First calendar shows the date of update.
+
+* Second calendar indicates the creation date of the element.
+
+      Calendars appear in red when the modified or created date is today's.
+      
+      They appear in yellow when this date is yesterday.
+      
+      and in gray when the date is older
+
+The thumbnail corresponds to the creator of the element
+
+See: :ref:`thumbnails`
+
+
+ .. note::
+
+    Administrator can change this informations.
+
+
+
+
+
+.. _detail-window-button:
+
+.. rubric:: |threeBLC| Buttons
+
+.. topic:: Details windows buttons
+
+   * |New| :ref:`Create new item<dw-create-item>`
+   * |Save| :ref:`Save the changes<dw-save-item>` 
+   * |Refresh| :ref:`Refresh the display<dw-refresh-display>`
+   * |Copy| :ref:`Copy the current item<copy-item>`     
+   * |Delete| :ref:`Delete the item<dw-delete-item>`    
+   * |Undo| :ref:`Cancel changes<dw-undo-change>`
+   * |Print| :ref:`Print the details<dw-print-item>`
+   * |Pdf|  :ref:`Export to PDF format<dw-export-pdf>`
+   * |Email| :ref:`Send details<email-detail>`
+   * |Subscribe| :ref:`Subscribe detail<subscribe-detail>`
+   * |ActivityStream| :ref:`Activity Stream<gui-activity-stream>`
+   * |History| :ref:`Show history<change-history>`
+   * |Checklist| :ref:`Show checklist<dw-show-checklist>`
+
+   
+    
+
+   .. warning::
+
+    Some buttons are not clickable when changes are ongoing.
+    
+    When changes are ongoing, you cannot select another item or another menu item. 
+    
+    Save or cancel ongoing changes first.
+    
+    
+    
+    
+    
+    
+.. _dw-create-item:
+    
+   .. compound:: |New| Create a new item
+   
+      Depending on the screen of the selected item, create a new item in that category 
+
+
+.. _dw-save-item:
+    
+   .. compound:: |Save| Save the changes
+   
+      Save the changes of the current item. 
+      
+      Or use shortcut key :kbd:`ctrl-s` to save the changes on the current item.
+            
+            
+.. _dw-refresh-display:
+
+   .. compound:: |Refresh| Refresh the display
+   
+      Allows you to refresh the details windows of the selected element
+
+
+
+.. _copy-item:
+
+   .. compound:: |Copy| Copy item
+
+      Allows you to copy an entire element or to select only some information such as project structure, meetings, links or attached files.
+
+      The new item has the status **copied**.
+      
+      The information to copy is different depending on the item selected
+      
+        
+      .. figure:: /images/GUI/GUI_BOX_CopyItemProject.png 
+         :alt: Dialog box - Copy element
+         :align: center
+         
+         Copy project
+          
+      The options displayed in dialog box depends on whether the element is simple or complex.
+
+
+
+         **Simple element**
+                           
+         Simple element (environment parameters, lists,…) can only be copied "as is".
+                     
+                           
+         **Complex element**
+                           
+         Complex element (Tickets, Activities, …), it is possible to copy them into a new kind of elements.
+         
+         For instance, it is possible to copy a Ticket (the request) into an Activity (the task to manage the request) or meeting, periodics meetings as well as test sessions. 
+                           
+                     
+         **It is possible to select:**
+                                 
+         * New kind of element.
+                                
+         * Select new type (corresponding to the kind of element).
+                                
+         * Change the name.
+         
+         * Change the project.
+         
+         * Select whether the initial element will be indicated as the origin of the copied one.
+         
+         For main items, it is also possible to choose to copy links, attachments and notes.
+                                   
+         For Projects and Activities, it is also possible to copy the hierarchic structure of activities (sub-projects, sub-activities). 
+                              
+
+      
+.. _dw-delete-item:
+
+   .. compound:: |Delete| Delete the item
+   
+      To delete the selected element.
+      
+      Basically, some items cannot be deleted. For example, if actual work has been saved on an activity. The latter, as well as the project on which it depends, cannot be deleted.
+
+      To be able to delete these elements, go to the :ref:`Acces_Right` menu in the :ref:`specific_access` and choose YES in can force the deletion of the actual work in the "specific update rights" section.
+      
+
+.. _dw-undo-change:
+
+   .. compound:: |Undo| Undo the change
+   
+      The button is clickable only when changes are ongoing.
+
+      Allows you to undo changes made to the current element 
+
+
+.. _dw-print-item:
+    
+   .. compound:: |Print| Print the details
+   
+      To obtain a printable version of the details of the current element.      
+
+
+.. _dw-export-pdf:
+    
+   .. compound:: |Pdf| Export to PDF format
+   
+      To get a printable version of the details in PDF format.
+       
+
+
+  
+.. _email-detail:
+
+   .. compound:: |Email| Email detail
+
+      Allows to send an informative email to defined recipients list.
+
+      .. figure:: /images/GUI/GUI_BOX_EmailDetails.png
+         :alt: Dialog box - Email detail
+         :align: center
+         
+         Email details dialog box
+         
+      The list is defined according to the role of the recipient.
+
+      See: :ref:`projeqtor-roles`
+         
+      Flag on the role checkbox to define the recipients list.
+      
+            .. compound:: **Checkbox other**
+                  
+               Flag on the checkbox other to manually enter email addresses.
+                            
+               When sending an email, the address (es) entered in "other" remains in memory and will be proposed during the next mailing
+                           
+               Use commas or semicolons to separate addresses.
+                  
+                  
+                  
+                  
+            .. compound:: **Message**
+            
+               The message that will be included in the body of the email, in addition to a  complete description of the item.
+            
+      
+      
+      
+            .. compound:: **Save as note**
+            
+               Flag on to indicate the email message will be saved as a note.
+               
+               
+            
+            .. compound:: **Email Template**
+            
+               You can choose an email template even without having predefined it in the settings.
+               
+               To create and view templates. See :ref:`email-template`.
+               
+               
+      
+            .. compound:: **Files to attach to email**
+            
+               Attachments for the item appear in the attachment table. If the item has no files attached then the table is not visible.
+      
+               The maximum size of attached files must be entered in the global parameters in the Mailing tab. The size indicated is in bytes unless you indicate otherwise. see: :ref:`Global parameters<gp-emailing-section>`
+      
+               When you check a file to send the size of the latter is displayed at the top right of the table. 
+               
+                  * If several files are selected, then the total size of these files is calculated and displayed.
+               
+                  * If the total size 
+
+
+
+
+          
+.. _subscribe-detail:
+
+  
+   .. compound:: |Subscribe| Subscribe detail
+
+      Allows to subscribe to tracking of an item.
+      
+      This icon is checked when you subscribed |SubscribeON|.
+
+
+      .. figure:: /images/GUI/GUI_ZONE_Subscribe.png
+         :alt: Dialog box - Susbcribe detail
+         
+         Subscribe detail
+   
+
+      When a user "subscribes" to the project, he will receive notifications "to subscribers" for all elements of the project
+      
+      
+      Ability to subscribe a third party user to the tracking of an element (according to configurable rights).
+      
+      You can drag the name of selected ressources and drop them on the right column for subscribe them.
+      
+      .. figure:: /images/GUI/GUI_ZONE_SubscribeOther.png 
+         :alt: Dialog box - Susbcribe for other
+         
+         Suscribe for other
+         
+      
+      
+      **Display of list of followed items**
+         
+      You can view the list of followed items in two ways:
+            
+         * click on the button "View the list of subscriptions" in the subscription menu
+            
+         * In the user settings of the :ref:`Automation section<UP-automation>`, click on the "show list of followed items" button.
+         
+      .. figure:: /images/GUI/GUI_BOX_ListSubscribe.png
+         :alt: Dialog box - Display list of tracked items
+            
+         Display list of followed items
+      
+      
+      .. note:: 
+         
+         **email**
+         
+         Possibility to send an email to users following the item
+         
+         When unitary sending detail or on automatic sending or on indicator.
+         
+         **contacts**
+         
+         You can see the items followed by your contacts
+         
+         see: :ref:`contact`
+         
+         
+      
+      
+.. _gui-activity-stream:
+
+ .. compound:: |ActivityStream| Activity Stream
+  
+  This icon allows you to display the Stream activity in a unique way on the selected element.
+  
+  Unlike the Activity Stream icon in the Display layout menu which activates it globally on all screens.
+  
+  The last position of the activity stream is always saved.
+ 
+ See: :ref:`activity-stream`
+ 
+ 
+ 
+ 
+ 
+.. _change-history:
+
+ .. compound:: |History| History of changes
+
+   All the changes items are tracked.
+      
+   They are stored and displayed on each item.
+
+   On creation, just an insert operation is stored, not all the initial values on creation.
+
+
+
+
+      .. tabularcolumns:: |l|l|
+      
+      .. list-table:: Fields of changes
+         :widths: 30, 70
+         :header-rows: 1
+      
+         * - Field
+           - Description
+         * - Operation
+           - The operation on the item (insert or update).
+         * - Data
+           - The field modified.
+         * - Value before
+           - The value of the field before the update.
+         * - Value after
+           - The value of the field after the update.
+         * - Date
+           - Date of change operation.
+         * - User
+           - Name of the user who operated the change.
+
+
+      **Displaying the history of changes**
+
+      * The user parameter "Display history" allows to define whether the history of changes appears in a section or in a dialog box.
+      * If the value "On request" is set, the button |History| appears on the detail header window.
+      * Click on  to display the history of changes.
+      * If the value "Yes" is set, the "Change history" section appears in the detail window. 
+
+      .. figure:: /images/GUI/GUI_BOX_HistoryChange.png
+         :alt: Dialog box - History of changes
+         :align: center
+      
+         Dialog box - History of changes
+
+
+      **Show/Hide work**
+
+      * This button allows to show or hide work changes done in "Real Work Allocation".
+      * For section "Change history"  the display of work is defined in  user parameter "Display history".
+      
+
+
+.. _dw-show-checklist:
+
+   .. compound:: |Checklist| Show / hide the checklist
+   
+      This button is only displayed if the "display checklist" parameter in the user settings is set to "on request" status
+      
+      **More details:** :ref:`checklist-definition`
+      
+
+
+.. _drop-file-area:
+
+   .. compound:: |Attach| Drop file area
+
+      This area allows to add an attachment file to the item.
+
+      * Drop the file in the area.
+      * Or click on the area to select a file.
+
+
+
+.. _dw-text-editor:
+
+.. rubric:: |fourBLC| Text editor
+
+Text editors are available for editing of long text fields like description, results, notes, ...
+
+Selection of text editor can be done in User and Global parameters screens.
+
+
+   .. compound:: CK Editor
+
+         The most advanced web editor.
+         
+         Spell checker available with this text editor. 
+         
+         .. figure:: /images/GUI/GUI_ZONE_CKEditor.png
+            :alt: CK Editor
+            :align: center
+         
+            CK Editor - Ability to resize the CK Editor height, the size is saved
+
+        
+   Possibility to deactivate the SCAYT spell checker. It can be modified by each user in user parameters.
+
+
+
+   .. compound:: CK editor inline
+
+      As CK Editor. 
+      
+      Activated only when needed.
+
+      .. note::
+         
+         * CK editor inline height, keep the size of CK editor.
+         * Click on the text zone to display toolbar.
+         * Can not use it in fullscreen mode.
+
+
+   .. compound:: Plain text editor
+
+      * Conventional text input.
+      * Text zone is extendable.
+
+
+
+.. _detail-window-sections:
+
+.. rubric:: |sixBLC| Sections
+
+* The fields are regrouped under a section.
+* All sections can be folded or unfolded, clicking on the section title. 
+
+ .. compound:: **Columns**
+
+    The sections are organized in columns.
+    
+    Number of displayed columns can be defined in user parameters.
+
+ .. compound:: **Common sections**
+
+    Some sections are displayed on almost all screens. (See : :ref:`common-sections`)  
+
+ .. compound:: **Item count in the list**
+
+    When the section contains a list, the item count is displayed at right of the header.
+
+    .. figure:: /images/GUI/GUI_ZONE_SectionHeader.png
+       :alt: Header section
+       :align: center
+
+       Header section
+
+ .. compound:: **Thumbnails on items in the list**
+
+    Thumbnails are displayed on item row to present field values in graphical format.
+    
+    See: :ref:`thumbnails`.
+
+ .. compound:: **Go to selected item**
+
+    In a list, possibility to go directly to an item by clicking on its fields.
+    
+    Cursor change to |pointingHandCursor| on clickable fields.
+
+
+
+
+.. _specialfields:
+
+Special fields
+==============
+
+.. rubric:: Accelerator buttons
+
+
+.. _movetonextstatus-button:
+
+ .. compound:: Move to the next status
+
+   This button allows to skip to the next status without having to open the list.
+   The next status is defined by the workflow linked to the type of element.
+   
+   
+   .. figure:: /images/GUI/GUI_BUTTON_MoveToNextStatus.png
+      :alt: Button - Move to next status 
+      :align: center
+         
+      Move to next status
+
+   The mouse tracking over this colored button allows to show the workflow. 
+
+
+.. _assignToMe-button:
+
+ .. compound:: Assign to me button
+
+   This button allows to set the current user in the related field.
+
+   .. figure:: /images/GUI/GUI_BUTTON_AssignToMe.png
+      :alt: Button - Assign to me 
+      :align: center
+
+
+
+
+
+
+
+.. _combo-list-fields:
+
+.. rubric:: Combo list field
+
+
+Combo list field allows to search, view or create item associated with the field.
+
+The access to view or create item depends on your access rights. Some buttons can be not available.
+
+
+.. figure:: /images/GUI/GUI_ZONE_ComboListFields.png
+   :alt: Field - Combo list
+   :align: center
+   
+   Combo list
+
+
+* Click on |Goto| will directly go to the selected item.
+
+* Click on |View| to display the details of the selected item.
+
+* Click on |Add| to directly add a new element corresponding to the selected field.
+
+* Click on |Search| to search for an element among those existing corresponding to the selected field.
+
+
+.. figure:: /images/GUI/GUI_BOX_DetailOfListITEM.png
+   :alt: Dialog box to search item
+   :align: center
+   
+   Dialog box - Item search
+   
+   
+* Click on |Valid| to re-select an item.
+       
+* Click on |Undo| to close the dialog box.
+      
+* Click on |Filters| to filter the items list
+   
+   
+Some elements is possible to select several items, use :kbd:`Control` or :kbd:`Shift`.
+ 
+ 
+
+
+
+
+.. _origin-field:
+
+.. rubric:: Origin field
+
+The origin of an element has no impact on it.
+
+This is a memo, pure information.
+
+It can be filled in automatically during a copy or manually.
+
+
+.. figure:: /images/GUI/GUI_ZONE_OriginField.png
+   :alt: Field - Origin 
+   :align: center
+   
+   Origin field
+
+* This field allows to determine the element of origin.
+* The origin is used to keep track of events (ex.: order from quote, action from meeting).
+* The origin may be selected manually or automatically inserted during copying an element. 
+
+
+   .. compound:: Origin element
+
+      * Click on |Add| to add a orgin element.
+      * Click on |Delete| to delete the link.
+      
+      .. figure:: /images/GUI/GUI_BOX_AddOriginElem.png
+         :alt: Dialog box - Add an origin element 
+         :align: center
+         
+         Add an origin element
+      
+      * Choose the type of element from the drop-down list.
+      * Select the item from the corresponding list
+
+.. rubric:: Set color field
+
+
+* This field allows to set the color of an item.
+* Used to differentiate items in list or report.
+* Click on list of colors to select.
+* Click on "Reset" button to erase.
+
+.. figure:: /images/GUI/GUI_ZONE_SetColor.png
+   :alt: Zone - Set color field 
+   :align: center
+   
+   Set color field
+
+
+* Displays a colored circle for field colorable.
+* Some list of values has a field to define a color. 
+* A color is defined for each value.
+
+
+
+
+
+
+.. _thumbnails:
+
+.. rubric:: Thumbnails
+
+Thumbnails are a graphical representation of the field value.
+
+
+
+
+ .. compound:: Date
+
+   * Displays the date of creation or update of the item.
+   * Move cursor over thumbnail to display the date.
+
+
+    .. compound:: |calendRed| The Item have been created or updated today.
+
+    .. compound:: |calendYellow| The Item have been created or updated recently. 
+
+    .. compound:: |calendGrey| Default view.
+
+
+
+
+
+ .. compound:: User
+
+   * Portrait of the user. Displays if it has created or updated an item.
+   * If no photo is saved, an icon will automatically be generated.
+   * The letter is chosen according to the real name. This is his initial.
+   * Move the cursor over the thumbnail to display the user's name and photo in its original size.
+   * The user who does not have a photo automatically obtains a thumbnail with the first letter that makes up the real name.
+
+      .. figure:: /images/GUI/GUI_ZONE_ListNONphoto.png
+         :alt: list of users without personal photo
+         
+         list of users without personal photo
+   
+ .. compound:: Comment
+
+   * |Comment| Indicates a comment or description is defined.
+   * |AddComment| to add a new note or comment
+   * Move cursor over thumbnail to display text.
+
+ .. compound:: Privacy
+
+   Indicates the visibility level defined in a note or attachment.
+
+    * |Privacy| Private contents.
+   
+    * |Team| Visible to team.
+
+
+
+
+.. rubric:: Message pop-up
+
+Users may receive messages pop-up, displayed on the bottom right corner of the screen.
+
+Three kinds of message may be displayed:
+
+* Information
+* Warning
+* Alert
+
+.. figure:: /images/GUI/GUI_BOX_Alert.png
+   :alt: Example - message pop-up
+   :align: center
+
+.. rubric:: Action on message pop-up
+
+**Three possible actions:**
+
+* Select to remind you in a given number of minutes (message will close and appear  again in the given number of minutes).
+* Mark it as read to definitively hide it. 
+* Mark as read all remaining alerts (the number appears on the button).  
+
+.. note::
+
+   On :ref:`alerts` screen, the user can read the alert messages marked as read.
+
+
+.. rubric:: Alert on detail window
+
+On indicatorable items, you may see a small icon on top left of the detail of the item.
+
+Just move the mouse over the icon to display, which indicator has been raised.
+
+.. figure:: /images/GUI/GUI_ZONE_Alert.png
+   :alt: Alert on detail window
+   :align: center
+
+   Alert on detail window
+
+
+.. rubric:: Alert on Today screen
+
+Just move the mouse over the red line to display, which indicator has been raised.
+
+.. figure:: /images/GUI/GUI_ZONE_AlertToday.png
+   :alt: Alert on Today screen
+   :align: center
+
+   Alert on Today screen
+
+     

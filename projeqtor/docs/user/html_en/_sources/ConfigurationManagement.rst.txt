@@ -1,0 +1,524 @@
+.. include:: ImageReplacement.txt
+
+.. title:: Configuration Management
+
+.. index:: Configuration Management
+
+.. _ConfigurationManagement:
+
+Configuration Management
+************************
+
+Configuration management consists of managing the technical description of a system, as well as managing all changes made during the evolution of the system.
+
+It is the set of processes to ensure the conformity of a product to the requirements, throughout its life cycle.
+
+In computing, for example, configuration management can be used for many purposes.
+
+* To store and trace the different versions or revisions of any information intended to be used by a system (hardware, software, document, unit data, etc.).
+* To deploy configurations through a computer park in the form of files and data.
+* Manage source codes ...
+  
+  
+.. index:: Product
+
+.. _product:
+
+Products
+--------
+
+Allows to define product and sub-product.
+
+Allows to link components to product.
+
+.. figure:: /images/GUI/CONF_SCR_Product.png
+   :alt: Product configuration screen
+   
+   Product configuration screen
+   
+
+
+   
+   
+     
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>` 
+   
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required fields |ReqFieldLegend|
+   :widths: 20, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the product.
+   * - |RequiredField| Name
+     - Name of the product.
+   * - |RequiredField| Product type
+     - Type of product.
+   * - Designation
+     - Trade name of the product known outside the company.
+   * - Customer
+     - The customer the product should be delivered to.
+   * - Prime contractor
+     - The contact, into customer organization, who will be responsible for the product delivery.
+   * - Responsible
+     - Person responsible for the product.
+   * - sub-product 
+     - Name of the top product if this product is a sub-product.
+   * - |RequiredField| Status
+     - State to be registered.
+   * - :term:`Closed`
+     - item is closed if checked
+   * - Description :
+     - Box checked indicates the product is archived.
+
+You can create many links between products, product versions and component
+
+ .. compound:: Project linked to this product
+
+   Possibility of attaching the products of the list to projects.
+
+ .. compound:: Composition Section
+ 
+   List of sub-products and list of components used by this product
+
+   See: :ref:`relationship-product-component`.
+
+ .. compound:: Structure
+   
+   You can display 2 ways to display the structure. Normal and flat.
+   
+   
+   .. figure:: /images/GUI/CONF_BOX_DisplayStructureSSBox.png
+      :alt: Display the product structure
+      
+      Normal display the product structure
+      
+      
+   Box checked "Show versions for all structure" allows to display versions of sub-products and components.
+
+   Box checked "Show projects linked to versions" allows to display projects linked.
+
+   .. figure:: /images/GUI/CONF_BOX_DisplayStructure.png
+      :alt: Display the product structure box checked
+      
+      Display the product structure with the boxes checked
+
+
+.. index:: Product (Version)
+
+.. _product-version:
+
+Product Versions
+----------------
+
+
+Allows to define versions of a product.
+
+Allows to link a component version to product version.
+
+Allows to link the product version to a project.
+
+Ability to define the compatibility between product versions (feature activated through a global parameter)
+
+.. rubric:: Automatic formatting of version name
+
+Possibility to define if the version name is automatically produced from the product name and version number.
+
+Set :ref:`global_parameters` to activate this feature.
+
+Else, the version name will entered manually.
+
+By profile, possibility to have a different list of the version of the original product according to the status.
+
+.. rubric:: Section Description
+
+
+.. figure:: /images/GUI/CONF_ZONE_DescriptionVersionProduct.png
+   :alt: Product version description
+   
+   Product version description
+   
+   
+.. sidebar:: Other sections
+
+   * :ref:`Projects linked to this version<Link-version-project-section>`
+   * :ref:`Composition...<version-product-component>`  
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>` 
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 45, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the version
+   * - |RequiredField| Product
+     - The product on which the version applies
+   * - |RequiredField| Version number
+     - Version number of the product
+   * - |RequiredField| Product v° type
+     - Type of the product version: major, minor, patch 
+   * - Name
+     - Name of the version  
+   * - Prime contractor
+     - The contact, into customer organization, who will be responsible for the version delivery
+   * - Responsible
+     - Resource responsible of the version.
+   * - Sart date
+     - Initial, planned and real start dates of the version
+   * - Delivery date
+     - Initial, planned and real delivery dates of the version
+   * - Entry into service
+     - Initial, planned and real entry into service date of the version
+   * - End date
+     - Initial, planned and real end dates of the version
+   * - |RequiredField| Status 
+     - State to be registered
+   * - Description
+     - Complete description of the version
+
+
+.. rubric:: Version number & Name
+
+The field "Version number" appears only if the global parameter "Automatic format of version name" is set to Yes.
+
+The field "Name" will be read only.
+
+.. rubric:: Prime contractor
+     
+The field "Prime contractor can be different from product prime contractor.
+
+.. rubric:: Entry into service (Real)
+
+The field "Entry into service" specify the date of entry into service.
+
+The box "Done" is checked when the real date field is set.
+
+.. rubric:: End date (Real)
+
+The field "End date" specify the date end-of-service.
+
+The box "Done" is checked when the real date field is set.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Component
+
+.. _component:
+
+Components
+----------
+
+Allows to define product components.
+
+Allows to define products using the component.
+
+Possibility to define component types and component versions that will only be used for definition of structure (not for Version Planning or Tickets)
+
+.. figure:: /images/GUI/CONF_ZONE_ComponentDetails.png
+   :alt: Component
+   
+   Component details
+   
+   
+.. rubric:: Section Description
+
+.. sidebar:: **Other sections**
+   
+   * :ref:`Structure...<relationship-product-component>`   
+   * :ref:`Composition...<relationship-product-component>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`  
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 40, 70
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the component
+   * - |RequiredField| Name
+     - Name of the component
+   * - |RequiredField| Component type
+     - Type of component
+   * - Identifier
+     - Another name to identify the component
+   * - Responsible
+     - Person responsible for the component
+   * - |RequiredField| Statut 
+     - State to be registered
+   * - :term:`Closed`
+     - Box checked indicates the component is archived
+   * - Description
+     - Complete description of the component
+
+.. rubric:: Section Component versions
+
+List of versions defined for the component.
+
+Component versions are defined in :ref:`component-version` screen.
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Component (Version)
+
+.. _component-version:
+
+Component Versions
+------------------
+
+Allows to define versions of a component.
+
+Allows to link a product version to component version.
+ 
+.. figure:: /images/GUI/CONF_ZONE_ComponentVersionDetails.png
+   :alt: Component version details
+   
+   Component version details
+   
+      
+.. rubric:: Automatic formatting of version name
+
+Possibility to define if the version name is automatically produced from the component name and version number.
+
+Set global parameters to activate this feature.
+
+Else, the version name will entered manually.
+
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Structure...<version-product-component>`  
+   * :ref:`Composition...<version-product-component>`  
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`   
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: Required field |ReqFieldLegend|
+   :widths: 45, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the version
+   * - |RequiredField| Component
+     - The component on which the version applies
+   * - |RequiredField| Version number
+     - V° number of the component
+   * - |RequiredField| Component V° type
+     - Type of the component version: major, minor or patch
+   * - Name
+     - Name of the version.
+   * - Responsible
+     - Name of the responsible.  
+   * - Start date
+     - Initial, planned and real start dates of the version
+   * - Delivery date
+     - Initial, planned and real delivery dates of the version
+   * - Entry into service
+     - Initial, planned and real entry into service date of the version 
+   * - End date
+     - Initial, planned and real end dates of the version
+   * - |RequiredField| Statut 
+     - State to be registered
+   * - Description
+     - Complete description of the version
+
+.. note:: **Initial Date**
+
+   when the planned date has been set, the initial date (if it is empty only) will be defined
+
+
+.. rubric:: Version number & Name
+
+The field "Version number" appears only if the global parameter "Automatic format of version name" is set to Yes.
+
+The field "Name" will be read only.
+
+
+.. rubric:: Entry into service (Real)
+
+The field "Entry into service" specify the date of entry into service.
+
+The box "Done" is checked when the real date field is set.
+
+.. rubric:: End date (Real)
+
+The field "End date" specify the date end-of-service.
+
+The box "Done" is checked when the real date field is set.
+   
+.. raw:: latex
+
+    \newpage
+
+.. _relationship-product-component:
+
+Relationships
+-------------
+
+product and component elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows to manage relationships between products and components to define product structure.
+
+See possible relationships:  :ref:`product-structure`   
+
+.. rubric:: Relationships management
+
+* Click on |Add| to create a new relationship. The dialog box "Structure" appear. 
+* Click on |Delete| to delete the corresponding relationship.
+
+.. figure:: /images/GUI/CONF_BOX_ProductStructure.png
+   :alt: Dialog box - Structure 
+   :align: center
+   
+   Structure
+
+.. _version-product-component:
+
+versions of products and components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Allows to define links between versions of products and components.
+
+.. note:: 
+
+   Only with the elements defined in the product structure.
+
+.. rubric:: Link management
+
+* Click on |Add| to create a new link. The dialog box "Version Structure" appear. 
+* Click on |Delete| to delete the corresponding link.
+
+.. figure:: /images/GUI/CONF_BOX_VersionStructure.png
+   :alt: Dialog box - Version structure 
+   :align: center
+   
+   Version structure
+
+.. raw:: latex
+
+    \newpage
+
+.. _Link-version-project-section:
+
+version to projects
+^^^^^^^^^^^^^^^^^^^
+
+This section allows to manage links between projects and versions of products.
+
+.. rubric:: Link version to projects management
+
+* Click on |Add| to create a new link. 
+* Click on |Edit| to update an existing link.
+* Click on |Delete| to delete the corresponding link.
+
+
+.. figure:: /images/GUI/CONF_BOX_ProjectVersionLink.png
+   :alt: Dialog box - Project-Version link 
+   :align: center
+
+   Project / Version Link
+
+.. list-table:: Project-Version link dialog box
+   :widths: 30, 80
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Project
+     - The project linked to product version or the project list.
+   * - Product
+     - Product linked to the project or the list of products.
+   * - Version
+     - Product version linked to the project or list of product versions.
+   * - Start date
+     - Start date for validity of the link.
+   * - End date
+     - End date for validity of the link.
+   * - Status 
+     - State to be registerd
+   * - Closed
+     - Box checked indicates the link is not active anymore, without deleting it.
+
+.. topic:: Fields Project, Product and Version
+ 
+   * From the screen **Projects**, the fields **product and version** will be selectable.
+   * From the screen **Product versions**, the field **project** will be selectable.
+   
+.. _versions-planning:
+
+Versions planning
+-----------------
+
+Select one or more product versions and the planning version is displayed.
+
+This planning displays each version of selected product versions and their components from define start date to deliverable date.
+
+To use it define your start and delivery date in Product Version and Component Version.
+   
+.. note:: 
+
+   To insert values you have to activate display the start and delivery milestones’ in global parameters otherwise these fields are hidden.
+
+This screen allows to see if the delivery date of Component versions is more later than their Product versions. 
+
+Graphically, you can see any delay or incompatibility.
+
+.. figure:: /images/GUI/CONF_ZONE_planningVersion.png
+   :alt: Planning version
+   :align: center
+   
+   Planning version
+   
+   
+.. rubric:: Display options
+
+
+Click on |New| to add an activity.
+Click on |Filters| to filter the version display.  
+
+.. figure:: /images/GUI/CONF_ZONE_Options.png
+   :alt: Show options
+   
+   Version planning options
+
+Click on **Show activities from product version** or **Show activities from component version** To display the related activities.
+
+New check boxes will appear: one to show resources and the other to show or hide versions with no activity displayed.
+
+You must select an existing activity to insert the new activity into the WBS structure.
+
+If no activity is selected then the "add new element" icon will be grayed out.
+
+The new activity is automatically inserted after the selected activity.
+
+The new activity is generated on the same project, with the same component, the same component version, and with the same product and the same product version if these elements are filled in on the original activity.
+
+The insertion from the selection of a product and component version will not be possible because we do not know where to insert it in the WBS of the projects.

@@ -1,0 +1,368 @@
+.. include:: ImageReplacement.txt
+
+.. _Glossary:
+
+Glossary
+--------
+
+.. glossary::
+
+   Action
+   
+     Stocks are used in anticipation of risk. They serve to reduce the risks.
+
+     The analysis of these risks consists in defining actions. There are two types of actions:
+
+       * Preventive action aimed at removing the risk or
+       * Corrective action that has been earned on the occurrence of a risk
+
+   Activity
+   
+      An Activity can be likened to the key stages of the project: it is the skeleton of your project that organizes the main phases of a project
+         
+         * They have a start and end date
+         * They designed for the planning phases of a project 
+         * They serve to organize the milestones and tasks of a project
+         * They can allocated to a or many resources
+         * They can be prioritized and have sub-activities
+   
+   Administrator
+
+      An administrator is a :term:`user` with "Administrator" profile.
+      Has a visibility over all the projects.
+   
+         
+   Agile methods
+   
+      Agile methods are groups of practices of piloting and realization of projects.
+      They originate from the Agile manifesto, written in 2001, which uses the term 'agile' to refer to multiple existing methods
+   
+   Closed
+
+      Closed is a micro state in ProjeQtOr
+   
+      * Flag to indicate that item is archived.
+      * Item will not appear in lists any more
+      * You can display them again by checking the box "Show closed items"
+      * You can setting their default display in the :ref:`user's Parameters<graphic-interface-behavior-section>`
+
+   Contact
+
+      A contact is a person in a business relationship.
+      A contact can be a person in the customer organization.
+      Used as contact person for contracts, sales and billing.
+      Contacts management is performed on :ref:`contact` screen.
+
+   CRON
+      
+      cron is a program that allows users of Unix systems to automatically execute scripts, 
+      commands or software at a date and time specified in advance, or according to a cycle defined in advance.
+
+   CRUD
+      
+      It is an English computer acronym for Create, Read, Update, Delete.
+      It designates the four basic operations for data persistence, in particular the storage of information in a database.
+
+   Decision
+   
+      A good decision helps move towards the end goal. 
+      It is in the general interest, the interest of the greatest number as well as in the interest of the project
+      
+      a good decision is a suitable solution, put in place with the tools and resources available at a given moment.
+      
+   Description
+
+    * This field allows to define a description on an item.  
+    * Depending on the element type, name of field can be different.
+
+    .. seealso:: **GUI behavior**
+
+       * It is possible to define that description field is mandatory.
+       * The element type screens allow to set this parameter to several elements. 
+       * More detail, see: :ref:`behavior-section`. 
+
+   Done
+
+      Done is a micro state in ProjeQtOr 
+      
+      * Flag to indicate that item has been done.
+      * Date of done is saved.
+      * A result can be specify.
+      * It is possible to require a result when the status change to “done”.
+
+   External reference
+
+    * This field allows fill free input.
+    * It uses to refer information from an external source.
+    * External reference value can be put in email message with **externalReference** special field.
+
+    * More detail, see: :ref:`Administration<administration-special-fields>`  
+  
+   FTE
+   
+      Full Time Equivalent
+      The full-time equivalent (FTE) is a unit of measurement: a workload or more often, a capacity for work or production.
+
+   Gantt chart
+   
+      Description  The Gantt chart is a tool used in scheduling and project management 
+      and allowing to visualize in time the various tasks composing a project. 
+      
+      It is a representation of a connected graph, evaluated and oriented, 
+      which makes it possible to graphically represent the progress of the project 
+   
+   Handled
+
+    * Flag to indicate that item has been taken into account.
+    * Date of handling is saved.
+    * This generally means that responsible has been named.
+
+   Id
+
+    * Every item has a unique Id, automatically generated on creation.
+    * Id is chronologically allocated, for all kind of items (Activity, Ticket).
+    * Id is shared for all projects and all types (i.e. incident) of the same kind items (i.e. Ticket).
+
+   Incident
+   
+      Any event that is not part of the standard operation of a service and that causes, 
+      or may cause, an interruption or decrease in the quality of that service   
+
+   Issuer
+
+      An issuer is a :term:`user` who created the item.
+
+      .. seealso:: **Creation information**
+
+         The issuer name and creation date of an item are displayed in the :ref:`Creation information zone<detail-window>`.
+   
+   Key Performance Indicator (KPI)
+   
+      Indispensable to the project manager, an indicator makes it possible to evaluate a situation and to make an adapted decision. 
+      Key performance indicators measure the performance of your projects. 
+      You choose them together with your team. They must be simple, reliable, easily understandable by all and relevant
+   
+      If the indicator is green, all is well, you will need to continue the actions in progress to maintain this good result.  
+      If the indicator is red, then you must take the necessary corrective action.   
+      If the indicator is orange, it should be monitored.   
+            
+         * Each indicator is associated with a specific goal.  
+         * An indicator necessarily implies a decision.
+         * An indicator is never silent.  
+         * A relevant indicator must be simple
+         
+   Objective
+   
+      An objective is a goal to achieve by carrying out different tasks. For example, building a new plant in order to produce more and meet the growing demand. It is essential to precisely define the goal (s) to reach so that you and your team know where you are going. 
+      A good goal must be :term:`SMART`.   
+ 
+   Origin
+
+    * Determines the element of origin.
+    * The origin is used to keep track of events (ex.: order from quote, action from meeting).
+    * More detail, see : :ref:`Origin field<origin-field>`.
+
+   Owner builder 
+   
+      The client is the person on whose behalf the work is carried out. It is the sponsor and the one who bears the financial cost. 
+      The client is a natural or legal person, public law or private law
+
+   PERT chart (Program Evaluation and Review Technique)
+   
+      provides a practical method and means to describe, represent, analyze and logically follow the tasks and the network of tasks to be carried out as part of an action to be undertaken or to be followed.
+      The PERT diagram represents the work schedule by a dependency graph. 
+      His network formalism focuses on the interconnection of the tasks to be performed and the calculation of critical paths. 
+      
+      An important difference with the Gantt chart is the conventional time scale of the PERT chart which represents a sequence of tasks 
+      and not durations or a calendar
+   
+   Project
+   
+      A project is defined as a finite set of activities and actions undertaken in order to meet a defined need within a set timeframe 
+      and within the limits of an allocated budget envelope
+   
+   Project Leader
+      
+      A project leader is a :term:`resource` allocated to a project with a “Project Leader” profile.
+      person responsible for leading a project and managing its smooth running. 
+      In general, he leads a team during the duration of the various projects for which he is responsible
+
+   Project manager
+
+    A project manager is a :term:`resource` defined as the manager on a project.
+
+    .. seealso:: **Accelerator button**
+
+       This button allows to set current user is the project manager.
+       More detail, see: :ref:`Assign to me button<assignToMe-button>`.  
+
+   Project team
+
+    All :term:`resources<resource>` allocated to a project.
+   
+   Quotity
+   
+      A quota is the amount of a quota. 
+      This term of right refers to the fraction of a whole, a proportional sum in a share.
+      A quota can be to pay or to collect.
+   
+   Reference
+    
+      * Reference is displayed after id, automatically generated on creation. 
+      * Reference depends on defined format, see under "Format for reference numbering" section in :ref:`global_parameters` screen.
+      * Default format defines a specific numbering format that can provide unique numbering sequence for each project and/or each type of items.
+
+   Requestor
+
+      A requestor is a :term:`contact`.
+      Used to specify the requestor for ticket, activity and requirement.
+      Only contacts allocated to the selected project can be a requestor.  
+   
+   
+   
+   Responsible
+
+      A responsible is a :term:`resource` in charge of item treatment. 
+      Usually, the responsible is set when the status of the item is :term:`handled<Handled status>`.
+      Only resources allocated to the selected project can be a responsible.   
+     
+    .. seealso:: 
+
+       **GUI behavior**
+    
+         It is possible to define that responsible field is mandatory on handled status.
+   
+         The element type screens allow to set this parameter to several elements. 
+   
+         More detail, see: :ref:`behavior-section`. 
+         
+         
+       **Set automatically the responsible**
+
+         It is possible to set automatically the responsible.
+   
+         More detail, see: :ref:`Global parameters<auto-responsible>`  
+         
+
+       **Accelerator button**
+
+         This button allows to set current user is the responsible.
+   
+         More detail, see: :ref:`Assign to me button<assignToMe-button>`.
+         
+
+       **Access rights**
+
+         It is possible to define a combination of rights to permit access for elements the user is responsible for.
+   
+         More detail, see: :ref:`access-mode` screen.
+
+   Resource
+
+    * Human or material resource involved in the projects.
+    * It is possible to define the resource availability to the projects.
+    * Resources management is performed on the :ref:`resource` screen.
+
+
+   Result
+
+    * A result is a description of the treatment of an item.
+    * Usually, the result is set when the status of the item is :term:`done<Done status>`.  
+
+    .. seealso:: **GUI behavior**
+
+       It is possible to define that result field is mandatory on done status.
+       
+       The element type screens allow to set this parameter to several elements.
+   
+   Risks
+   
+      The risk is a hazard, an undesirable event whose appearance is not certain, 
+      resulting in the possibility that the project does not achieve the objectives of: 
+      
+         * Completion date
+         * Costs
+         * Specifications (techniques, quality, performance , reliability ...) 
+         * Others: Image of the company, environment, legal, social ...
+
+      The risk can put in danger the project, deviations from forecasts the making it unacceptable or totally unacceptable.
+      We distinguished the risks exogenous (external at now ; suppliers, evolution regulation, political, social, meteorology...)
+   
+   Quality 
+   
+      The Quality approach consists in finding the match between the answer to the needs of the project, 
+      the correct expression of these needs by adequate specifications which go through a careful listening of the customer, 
+      and a realization answering the expression of the needs.
+
+   User
+
+    * User allows to connect to the application.
+    * User profile define general access rights. But it does not necessarily give access to project data.
+    * Users management is performed on the :ref:`user` screen.
+   
+   
+   SLA
+   
+    A service level agreement (SLA) is a contract between a service provider and its customers that documents the services that the provider will provide and defines the service standards that the provider is required to meet.
+    
+    
+   SMART
+   
+       it is an acronym or mnemonic device that stands for 'Specific, Measurable, Acceptable, Realistic and Temporally Defined'.
+       These terms apply mainly to the determination of the most suitable objectives in order to complete a given project. 
+       Setting appropriate targets will help accelerate project completion and improve its chances of success.
+   
+   Status
+
+    * The status determines the life cycle of items.
+    * It defines the progress of the treatment of the item.
+    * Item is linked to a element type, element type is linked to a workflow.
+    * A workflow defines the possibility to go from one status to another one, more detail, see: :ref:`workflow`.
+
+    .. seealso:: 
+    
+      **Accelerator button**
+
+       This button allows to skip to the next status.
+       
+       More detail, see: :ref:`Move to next status button<moveToNextStatus-button>`.    
+   
+   Ticketing
+   
+      Ticketing is an anomaly tracking system : bugs, incidents, problems, requests...
+      
+   
+   WBS
+
+    * Work Breakdown Structure.
+    * Hierarchical position of the element in the global planning.
+    * WBS also defines the index of an item in the WBS structure. This index is calculated like paragraphs in a word document.
+   
+   
+   
+   Work 
+   
+      * **Assigned:** The work initially planned for this resource to the task.
+
+      * **Left:** Assigned Work – Real Work
+                     
+      * **Planned:** Date defined by ProjeQtOr
+            
+      * **Real:** Sum of work done by this resource to the task. 
+
+      * **reassessed:** Real Work + Left Work
+
+      * **Requested:** Initially requested by the customer
+         
+      * **Validated:** Initial planning, on which we committed each other. Baseline.
+      
+      
+      
+      .. warning:: Except for some planning modes, the planning does not take into account the validated load but that affected.
+
+
+   Workflow
+   
+      A workflow is the representation of a series of tasks or operations carried out by a person, a group of people, an organization, etc.
+
+      The term flow refers to the passage of an element, from one stage to another.     

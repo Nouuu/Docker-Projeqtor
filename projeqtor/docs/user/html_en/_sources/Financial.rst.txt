@@ -1,0 +1,48 @@
+.. raw:: latex
+
+    \newpage
+    
+.. include:: ImageReplacement.txt
+
+.. title:: Financial monitoring
+
+.. index:: Financial monitoring
+
+
+
+.. _financial-situation:
+
+Financial situation
+*******************
+
+.. rubric:: Project financial situation
+
+The financial situation screens allow you to precisely follow up all the financial elements of a project. 
+
+.. figure:: /images/GUI/FINANCIAL_SCR_ProjectFinancialSituation.png
+   :alt: Project financial situation screen
+   
+   Project financial situation screen
+
+Find the financial situation in its entirety on the respective screens of the elements.
+
+Financial status screens will only display the most recent transaction.
+
+.. rubric:: Expenses financial situation
+
+The following operations will then be displayed for the expenses.
+
+- Call for tender.
+- Provider tenders
+- Orders to provider
+- Provider bills
+
+
+.. rubric:: Incomes financial situation
+
+The following operations will then displayed for the incomes.
+
+- Client quatations
+- Client orders
+- Clients bills
+- Client paiements

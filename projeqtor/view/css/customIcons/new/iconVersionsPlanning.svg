@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Calque_1_3_" display="none">
+	<g id="Calque_1_2_" display="inline">
+		<g id="Calque_1_1_" display="none">
+		</g>
+		<line fill="none" stroke="#FF0000" stroke-width="11" stroke-miterlimit="10" x1="5.1" y1="35.064" x2="58.226" y2="35.064"/>
+		<line fill="none" stroke="#FF0000" stroke-width="11" stroke-miterlimit="10" x1="58.226" y1="46.698" x2="86.372" y2="46.698"/>
+		<line fill="none" stroke="#FF0000" stroke-width="11" stroke-miterlimit="10" x1="17.83" y1="68.512" x2="45.601" y2="68.512"/>
+		<line fill="none" stroke="#FF0000" stroke-width="11" stroke-miterlimit="10" x1="45.601" y1="81.646" x2="53.228" y2="81.646"/>
+		<path fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M45.971,111.907H11.022
+			c-3.316,0-6.004-2.915-6.004-6.509V15.383c0-3.594,2.688-6.507,6.004-6.507h107.083c3.316,0,6.006,2.914,6.006,6.507V69.95"/>
+	</g>
+</g>
+<path id="path29_1_" fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" d="M68.252,124.043H14.737
+	c-5.953,0-10.781-4.826-10.781-10.781V14.738c0-5.955,4.828-10.781,10.781-10.781h98.525c5.953,0,10.781,4.827,10.781,10.781V64"/>
+<line id="line31" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="12.882" y1="24.339" x2="41.552" y2="24.339"/>
+<line id="line33" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="40.676" y1="78.172" x2="61.393" y2="78.172"/>
+<line id="line37" fill="none" stroke="#FF0000" stroke-width="12" stroke-miterlimit="10" x1="41.526" y1="51.284" x2="74.317" y2="51.284"/>
+<path id="path2790" fill="none" stroke="#FF0000" d="M41.149,18.462l-0.072,65.684"/>
+<g>
+	<path fill="#FF0000" d="M115.739,120.109c0,0.957-0.258,1.77-0.76,2.441c-0.517,0.67-1.132,1.006-1.861,1.006H91.985
+		c-0.729,0-1.345-0.35-1.861-1.046c-0.507-0.701-0.758-1.532-0.758-2.486c0-0.933,0.251-1.719,0.758-2.379
+		c0.517-0.656,1.132-0.983,1.861-0.983h8.04V75.991h-7.922c-0.725,0-1.343-0.341-1.852-1.006c-0.512-0.67-0.765-1.487-0.765-2.441
+		c0-0.963,0.253-1.771,0.765-2.448c0.509-0.667,1.127-1.004,1.852-1.004h13.159v47.57h5.237
+		C110.5,116.662,115.739,116.042,115.739,120.109z"/>
+</g>
+</svg>

@@ -1,0 +1,529 @@
+/*
+ * basic.css
+ * ~~~~~~~~~
+ *
+ * Sphinx stylesheet -- basic theme.
+ *
+ * :copyright: Copyright 2007-2018 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+ 
+ /* ------------------------------- IMPORT FONT -------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------- MAIN LAYOUT -------------------------------------- */
+/* ------------------ Découpage + apparence générale de la page ---------------------- */
+
+/* séparation page : marge contenant Sphinxsidebar */
+div.bodywrapper {
+    margin: 0 0 0 300px;
+}
+
+/* Apparence du corps de la page - Global */
+body {
+    background-color: #545381;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
+}
+
+/* Apparence corps de la page - Contenu Only */
+div.body {
+    background-color: #ffffff;
+    color: #6e6e6e;
+    padding: 0 60px 30px 50px;    
+    min-width: 400px;
+    max-width: 650px;
+}
+
+/* Alignement tout élément txt */
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- REL BAR ------------------------------------- */
+/* ----------------------- Barre de Navigation HAUT et BAS --------------------------- */
+
+div.related {
+    line-height: 30px;
+    color: #ffffff;
+    width: 100%;
+    font-size: 90%;
+}
+
+div.related a {
+    color: #ffffff;
+}
+
+/* masque le titre de la RELBAR = "Navigation" */ 
+div.related h3 {
+    display: none;
+}
+
+/* Liste pour l'affichage du contenu de la RELBAR */ 
+div.related ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+}
+
+/* Affichage des éléments la RELBAR sur une seule ligne */ 
+div.related li {
+    display: inline;
+}
+
+/* Affichage next + index la RELBAR à droite */ 
+div.related li.right {
+    float: right;
+    margin-right: 5px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- SPHINXSIDEBAR ------------------------------------- */
+/* ------------------------ Position - Menu de gauche -------------------------------- */
+
+/* marges interieures autour du contenu */
+div.sphinxsidebarwrapper {
+    padding: 0px 5px 0 10px;
+}
+/* Position/dimensions de la barre */
+div.sphinxsidebar {
+    float: left;
+    width: 300px;
+    margin-left: -100%;
+    font-size: 90%;
+    word-wrap: break-word;
+    overflow-wrap : break-word;
+    top: 30px;
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
+}
+
+/* ------------------------------- SPHINXSIDEBAR ------------------------------------- */
+/* ---------------------------- Apparence liste menu --------------------------------- */
+div.sphinxsidebar ul {
+    list-style: none;
+    margin: 10px 5px 20px 2px;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Décalage des niveaux + style de points - Liste menu */
+div.sphinxsidebar ul ul,
+div.sphinxsidebar ul.want-points {
+    margin-left: 25px;
+    list-style: square;
+}
+
+/* espacement entre les éléments de la liste du menu */
+div.sphinxsidebar ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div.sphinxsidebar li {
+    padding: 0;
+    line-height: 1.3em;
+}
+
+/* apparence des liens */
+div.sphinxsidebar a {
+    color: #bfbfdf;
+}
+
+/* ------------------------------- SPHINXSIDEBAR ------------------------------------- */
+/* ----------------------------- Titres importants ----------------------------------- */
+
+/* Titre Table of content + Quick Search */
+div.sphinxsidebar h3 {
+    font-family: 'Blinker', sans-serif;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+div.sphinxsidebar h3 a {
+    color: #ffffff;
+}
+
+/* Titre Previous/Next Topic */
+div.sphinxsidebar h4 {
+    font-family: 'Blinker', sans-serif;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+/* Espacement autour de Previous/Next Topic */
+div.sphinxsidebar p.topless {
+    margin: 5px 10px 10px 10px;
+}
+
+
+/* ------------------------------- SPHINXSIDEBAR ------------------------------------- */
+/* -------------------------------- SEARCH BOX --------------------------------------- */
+
+/* Marge entre Search Box et Titre QuickSearch */
+div.sphinxsidebar form {
+    margin-top: 5px;
+}
+
+/* Conteneu général de la SearchBox */
+div.sphinxsidebar input {
+    border: 1px solid #bfbfdf;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    float: left;
+    width: 60%;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+div.sphinxsidebar #searchbox input[type="submit"] {
+    float: left;
+    width: 20%;
+    border-left: none;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ PIED DE PAGE ---------------------------------- */
+
+div.clearer {
+    clear: none;
+    position: fixed;
+    border-top: 2px solid #8080c0;
+}
+
+div.footer {
+    color: #bfbfdf;
+    width: 100%;
+    padding: 0;
+    margin: -10px 0 20px 0;
+    text-align: center;
+    font-size: 70%;
+}
+
+div.footer a {
+    color: #e9e9f3;
+    text-decoration: none;
+}
+
+/* --> PdP copyright : apparence lien sur Sphinx <-- */
+div.footer a:hover {
+    color: #ff954a;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- IMAGES ET FIGURES --------------------------------- */
+/* ------------------------------------ images --------------------------------------- */
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+/*
+img.toggler {
+    margin-right: 3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+/* ------------------------------- IMAGES ET FIGURES --------------------------------- */
+/* ------------------------------------ figures --------------------------------------- */
+
+div.figure {
+    margin: 5px 0 3px 0;
+    padding: 5px 5px 5px 5px;
+    background-color: #f0f3f5;
+}
+
+
+div.figure p.caption {
+	margin: 2px 0 2px 0;
+	padding: 5px;
+	border-top: 1px dotted #414141;    
+	border-bottom: 1px dotted #414141;   
+	color: #808080;
+	text-shadow: 1px 1px 0px #ffffff;
+    text-align: center;
+    font-size: 75%;
+    font-style: italic;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+div.figure p.caption span.caption-number {
+    font-style: italic;
+}
+
+div.figure p.caption span.caption-text {
+}
+
+/* ------------------------------- IMAGES ET FIGURES --------------------------------- */
+/* ------------------------------------ aligement ------------------------------------ */
+img.align-left, .figure.align-left, object.align-left {
+    clear: left;
+    float: left;
+    margin-right: 0,5em;
+}
+
+img.align-right, .figure.align-right, object.align-right {
+    clear: right;
+    float: right;
+    margin-left: 0,5em;
+}
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------- SIDEBAR FLOTTANTE ------------------------------- */
+
+div.sidebar {
+    margin: 0 0 1em 1em;
+    border: 1px solid #ffffff;
+    padding: 0;
+    background-color: #f0f3f5;
+    width: 30%;
+    float: right;
+    box-shadow: 2px 2px 5px #aaa;
+    font-size: 85%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: left;
+}
+
+p.sidebar-title {
+	margin-top: 0;
+	color: #ffffff;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #9593e0, #8482c7, #7472af, #646298, #545381);
+    border-bottom: 2px solid #4a5564;
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    padding: 5px;
+    font-size: 100%;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- TABLEAUX ------------------------------------ */
+
+table.docutils {
+	border-collapse: separate;
+	background: #fff;
+	border-radius: 5px;
+	margin: 10px auto;
+	box-shadow: 0px 0px 5px #aaa;
+	/*table-layout: auto;
+	max-width: 100%;*/
+}
+
+table.docutils thead {
+	border-radius: 5px;
+	height: 50px;
+}
+
+table.docutils thead th {
+  font-family: 'Blinker', sans-serif;
+  font-size: 90%;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #9593e0, #8482c7, #7472af, #646298, #545381);
+  border-top: 1px solid #858d99;
+}
+
+table.docutils tbody tr td {
+  font-weight: 100;
+  color: #5f6062;
+  font-size: 90%;
+  padding: 0 15px 0 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table.docutils tbody tr:nth-child(2n) {
+  background: #f0f3f5;
+}
+table.docutils tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table.docutils caption {
+    caption-side: bottom;
+    text-align: right;
+    font-size: 80%;
+    font-style: italic;
+}
+
+
+/* --------- Bords arrondis --------- */
+thead th:first-child {
+  border-top-left-radius: 5px;
+}
+thead th:last-child {
+  border-top-right-radius: 5px;
+}
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+ /* ---------------------------------*/
+ 
+ 
+ 
+/* --------- Effet opacité --------- */
+
+/*
+tbody:hover > tr td {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));
+}
+
+tbody:hover > tr:hover td {
+  text-shadow: none;
+  color: #808080;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+*/
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------- printout stylesheet ------------------------------- */
+
+@media print {
+    div.document,
+    div.documentwrapper,
+    div.bodywrapper {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    div.sphinxsidebar,
+    div.related,
+    div.footer,
+    #top-link {
+        display: none;
+    }
+/* ----------------------------------------------------------------------------- */

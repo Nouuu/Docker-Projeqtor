@@ -1,0 +1,81 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ *
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+/* =============================================================================== */
+/* ICONS                                                                           */
+/* =============================================================================== */
+/*
+.iconDashboardEmployeeManager32 { background-image: url(imagesHR/iconDashboardEmployeeManager.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconDashboardEmployeeManager22 { background-image: url(imagesHR/iconDashboardEmployeeManager.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconDashboardEmployeeManager16 { background-image: url(imagesHR/iconDashboardEmployeeManager.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmployee32 { background-image: url(imagesHR/iconEmployee.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmployee22 { background-image: url(imagesHR/iconEmployee.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmployee16 { background-image: url(imagesHR/iconEmployee.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmployeeLeaveEarned32 { background-image: url(imagesHR/iconEmployeeLeaveEarned.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmployeeLeaveEarned22 { background-image: url(imagesHR/iconEmployeeLeaveEarned.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmployeeLeaveEarned16 { background-image: url(imagesHR/iconEmployeeLeaveEarned.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmployeeManager32 { background-image: url(imagesHR/iconEmployeeManager.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmployeeManager22 { background-image: url(imagesHR/iconEmployeeManager.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmployeeManager16 { background-image: url(imagesHR/iconEmployeeManager.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmploymentContract32 { background-image: url(imagesHR/iconEmploymentContract.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmploymentContract22 { background-image: url(imagesHR/iconEmploymentContract.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmploymentContract16 { background-image: url(imagesHR/iconEmploymentContract.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmploymentContractEndReason32 { background-image: url(imagesHR/iconEmploymentContractEndReason.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmploymentContractEndReason22 { background-image: url(imagesHR/iconEmploymentContractEndReason.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmploymentContractEndReason16 { background-image: url(imagesHR/iconEmploymentContractEndReason.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconEmploymentContractType32 { background-image: url(imagesHR/iconEmploymentContractType.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconEmploymentContractType22 { background-image: url(imagesHR/iconEmploymentContractType.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconEmploymentContractType16 { background-image: url(imagesHR/iconEmploymentContractType.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconHumanResource32 { background-image: url(imagesHR/iconHumanResource.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconHumanResource22 { background-image: url(imagesHR/iconHumanResource.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconHumanResource16 { background-image: url(imagesHR/iconHumanResource.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconHumanResourceParameters32 { background-image: url(images/iconParameter32.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconHumanResourceParameters22 { background-image: url(images/iconParameter22.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconHumanResourceParameters16 { background-image: url(images/iconParameter16.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconLeave32 { background-image: url(imagesHR/iconLeave.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconLeave22 { background-image: url(imagesHR/iconLeave.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconLeave16 { background-image: url(imagesHR/iconLeave.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconLeaveCalendar32 { background-image: url(imagesHR/iconLeaveCalendar.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconLeaveCalendar22 { background-image: url(imagesHR/iconLeaveCalendar.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconLeaveCalendar16 { background-image: url(imagesHR/iconLeaveCalendar.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconLeaveType32 { background-image: url(imagesHR/iconLeaveType.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconLeaveType22 { background-image: url(imagesHR/iconLeaveType.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconLeaveType16 { background-image: url(imagesHR/iconLeaveType.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+
+.iconLeavesSystemHabilitation32 { background-image: url(imagesHR/iconLeavesSystemHabilitation.png);  background-repeat: no-repeat; width: 32px; height: 32px; }
+.iconLeavesSystemHabilitation22 { background-image: url(imagesHR/iconLeavesSystemHabilitation.png);  background-repeat: no-repeat; width: 22px; height: 22px; }
+.iconLeavesSystemHabilitation16 { background-image: url(imagesHR/iconLeavesSystemHabilitation.png);  background-repeat: no-repeat; width: 16px; height: 16px; }
+*/

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Calque_1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" sodipodi:docname="iconActivity.svg" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="128px"
+	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<sodipodi:namedview  inkscape:cx="64" id="namedview42" showgrid="false" pagecolor="#ffffff" objecttolerance="10" bordercolor="#666666" gridtolerance="10" inkscape:zoom="5.7421875" inkscape:cy="64" guidetolerance="10" borderopacity="1" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:pageopacity="0" inkscape:window-x="-8" inkscape:window-height="1017" inkscape:window-width="1920" inkscape:current-layer="Calque_1" inkscape:pageshadow="2">
+	</sodipodi:namedview>
+<line id="line16" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="64.342" y1="94.693" x2="64.342" y2="36.017"/>
+<line id="line18" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="47.21" y1="34.429" x2="80.55" y2="34.429"/>
+<path id="path22" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M8.219,51.485c0,0.171,0.615,0.31,1.374,0.31h34.353c0.758,0,1.374-0.139,1.374-0.31V17.519c0-0.171-0.616-0.31-1.374-0.31H9.593
+	c-0.759,0-1.374,0.139-1.374,0.31V51.485z"/>
+<g id="Calque_2" display="none">
+	
+		<polyline id="polyline26" display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-15.692,71.884 -1.538,71.884 8.923,54.038 27.539,99.884 47.385,40.5 58.154,70.191 79.077,70.191 	"/>
+	
+		<circle id="circle28" display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="89.385" cy="69.884" r="10.308"/>
+	<g id="g38" display="inline">
+		
+			<path id="path30" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M89.385,34.5V17c0-1.657-1.343-3-3-3H72"/>
+		
+			<path id="path32" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M12,14H-1.5c-1.657,0-3,1.343-3,3v17.5"/>
+		
+			<path id="path34" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M72,115h14.385c1.657,0,3-1.343,3-3V94.5"/>
+		
+			<path id="path36" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M-4.5,94.5V112c0,1.657,1.343,3,3,3H12"/>
+	</g>
+</g>
+<path id="path22-1" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M82.631,52.684c0,0.171,0.615,0.31,1.374,0.31h34.353c0.758,0,1.374-0.139,1.374-0.31V18.717c0-0.171-0.616-0.31-1.374-0.31H84.005
+	c-0.759,0-1.374,0.139-1.374,0.31V52.684z"/>
+<path id="path22-3" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M82.979,110.85c0,0.172,0.616,0.311,1.375,0.311h34.352c0.759,0,1.375-0.139,1.375-0.311V76.883c0-0.171-0.616-0.31-1.375-0.31
+	H84.354c-0.759,0-1.375,0.139-1.375,0.31V110.85z"/>
+<line id="line18-4" fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="64.848" y1="94.737" x2="82.477" y2="94.737"/>
+</svg>

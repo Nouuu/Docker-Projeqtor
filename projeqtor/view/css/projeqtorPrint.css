@@ -1,0 +1,496 @@
+/*** COPYRIGHT NOTICE *********************************************************
+ *
+ * Copyright 2009-2017 ProjeQtOr - Pascal BERNARD - support@projeqtor.org
+ * Contributors : -
+ * 
+ * This file is part of ProjeQtOr.
+ * 
+ * ProjeQtOr is free software: you can redistribute it and/or modify it under 
+ * the terms of the GNU Affero General Public License as published by the Free 
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * ProjeQtOr is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for 
+ * more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * ProjeQtOr. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * You can get complete code of ProjeQtOr, other resource, help and information
+ * about contributors at http://www.projeqtor.org 
+ *     
+ *** DO NOT REMOVE THIS NOTICE ************************************************/
+
+/* ============================================================================
+ * Main css styles for Printing purpose.
+ * ============================================================================
+ */
+
+/* Imports ==================================================================== */
+
+/* Main structure objects ===================================================== */
+
+html, body {
+  height: 100%; width: 100%; 
+  border: 0; margin: 0px; padding: 0px;
+  font-family: Verdana, Arial, Tahoma, sans-serif; font-size: 9pt;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: top;
+}
+html,  body,  #mainDiv,  #contentDiv,  #centerDiv,  #detailDiv,  .display {
+  background-color: #FFFFFF; color: #000000;
+}
+/* Specific attributes on common nodes ======================================== */
+
+table {
+  border-collapse: collapse; border: 0px;
+  /* border: 1px solid #FF0000; /* padding: 3px !important; margin: 3px !important; /* for debug purpose */
+}
+
+tr {
+   /*border: 2px solid #0000FF;  padding: 3px !important; margin: 3px !important; /* for debug purpose */
+}
+tr .defaultHeight {
+  height: 25px;
+}
+
+.menuTree {
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  width: 400px;
+  margin: 1px; padding: 0px; 
+  border: 0px;
+}
+
+td {
+  margin: 0; padding: 0; cellspacing: 0; cellpadding: 0;
+  border: collapse; border: 0px;
+  /* border: 1px solid #00FF00; /* padding: 3px !important; margin: 3px !important; /* for debug purpose */
+}
+
+th {
+  border: 1px solid #555555;
+  background-color: #DDDDDD; 
+  margin: 2px; 
+}
+
+.tdListPrint {
+  border: 1px solid #555555;
+  background-color: #FFFFFF; 
+  margin: 0px; padding: 1px 3px 1px 3px; 
+  white-space: normal;
+}
+
+a {
+ text-decoration: none; 
+}
+
+label, .label {
+  font-weight: normal;
+  text-align: right; vertical-align: top;
+  width: 225px;
+  padding: 2px;
+  float:left;
+  border: 0px solid white;
+  background-color: #FFFFFF; color: #55555;
+  color: #808080;
+}
+
+/* Specific classes =========================================================== */
+
+.input {
+  font-weight: normal;
+  color: #000;
+  width: 400px;
+  margin: 1px; padding: 0px;
+  border: 1px solid #b3b3b3;
+  line-height: normal;
+}
+
+.display {
+  background-repeat: no-repeat;
+  font-weight: normal;
+  color: #000;
+  text-align: left;
+  width: 400px;
+  margin: 1px; padding: 0px; 
+  border: 1px solid #FFFFFF;
+}
+
+.detail {
+  width: 1px;
+  height: 10px;
+}
+
+.tabLabel {
+  font-weight: bold;
+  text-align: center;
+  border: none; padding: 0px; spacing: 0px;
+  width: 80px;
+  background-color: #FFFFFF;
+  color: #505050;
+}
+
+.colorSelector {
+  background-image: url(images/colorSelector.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.colorDisplay {
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.colorHealth {
+  width:10px; 
+  height:10px; 
+  margin:1px;padding:0;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #AAAAAA;
+}
+
+.checkBox {
+  background-image: url(images/checkmark.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-position: 0px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+
+.filterField {
+  color: #555555;
+}
+
+.crossTable {
+  border: 0px solid black;
+}
+.crossTableHeader {
+ border: 0px solid blue;
+ witdh: 100px;
+ text-align: center;
+}
+.crossTableLine {
+  border: 0px solid red;
+  text-align: right;
+  height: 30px;
+}
+.crossTablePivot {
+  border: 0px solid green;
+  text-align: center;
+}
+
+.section {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;  
+  margin-bottom: 5px;
+  font-size:15px;
+}
+
+
+.historyHeader, .noteHeader, .attachmentHeader, .messageHeader, .linkHeader, .assignHeader, 
+.dependencyHeader, .workflowHeader, .filterHeader, .calendarHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 1px 1px #FFFFFF;
+  background: url(images/titleBar.png) #DDDDDD top repeat-x !important;
+  color: #505050;
+  height:25px;
+}
+.workflowHeader {
+  font-size: 90%;
+}
+.largeReportHeader {
+  border: 1px solid #555555;
+  text-align: center;
+  font-weight: bold;
+  background: url() #CECECE !important;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+  text-shadow: none !important;
+}
+.largeReportData {
+  border: 1px solid #AAAAAA;
+  font-weight: normal;
+  background: #FFFFFF;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+  vertical-align: top;
+}
+.largeReportDataDone {
+  border: 1px solid #AAAAAA;
+  font-weight: normal;
+  background: #E0E0E0;
+  color: #505050;
+  font-size: 80%;
+  margin: 0; padding: 0; spacing: 0;
+  vertical-align: top;
+}
+.reportHeader {
+  border: 0px solid #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff !important;
+  background: url() #DDDDDD top repeat-x;
+}
+.reportTableHeader {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 5px 12px 5px;
+  color: #ffffff !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #898989 !important; 
+}
+
+.reportTableHeaderAsset {
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #ffffff !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #898989 !important; 
+}
+
+.reportTableColumnHeader {
+  text-align: center;
+  padding: 1px 3px 1px 3px;
+  background: url() #AEAEAE !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border: 1px solid #D4D1D1;
+}
+.reportTableLineHeader {
+  border: 1px solid #AAAAAA;
+  padding: 0px 3px 0px 3px;
+  background: url() #D4D1D1 !important;
+  color: #656565;
+  text-shadow: none;
+}
+.reportTableData, .reportTableDataSpanned {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  padding: 0px 1px 0px 1px;
+  background: #FFFFFF;
+}
+.reportTableDataSpanned {
+  padding: 3px 5px;  
+}
+.reportTableDataBorderRight {
+  border-right: 1px solid #AAAAAA;
+}
+  
+.reportTableDataLeft {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: normal;
+  padding: 0px 1px 0px 1px;
+  background: #FFFFFF;
+}
+
+.reportTableDataFull {
+  border: 1px solid #AAAAAA;
+  text-align: left;
+  vertival-align: middle;
+  font-weight: normal;
+  padding: 0px 0px 0px 0px;
+  background: #FFFFFF;
+  width: 20px; height: 20px;
+}
+
+.reportTableDataSimple {
+  border: 1px solid #AAAAAA;
+  vertical-align: middle;
+  padding: 0px 1px 0px 1px;
+}
+.historyData, .noteData, .attachmentData, .messageData, .messageDataValue, .linkData, .assignData, 
+.dependencyData, .workflowData, .filterData, .messageDataValueGrey {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  border: 1px solid #AAAAAA;
+  vertical-align: top;
+  background-color: #FFFFFF;
+  height:25px;
+}
+.colorNameData {
+  padding:0;
+  height:10px;
+}
+@-moz-document url-prefix() {
+    .colorNameData {
+        height: 100%;
+    }
+}
+.historyDataNewOperation {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+  border: 1px solid #AAAAAA;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  background-color: #FFFFFF;
+}
+.historyDataContinueOperation {
+  font-size: 90%;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+  border: 1px solid #AAAAAA;
+  border-top: 0px solid #FFFFFF;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  background-color: #FFFFFF;
+}
+.historyDataClosetable, .noteDataClosetable , .attachmentDataClosetable, .linkDataCloseTable, .assignDataCloseTable {
+  font-size: 1pt;
+  padding: 0px 0px 0px 0px;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 0px solid #FFFFFF;
+  border-left: 0px solid #FFFFFF;
+  border-right: 0px solid #FFFFFF;
+}
+/* =============================================================================== */
+/* COMMON                                                                          */
+/* =============================================================================== */
+
+.dijitTitlePane .dijitTitlePaneTitle, .section {
+  /* background: url(images/titleBar.png) #dedede top repeat-x !important; */
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+  border-top: 1px solid #A0A0A0;
+  border-left: 1px solid #A0A0A0;
+  border-bottom: 1px solid #A0A0A0; 
+  border-right: 1px solid #A0A0A0;
+  /*-moz-border-radius: 7px;
+  border-radius: 7px;*/
+  color: #FEFEFE !important;
+  font-weight: 600 !important;
+  text-shadow: 1px 1px #606060;
+  height: 25px;
+}
+.dijitTitlePane .dijitTitlePaneTitle {
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+}
+.section {
+  background: url(images/titleBarDark.png) #909090 top repeat-x !important;
+  margin: 5px !important; 
+} 
+
+.tabLabel {
+  border:0;
+}
+div .scrollLeftTop {
+  height:43px !important;
+}
+
+
+/* ====================== TEST ====================== */
+
+.reportTableHeader, .reportHeader, .section {
+  color: #FEFEFE !important;
+  border-radius: 0px;
+  text-shadow: none;
+  background: #B0B0B0 !important; 
+  vertical-align: middle;
+}
+
+.reportTableColumnHeader {
+  background: url() #D0D0D0 !important;
+  text-shadow: none !important;
+  border: 1px solid #A0A0A0;
+}
+
+.linkHeader, .attachmentHeader, .noteHeader, .dependencyHeader,
+.historyHeader, .assignHeader,
+.messageHeader, .workflowHeader, .filterHeader, .calendarHeader,
+.reportTableLineHeader {
+  background: url() #E0E0E0 !important;
+  color: #656565;
+  text-shadow: none;
+  vertical-align: middle;
+}
+div.iconFavorite16 { background-image: url(images/iconFavorite16.png); background-repeat: no-repeat; width: 16px; height: 16px;}
+div.iconFavorite22 { background-image: url(images/iconFavorite16.png); background-repeat: no-repeat; width: 22px; height: 22px;}
+
+.messageOK, .messageNO_CHANGE, .messageINVALID, .messageERROR, .messageWARNING, .messageINCOMPLETE {
+  top:0px;
+  overflow:hidden;
+  vertical-align: middle;
+  padding: 5px 5px;
+  color:#555555; 
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  min-height:16px; max-height:200px;
+  min-width: 100px;
+  overflow-y:auto; overflox-x: hidden;
+  width:95%;
+  height:100%;
+  box-shadow: 5px 5px 10px #656565;
+}
+span.messageOK {
+  background: #DDFFDD url() !important;
+  font-weight: 600;
+}
+.messageERROR {
+  background: #FF0000 url() !important;
+  color: #FFFFFF !important;
+  text-shadow: 1px 1px #555555; 
+}
+.messageWARNING, .messageINCOMPLETE {
+  background: #FFDDDD url() !important;
+}
+.messageNO_CHANGE {
+  background: #F0F0F0 url() !important;
+}
+.messageINVALID {
+  background: #FFDDDD url() !important;
+}
+.consistencySection {
+  width:95%;
+  background-color:#A0A0C0;
+  color: white;
+  margin:20px 5px; 
+  padding:5px 10px;
+  font-size:150%;
+  font-weight:bold;
+  text-align:center;
+  border:2px solid #A0A0A0;
+  border-radius: 20px;
+  box-shadow : 5px 5px 5px #656565;
+}
+.calendar {
+  font-size: 7pt;
+  background: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+}
+.offDay {
+  background: #DDDDDD;
+}
+
+.calendar .offDay {
+  background: #DDDDDD;
+}

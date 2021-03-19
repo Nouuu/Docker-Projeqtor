@@ -1,0 +1,1424 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Lists of values &#8212; ProjeQtOr User guide 8.6.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Control Automation" href="ControlAutomation.html" />
+    <link rel="prev" title="List of Types" href="ListsOfTypes.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ControlAutomation.html" title="Control Automation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ListsOfTypes.html" title="List of Types"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="list-of-values">
+<span id="index-0"></span><span id="id1"></span><h1>List of Values<a class="headerlink" href="#list-of-values" title="Permalink to this headline">¶</a></h1>
+<p>Each screen in List of values allows to define your own values.</p>
+<p>Then you will be able to select them in corresponding screens.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>By default, some lists are not visible on their corresponding screen like Languages in Product and Component screen.</li>
+<li>To use them you must enable their parameter in global parameters.</li>
+</ul>
+</div>
+<div class="section" id="functions">
+<span id="function"></span><h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>The function defines the generic competency of a resource.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id5">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+<tr class="row-even"><td>Description</td>
+<td>Complete description of this value.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="status">
+<span id="index-1"></span><span id="id2"></span><h2>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p>The status is an important element of items lifecycle.</p>
+<p>It defines the progress of the treatment of the element.</p>
+<p>Some automations are implemented, depending on status definition, to set on items.</p>
+<p>See: <a class="reference internal" href="ControlAutomation.html#workflow"><span class="std std-ref">Workflow</span></a>.</p>
+<dl class="glossary docutils">
+<dt id="term-handled-status">Handled status</dt>
+<dd><ul class="first last simple">
+<li>This status specifies that the treatment of item is supported.</li>
+<li>A <a class="reference internal" href="Glossary.html#term-responsible"><span class="xref std std-term">responsible</span></a> can be determined or required.</li>
+</ul>
+</dd>
+<dt id="term-done-status">Done status</dt>
+<dd><ul class="first last simple">
+<li>This status specifies that the treatment of item is done.</li>
+<li>A <a class="reference internal" href="Glossary.html#term-result"><span class="xref std std-term">result</span></a> can be specified or required.</li>
+<li>It is possible to require a result when the status change to “done”.</li>
+</ul>
+</dd>
+<dt id="term-closed-status">Closed status</dt>
+<dd><ul class="first last simple">
+<li>This status indicates that the item is closed.</li>
+<li>This article is archived and will no longer appear in the lists.</li>
+<li>You can display these items by checking the “closed” option at the top right of the screen</li>
+</ul>
+</dd>
+<dt id="term-cancelled-status">Cancelled status</dt>
+<dd><ul class="first last simple">
+<li>This status specifies that the item is cancelled.</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id6">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#term-handled-status"><span class="xref std std-term">Handled status</span></a></td>
+<td>Defines whether ‘handled’ flag is automatically set for this status.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#term-done-status"><span class="xref std std-term">Done status</span></a></td>
+<td>Defines whether ‘done’ flag is automatically set for this status.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#term-closed-status"><span class="xref std std-term">Closed status</span></a></td>
+<td>Defines whether ‘closed’ flag is automatically set for this status.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#term-cancelled-status"><span class="xref std std-term">Cancelled status</span></a></td>
+<td>Defines whether ‘cancelled’ flag is automatically set for this status.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the status in element lists.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Consolidation of status changes</p>
+<ul class="simple">
+<li>We have a parameter which allows to auto set parent item status.
+It depends on children item status and available status in the workflow.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Select YES ‘auto set parent activity status’ in global parameters to use it.</li>
+<li>If an activity changes to a “handled” status, all parents move to the first “handled” status available in the workflow.</li>
+<li>If an activity changes to a “done”, “closed” or “canceled” status, moving of each parent to the first “done” or “closed” status according to the status of all its children.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If parents items status has not been changed auto, please check your controls like required fields.</p>
+</div>
+</div>
+<div class="section" id="resolutions">
+<span id="resolution"></span><span id="index-2"></span><h2>Resolutions<a class="headerlink" href="#resolutions" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define different kinds of resolution for tickets.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id7">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Solved</td>
+<td>Box checked indicates the ticket will be automatically marked as “solved” when this resolution is selected.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the resolution in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="quality-levels">
+<span id="quality-level"></span><span id="index-3"></span><h2>Quality levels<a class="headerlink" href="#quality-levels" title="Permalink to this headline">¶</a></h2>
+<p>The quality is a manual indicator for the conformity of a project to quality processes.</p>
+<p>It defines in a visual way the global conformity of the project.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id8">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the quality level in element lists and on today screen.</td>
+</tr>
+<tr class="row-odd"><td>Icon</td>
+<td>Icon that can be displayed for this quality level.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Icon</p>
+<ul class="simple">
+<li>If no icon is defined, color is used.</li>
+<li>You can define your own icons list (see: administration guide).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="health-status">
+<span id="index-4"></span><span id="id3"></span><h2>Health status<a class="headerlink" href="#health-status" title="Permalink to this headline">¶</a></h2>
+<p>The health status is a manual indicator for the health of a project.</p>
+<p>It defines in a visual way the global health of the project.</p>
+<p>It is displayed on Today screen, for each project, as a Red / Amber / Green traffic light.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id9">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the health status in element lists and on today screen.</td>
+</tr>
+<tr class="row-odd"><td>Icon</td>
+<td>Icon that can be displayed for this health status.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Icon</p>
+<ul class="simple">
+<li>If no icon is defined, color is used.</li>
+<li>You can define your own icons list (see: administration guide).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="overall-progress">
+<span id="index-5"></span><span id="id4"></span><h2>Overall progress<a class="headerlink" href="#overall-progress" title="Permalink to this headline">¶</a></h2>
+<p>The overall progress is a manual indicator for global progress of a project.</p>
+<p>It defines in a visual way the global progress of the project, independently from work progress.</p>
+<p>It is displayed on Today screen, for each project.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id10">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="trends">
+<span id="trend"></span><span id="index-6"></span><h2>Trends<a class="headerlink" href="#trends" title="Permalink to this headline">¶</a></h2>
+<p>The trend is a manual indicator for the global trend of project health.</p>
+<p>It defines in a visual way the health trend of the project.</p>
+<p>It is displayed on Today screen, for each project.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id11">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the trend in element lists and on today screen.</td>
+</tr>
+<tr class="row-odd"><td>Icon</td>
+<td>Icon that can be displayed for this trend.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field Icon</p>
+<ul class="simple">
+<li>If no icon is defined, color is used.</li>
+<li>You can define your own icons list (see: administration guide).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="likelihoods">
+<span id="likelihood"></span><span id="index-7"></span><h2>Likelihoods<a class="headerlink" href="#likelihoods" title="Permalink to this headline">¶</a></h2>
+<p>The likelihood is the probability of a risk or an opportunity to occur.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id12">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Value of likelihood.</td>
+</tr>
+<tr class="row-odd"><td>% value</td>
+<td>Value in percent.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the likelihood in element lists</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<div class="topic">
+<p class="topic-title first">Field % value</p>
+<p>This field is used to calculate a reserve amount according to the likelihood of risk or opportunity.</p>
+</div>
+</div>
+<div class="section" id="criticalities">
+<span id="criticality"></span><span id="index-8"></span><h2>Criticalities<a class="headerlink" href="#criticalities" title="Permalink to this headline">¶</a></h2>
+<p>The criticality is the importance of an element to its context.</p>
+<div class="topic">
+<p class="topic-title first">Risk and Opportunity</p>
+<p>The criticality designs the level of impact the risk or opportunity may have to the project.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Ticket</p>
+<p>The criticality is the estimated impact that the subject of the ticket may have for the product.</p>
+</div>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id13">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Value of criticality.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the criticality in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="severities">
+<span id="severity"></span><span id="index-9"></span><h2>Severities<a class="headerlink" href="#severities" title="Permalink to this headline">¶</a></h2>
+<p>The severity designs the level of negative or positive impact the risk or opportunity may have for the product.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id14">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Value of severity.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the severity in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="urgencies">
+<span id="urgency"></span><span id="index-10"></span><h2>Urgencies<a class="headerlink" href="#urgencies" title="Permalink to this headline">¶</a></h2>
+<p>The ticket urgency is an element given by the requestor to indicate the quickness of treatment needed for the ticket.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id15">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Value of urgency.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the urgency in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="priorities">
+<span id="priority"></span><span id="index-11"></span><h2>Priorities<a class="headerlink" href="#priorities" title="Permalink to this headline">¶</a></h2>
+<p>The ticket priority defines the order to treat different tickets.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id16">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Value</td>
+<td>Value of priority.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the priority in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="risk-levels">
+<span id="risk-level"></span><span id="index-12"></span><h2>Risk levels<a class="headerlink" href="#risk-levels" title="Permalink to this headline">¶</a></h2>
+<p>The risk level measures the technical risk of implementation of a requirement.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id17">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the risk level in element lists.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="feasibilities">
+<span id="feasibility"></span><span id="index-13"></span><h2>Feasibilities<a class="headerlink" href="#feasibilities" title="Permalink to this headline">¶</a></h2>
+<p>The feasibility defines the first analysis of implementation of a requirement.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id18">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this status.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this status.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the feasibility in element lists.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this status is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="efficiencies">
+<span id="efficiency"></span><span id="index-14"></span><h2>Efficiencies<a class="headerlink" href="#efficiencies" title="Permalink to this headline">¶</a></h2>
+<p>The efficiency measures the result of an action.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id19">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the efficiency in element lists.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="payment-deadlines">
+<span id="payment-deadline"></span><span id="index-15"></span><h2>Payment deadlines<a class="headerlink" href="#payment-deadlines" title="Permalink to this headline">¶</a></h2>
+<p>The payment deadline is stated on the bill.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id20">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Number of days</td>
+<td>Delay in payment (in days).</td>
+</tr>
+<tr class="row-odd"><td>End of month</td>
+<td>Flag to indicate that delay for payment is set at the end of month.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="payment-methods">
+<span id="payment-method"></span><span id="index-16"></span><h2>Payment methods<a class="headerlink" href="#payment-methods" title="Permalink to this headline">¶</a></h2>
+<p>The mode of payment.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id21">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="delivery-modes">
+<span id="delivery-mode"></span><span id="index-17"></span><h2>Delivery modes<a class="headerlink" href="#delivery-modes" title="Permalink to this headline">¶</a></h2>
+<p>The mode of delivery.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id22">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Add dates on deliveries to follow dates : initial, planned, real, validation</li>
+</ul>
+</div>
+<div class="section" id="measure-units">
+<span id="measure-unit"></span><span id="index-18"></span><h2>Measure units<a class="headerlink" href="#measure-units" title="Permalink to this headline">¶</a></h2>
+<p>The measure units.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id23">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Plural of name</td>
+<td>Plural form of name.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="budget-orientation">
+<h2>Budget orientation<a class="headerlink" href="#budget-orientation" title="Permalink to this headline">¶</a></h2>
+<p>The orientation of the budget</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id24">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id24" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="budget-category">
+<h2>Budget Category<a class="headerlink" href="#budget-category" title="Permalink to this headline">¶</a></h2>
+<p>The orientation of the budget</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id25">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tender-status">
+<span id="lov-tender-statut"></span><h2>Tender status<a class="headerlink" href="#tender-status" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define or create your own tender status list.</p>
+<p>Tender status displayed on Tenders screen and in the table Submissions of tenders</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id26">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id26" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Color</td>
+<td>Color to display the status in element lists.</td>
+</tr>
+<tr class="row-odd"><td>Waiting tender</td>
+<td>Status information.</td>
+</tr>
+<tr class="row-even"><td>Tender received</td>
+<td>status information.</td>
+</tr>
+<tr class="row-odd"><td>Tender not selected</td>
+<td>status information.</td>
+</tr>
+<tr class="row-even"><td>Tender selected</td>
+<td>status information.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="categories-of-project">
+<h2>Categories of project<a class="headerlink" href="#categories-of-project" title="Permalink to this headline">¶</a></h2>
+<p>Define your categories of project and you are able to select one in Project screen.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id27">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id27" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="incoming-weights">
+<h2>Incoming weights<a class="headerlink" href="#incoming-weights" title="Permalink to this headline">¶</a></h2>
+<p>Define your incoming weights list and select it in Incoming screen.</p>
+<p>That is useful to calculate weighting between different parameters in Reports-&gt;KPIs-&gt;KPI-incoming-for-project screen.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id28">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id28" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Value</td>
+<td>Value of incoming weights.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the incoming weights in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="deliverable-weights">
+<h2>Deliverable weights<a class="headerlink" href="#deliverable-weights" title="Permalink to this headline">¶</a></h2>
+<p>Define your deliverable weights list and select it in Deliverable screen.</p>
+<p>That is useful to calculate weighting between different parameters in Reports-&gt;KPIs-&gt;KPI-deliverable-for-project screen.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id29">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id29" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Value</td>
+<td>Value of deliverable weights.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the deliverable weights in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="incoming-status">
+<h2>Incoming status<a class="headerlink" href="#incoming-status" title="Permalink to this headline">¶</a></h2>
+<p>Define your incoming status list and select it in Incoming screen.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id30">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id30" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Value</td>
+<td>Value of incoming status.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the incoming status in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Add dates on incomings to follow dates : initial, planned, real, validation</li>
+</ul>
+</div>
+<div class="section" id="deliverable-status">
+<h2>Deliverable status<a class="headerlink" href="#deliverable-status" title="Permalink to this headline">¶</a></h2>
+<p>Define your deliverable status list and select it in Deliverable screen.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id31">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id31" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Value</td>
+<td>Value of deliverable status.</td>
+</tr>
+<tr class="row-odd"><td>Color</td>
+<td>Color to display the deliverable status in element lists.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>Add dates on deliverables to follow dates : initial, planned, real, validation</li>
+</ul>
+</div>
+<div class="section" id="languages">
+<h2>Languages<a class="headerlink" href="#languages" title="Permalink to this headline">¶</a></h2>
+<p>Allows to define and create your own languages list.</p>
+<p>Then in Product or Component screen you can select your languages values.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">you have to active ‘display language in Product/Component’ in global parameters.</p>
+</div>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id32">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id32" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Value</td>
+<td>Value of deliverable status.</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="locations">
+<h2>Locations<a class="headerlink" href="#locations" title="Permalink to this headline">¶</a></h2>
+<p>Allows you to define and create your own list of locations, Sites, Cities, Countries … for the management of your IT infrastructure.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id33">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id33" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="periods">
+<h2>Periods<a class="headerlink" href="#periods" title="Permalink to this headline">¶</a></h2>
+<p>Allows you to define and create your own list of periods. These are used to define the intervention periods in customer and supplier contracts.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id34">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id34" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number to define order of display in lists.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="renewal">
+<h2>Renewal<a class="headerlink" href="#renewal" title="Permalink to this headline">¶</a></h2>
+<p>Allows you to define and create your own renewal type list. These values are used in the customer and supplier contract management screens.</p>
+<p>3 values are pre-registered by default: never, tacit and Express
+See: <a class="reference internal" href="Incomes.html#renewal"><span class="std std-ref">incomes</span></a></p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id35">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id35" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="predefined-situation">
+<h2>Predefined situation<a class="headerlink" href="#predefined-situation" title="Permalink to this headline">¶</a></h2>
+<p>xoixoioxioxioix</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id36">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id36" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td>Element</td>
+<td>Type of element affected</td>
+</tr>
+<tr class="row-odd"><td>Type</td>
+<td>Name of the <a class="reference internal" href="AssetManagement.html#brands"><span class="std std-ref">Brands</span></a></td>
+</tr>
+<tr class="row-even"><td>Sort order</td>
+<td>Number which defines the display order of the finacial elements</td>
+</tr>
+<tr class="row-odd"><td>Financial situation</td>
+<td>The financial situation which will be taken into account</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="intervention-modes">
+<span id="intervention-mode-value"></span><h2>Intervention modes<a class="headerlink" href="#intervention-modes" title="Permalink to this headline">¶</a></h2>
+<p>Allows you to define and create your own list of interventions mode.</p>
+<p>These values are used in the <a class="reference internal" href="Gantt.html#planned-interventions"><span class="std std-ref">planned interventions</span></a> screens and <a class="reference internal" href="Gantt.html#view-interventions"><span class="std std-ref">view interventions</span></a>.</p>
+<p class="rubric">Section Description</p>
+<table border="1" class="colwidths-given docutils" id="id37">
+<caption><span class="caption-text">Required fields <a class="reference internal" href="_images/RequiredFILE.png"><img alt="Required File legend" src="_images/RequiredFILE.png" style="width: 1.7999999999999998px; height: 10.799999999999999px;" /></a></span><a class="headerlink" href="#id37" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-id"><span class="xref std std-term">Id</span></a></td>
+<td>Unique Id for this value.</td>
+</tr>
+<tr class="row-odd"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Name</td>
+<td>Name of this value.</td>
+</tr>
+<tr class="row-even"><td><img alt="Required File" src="_images/RequiredFILE.png" /> Letter</td>
+<td>Letter displayed on the intervention schedule and which refers to the corresponding intervention mode</td>
+</tr>
+<tr class="row-odd"><td>Sort order</td>
+<td>Number which defines the display order of intervention modes on the planned interventions and view interventions screen</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="Glossary.html#term-closed"><span class="xref std std-term">Closed</span></a></td>
+<td>Flag to indicate this value is archived.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">List of Values</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#status">Status</a></li>
+<li><a class="reference internal" href="#resolutions">Resolutions</a></li>
+<li><a class="reference internal" href="#quality-levels">Quality levels</a></li>
+<li><a class="reference internal" href="#health-status">Health status</a></li>
+<li><a class="reference internal" href="#overall-progress">Overall progress</a></li>
+<li><a class="reference internal" href="#trends">Trends</a></li>
+<li><a class="reference internal" href="#likelihoods">Likelihoods</a></li>
+<li><a class="reference internal" href="#criticalities">Criticalities</a></li>
+<li><a class="reference internal" href="#severities">Severities</a></li>
+<li><a class="reference internal" href="#urgencies">Urgencies</a></li>
+<li><a class="reference internal" href="#priorities">Priorities</a></li>
+<li><a class="reference internal" href="#risk-levels">Risk levels</a></li>
+<li><a class="reference internal" href="#feasibilities">Feasibilities</a></li>
+<li><a class="reference internal" href="#efficiencies">Efficiencies</a></li>
+<li><a class="reference internal" href="#payment-deadlines">Payment deadlines</a></li>
+<li><a class="reference internal" href="#payment-methods">Payment methods</a></li>
+<li><a class="reference internal" href="#delivery-modes">Delivery modes</a></li>
+<li><a class="reference internal" href="#measure-units">Measure units</a></li>
+<li><a class="reference internal" href="#budget-orientation">Budget orientation</a></li>
+<li><a class="reference internal" href="#budget-category">Budget Category</a></li>
+<li><a class="reference internal" href="#tender-status">Tender status</a></li>
+<li><a class="reference internal" href="#categories-of-project">Categories of project</a></li>
+<li><a class="reference internal" href="#incoming-weights">Incoming weights</a></li>
+<li><a class="reference internal" href="#deliverable-weights">Deliverable weights</a></li>
+<li><a class="reference internal" href="#incoming-status">Incoming status</a></li>
+<li><a class="reference internal" href="#deliverable-status">Deliverable status</a></li>
+<li><a class="reference internal" href="#languages">Languages</a></li>
+<li><a class="reference internal" href="#locations">Locations</a></li>
+<li><a class="reference internal" href="#periods">Periods</a></li>
+<li><a class="reference internal" href="#renewal">Renewal</a></li>
+<li><a class="reference internal" href="#predefined-situation">Predefined situation</a></li>
+<li><a class="reference internal" href="#intervention-modes">Intervention modes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ListsOfTypes.html"
+                        title="previous chapter">List of Types</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ControlAutomation.html"
+                        title="next chapter">Control Automation</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ControlAutomation.html" title="Control Automation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ListsOfTypes.html" title="List of Types"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015-2020, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.3.
+    </div>
+  </body>
+</html>

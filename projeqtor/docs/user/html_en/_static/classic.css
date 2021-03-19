@@ -1,0 +1,371 @@
+/*
+ * classic.css_t
+ * ~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- classic theme.
+ *
+ * :copyright: Copyright 2007-2016 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("basic.css");
+
+
+ /* ------------------------------- IMPORT FONT -------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+/* ------------------------------- MISE EN PAGE --------------------------------- */
+/* ----------------------------- hyperlink styles ------------------------------- */
+
+a {
+    color: #e97B2c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e97B2c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------- MISE EN PAGE --------------------------------- */
+/* --------------------------------- Titres ------------------------------------- */
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    font-family: 'Blinker', sans-serif;
+    text-transform: uppercase;
+    background-color: #545381;
+    font-weight: bolder;
+    color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    margin: 30px -60px 10px -50px;
+    padding: 3px 0 3px 10px;
+    clear: both;
+}
+
+div.body h1 { font-size: 160%; }
+div.body h2 { font-size: 140%; }
+div.body h3 { font-size: 120%; }
+div.body h4 { font-size: 100%; }
+div.body h5 { font-size: 90%; }
+div.body h6 { font-size: 80%; }
+
+/* ------------------------------ MISE EN PAGE --------------------------------- */
+/* ------------------ Anchor of Titles styles - Permalink ---------------------- */
+a.headerlink {
+    color: #545381;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+a.headerlink:hover {
+    background-color: #ffffff;
+    color: white;
+}
+
+/*
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink,
+caption:hover > a.headerlink,
+p.caption:hover > a.headerlink,
+div.code-block-caption:hover > a.headerlink {
+    visibility: visible;
+}
+
+/* ------------------------------- MISE EN PAGE --------------------------------- */
+/* ------------------------------- Text styles ---------------------------------- */
+div.body p, div.body dd, div.body li {
+    text-align: justify;
+/*    line-height: 100%;     */
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+div.body li::marker {
+	list-style: square;
+	margin-left: 15px;
+}
+
+/* Marges puces liste */
+div.body ul {
+	padding-left: 22px;
+}
+
+/* légendes */
+div.body p.caption {
+    text-align: inherit;
+}
+
+
+p.rubric {
+    margin-top: 40px;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #8a83a7;
+}
+
+p.compound-first { 
+	margin-top: 30px;
+    padding: 5px 0 5px 0px;
+    border-bottom: 1px solid #808080;
+    font-weight: bold;  
+}
+
+
+/* ------------------------------- MISE EN PAGE --------------------------------- */
+/* ------------------------ Text specific - préformaté -------------------------- */
+
+/* Texte preformaté - conteneur code */
+pre {
+    padding: 5px;
+    background-color: #f0f3f5;
+    color: #333333;
+    line-height: 120%;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+}
+
+/* Texte code */
+code {
+    background-color: #f0f3f5;
+    border-top: 1px solid #8080c0;
+    border-bottom: 1px solid #8080c0;
+    padding: 2px 2px 2px 2px;
+    font-size: 1em;
+}
+
+kbd {
+	background-color: #fafbfc;
+    border: 1px solid #c6cbd1;
+    border-bottom-color: rgb(198, 203, 209);
+    border-bottom-color: #959da5;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #959da5;
+    color: #444d56;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+
+/* ------------------------------- MISE EN PAGE --------------------------------- */
+/* ------------------------- Search page presentation --------------------------- */
+
+ul.search {
+    margin: 0;
+}
+
+ul.search li {
+    padding: 5px 0 5px 20px;
+    background-image: url(file.png);
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+}
+
+ul.search li::marker {
+    list-style: none;
+}
+
+ul.search li a {
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 90%;
+    display: block;
+	border-bottom: 1px dotted #b0af9d;
+}
+
+ul.search li div.context {
+    color: #a6a6a6;
+    margin: 0px 0 15px 10px;
+    text-align: justify;
+}
+
+ul.keywordmatches li.goodmatch a {
+    font-weight: bold;
+}
+
+ul.search li a:hover {
+	background:#dbdbdb;
+	text-decoration: none;
+}
+
+/* ----------------------------- Surbrillance ---------------------------------- */
+
+span.highlighted {
+    background-color: #cacaff;
+    color: #000000;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- ADMONITIONS - CONTAINERS & TOPICS ------------------------------ */
+
+div.admonition {
+    margin: 20px 0px 30px 0px;
+    padding: 0px 0px 5px 0px;
+    font-size: 85%;
+    background-color: #f0f3f5;
+    border: 2px solid #a2a2a2;
+    line-height: 1.5em;
+    max-width: 100%;
+    display: block;
+}
+
+
+div.container {
+	margin: 10px 5px 10px 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 85%;
+    border: 2px dashed #b1acc4;
+    line-height: 1.1em;
+    width: auto;
+    float: left;
+    max-width: 43%;
+    /*display: block;*/
+	box-shadow: 1px 1px 5px #aaa;
+}
+
+
+p.admonition-title {
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 5px;
+    font-weight: bold;
+    color: white;
+}
+
+div.admonition p {
+    margin-bottom: 5px;
+    padding: 0px 10px 2px 10px;
+}
+
+div.topic {
+	margin: 20px 0px 30px 0px;
+    padding: 10px 20px 0 20px;
+    background-color: #ffffff;
+    font-size: 85%;
+    border: 2px dashed #b1acc4;
+    line-height: 1.3em;
+    max-width: 100%;
+    display: block;
+	box-shadow: 1px 1px 5px #aaa;
+}
+
+
+/* -------------------------- ADMONITIONS TITRES ------------------------ */
+
+div.note p.admonition-title {
+    background-color: #545381;
+    border-bottom: 4px solid #434266;
+    line-height: 150%;
+}
+
+div.warning p.admonition-title {
+    background-color: #ffbe6f;
+    border-bottom: 4px solid #ff9518;
+    line-height: 150%;
+}
+
+div.important p.admonition-title {
+    background-color: #CF0000;
+    border-bottom: 4px solid #940000;
+    line-height: 150%;
+}
+
+div.seealso p.admonition-title {
+    background-color: #b0a9c0;
+    border-bottom: 4px solid #c6c1d2;
+    line-height: 150%;
+}
+
+div.error p.admonition-title {
+    background-color: #4e4e4e;
+    border-bottom: 4px solid #000000;
+    line-height: 150%;
+}
+
+div.tip p.admonition-title {
+    background-color: #94d584;
+    border-bottom: 4px solid #6ac653;
+    line-height: 150%;
+}
+
+p.topic-title {
+    font-weight: bold;
+    color: #9a94b1;
+    margin-top: 0;
+}
+
+div.admonition pre {
+    margin-bottom: 20px;
+}
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ GLOSSAIRE --------------------------------- */
+dl.glossary dt {
+    font-weight: bold;
+    color: #9a94b1;
+    font-size: 1.2em;
+    border-bottom: 1px dashed #808080;
+}
+
+dl.glossary p {
+	line-height: 1.2em;
+}
+
+dl.glossary dt:target {
+    background-color: #cacaff;
+    color: #000000;
+}
+/* --------------------------------------------------------------------------- */

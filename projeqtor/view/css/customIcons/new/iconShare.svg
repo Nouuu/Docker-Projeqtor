@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
+	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="svg15" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docname="iconKanban.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+	
+		<sodipodi:namedview  bordercolor="#666666" borderopacity="1" inkscape:cx="24.979592" guidetolerance="10" showgrid="false" inkscape:zoom="15.3125" pagecolor="#ffffff" gridtolerance="10" inkscape:cy="24" id="namedview17" objecttolerance="10" inkscape:window-x="-8" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:pageopacity="0" inkscape:document-rotation="0" inkscape:current-layer="svg15" inkscape:pageshadow="2" inkscape:window-y="-8" inkscape:window-maximized="1">
+		</sodipodi:namedview>
+	<title  id="title6"></title>
+</g>
+<g id="Calque_2" display="none">
+	<g display="inline">
+		<path fill="#FF0000" d="M81.264,109.997c-1.072-1.071-1.606-2.42-1.606-4.047V91.096H64.8c-1.627,0-2.977-0.556-4.047-1.664
+			c-1.072-1.106-1.607-2.476-1.607-4.103c0-1.625,0.535-2.976,1.607-4.047c1.07-1.07,2.42-1.607,4.047-1.607h14.854V64.818
+			c0-1.551,0.57-2.881,1.719-3.99c1.146-1.108,2.457-1.663,3.938-1.663c1.623,0,2.974,0.537,4.045,1.608
+			c1.07,1.072,1.607,2.421,1.607,4.045v14.854h14.854c1.554,0,2.9,0.556,4.047,1.664c1.146,1.106,1.72,2.478,1.72,4.103
+			c0,1.553-0.571,2.884-1.72,3.99c-1.146,1.108-2.493,1.663-4.047,1.663H90.963v14.855c0,1.627-0.537,2.976-1.607,4.047
+			c-1.071,1.071-2.422,1.606-4.045,1.606C83.684,111.604,82.332,111.068,81.264,109.997z"/>
+	</g>
+	
+		<circle display="inline" fill="none" stroke="#FF0000" stroke-width="5" stroke-miterlimit="10" cx="85.253" cy="85.384" r="37.729"/>
+</g>
+<g id="Calque_3">
+	
+		<ellipse fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" cx="98.275" cy="21.122" rx="16.707" ry="16.11"/>
+	
+		<ellipse fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" cx="98.275" cy="105.919" rx="16.707" ry="16.109"/>
+	
+		<ellipse fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" cx="27.606" cy="59.906" rx="16.707" ry="16.11"/>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="82.43" y1="26.221" x2="41.042" y2="50.331"/>
+	
+		<line fill="none" stroke="#FF0000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="38.856" y1="71.815" x2="82.43" y2="100.817"/>
+</g>
+</svg>

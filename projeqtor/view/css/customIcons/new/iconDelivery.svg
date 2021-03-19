@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g id="Layer_1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="iconTicketDashboard.svg">
+	
+		<sodipodi:namedview  objecttolerance="10" inkscape:cy="128" gridtolerance="10" pagecolor="#ffffff" inkscape:zoom="2.8710938" showgrid="false" guidetolerance="10" inkscape:cx="128" borderopacity="1" bordercolor="#666666" id="namedview13" inkscape:window-maximized="1" inkscape:pageopacity="0" inkscape:window-height="1017" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:pageshadow="2" inkscape:current-layer="Layer_1">
+		</sodipodi:namedview>
+</g>
+<g>
+	
+		<path fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M49.994,96.363c0,6.528-5.292,11.818-11.818,11.818c-6.526,0-11.816-5.29-11.816-11.818c0-6.523,5.29-11.814,11.816-11.814
+		C44.703,84.549,49.994,89.84,49.994,96.363z"/>
+	
+		<path fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M112.79,96.363c0,6.528-5.294,11.818-11.817,11.818c-6.528,0-11.818-5.29-11.818-11.818c0-6.523,5.29-11.814,11.818-11.814
+		C107.496,84.549,112.79,89.84,112.79,96.363z"/>
+	
+		<path fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M76.959,34.851h16.908c15.77,0,28.58,12.78,28.58,28.581V96.37h-9.649"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		26.352,96.37 16.729,96.37 16.729,73.88 69.472,73.88 	"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		50.008,96.37 69.472,96.37 89.143,96.37 	"/>
+	
+		<rect x="6.295" y="23.55" fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="70.672" height="50.334"/>
+	
+		<polyline fill="none" stroke="#FF0000" stroke-width="5.2462" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		95.955,34.921 95.955,66.927 122.442,66.927 	"/>
+</g>
+</svg>

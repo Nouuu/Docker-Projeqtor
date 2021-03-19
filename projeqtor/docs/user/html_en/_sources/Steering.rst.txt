@@ -1,0 +1,813 @@
+.. include:: ImageReplacement.txt
+
+.. index:: Steering
+
+.. title:: Steering
+
+.. index:: Meeting 
+
+
+.. _steering-page:
+
+.. _meeting:
+
+Meetings
+********
+
+.. figure:: /images/GUI/STEERING_SCR_Meeting.png
+   :alt: Meeting screen
+   
+   Meeting screen
+   
+Meeting items are stored to keep track of important meetings during the project lifecycle :
+
+* Progress Meetings
+* Steering committees
+* Functional workshops
+
+In fact, you should keep track of every meeting where decisions are taken, or questions answered.
+
+This will provide an easy way to find back when, where and why a decision has been taken.
+
+Each meeting is displayed in the agenda
+
+.. rubric:: Project task
+
+* Meeting is a task. they appear in the imputation sheets with the date fixed. 
+* You can assign project resources (named attendees).
+* You have progress section that allows for followed resources work and cost. 
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Attendees<attendees-section>`
+   * :ref:`Progress<progress-section-meeting>`
+   * :ref:`Predecessor and Sucessor <predSuces-element-section>`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`
+   * :ref:`Notes<note-section>` 
+   * :ref:`Live meeting<live-meeting-steering>`    
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the meeting.
+   * - Name
+     - Short description of the meeting. If not set, will automatically be set to meeting type completed with meeting date.
+   * - |RequiredField| Meeting type
+     - Type of meeting. 
+   * - |RequiredField| Project
+     - The project concerned by the meeting.
+   * - |RequiredField| Meeting date
+     - The initial date of the meeting, including the start and end time.
+   * - Location
+     - Place (room or else) when meeting will stand.
+   * - Email invitation
+     - Send an email to the expected participant in the :ref:`Attendees<attendees-Section>` section
+   * - Start Meeting button
+     - Allow to go on the :ref:`live meeting<live-meeting-steering>` screen. 
+   * - Agenda of the meeting
+     - Description of the meeting and agenda. 
+     
+     
+Description can be used to store agenda. 
+
+.. rubric:: Email invitation
+
+* Allows to send the email to attendees.
+* They will receive the invitation in their calendar management tool. 
+
+.. rubric:: Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Parent activity
+     - Parent activity of the meeting. In the WBS structure, under which the meeting will be displayed in the Gantt planning.
+   * - |RequiredField| Status
+     - Actual :term:`status` of the meeting.
+   * - :term:`Responsible`
+     - Resource who is responsible for the organization of the meeting.
+   * - :term:`Handled`
+     - Flag to indicate that meeting has been taken into account. 
+   * - :term:`Done`
+     - Flag to indicate that meeting has been held.
+   * - :term:`Closed`
+     - Flag to indicate that meeting is archived.
+   * - Cancelled
+     - Flag to indicate that meeting is cancelled.
+   * - :term:`Minutes<Result>`
+     - Minutes of the meeting.
+ 
+
+
+.. note::
+
+   **Minutes**
+
+   You can enter here only a short summary of the minutes and attach the full minutes as a file.
+
+   **Steering**
+
+   Retrieving the agenda of a meeting from the description of its type
+
+   **Diary**
+
+   Viewing meetings in agenda, even if they are not planned
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Live Meeting 
+.. index:: Meeting (Live) 
+
+.. _live-meeting-steering:
+
+Live Meeting
+------------
+
+LiveMeeting you can manage meetings in an :ref:`Agile<agile-methods>` way.
+
+* Manage minutes of meetings quickly
+
+* Automatically share the time between all participants
+
+* Dynamically measure the speaking time of each participant
+
+* Easily write minutes while assistants speak
+
+* Easily manage actions / decisions / questions while writing minutes
+
+* Manage tickets, activities, actions and requirements with Kanban while writing minutes.
+
+
+Click on :kbd:`Start meeting` button to access the Live Meeting Management screen.
+
+.. figure:: /images/GUI/AGILE_SCR_LiveMeeting.png
+   :alt: The LiveMeeting screen
+   
+   The Live Meeting screen
+   
+* Click on **Hide time counters** to show or hide participants' tabs with their speaking time    
+* Click on |meetingPlay| to start the meeting and to start decrementing the speaking time
+* Click on |meetingStop| to stop the meeting and close the LiveMeeting window 
+* Click on |Quit| to exit the LiveMeeting screen
+* Click on |Save| to save the live meeting report
+
+See: :ref:`livemeeting-agile`
+
+.. rubric:: Kanban Management
+
+Click on |Kanban| to manage the kanbans
+ 
+.. figure:: /images/GUI/AGILE_SCR_LiveMeeting-Kanban.png
+   :alt: Kanban management
+   
+   Kanban management in the Live Meeting
+   
+You can manage your Kanban tiles directly in the Live Meeting interface. 
+
+See: :ref:`kanban`
+   
+   
+
+  
+   
+.. raw:: latex
+
+    \newpage
+
+.. index:: Meeting (Periodic)  
+
+.. _periodic-meeting:
+
+Periodic meetings
+-----------------
+
+Periodic meeting is a way to define some meetings that will occur on a regular basis.
+
+.. figure:: /images/GUI/STEERING_SCR_PeriodicMeeting.png
+   :alt: Periodic Meeting screen
+   :align: center
+   
+   Periodic meeting screen
+   
+.. note::
+
+   * Most fields fit, but some information is not present for periodic meetings, such as Minutes or Status
+   
+   * It is because these fields won’t be set through periodic meeting definition, but must be set directly on the meetings
+  
+.. rubric:: Periodic meeting process
+
+When recording a recurring meeting, unit meetings are automatically created in a parent folder.
+
+.. figure:: /images/GUI/STEERING_ZONE_Gantt-PeriodMeetings.png
+   :alt: displaying periodic meetings in the Gantt chart 
+   
+   Display of unit meetings under the parent folder
+         
+When the parent folder is closed, the meeting lines are not visible, but they appear on the same line as the folder.
+
+.. figure:: /images/GUI/STEERING_ZONE_Gantt-PeriodMeetings_HIDE.png
+   :alt: displaying periodic meetings on the bar 
+   
+   Display of single meetings on the parent folder bar
+
+Changes can be made on each group meeting.
+
+In most cases, these changes will not be affected or erased by periodic meeting updates.
+      
+
+   
+  
+.. rubric:: Update on a periodic meeting
+
+* On each update of a periodic meeting, meetings are re-evaluated.
+* This may lead to deletion of some meetings.
+* This will also reposition meetings, even if their planned dates were elementary updated.
+
+.. rubric:: Attendees assignment
+
+* Attendees can be defined on a periodic meeting. 
+* Allocation of the entire project team to a periodic meeting (as existing for a simple meeting) is possible.
+* They will be copied on the elementary meetings. 
+* The periodic meetings will not be planned, only elementary meetings will be. 
+* So left work will always be set to zero on periodic meetings.  
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Attendees<attendees-section>`
+   * :ref:`Progress<progress-section-meeting>`
+   * :ref:`Predecessor and Sucessor<predSuces-element-section>`
+   * :ref:`Notes<note-section>`  
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the periodic meeting
+   * - Name
+     - Short description of the meeting
+   * - |RequiredField| Meeting type
+     - Type of meeting
+   * - |RequiredField| Project
+     - The project concerned by the meeting
+   * - Location
+     - Place (room or else) when meeting will stand
+   * - :term:`Description`
+     - Description of the meeting
+     
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Parent activity
+     - Parent activity of the meeting.
+   * - :term:`Responsible`
+     - Resource who is responsible for the organization of the meeting.
+   * - :term:`Closed`
+     - Flag to indicate that periodic meeting is archived.
+
+.. rubric:: Section Periodicity
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Period
+     - Start date and end date or number of occurrences to define the range of the periodicity.
+   * - Time
+     - Start and end time for all the meetings.
+   * - |RequiredField| Periodicity
+     - Frequency of the meeting, on proposed bases (daily, weekly monthly).
+   * - Only on open days
+     - Specify that meetings will not be set on off days.
+
+.. topic:: **Field Periodicity**
+
+   * Several periodicity is proposed:
+    
+     * Every day
+     * Same day every week
+     * Same day every mouth
+     * Same week every mounth
+
+.. raw:: latex
+
+    \newpage
+
+.. _attendees-Section:
+
+Attendees section
+-----------------
+
+**This section allows to define the list of attendees to the meeting.**
+
+* Meeting is a task you can assign project resources.
+
+* A possibility to assign work to some attendees (project resources). 
+
+  So meeting works of these attendees are booked in the project.
+  
+* Ability to assign to a meeting a resource or a contact or a user not member of the project team
+
+.. figure:: /images/GUI/STEERING_ZONE_Attendees.png
+   :alt: Attendees section
+   :align: center
+
+
+.. rubric:: Attendee list
+
+* Click on |Add| to add a new attendee
+* Click on |Edit| modify the assignment of the resource
+* Click on |Delete| to delete the assignment of the resource
+* Click on |Split| to divide the assignement with another resource
+
+.. note:: Mandatory participant
+
+   The icon |Star| indicates that the presence of the participant is mandatory
+ 
+   More detail about how assigned project resources, see: :ref:`assignment-section` section.
+   
+.. rubric:: Other attendees
+
+Extra list of persons attending (or expecting to attend) the meeting, in completion to resource in the attendee list.
+
+   * You can enter attendees by email address, resource or contact name, user name or initial without caring about. 
+   * Just separate attendees with commas or semicolons.
+
+.. note::
+
+   Duplicate email addresses in the attendee list will automatically be removed.
+
+
+
+
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Decision
+
+.. _change-request: 
+
+Change Request
+**************
+
+The change request feature provides effective tracking of your customer's change requests.
+
+Its purpose is to describe a process that makes clear how the change is communicated, how decisions will be made and by whom and how the project will adapt accordingly.
+
+A change request is very close to a requirement, it can also generate several requirements. The change request is necessarily linked to a project and can be linked to a product.
+
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - ID
+     - Request ID number 
+   * - |RequiredField| Name
+     - Fill in the title of the change. It must be understandable at first reading
+   * - Change Request Type
+     - define the type of the request
+   * - Project
+     - Link the change request to a project
+   * - Product
+     - Link the change request to a product
+   * - External reference
+     - Name of the external reference
+   * - Contact
+     - Name oft the contact  
+   * - Origin    
+     - Link to the item causing the change request
+   * - Business Features
+     - Functionality trades whose modification request will need
+   * - Urgency
+     - Determine the urgency of the request
+   * - Initial due date       
+     - Date you committed to the client
+   * - Planned due date 
+     - Deadline actually planned 
+   * - Description
+     - Describe the change request you want to initiate
+   * - Justification    
+     - Justify this change request.
+   * - Expected benefit  
+     - List the potential benefits that this change request will bring
+
+
+.. rubric:: Section Treatment
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Status
+     - Actual :term:`status` of the decision
+   * - :term:`Responsible`
+     - Resource who is responsible for the follow-up of the question
+   * - Criticality
+     - how critical is the demand
+   * - Feasibility
+     - how feasibility is the demand  
+   * - Technical risk    
+     - what are the technical risks
+   * - Priority
+     - What is the priority of the request
+   * - Estimate work
+     - Estimate work for the resquest
+   * - Estimate cost
+     - Estimate cost for the request  
+   * - Target Version
+     - The target version affected by the request           
+   * - :term:`Handled`
+     - Flag to indicate that question has been taken into account
+   * - Approved by
+     - Indicates the date the application was approved and by whom
+   * - :term:`Done`
+     - Flag to indicate that question has been answered
+   * - :term:`Closed`
+     - Flag to indicate that decision is archived  
+   * - Cancelled
+     - Flag to indicate that decision is cancelled
+   * - Result
+     - Enter the result of the implementation of the change request
+   * - Efficiency Annalyse
+     - Complete the analysis of the effectiveness of the implementation of the change request
+     
+     
+     
+               
+
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Decision
+
+.. _decision: 
+
+Decisions
+*********
+
+Decisions are stored to keep track of important decisions, when, where and why the decision was taken.
+
+You can link a decision to a meeting to rapidly find the minutes where the decision is described.
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`   
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the decision.
+   * - |RequiredField| Name
+     - Short description of the decision.
+   * - |RequiredField| Decision type
+     - Type of decision. 
+   * - |RequiredField| Project
+     - The project concerned by the decision.
+   * - :term:`Description`
+     - Complete description of the decision.
+ 
+.. rubric:: Section Validation
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the decision.
+   * - Decision date
+     - Date of the decision.
+   * - Origin
+     - Origin of the decision.
+   * - :term:`Accountable<result>`
+     - Resource accountable for the decision.
+   * - :term:`Closed`
+     - Flag to indicate that decision is archived.
+   * - Cancelled
+     - Flag to indicate that decision is cancelled.
+ 
+.. topic:: Field Origin
+
+   It can be either the reference to a meeting where the decision was taken (so also add the reference to the meetings list), or a short description of why the decision was taken. 
+
+.. topic:: Field Accountable
+
+   The person who took the decision.
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Question 
+
+.. _question:
+
+Questions
+*********
+
+Question are stored to keep track of important questions and answers.
+
+In fact, you should keep trace of every question and answer that have an impact to the project.
+
+The questions can also afford an easy way to track questions sent and follow-up non-answered ones.
+
+This will provide an easy way to find back when, who and precise description of the answer to a question.
+
+Also keep in mind that some people will (consciously or not) be able to change their mind and uphold it has always been their opinion… 
+
+You can link a question to a meeting to rapidly find the minutes where the question was raised or answered.
+
+.. rubric:: Monitoring indicator
+
+Possibility to define indicators to follow the respect of dates values.
+
+ .. describe:: Respect of initial due date
+ .. describe:: Respect of planned due date
+
+.. rubric:: Section Description
+
+.. sidebar:: Other sections
+
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the question.
+   * - |RequiredField| Name
+     - Short description of the question.
+   * - |RequiredField| Question type
+     - Type of question. 
+   * - |RequiredField| Project
+     - The project concerned by the question.
+   * - :term:`Description`
+     - Complete description of the question.
+
+   
+
+.. rubric:: Section Answer
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - |RequiredField| Status
+     - Actual :term:`status` of the decision.
+   * - :term:`Responsible`
+     - Resource who is responsible for the follow-up of the question.
+   * - Initial due date
+     - Initially expected date for the answer to the question.
+   * - Planned due date
+     - Updated expected date for the answer to the question.
+   * - Replier
+     - Name of the person who provided the answer.
+   * - :term:`Handled`
+     - Flag to indicate that question has been taken into account. 
+   * - :term:`Done`
+     - Flag to indicate that question has been answered.
+   * - :term:`Closed`
+     - Flag to indicate that question is archived.
+   * - Cancelled
+     - Flag to indicate that question is cancelled. 
+   * - :term:`Response<Result>`
+     - Complete description of the answer to the question.
+  
+.. raw:: latex
+
+    \newpage
+    
+.. index:: Deliverable
+
+.. _deliverables:
+
+Deliverables
+************
+
+This section allows to define the list of deliverables items.
+
+This will provide an easy way to organize your due to customers. 
+
+In fact, you can keep track of every deliverables. 
+
+Deliverables links with Milestones.
+
+.. note::
+
+   If you change the responsible of milestones, the responsible of deliverable will automatically changed, and vice versa. 
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the KPI.
+   * - |RequiredField| Name
+     - name of the deliverable.
+   * - IdDeliverableType
+     - id of the Deliverable Type.
+   * - IdProject
+     - id of the Project.
+   * - externalReference
+     - name of the external reference.
+   * - Description
+     - Complete description of the deliverable.
+     
+.. note::
+
+   You can estimated quality value for deliverable and this will produce a KPI. 
+      
+   See: :ref:`kpi-definitions`
+  
+.. raw:: latex
+
+    \newpage
+
+.. rubric:: Section Validation
+
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Validation
+   * - Delivery status
+     - Actual :term:`status` of the delivery.
+   * - Deliverable
+     - Weight of the quality of the deliverable.
+   * - Responsible
+     - to name
+   * - due date
+     - as planned
+   * - :term:`Closed`
+     - Box to indicate that delivery is archived.
+
+To follow life cycle management on deliverables (status managed as a workflow)
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Incoming
+    
+.. _incomings:
+
+Incomings
+*********
+
+This section allows to define the list of incomings items from customers.
+
+It can be an indicator to follow if you can begin an action. For example, if you need an item from customer.
+
+Incomings links with Milestones.
+
+.. note::
+
+   If you change the responsible of milestones, the responsible of Incomings will automatically changed, and vice versa. 
+
+   You can estimated quality value for incoming  and this will produce a KPI. See: :ref:`kpi-definitions`
+
+.. raw:: latex
+
+    \newpage
+
+.. index:: Deliveries
+    
+.. _deliveries:
+
+Deliveries
+**********
+
+Deliveries items are stored to keep track of deliveries.
+
+Added list of deliverables integrated in delivery.
+
+.. note::
+
+   Automatic dispatch of delivery status to deliverables.
+
+.. rubric:: Section Description
+
+.. tabularcolumns:: |l|l|
+
+.. list-table:: |ReqFieldLegend| Required field
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - :term:`Id`
+     - Unique Id for the delivery.
+   * - |RequiredField| Name
+     - Short description of the delivery.
+   * - |RequiredField| Deliverable type
+     - Type of deliverable.
+   * - |RequiredField| Project
+     - The project concerned by the delivery. 
+   * - ExternalReference
+     - name of the external reference.
+   * - Description
+     - Description of the delivery. 
+
+.. rubric:: Section Validation
+
+.. sidebar:: Other sections
+   
+   * :ref:`Deliverables`
+   * :ref:`Linked element<linkElement-section>`   
+   * :ref:`Attachments<attachment-section>`   
+   * :ref:`Notes<note-section>`
+   
+.. tabularcolumns:: |l|l|
+
+.. list-table::
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - Delivery status
+     - Actual :term:`status` of the delivery.
+   * - Resource
+     - resource of the delivery.
+   * - Planned date
+     - Expected date of delivery.
+   * - Real date
+     - Effective delivery date.
+   * - Validation date
+     - validate the delivery date.
+   * - :term:`Closed`
+     - Flag to indicate that delivery is archived.
+
+To follow life cycle management on deliveries (status managed by a workflow)
+

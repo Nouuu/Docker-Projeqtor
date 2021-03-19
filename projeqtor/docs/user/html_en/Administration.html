@@ -1,0 +1,242 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Administration &#8212; ProjeQtOr User guide 8.6.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/projeqtor.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Access Rights" href="AccessRights.html" />
+    <link rel="prev" title="Global Parameters" href="GlobalParameters.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="AccessRights.html" title="Access Rights"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="GlobalParameters.html" title="Global Parameters"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="administration-console">
+<span id="admin-console"></span><span id="index-0"></span><h1>Administration Console<a class="headerlink" href="#administration-console" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center" id="id1">
+<img alt="Administration screen" src="_images/ADMIN_SCR_Console.png" />
+<p class="caption"><span class="caption-text">Administration screen</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The screens described below are restricted to users with administrator profile.</p>
+<p class="last">Users with other profiles can not access it, whether display or access rights are granted or not.</p>
+</div>
+<p>Administration console allows to execute administration tasks on application.</p>
+<div class="section" id="background-tasks">
+<span id="background-task"></span><span id="index-1"></span><h2>Background tasks<a class="headerlink" href="#background-tasks" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="Glossary.html#term-cron"><span class="xref std std-term">CRON</span></a> program starts and stops background jobs that process and periodically check indicators to generate the corresponding alerts, warnings or even automatic imports if necessary.</p>
+<p>This program automatically runs scripts, commands, or software at a specified date and time, or a pre-defined cycle.</p>
+<div class="figure" id="id2">
+<img alt="Background tasks in Admin" src="_images/ADMIN_ZONE_BackgroundTask.png" />
+<p class="caption"><span class="caption-text">Background tasks is running in Administration console</span></p>
+</div>
+<p>You can activate or deactivate CRON directly from the info bar. See: <a class="reference internal" href="Gui.html#cron-button"><span class="std std-ref">The CRON button</span></a></p>
+<div class="figure" id="id3">
+<img alt="CRON Button" src="_images/ADMIN_ZONE_ButtonCRON.png" />
+<p class="caption"><span class="caption-text">CRON activation button</span></p>
+</div>
+</div>
+<div class="section" id="internal-alert">
+<span id="index-2"></span><h2>Internal alert<a class="headerlink" href="#internal-alert" title="Permalink to this headline">¶</a></h2>
+<p>Allows to send an internal alert to users. It’s a <a class="reference internal" href="#background-task"><span class="std std-ref">background task</span></a>.</p>
+<div class="figure" id="id4">
+<img alt="Internal Alert" src="_images/ADMIN_ZONE_SendAlertIntern.png" />
+<p class="caption"><span class="caption-text">Internal Alert</span></p>
+</div>
+<p>Internal alerts can be sent to users.</p>
+<p>You can define a date and time for sending, specific adressees or all users, the type of message that users will receive: information, an alert or a warning …</p>
+<p>This can be a good step to warn users before a temporary shutdown of ProjeQtOr for update for example.</p>
+<p>An internal alert can be sent by the administrator or by monitoring indicators.</p>
+<blockquote>
+<div><div class="compound">
+<p class="compound-first">By the administrator</p>
+<p class="compound-middle">The administrator can send internal alert by administration console.</p>
+<p class="compound-last">The message will be received by user via message pop-up.</p>
+</div>
+<div class="compound">
+<p class="compound-first">Monitoring indicators</p>
+<p class="compound-middle">Monitoring indicators send only warning and alert message.</p>
+<p class="compound-middle">The message contains information that explains the alert:</p>
+<blockquote class="compound-middle">
+<div><ul class="simple">
+<li>Item id and type.</li>
+<li>Indicator description.</li>
+<li>Target value.</li>
+<li>Alert or warning value.</li>
+</ul>
+</div></blockquote>
+<p class="compound-last">The indicators are defined in <a class="reference internal" href="ControlAutomation.html#indicator"><span class="std std-ref">Indicators screen</span></a> .</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="manage-connections">
+<span id="manage-connection"></span><span id="index-3"></span><h2>Manage connections<a class="headerlink" href="#manage-connections" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id5">
+<img alt="Manage connections" src="_images/ADMIN_ZONE_ManageConnection.png" />
+<p class="caption"><span class="caption-text">Manage connections</span></p>
+</div>
+<p>Allows to force disconnection of active users and close the application for new connections.</p>
+<div class="compound">
+<p class="compound-first">Disconnect all users</p>
+<ul class="compound-last simple">
+<li>The button <kbd class="kbd docutils literal notranslate">Disconnect all users</kbd> allows to disconnect all connected users except your own connection.</li>
+<li>The application status is displayed below.</li>
+<li>Disconnection will be effective for each user when his browser will ckeck for alerts to be displayed.</li>
+<li>The delay for the effective disconnection of users will depend on the parameter “delay (in second) to check alerts” in <a class="reference internal" href="GlobalParameters.html#automated-service"><span class="std std-ref">Global parameters</span></a> screen.</li>
+</ul>
+</div>
+<div class="compound">
+<p class="compound-first">Open/Close application</p>
+<ul class="compound-last simple">
+<li>The button <kbd class="kbd docutils literal notranslate">Open/Close application</kbd></li>
+<li>Allows to open and close application.</li>
+<li>When the application is closed the message below will appear on login screen.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="consistency-check">
+<span id="index-4"></span><h2>Consistency check<a class="headerlink" href="#consistency-check" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id6">
+<img alt="constancy check" src="_images/ADMIN_ConstencyCheck.png" />
+<p class="caption"><span class="caption-text">consistency check</span></p>
+</div>
+<p><strong>Consistency check</strong></p>
+<ul class="simple">
+<li>on the WBS sequence search for duplicates, sequence holes, incorrect order</li>
+<li>on the presence of one and only one line of “PlanningElement” for the planifiable elements</li>
+<li>on the consolidation of ticket work</li>
+<li>on consolidation of work on activities</li>
+<li>on assignments</li>
+<li>This feature available automatically corrects detected issues</li>
+</ul>
+<span class="target" id="index-5"></span><span class="target" id="index-6"></span></div>
+<div class="section" id="maintenance-of-data">
+<span id="index-7"></span><h2>Maintenance of Data<a class="headerlink" href="#maintenance-of-data" title="Permalink to this headline">¶</a></h2>
+<p>The administrator has the possibility to:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Close and delete sent emails and alerts.</li>
+<li>Delete history of connections.</li>
+<li>Updating references for any kind of element.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="log-files-maintenance">
+<span id="index-8"></span><h2>Log files maintenance<a class="headerlink" href="#log-files-maintenance" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id7">
+<img alt="Log files maintenance" src="_images/ADMIN_Zone_LogFiles.png" />
+<p class="caption"><span class="caption-text">Log files maintenance</span></p>
+</div>
+<p>The administrator has the possibility to choose the level of the log files among debug, trace, script and errors.</p>
+<blockquote>
+<div><ul class="simple">
+<li>delete files on a given number of days.</li>
+<li>Show the list of logs</li>
+<li>Show the last logs list.</li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id8">
+<img alt="Log files maintenance" src="_images/ADMIN_BOX_LogfilesList.png" />
+<p class="caption"><span class="caption-text">Log files list</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/Projeqtor_Logo_White.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Administration Console</a><ul>
+<li><a class="reference internal" href="#background-tasks">Background tasks</a></li>
+<li><a class="reference internal" href="#internal-alert">Internal alert</a></li>
+<li><a class="reference internal" href="#manage-connections">Manage connections</a></li>
+<li><a class="reference internal" href="#consistency-check">Consistency check</a></li>
+<li><a class="reference internal" href="#maintenance-of-data">Maintenance of Data</a></li>
+<li><a class="reference internal" href="#log-files-maintenance">Log files maintenance</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="GlobalParameters.html"
+                        title="previous chapter">Global Parameters</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="AccessRights.html"
+                        title="next chapter">Access Rights</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="AccessRights.html" title="Access Rights"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="GlobalParameters.html" title="Global Parameters"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ProjeQtOr User guide 8.6.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015-2020, ProjeQtOr.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.3.
+    </div>
+  </body>
+</html>
