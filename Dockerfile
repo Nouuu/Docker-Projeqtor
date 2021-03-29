@@ -1,6 +1,8 @@
 FROM php:7.4-apache
 
-COPY projeqtor/ /var/www/html/
+ADD projeqtor.tar.gz /var/www/html/
+#COPY projeqtor.zip /var/www/html/
+#RUN unzip /var/www/html/projeqtor.zip && rm /var/www/html/projeqtor.zip
 RUN chown -R www-data:www-data /var/www/html/
 
 ENV PHP_MAX_INPUT_VARS=4000
@@ -24,7 +26,6 @@ ENV PJT_ENFORCE_UTF8=1
 
 VOLUME /mnt/documents/
 VOLUME /mnt/logs/
-
 RUN chown www-data:www-data /mnt/*
 
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
