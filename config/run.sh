@@ -4,9 +4,11 @@ echo "Init config"
 FILE="$PHP_INI_DIR/php.ini"
 cp "$PHP_INI_DIR/php.ini-production" $FILE
 
-cp -f /opt/parametersLocation.php /var/www/html/tool/parametersLocation.php
-chown www-data:www-data /var/www/html/tool/parametersLocation.php
-chmod 777 /var/www/html/tool/parametersLocation.php
+chown -R www-data:www-data /mnt/
+
+#cp -f /opt/parametersLocation.php /var/www/html/tool/parametersLocation.php
+#chown www-data:www-data /var/www/html/tool/parametersLocation.php
+#chmod 777 /var/www/html/tool/parametersLocation.php
 
 echo "\
 max_input_vars = $PHP_MAX_INPUT_VARS                        ; must be > 2000\n\

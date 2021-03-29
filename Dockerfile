@@ -26,14 +26,14 @@ ENV PJT_ENFORCE_UTF8=1
 
 VOLUME /mnt/documents/
 VOLUME /mnt/logs/
-RUN chown www-data:www-data /mnt/*
 
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 ADD config/parameters.php /opt
+RUN chown www-data:www-data /opt/parameters.php
 ADD config/run.sh /opt
-ADD config/parametersLocation.php /opt
 RUN chmod 777 /opt/run.sh
+#ADD config/parametersLocation.php /opt
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
@@ -67,7 +67,7 @@ RUN docker-php-ext-install -j$(nproc) imap
 #RUN docker-php-ext-install openssl
 
 RUN docker-php-ext-install \
-  mbstring \
+#  mbstring \
   mysqli \
   pdo \
   pdo_mysql \
