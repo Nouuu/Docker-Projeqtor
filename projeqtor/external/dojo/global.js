@@ -1,2 +1,0 @@
-//>>built
-define("dojo/global",function(){if(typeof global!=="undefined"&&typeof global!=="function"){return global;}else{if(typeof window!=="undefined"){return window;}else{if(typeof self!=="undefined"){return self;}}}return this;});

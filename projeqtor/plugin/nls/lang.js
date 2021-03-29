@@ -1,3 +1,0 @@
-{
-colPlgIdClient : "client",
-}
