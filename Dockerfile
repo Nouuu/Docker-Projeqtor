@@ -25,8 +25,7 @@ ENV PJT_ENFORCE_UTF8=1
 VOLUME /mnt/documents/
 VOLUME /mnt/logs/
 
-RUN mkdir /mnt/documents && mkdir /mnt/logs && \
- chown www-data:www-data /mnt/*
+RUN chown www-data:www-data /mnt/*
 
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
