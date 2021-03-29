@@ -1,8 +1,4 @@
 <?php
-// =======================================================================================
-// Automatically generated parameter file
-// on 2021-03-19 16:45:37
-// =======================================================================================
 $paramDbType = getenv('PJT_DB_TYPE');
 $paramDbHost = getenv('PJT_DB_HOST');
 $paramDbPort = getenv('PJT_DB_PORT');
