@@ -14,3 +14,4 @@ $logLevel = getenv('PJT_LOG_LEVEL');
 $enforceUTF8 = getenv('PJT_ENFORCE_UTF8');
 $documentRoot = '/mnt/documents/';
 $logFile = '/mnt/logs/projeqtor_${date}.log';
+$paramDefaultLocale = 'en';
