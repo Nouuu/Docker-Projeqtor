@@ -4,7 +4,7 @@ This docker image provides a [Projeqtor](https://www.projeqtor.org) container wi
 
 This image is based on `php:7.4-apache`
 
-Version of Projeqtor in this image is currently **9.0.6**
+Version of Projeqtor in this image is currently **9.1.2**
 
 ## Exposed ports :
 
