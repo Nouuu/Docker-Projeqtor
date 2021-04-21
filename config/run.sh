@@ -17,6 +17,8 @@ max_execution_time = $PHP_MAX_EXECUTION_TIME                ; minimum advised\n\
 memory_limit = $PHP_MEMORY_LIMIT                            ; minimum advised for PDF generation\n\
 file_uploads = On                                           ; to allow attachements and documents management\n\
 upload_max_filesize = 1G                                    ; upload max file size
+post_max_size = 1G                                          ; upload max size
+allow_url_fopen = True
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT\n" >>"$FILE"
 
 echo "Init apache2"
