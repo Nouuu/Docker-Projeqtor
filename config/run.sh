@@ -16,6 +16,7 @@ request_terminate_timeout = $PHP_REQUEST_TERMINATE_TIMEOUT  ; must not end reque
 max_execution_time = $PHP_MAX_EXECUTION_TIME                ; minimum advised\n\
 memory_limit = $PHP_MEMORY_LIMIT                            ; minimum advised for PDF generation\n\
 file_uploads = On                                           ; to allow attachements and documents management\n\
+upload_max_filesize = 1G                                    ; upload max file size
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT\n" >>"$FILE"
 
 echo "Init apache2"
