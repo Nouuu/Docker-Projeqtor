@@ -1,6 +1,7 @@
 FROM php:7.4-apache
 
 ADD projeqtor.tar.gz /var/www/html/
+COPY config/parametersLocation.php /var/www/html/tool/
 #COPY projeqtor.zip /var/www/html/
 #RUN unzip /var/www/html/projeqtor.zip && rm /var/www/html/projeqtor.zip
 ENV PHP_MAX_INPUT_VARS=4000 \
