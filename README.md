@@ -68,3 +68,60 @@ Current used environments vars :
 | ldap      | Directory Access Protocol, and is a protocol used to access "Directory Servers" |
 | zip       | ZipArchive class is mandatory to manage plugins and export to Excel format |
 
+# Ready 2 Go Stack
+
+Here is my own [compose](./docker-compose.yml.example) I use to deploy Projeqtor stack with MySQL database.
+
+First deploy may require admin login (on Projeqtor login page) to init DB.
+
+```yaml
+version: '3.8'
+
+services:
+  mysql_service:
+    image: mysql:latest
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - projeqtor_network
+    environment:
+      - MYSQL_ROOT_PASSWORD=changeme
+      - MYSQL_DATABASE=projeqtor
+  projeqtor_service:
+    image: nospy/projeqtor:latest
+    depends_on:
+      - mysql_service
+    volumes:
+      - projeqtor_documents:/mnt/documents
+      - projeqtor_logs:/mnt/logs
+    ports:
+      - "25:25"
+      - "80:80"
+    networks:
+      - projeqtor_network
+    environment:
+      - PHP_MAX_EXECUTION_TIME=30
+      - PHP_MAX_INPUT_VARS=4000
+      - PHP_MAX_UPLOAD_SIZE=1G
+      - PHP_MEMORY_LIMIT=512M
+      - PHP_REQUEST_TERMINATE_TIMEOUT=0
+      - PJT_ATTACHMENT_MAX_SIZE_MAIL=2097152
+      - PJT_DB_TYPE=mysql
+      - PJT_DB_HOST=mysql_service
+      - PJT_DB_PORT=3306
+      - PJT_DB_NAME=projeqtor
+      - PJT_DB_USER=root
+      - PJT_DB_PASSWORD=changeme
+volumes:
+  mysql_data:
+    external: true
+  projeqtor_documents:
+    external: true
+  projeqtor_logs:
+    external: true
+
+networks:
+  projeqtor_network:
+    driver: overlay
+    attachable: true
+```
