@@ -37,11 +37,8 @@ services:
       - PJT_DB_PASSWORD=changeme
 volumes:
   mysql_data:
-    external: true
   projeqtor_documents:
-    external: true
   projeqtor_logs:
-    external: true
 
 networks:
   projeqtor_network:

@@ -4,7 +4,7 @@ This docker image provides a [Projeqtor](https://www.projeqtor.org) container wi
 
 This image is based on `php:7.4-apache`
 
-Version of Projeqtor in this image is currently **9.2.2**
+Version of Projeqtor in this image is currently **9.4.2**
 
 ## Exposed ports :
 
@@ -74,6 +74,8 @@ Here is my own [compose](./docker-compose.yml.example) I use to deploy Projeqtor
 
 First deploy may require admin login (on Projeqtor login page) to init DB.
 
+> :warning: This stack is for Docker Swarm, if tyou wnat to run it on simple docker compose, you must replace `overlay` in network definition by `bridge`
+
 ```yaml
 version: '3.8'
 
@@ -114,11 +116,8 @@ services:
       - PJT_DB_PASSWORD=changeme
 volumes:
   mysql_data:
-    external: true
   projeqtor_documents:
-    external: true
   projeqtor_logs:
-    external: true
 
 networks:
   projeqtor_network:
