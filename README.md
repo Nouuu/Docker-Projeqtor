@@ -4,11 +4,20 @@ This docker image provides a [Projeqtor](https://www.projeqtor.org) container wi
 
 This image is based on `php:7.4-apache`
 
-Version of Projeqtor in this image is currently **9.5.4**
+Available tags of Projeqtor in this image are :
+
+- **latest** (10.1.2)
+- **10.1.2**
+- **9.5.4**
+- **9.4.2**
+- **9.2.2**
+- **9.1.2**
+- **9.0.6**
 
 ## Exposed ports :
 
 - 80 : Projeqtor Webpanel
+- 25 : SMTP
 
 ## Volumes
 
@@ -50,8 +59,6 @@ Current used environments vars :
 | PJT_LOG_LEVEL                | 2             | Log level {'4' for script tracing, '3' for debug, '2' for general trace, '1' for error trace, '0' for none} |
 | PJT_ENFORCE_UTF8             | 1             |                                                              |
 
-
-
 ## Installed PHP extensions
 
 | Extension | Usage                                                        |
@@ -74,7 +81,8 @@ Here is my own [compose](./docker-compose.yml.example) I use to deploy Projeqtor
 
 First deploy may require admin login (on Projeqtor login page) to init DB.
 
-> :warning: This stack is for Docker Swarm, if tyou wnat to run it on simple docker compose, you must replace `overlay` in network definition by `bridge`
+> :warning: This stack is for Docker Swarm, if tyou wnat to run it on simple docker compose, you must replace `overlay`
+> in network definition by `bridge`
 
 ```yaml
 version: '3.8'

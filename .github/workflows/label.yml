@@ -2,6 +2,8 @@ name: Tag CI
 
 on:
   push:
+    branches:
+      - main
     tags:
       - '*'
 
