@@ -1,4 +1,4 @@
-name: CI
+name: Latest CI
 
 on:
   push:
