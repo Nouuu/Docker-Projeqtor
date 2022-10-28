@@ -2,14 +2,17 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
 
 jobs:
   docker:
-    name: Build and push Docker image on latest tag
+    name: Build and push Docker image on pushed tag
     runs-on: ubuntu-latest
     steps:
+      - name: Set projeqtor version
+        run: echo "PROJEQTOR_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -26,4 +29,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:latest
+          build-args: |
+            PJT_VERSION=$PROJEQTOR_VERSION
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:$PROJEQTOR_VERSION
