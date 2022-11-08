@@ -2,7 +2,7 @@
 
 This docker image provides a [Projeqtor](https://www.projeqtor.org) container with LDAP support.
 
-This image is based on `php:7.4-apache`
+This image is based on `php:8.1-apache` (since version 10, 7.4 before)
 
 Available tags of Projeqtor in this image are :
 
