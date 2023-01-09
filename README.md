@@ -6,7 +6,7 @@ This image is based on `php:8.1-apache` (since version 10, 7.4 before)
 
 Available tags of Projeqtor in this image are :
 
-- **latest** (10.1.3)
+- **10.2.1** (latest)
 - **10.1.3**
 - **10.1.2**
 - **9.5.4**
