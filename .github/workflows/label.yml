@@ -31,6 +31,4 @@ jobs:
           push: true
           build-args: |
             PJT_VERSION=${{ env.PROJEQTOR_VERSION }}
-          tags:
-           - ${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:${{ env.PROJEQTOR_VERSION }}
-           - ${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:${{ env.PROJEQTOR_VERSION }},${{ secrets.DOCKERHUB_USERNAME }}/projeqtor:latest
