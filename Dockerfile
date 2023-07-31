@@ -12,8 +12,7 @@ ARG PJT_EXTRACT_DIR
 RUN echo "Installing base packages" \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-        ca-certificates \
-        unzip \
+        ca-certificates unzip wget \
     && rm -rf /var/lib/apt/lists/*
 
 
