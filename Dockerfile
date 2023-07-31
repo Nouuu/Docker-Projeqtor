@@ -18,7 +18,7 @@ RUN echo "Installing base packages" \
 
 
 RUN echo "Downloading projeqtor"
-ADD ${PJT_ARCHIVE_URL} /tmp/${PJT_ARCHIVE_NAME}
+RUN wget -q -O /tmp/${PJT_ARCHIVE_NAME} ${PJT_ARCHIVE_URL}
 
 RUN echo "Extract projeqtor archive" \
     && unzip -q /tmp/${PJT_ARCHIVE_NAME} -d /tmp \
