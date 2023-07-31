@@ -10,7 +10,8 @@ This image is derived from different versions of `php-apache`:
 
 Available tags of Projeqtor in this image are :
 
-- **latest** (10.3.6)
+- **latest** (10.4.0)
+- **10.4.0**
 - **10.3.6**
 - **10.3.0**
 - **10.2.3**
