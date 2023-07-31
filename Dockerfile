@@ -1,14 +1,22 @@
+# Define base arguments for ProjeQtOr
+# PHP_VERSION: the version of php to use
+# PJT_VERSION: the version of ProjeQtOr to use
+# PJT_ARCHIVE_NAME: the archive name for ProjeQtOr
+# PJT_EXTRACT_DIR: the directory name to extract the  to
+# PJT_ARCHIVE_URL: the URL to download ProjeQtOr
 ARG PHP_VERSION=8.1
 ARG PJT_VERSION=10.2.3
-ARG PJT_ARCHIVE_URL=https://freefr.dl.sourceforge.net/project/projectorria/projeqtorV${PJT_VERSION}.zip
 ARG PJT_ARCHIVE_NAME=projeqtorV${PJT_VERSION}.zip
 ARG PJT_EXTRACT_DIR=projeqtor
+ARG PJT_ARCHIVE_URL=https://freefr.dl.sourceforge.net/project/projectorria/projeqtorV${PJT_VERSION}.zip
 
+# Stage 1: Base. Prepares the base image for our Docker build
 FROM debian:11-slim AS base
 ARG PJT_ARCHIVE_URL
 ARG PJT_ARCHIVE_NAME
 ARG PJT_EXTRACT_DIR
 
+# Update and install necessary Debian packages
 RUN echo "Installing base packages" \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -16,21 +24,24 @@ RUN echo "Installing base packages" \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN echo "Downloading projeqtor"
-RUN wget -q -O /tmp/${PJT_ARCHIVE_NAME} ${PJT_ARCHIVE_URL}
-
-RUN echo "Extract projeqtor archive" \
+# Download and extract ProjeQtOr archive
+RUN echo "Downloading projeqtor"  \
+    && wget -q -O /tmp/${PJT_ARCHIVE_NAME} ${PJT_ARCHIVE_URL} \
+    && echo "Extract projeqtor archive" \
     && unzip -q /tmp/${PJT_ARCHIVE_NAME} -d /tmp \
     && mv /tmp/${PJT_EXTRACT_DIR} /opt/projeqtor \
     && rm /tmp/${PJT_ARCHIVE_NAME}
 
+# Stage 2: PHP. Prepares the PHP environment
 FROM php:${PHP_VERSION}-apache
 
-# Add from base
+# Copy the output from base
 COPY --from=base /opt/projeqtor/ /var/www/html
 
+# Copy configuration files
 COPY config/parametersLocation.php /var/www/html/tool/
 
+# Environment Variables for PHP and ProjeQtOr configuration. They can be overridden in docker-run command.
 ENV PHP_MAX_INPUT_VARS=4000 \
  PHP_REQUEST_TERMINATE_TIMEOUT=0 \
  PHP_MAX_EXECUTION_TIME=30 \
@@ -50,12 +61,13 @@ ENV PHP_MAX_INPUT_VARS=4000 \
  PJT_LOG_LEVEL=2 \
  PJT_ENFORCE_UTF8=1
 
+# Create persistent storage volumes for documents and logs
 VOLUME /mnt/documents/
 VOLUME /mnt/logs/
 
 
 COPY config/parameters.php config/run.sh /opt/
-#ADD config/run.sh /opt
+# Setup apache and php environments
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
     chown www-data:www-data /opt/parameters.php && \
     chmod 777 /opt/run.sh && \
@@ -90,5 +102,8 @@ RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
     pdo_pgsql \
     pgsql
 
+# Expose ports.
 EXPOSE 80
+
+# Define the entrypoint script
 ENTRYPOINT ["sh" ,"/opt/run.sh"]
