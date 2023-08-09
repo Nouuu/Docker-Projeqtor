@@ -39,7 +39,7 @@ They are two volume mounted on this image :
 
 Note: Both volumes require read and write (rw) access.
 
-## ## Environment Variables:
+## Environment Variables:
 
 ### PHP Environment Variables
 
