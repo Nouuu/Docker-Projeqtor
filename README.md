@@ -7,13 +7,14 @@ Docker image for [Projeqtor](https://www.projeqtor.org) with LDAP support.
 
 *This image is derived from various `php-apache` versions:*
 
-- For version 10.3 onwards, `php:8.2-apache` is used.
-- From versions 10.0 to 10.2, `php:8.1-apache` was utilized.
+- For version 11.2 onwards, `php:8.3-apache` is used.
+- From versions 10.3 to 11.1, `php:8.2-apache` was used.
+- From versions 10.0 to 10.2, `php:8.1-apache` was used.
 - Prior to version 10.0, `php:7.4-apache` was the choice.
 
 The **available Projeqtor tags** in this image include:
 
-- latest, 11.1.5, 11.1.0, 11.0.4, 11.0.0, 10.4.5, 10.4.3, 10.4.2, 10.4.0, 10.3.6, 10.3.0, 10.2.3, 10.2.1, 10.1.3, 10.1.2, 9.5.4, 9.4.2, 9.2.2, 9.1.2, and 9.0.6.
+- latest, 11.2.0, 11.1.5, 11.1.0, 11.0.4, 11.0.0, 10.4.5, 10.4.3, 10.4.2, 10.4.0, 10.3.6, 10.3.0, 10.2.3, 10.2.1, 10.1.3, 10.1.2, 9.5.4, 9.4.2, 9.2.2, 9.1.2, and 9.0.6.
 
 ## Technical Specifications
 

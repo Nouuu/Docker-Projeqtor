@@ -4,8 +4,8 @@
 # PJT_ARCHIVE_NAME: the archive name for ProjeQtOr
 # PJT_EXTRACT_DIR: the directory name to extract the  to
 # PJT_ARCHIVE_URL: the URL to download ProjeQtOr
-ARG PHP_VERSION=8.2
-ARG PJT_VERSION=11.1.5
+ARG PHP_VERSION=8.3
+ARG PJT_VERSION=11.2.0
 ARG PJT_ARCHIVE_NAME=projeqtorV${PJT_VERSION}.zip
 ARG PJT_EXTRACT_DIR=projeqtor
 ARG PJT_ARCHIVE_URL=https://freefr.dl.sourceforge.net/project/projectorria/projeqtorV${PJT_VERSION}.zip
