@@ -9,7 +9,7 @@ services:
   projeqtor:
     image: nospy/projeqtor:latest
     depends_on:
-      - mysql_service
+      - mysql
     volumes:
       - projeqtor_documents:/mnt/documents
       - projeqtor_attachments:/mnt/attachments

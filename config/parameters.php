@@ -16,6 +16,7 @@ $AttachmentMaxSizeMail = '2097152';
 $logLevel = getenv('PJT_LOG_LEVEL');
 $enforceUTF8 = getenv('PJT_ENFORCE_UTF8');
 $documentRoot = '/mnt/documents/';
+$paramAttachmentDirectory = '/mnt/attachments/';
 $logFile = '/mnt/logs/projeqtor_${date}.log';
 $paramDefaultLocale = 'en';
 $paramDefaultTimezone="Europe/Paris";
