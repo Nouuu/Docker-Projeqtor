@@ -77,21 +77,17 @@ Proceed with the following [Docker Compose](./docker-compose.yml.example), which
 
 During the first deployment, Admin login might be required (on the Projeqtor login page) for DB initialization.
 
-> ⚠️ This stack is configured for Docker Swarm. For simple Docker Compose, replace `overlay` with `bridge` in the network definition.
-
 ```yaml
 
 services:
-  mysql_service:
+  mysql:
     image: mysql:latest
     volumes:
       - mysql_data:/var/lib/mysql
-    networks:
-      - projeqtor_network
     environment:
       - MYSQL_ROOT_PASSWORD=changeme
       - MYSQL_DATABASE=projeqtor
-  projeqtor_service:
+  projeqtor:
     image: nospy/projeqtor:latest
     depends_on:
       - mysql_service
@@ -101,8 +97,6 @@ services:
     ports:
       - "25:25"
       - "80:80"
-    networks:
-      - projeqtor_network
     environment:
       - PHP_MAX_EXECUTION_TIME=30
       - PHP_MAX_INPUT_VARS=4000

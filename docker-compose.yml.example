@@ -1,16 +1,12 @@
-version: '3.8'
-
 services:
-  mysql_service:
+  mysql:
     image: mysql:latest
     volumes:
       - mysql_data:/var/lib/mysql
-    networks:
-      - projeqtor_network
     environment:
       - MYSQL_ROOT_PASSWORD=changeme
       - MYSQL_DATABASE=projeqtor
-  projeqtor_service:
+  projeqtor:
     image: nospy/projeqtor:latest
     depends_on:
       - mysql_service
@@ -20,8 +16,6 @@ services:
     ports:
       - "25:25"
       - "80:80"
-    networks:
-      - projeqtor_network
     environment:
       - PHP_MAX_EXECUTION_TIME=30
       - PHP_MAX_INPUT_VARS=4000
@@ -42,5 +36,5 @@ volumes:
 
 networks:
   projeqtor_network:
-    driver: overlay
+    driver: bridge
     attachable: true
