@@ -13,7 +13,7 @@ Docker image for [Projeqtor](https://www.projeqtor.org) with LDAP support.
 
 The **available Projeqtor tags** in this image include:
 
-- latest, 11.0.0, 10.4.5, 10.4.3, 10.4.2, 10.4.0, 10.3.6, 10.3.0, 10.2.3, 10.2.1, 10.1.3, 10.1.2, 9.5.4, 9.4.2, 9.2.2, 9.1.2, and 9.0.6.
+- latest, 11.0.4, 11.0.0, 10.4.5, 10.4.3, 10.4.2, 10.4.0, 10.3.6, 10.3.0, 10.2.3, 10.2.1, 10.1.3, 10.1.2, 9.5.4, 9.4.2, 9.2.2, 9.1.2, and 9.0.6.
 
 ## Technical Specifications
 
