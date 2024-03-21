@@ -26,6 +26,7 @@ The **available Projeqtor tags** in this image include:
 **Volumes:**
 
 - /mnt/documents
+- /mnt/attachments
 - /mnt/logs
 
 *Note: Read and write (rw) access is required for both volumes.*
@@ -98,6 +99,7 @@ services:
       - mysql_service
     volumes:
       - projeqtor_documents:/mnt/documents
+      - projeqtor_attachments:/mnt/attachments
       - projeqtor_logs:/mnt/logs
     ports:
       - "25:25"
@@ -118,5 +120,6 @@ services:
 volumes:
   mysql_data:
   projeqtor_documents:
+  projeqtor_attachments:
   projeqtor_logs:
 ```

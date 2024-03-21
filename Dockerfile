@@ -63,6 +63,7 @@ ENV PHP_MAX_INPUT_VARS=4000 \
 
 # Create persistent storage volumes for documents and logs
 VOLUME /mnt/documents/
+VOLUME /mnt/attachments/
 VOLUME /mnt/logs/
 
 
