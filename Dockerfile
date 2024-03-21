@@ -5,13 +5,13 @@
 # PJT_EXTRACT_DIR: the directory name to extract the  to
 # PJT_ARCHIVE_URL: the URL to download ProjeQtOr
 ARG PHP_VERSION=8.2
-ARG PJT_VERSION=10.4.3
+ARG PJT_VERSION=10.4.5
 ARG PJT_ARCHIVE_NAME=projeqtorV${PJT_VERSION}.zip
 ARG PJT_EXTRACT_DIR=projeqtor
 ARG PJT_ARCHIVE_URL=https://freefr.dl.sourceforge.net/project/projectorria/projeqtorV${PJT_VERSION}.zip
 
 # Stage 1: Base. Prepares the base image for our Docker build
-FROM debian:11-slim AS base
+FROM debian:bookworm-slim AS base
 ARG PJT_ARCHIVE_URL
 ARG PJT_ARCHIVE_NAME
 ARG PJT_EXTRACT_DIR
